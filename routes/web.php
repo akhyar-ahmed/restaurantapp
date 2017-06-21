@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Middleware\checkAuthMiddleware;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'AuthController@index')->name('login')->middleware('guest');
+Route::post('/auth', ['uses' => 'AuthController@login', 'as' => 'auth'])->middleware('guest');
+
