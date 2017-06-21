@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Restaurant App 
+                    Restaurant App :) 
                 </div>
 
                 <div class="links">
