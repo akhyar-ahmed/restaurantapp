@@ -15,7 +15,21 @@ class CreateOrderManipulationsTable extends Migration
     {
         Schema::create('orderManipulations', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('order_id')->unsigned();
+            $table->integer('item_id')->unsigned();
+            $table->string('item_name');
+            $table->integer('quantity');
+            $table->integer('net_total');
             $table->timestamps();
+
+        $table->foreign('order_id')
+            ->references('id')
+            ->on('orders')->onDelete('cascade');
+
+        $table->foreign('item_id')
+            ->references('id')
+            ->on('items')->onDelete('cascade');  
+
         });
     }
 
