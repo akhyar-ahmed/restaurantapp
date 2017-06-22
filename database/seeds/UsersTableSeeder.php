@@ -39,5 +39,6 @@ class UsersTableSeeder extends Seeder
         {
             User::forceCreate($data);
         }
+        
     }
 }

@@ -13,13 +13,15 @@ class CreateOrderManipulationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('orderManipulations', function (Blueprint $table) {
+        Schema::create('order_manipulations', function (Blueprint $table) {
+
             $table->increments('id');
             $table->integer('order_id')->unsigned();
             $table->integer('item_id')->unsigned();
             $table->string('item_name');
             $table->integer('quantity');
             $table->integer('net_total');
+            $table->integer('is_paid');
             $table->timestamps();
 
         $table->foreign('order_id')
@@ -40,6 +42,6 @@ class CreateOrderManipulationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('orderManipulations');
+        Schema::dropIfExists('order_manipulations');
     }
 }
