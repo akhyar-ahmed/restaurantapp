@@ -184,11 +184,15 @@
           text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
           font-size: 0.8em;
         }
+        
         footer a, footer a:link {
           color: #fff;
           text-decoration: none;
         }
 
+        footer a:hover {
+          text-decoration: underline;
+        }
     </style>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
