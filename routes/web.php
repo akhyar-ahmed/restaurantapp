@@ -14,3 +14,8 @@ use App\Http\Middleware\checkAuthMiddleware;
 Route::get('/', 'AuthController@index')->name('login')->middleware('guest');
 Route::post('/auth', ['uses' => 'AuthController@login', 'as' => 'auth'])->middleware('guest');
 
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+    Route::get('/home', 'DashboardController@index')->name('home');
+    Route::post('/logout', 'AuthController@logout')->name('logout');
+});

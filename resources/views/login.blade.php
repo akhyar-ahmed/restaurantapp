@@ -219,7 +219,6 @@
     <i class="fa fa-key"></i>
     <a href="#">Forgot your password?</a>
     <button >
-      <i class="spinner"></i>
       <span class="state">Log in</span>
     </button>
   </form>

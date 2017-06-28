@@ -1,3 +1,3 @@
 <hr>
 
-<p class="text-center"> Copyright Authlab - All Rights Reserved </p>
+<p class="text-center"> All Right Reserved © Akhyar Ahmed </p>
