@@ -17,6 +17,7 @@ class CreateItemsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('stock');
+            $table->string('code');
             $table->integer('base_price');
             $table->timestamps();
         });

@@ -16,17 +16,20 @@ class OrdersTableSeeder extends Seeder
 
             [
                 'user_id' => '1',
-                'table_id' => "C-01"
+                'table_id' => "C-01",
+                'category_id' => '1'
             ],
 
             [
                 'user_id' => '2',
-                'table_id' => "C-02"
+                'table_id' => "C-02",
+                'category_id' => '2'
             ],
 
             [
                 'user_id' => '1',
-                'table_id' => 'C-02'
+                'table_id' => 'C-02',
+                'category_id' => '3'
             ]
         ];
 

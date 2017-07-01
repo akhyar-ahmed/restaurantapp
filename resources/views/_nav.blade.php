@@ -8,13 +8,14 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="{{ route('dashboard') }}">Restaurant Management</a>
+    <a class="navbar-brand" href="{{ route('home') }}">Restaurant Management</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li class="{{ Request::is('dashboard') ? "active": "" }}"><a href="/dashboard">Dashboard<span class="sr-only">(current)</span></a></li>
+       <li class="{{ Request::is('items') ? "active": "" }}"><a href="/items">Food-Items</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
