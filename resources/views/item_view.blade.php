@@ -45,12 +45,7 @@
     </form>
 
 @if(count($items))
-<<<<<<< HEAD
 <div class = "container form-group col-xs-12">
-=======
-<div class = "container">
-
->>>>>>> 6b47650d9296a84d12cf3044ba695aa35702a6a0
 	<table class="table table-bordered table-hover">
 	
 		<thead>
