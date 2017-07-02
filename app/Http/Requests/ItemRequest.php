@@ -24,9 +24,9 @@ class ItemRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|alpha_dash',
+            'name' => 'required',
             'stock' => 'required|numeric',
-            'code' => 'required|alpha_dash',
+            'code' => 'required',
             'base_price' => 'required|numeric' 
         ];
     }

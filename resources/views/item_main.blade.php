@@ -7,12 +7,11 @@
   <body>
     @include('_nav')
 
-      <div class="container">
+      <div class="container"> 
 
         @include('_messages')
         @yield('content')
         @include('_footer')
-
       </div>
 
     @include('_javascripts')

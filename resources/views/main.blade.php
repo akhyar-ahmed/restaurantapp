@@ -2,7 +2,7 @@
 
 <html lang="en">
 
-  @include('_head')
+  @include('_itemHead')
 
   <body>
     @include('_nav')

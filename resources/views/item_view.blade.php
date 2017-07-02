@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <div class = "page-header">
+    <div class = "page-header container col-xs-12 form-group">
 		<div class = "form-group col-xs-7">
 			<h1>Food Items</h1>
 		</div>
@@ -13,7 +13,7 @@
 			@include('_searching')
 		</div>
 	</div>
-	<div id="result"></div>
+	<div id="result" class = "container form-group col-xs-12"></div>
 	<br>
     <form method="POST" action="{{ route('create') }}">
         <div class="form-group col-xs-4">
@@ -45,10 +45,17 @@
     </form>
 
 @if(count($items))
+<<<<<<< HEAD
+<div class = "container form-group col-xs-12">
+=======
 <div class = "container">
+
+>>>>>>> 6b47650d9296a84d12cf3044ba695aa35702a6a0
 	<table class="table table-bordered table-hover">
+	
 		<thead>
 			<tr>
+				<th>SL.</th>
 				<th>Food Name</th>
 				<th>Menu ID</th>
 				<th>Stock</th>
@@ -61,6 +68,10 @@
 
 		@foreach($items as $items)
 	  	<tr>
+			<td>
+			  {{ $items->id }}
+			</td>
+
 	  		<td>
 	  			{{ $items->name }}
 	  		</td>

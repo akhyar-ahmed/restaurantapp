@@ -27,6 +27,12 @@
             color:#eee;
         }
         .table-bordered>tbody>tr:hover {background-color: #211e1d}
+        .container{
+            margin-top:2cm;
+        }
+        .a{
+            color: white;
+        }
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
