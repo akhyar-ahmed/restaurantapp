@@ -33,7 +33,7 @@
 		<thead>
 			<tr>
 				<th>Food Name</th>
-				<th>Code No.</th>
+				<th>Menu ID</th>
 				<th>Stock</th>
 				<th>Base Price</th>
 				<th>Created at</th>
