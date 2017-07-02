@@ -11,14 +11,21 @@
     <link rel="stylesheet" href="css/styles.css">
     <style>
         body{
-background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU_1nZDMFFu54bUNfgIkm-hH07OPDKLs03RXYC1uyIoXPPiBYLDg');
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            opacity: 0.9;
+            background-image:url('http://jppromotions.com.au/wp-content/uploads/2015/10/brown-wood-background-1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            opacity: 0.8;
+            color: #f5f5f5;
 
         }
+        .navbar-inverse .navbar-brand{
+            color:#eee;
+        }
+
+        .navbar-inverse .navbar-nav>li>a{
+            color:#eee;
+        }
+        .table-bordered>tbody>tr:hover {background-color: #211e1d}
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
