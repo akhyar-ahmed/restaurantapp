@@ -14,12 +14,13 @@ class SearchController extends Controller
      * @return \Illuminate\Http\Response
      */
      public function searchFoodItem(Request $request){
-        return "hello";
+        
         $output = "";
         $value = $request->search;
-        $sql1 = Items::where('name', 'LIKE', '%$value%')->get()
-                    ->orWhere('code', 'LIKE', '%$value%')->get();
-        if( count($sql1)>0){
+        $sql1 = Items::where('name', 'LIKE', '%'.$value.'%')
+                ->orWhere('code', 'LIKE', '%'.$value.'%')->get();
+       // return count($sql1);
+        if( count($sql1)>0 && $value !=NULL ){
             $output .= '<h3 align = "center"> Search Result </h3>';
             $output .= '<div class = "table-responsive">
                             <table class = "table table bordered">
@@ -30,7 +31,8 @@ class SearchController extends Controller
                                     <th>Stock</th>
                                     <th>Base Price</th>
                                     <th>Created at</th>
-                                    <th>Updated at</th>';
+                                    <th>Updated at</th>
+                                    <th>Actions</th>';
             foreach($sql1 as $sql1){
                 $output .= '
                             <tr>
@@ -41,6 +43,19 @@ class SearchController extends Controller
                                 <td>'.$sql1['base_price'].'</td>
                                 <td>'.$sql1['created_at'].'</td>
                                 <td>'.$sql1['updated_at'].'</td>
+                                <td>
+                                    <div>
+                                        <form method="GET" action="{{ route('.'get.edit'.','. $sql1['id'].') }}" style="display: inline-block;">
+                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                            <input type="submit" value="Update" role="button" class="btn btn-warning btn-xs">
+                                        </form>
+                                
+                                        <form method="GET" action="{{ route('.'delete'.','. $sql1['id'].')}}" style="display: inline-block;">
+                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                            <input type="submit" value="Delete" role="button" class="btn btn-danger btn-xs">
+                                        </form>
+                                    </div>
+	                            </td>
                             </tr>';
             }
 
@@ -57,10 +72,6 @@ class SearchController extends Controller
             //                 </tr>';  
             // }
         }
-        else {
-            $output .= "<h4> Data Not Found !!!</h4>";
-        }
-        return view('item_view')
-            ->with(compact('output'))->render();
+        return $output;
      }
 }

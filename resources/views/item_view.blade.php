@@ -106,6 +106,32 @@
 		$('#search_text').keyup(function(){
 			var txt = $(this).val();
 			if( txt != '') {
+				$.ajaxSetup({
+        		headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
+				$.ajax({
+					url: "/items/searchfood",
+					method: "POST",
+					data: {
+						search:txt
+						},
+					dataType: "text",
+					success: function(data){
+						$('#result').html(data);
+					}
+				});
+
+			}
+			else {
+				$('#result').html('');
+
+				$.ajaxSetup({
+        		headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
 				$.ajax({
 					url: "/items/searchfood",
 					method: "POST",
@@ -118,8 +144,36 @@
 					}
 				});
 			}
+		});
+		$('#search_text').keydown(function(){
+			var txt = $(this).val();
+			if( txt != '') {
+				$.ajaxSetup({
+        		headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
+				$.ajax({
+					url: "/items/searchfood",
+					method: "POST",
+					data: {
+						search:txt
+						},
+					dataType: "text",
+					success: function(data){
+						$('#result').html(data);
+					}
+				});
+
+			}
 			else {
 				$('#result').html('');
+				
+				$.ajaxSetup({
+        		headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
 				$.ajax({
 					url: "/items/searchfood",
 					method: "POST",
