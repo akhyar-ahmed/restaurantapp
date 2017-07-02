@@ -46,7 +46,9 @@
 
 @if(count($items))
 <div class = "container">
+
 	<table class="table table-bordered table-hover">
+	
 		<thead>
 			<tr>
 				<th>Food Name</th>
