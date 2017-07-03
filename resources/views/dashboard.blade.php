@@ -1,4 +1,4 @@
-@extends('main')
+@extends('item_main')
 
 @section('title', '| Dashboard')
 
