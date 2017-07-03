@@ -27,7 +27,7 @@
             color:#eee;
         }
         .table-bordered>tbody>tr:hover {background-color: #211e1d}
-        .container{
+        #item{
             margin-top:2cm;
         }
         .a{
