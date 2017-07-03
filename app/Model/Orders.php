@@ -11,12 +11,12 @@ class Orders extends Model
     	return $this->belongsTo('App\Model\User');
     }
 
-    public function incomes()
+    public function income()
     {
-        return $this->hasMany('App\Model\Items');
+        return $this->hasOne('App\Model\Incomes');
     }
 
-    public function orderManipulations()
+    public function order_manipulations()
     {
         return $this->hasMany('App\Model\Order_manipulations');
     }

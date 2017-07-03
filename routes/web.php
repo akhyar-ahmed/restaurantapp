@@ -29,6 +29,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/items/searchfood','SearchController@searchFoodItem');
     //Order Placement
     Route::get('/food-orders', 'OrderController@index')->name('place.order');
-
+    Route::post('/food-orders/searchfood', 'SearchController@searchOrderFoodItem');
     ///
 });

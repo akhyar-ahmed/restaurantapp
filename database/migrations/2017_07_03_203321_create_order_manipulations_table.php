@@ -14,7 +14,6 @@ class CreateOrderManipulationsTable extends Migration
     public function up()
     {
         Schema::create('order_manipulations', function (Blueprint $table) {
-
             $table->increments('id');
             $table->integer('order_id')->unsigned();
             $table->integer('item_id')->unsigned();
@@ -24,13 +23,13 @@ class CreateOrderManipulationsTable extends Migration
             $table->integer('is_paid');
             $table->timestamps();
 
-        $table->foreign('order_id')
-            ->references('id')
-            ->on('orders')->onDelete('cascade');
+            $table->foreign('order_id')
+                ->references('id')
+                ->on('orders')->onDelete('cascade');
 
-        $table->foreign('item_id')
-            ->references('id')
-            ->on('items')->onDelete('cascade');  
+            $table->foreign('item_id')
+                ->references('id')
+                ->on('items')->onDelete('cascade');  
 
         });
     }
