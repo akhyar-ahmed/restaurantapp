@@ -18,7 +18,7 @@ class CreateItemsTable extends Migration
             $table->string('name');
             $table->integer('stock');
             $table->string('code');
-            $table->integer('base_price');
+            $table->double('base_price',7,3);
             $table->timestamps();
         });
     }

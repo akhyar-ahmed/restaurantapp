@@ -13,7 +13,7 @@ class OrderManipulationRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**

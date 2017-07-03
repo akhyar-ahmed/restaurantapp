@@ -77,7 +77,7 @@
 	  			{{ $items->stock }}
 	  		</td>
 	  		<td>
-	  			{{ $items->base_price }}
+	  			£ {{ $items->base_price }}
 	  		</td>
 	  		<td>
 	  			{{ date('M j, Y', strtotime($items->created_at)) }}

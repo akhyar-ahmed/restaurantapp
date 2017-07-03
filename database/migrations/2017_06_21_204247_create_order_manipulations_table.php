@@ -20,7 +20,7 @@ class CreateOrderManipulationsTable extends Migration
             $table->integer('item_id')->unsigned();
             $table->string('item_name');
             $table->integer('quantity');
-            $table->integer('net_total');
+            $table->double('net_total',7,3);
             $table->integer('is_paid');
             $table->timestamps();
 

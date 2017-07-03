@@ -43,7 +43,7 @@ class SearchController extends Controller
                                 <td>'.$sql1['name'].'</td>
                                 <td>'.$sql1['code'].'</td>
                                 <td>'.$sql1['stock'].'</td>
-                                <td>'.$sql1['base_price'].'</td>
+                                <td>'.'£ '.$sql1['base_price'].'</td>
                                 <td>'.$create.'</td>
                                 <td>'.$update.'</td>
                                 <td>

@@ -18,7 +18,7 @@ class ItemsTableSeeder extends Seeder
                 'name' => "Burger",
                 'stock' => '100',
                 'code' => "f-01",
-                'base_price' => '1.00'
+                'base_price' => '1.50'
             ],
 
             [

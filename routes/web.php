@@ -27,7 +27,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/items/post-edit/{id}','ItemController@postEdit')->name('post.edit');
     Route::get('/items/delete/{id}','ItemController@delete')->name('delete');
     Route::post('/items/searchfood','SearchController@searchFoodItem');
-
+    //Order Placement
+    Route::get('/food-orders', 'OrderController@index')->name('place.order');
 
     ///
 });
