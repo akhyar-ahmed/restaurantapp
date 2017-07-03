@@ -18,7 +18,7 @@ class ItemsTableSeeder extends Seeder
                 'name' => "Burger",
                 'stock' => '100',
                 'code' => "f-01",
-                'base_price' => '1.50'
+                'base_price' => '1.00'
             ],
 
             [
@@ -873,6 +873,76 @@ class ItemsTableSeeder extends Seeder
                 'stock' => '200',
                 'code' => "cu-20",
                 'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Extra Pizza Chease",
+                'stock' => '200',
+                'code' => "ai-01",
+                'base_price' => '0.10'
+            ],
+
+            [
+                'name' => "Extra Pizza Mozerella",
+                'stock' => '200',
+                'code' => "ai-02",
+                'base_price' => '0.30'
+            ],
+
+            [
+                'name' => "Extra Burger Chease",
+                'stock' => '200',
+                'code' => "ai-03",
+                'base_price' => '0.40'
+            ],
+
+            [
+                'name' => "Extra Ham For Nurger",
+                'stock' => '200',
+                'code' => "ai-04",
+                'base_price' => '1.00'
+            ],
+
+            [
+                'name' => "Extra Beaf",
+                'stock' => '200',
+                'code' => "ai-05",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Extra Olive For Pizza",
+                'stock' => '200',
+                'code' => "ai-06",
+                'base_price' => '0.50'
+            ],
+
+            [
+                'name' => "Extra Ham for Sandwich",
+                'stock' => '200',
+                'code' => "ai-07",
+                'base_price' => '1.50'
+            ],
+
+            [
+                'name' => "Extra Garlic Sauce",
+                'stock' => '200',
+                'code' => "ai-08",
+                'base_price' => '0.30'
+            ],
+
+            [
+                'name' => "Extra Salad",
+                'stock' => '200',
+                'code' => "ai-09",
+                'base_price' => '1.00'
+            ],
+
+            [
+                'name' => "Extra Fried Onion",
+                'stock' => '200',
+                'code' => "ai-10",
+                'base_price' => '0.80'
             ]
         ];
 
