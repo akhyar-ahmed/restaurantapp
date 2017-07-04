@@ -9,14 +9,10 @@
     <div class = "container col-xs-12 form-group">
         @include('_orderSearch')
     </div>
-	<div id="result" class = "container form-group col-xs-12"></div>
-    <form method="POST" action="#" class = "container">
+	<div id="result" class = "container form-group col-xs-12">
+    
+    </div>  
 
-        <div class="form-group col-xs-12">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-        <input type="submit" name="submit" value="Insert" class="btn btn-primary">
-        </div>
-	</form>
 @endsection
 
 @push('scripts')
@@ -31,7 +27,7 @@
 					}
 				});
 				$.ajax({
-					url: "/order/searchfood",
+					url: "/food-orders/searchfood",
 					method: "POST",
 					data: {
 						search:txt
@@ -52,7 +48,7 @@
 					}
 				});
 				$.ajax({
-					url: "/items/searchfood",
+					url: "/food-orders/searchfood",
 					method: "POST",
 					data: {
 						search:txt
@@ -73,7 +69,7 @@
 					}
 				});
 				$.ajax({
-					url: "/items/searchfood",
+					url: "/food-orders/searchfood",
 					method: "POST",
 					data: {
 						search:txt
@@ -94,7 +90,7 @@
 					}
 				});
 				$.ajax({
-					url: "/items/searchfood",
+					url: "/food-orders/searchfood",
 					method: "POST",
 					data: {
 						search:txt

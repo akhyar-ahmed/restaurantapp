@@ -442,7 +442,7 @@ class Order_manipulationsTableSeeder extends Seeder
                 'item_name' => "Pudin Cake 2",
                 'quantity' => '02',
                 'net_total' => '2.00',
-                'is_paid' => ''
+                'is_paid' => '0'
             ],
 
             [
