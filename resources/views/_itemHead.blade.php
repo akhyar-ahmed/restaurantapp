@@ -26,12 +26,15 @@
         .navbar-inverse .navbar-nav>li>a{
             color:#eee;
         }
-        .table-bordered>tbody>tr:hover {background-color: #211e1d}
+        .table-bordered>tbody>tr:hover {background-color: #211e1d;}
         #item{
             margin-top:2cm;
         }
         .a{
             color: white;
+        }
+        #edit:hover{
+            background-color: transparent;
         }
     </style>
 
