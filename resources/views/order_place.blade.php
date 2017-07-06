@@ -11,8 +11,87 @@
     </div>
 	<div id="result" class = "container form-group col-xs-12">
     
-    </div>  
+    </div>
 
+	@if(count($orderItem))
+	<div class = " container col-xs-12 form-group">
+		<h2 style="text-align:center; display:inline: float:center"><u>Order Draft</u></h2>
+	</div>
+	<div class = "container form-group col-xs-12">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>Food Name</th>
+					<th>Quantity</th>
+					<th>Base Price</th>
+					<th>Total</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+
+			@foreach($orderItem as $or)
+
+			<tr>
+				<td>
+					#
+				</td>
+
+				<td>
+					{{ $or->food_name }}
+				</td>
+
+				<td>
+					{{ $or->quantity }}
+				</td>
+
+				<td>
+					{{ $or->base_price }}
+				</td>
+
+				<td>
+					{{ $or->total }}
+				</td>
+
+				<td>
+					<div>
+						<form method="GET" action="{{ route('newsale.delete', $or->id) }}" style="display: inline-block;">
+							<input type="submit" value="Delete" role="button" class="btn btn-danger btn-sm">
+						</form>
+					</div>
+				</td>
+
+			</tr>
+			@endforeach
+			
+		</table>
+	</div>
+	<div class="container form-group col-xs-12 ">
+		<div class = "form-group col-xs-10" >
+			<form method="POST" action="{{ route('newsale.save') }}">
+				<div class = "form-group col-xs-10" >
+					<select class="form-control" name="table_id" required="true">
+						<option disabled selected value> Select a Table ID </option>
+						@foreach($table as $md)
+							<option name="medicine_id" value="{{ $md }}">{{ $md }}</option>
+						@endforeach
+					</select>					
+				</div>
+				<div class = " form-group col-xs-2">
+					<input type="hidden" name="_token" value="{{ csrf_token() }}">
+					<input type="submit" name="submit" value="Confirm" class="btn btn-success">
+				</div>	
+			</form>
+		</div>
+		<div class = "form-group col-xs-2"> 
+			<form method="POST" action="{{ route('newsale.clear') }}">
+				<input type="hidden" name="_token" value="{{ csrf_token() }}">
+				<input type="submit" name="submit" value="Cancel" class="btn btn-danger ">
+			</form>
+		</div>
+	</div>
+@endif
+<br><br>
 @endsection
 
 @push('scripts')

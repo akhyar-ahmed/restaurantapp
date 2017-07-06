@@ -30,7 +30,11 @@ Route::group(['middleware' => 'auth'], function () {
     
     //Order Placement
     Route::get('/food-orders', 'OrderController@index')->name('place.order');
+    Route::get('/foodorders', 'SalerecordController@index')->name('place.item');
     Route::post('/food-orders/searchfood', 'SearchController@searchOrderFoodItem');
     Route::post('addOrder', 'SalerecordController@postCreateSale');
+    Route::get('/delete-item/{id}','SalerecordController@getDeleteItem')->name('newsale.delete');
+    Route::post('/food-order/confirm','OrderController@postOrderCreate')->name('newsale.save');
+    Route::post('/food-order/clear','SalerecordController@postDeleteUserOrder')->name('newsale.clear');
     ///
 });

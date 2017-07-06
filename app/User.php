@@ -31,4 +31,7 @@ class User extends Authenticatable
     {
     	return $this->hasMany('App\Model\Order');
     }
+    public function getId(){
+        return $this->id;
+    }
 }

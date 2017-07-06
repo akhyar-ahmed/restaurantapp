@@ -87,7 +87,8 @@ class ItemController extends Controller
     public function postEdit(ItemRequest $request, $id)
     {
         $item = Items::find($id);
-        $item->name = $request->name;
+        $itemName = ucfirst(strtolower($request->name));
+        $item->name = $itemName;
         $item->code = $request->code;
         $item->stock = $request->stock;
         $item->base_price = $request->base_price;

@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use App\Model\Salerecords;
 use App\Http\Requests\SalerecordRequest;
 use Auth;
+Use App\User;
+Use App\Model\Items;
+use Session;
+use Illuminate\Contracts\Validation\Validator;
 
 class SalerecordController extends Controller
 {
@@ -16,7 +20,15 @@ class SalerecordController extends Controller
      */
     public function index()
     {
-        //
+        $table = ["C-01","C-03","C-08","C-10","C-11","C-12","C-13","C-17","C-19","C-37"];
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+        //return $table[6];
+        $orderItem = Salerecords::where('user_id', '=', $id)->get();
+        return view('order_place')
+            ->with(compact('table', 'id', 'orderItem'));
     }
 
     /**
@@ -37,8 +49,28 @@ class SalerecordController extends Controller
      */
     public function postCreateSale(SalerecordRequest $request)
     {
-        
-        return $request;
+        if($request->stock < $request->quantity){
+            Session::flash('danger', 'Item quantity is out of stock!');
+            return redirect()->route('place.item');
+        }
+        else{
+            $newItem = new Salerecords;
+            $user_id = $request->user()->id;
+            $newItem->user_id = $user_id;
+            $newItem->item_id = $request->id;
+            $newItem->food_name = $request->name;
+            $newItem->food_stock = $request->stock;
+            $newItem->base_price = $request->base_price;
+            $newItem->food_code = $request->code;
+            $newItem->quantity = $request->quantity;
+            //$quantity = floatval($request->quantity);
+            $total = ($request->base_price) * ($request->quantity);
+            $newItem->total = $total;
+            
+            $newItem->save();
+            Session::flash('success', 'Item Enrolled Successfully');
+            return redirect()->route('place.item');
+        }
     }
 
     /**
@@ -81,8 +113,22 @@ class SalerecordController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function getDeleteItem($id)
     {
-        //
+        $order = Salerecords::find($id);
+        $order->delete();
+        Session:: flash('danger', 'Item Cancelled Successfully !');
+
+        return redirect()->route('place.item');
+    }
+    /**
+     * Clear the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function postDeleteUserOrder(Request $request){
+        return "hello";
     }
 }
