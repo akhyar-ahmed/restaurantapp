@@ -9,6 +9,8 @@ use App\Http\Requests\OrderManipulation;
 use App\Model\Order_manipulations;
 use Auth;
 use App\Model\Salerecords;
+use Session;
+use Illuminate\Contracts\Validation\Validator;
 
 class OrderController extends Controller
 {
@@ -46,15 +48,15 @@ class OrderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function postOrderCreate(Request $request)
-    {
-        return $request;
-        
+    public function postOrderCreate(OrderRequest $request)
+    {   
         if (Auth::check())
         {
             $id = Auth::user()->getId();
         }
-
+        $items = Salerecords::where('user_id', '=', $id)->get();
+        return $items;
+        
     }
 
     /**

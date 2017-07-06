@@ -72,13 +72,21 @@
 	</div>
 	<div class="container form-group col-xs-12 ">
 		<form method="POST" action="{{ route('newsale.save') }}">
-			<div class = "form-group col-xs-10" >
-				<select class="form-control" name="table_id" required="true">
+			<div class = "form-group col-xs-5" >
+				<select class="form-control" name="table_id">
 					<option disabled selected value> Select a Table ID </option>
 					@foreach($table as $md)
 						<option name="table_id" value="{{ $md }}">{{ $md }}</option>
 					@endforeach
 				</select>					
+			</div>
+			<div class = "form-group col-xs-5">
+				<select class = "form-control" name="category_id">
+					<option disabled selected value> Select an Order Type</option>
+					<option name="category_id" value="1">Onsite</option>
+					<option name="category_id" value="2">Take Away</option>
+					<option name="category_id" value="3">Online</option>
+				</select>
 			</div>
 			<div class = " form-group col-xs-1">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">

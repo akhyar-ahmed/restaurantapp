@@ -132,7 +132,7 @@ class SalerecordController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(SalerecordRequest $request, $id)
     {
         $orderItem = Salerecords::find($id);
         $item = Items::find($orderItem->item_id);
@@ -141,7 +141,7 @@ class SalerecordController extends Controller
         $updateQuantity = $request->quantity;
         if ($prevQuantity == $updateQuantity) {
             
-            Session::flash('success', 'Item Enrolled Successfully');
+            Session::flash('success', 'Item Updated Successfully');
 
             return redirect()->route('place.item');
 
@@ -158,7 +158,7 @@ class SalerecordController extends Controller
             $orderItem->save();
             $item->save();     
 
-            Session::flash('success', 'Item Enrolled Successfully');
+            Session::flash('success', 'Item Updated Successfully');
             
             return redirect()->route('place.item');
 
@@ -182,7 +182,7 @@ class SalerecordController extends Controller
             $orderItem->save();
             $item->save();
             
-            Session::flash('success', 'Item Enrolled Successfully');
+            Session::flash('success', 'Item Updated Successfully');
             
             return redirect()->route('place.item');
         }

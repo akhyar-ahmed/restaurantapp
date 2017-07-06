@@ -9,10 +9,10 @@
             <form method="POST" action="{{ route('order.item.edit', $orderItem->id) }}">
                 <td class="col-xs-9">
                     <div class="form-group col-xs-8">
-                        <input type="text" class="form-control" name="food_name" value="{{ $orderItem->food_name }}" required="true" disabled>
+                        <input type="text" class="form-control" name="food_name" value="{{ $orderItem->food_name }}" disabled>
                     </div>
                     <div class="form-group col-xs-4">
-                        <input type="text" class="form-control" name="quantity" value="{{ $orderItem->quantity }}" required="true">
+                        <input type="text" class="form-control" name="quantity" value="{{ $orderItem->quantity }}">
                     </div>
                 </td>
                 <td class="form-group col-xs-3">
