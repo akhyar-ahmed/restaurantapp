@@ -224,13 +224,20 @@ class SalerecordController extends Controller
         
         $order = Salerecords::where('user_id', '=', $user_id)->get();
         
-        return $order;
+        //return $order;
 
         foreach($order as $order) {
 
-            
+            $item = Items::find($order->item_id);
+            $item->stock += $order->quantity;
 
+            $item->save();
         }
-        die();
+
+        $order->truncate();
+
+        Session::flash('success', 'Order Cancelled Successfully');
+
+        return redirect()->route('place.item');
     }
 }
