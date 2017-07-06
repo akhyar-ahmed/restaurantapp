@@ -5,7 +5,7 @@
 @section('content')
     <div class="page-header"><h1>Update Order Item</h1></div><br> <br>
     <table class="table table-hover">
-        <tr>
+        <tr id="edit">
             <form method="POST" action="{{ route('order.item.edit', $orderItem->id) }}">
                 <td class="col-xs-9">
                     <div class="form-group col-xs-8">
