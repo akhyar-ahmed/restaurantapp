@@ -44,13 +44,14 @@
         </div>
     </form>
 
-@if(count($items))
+@if(count($availableItems))
 <div class = "container form-group col-xs-12">
+	<h3><u>Available Items:</u></h3>
 	<table class="table table-bordered table-hover">
 	
 		<thead>
 			<tr>
-				<th>SL.</th>
+				<th>SL</th>
 				<th>Food Name</th>
 				<th>Menu ID</th>
 				<th>Stock</th>
@@ -61,7 +62,7 @@
 			</tr>
 		</thead>
 
-		@foreach($items as $items)
+		@foreach($availableItems as $items)
 	  	<tr>
 			<td>
 			  {{ $items->id }}

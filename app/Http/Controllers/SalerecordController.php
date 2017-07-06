@@ -151,7 +151,7 @@ class SalerecordController extends Controller
             
             $orderItem->food_stock  += $quantity;
             $orderItem->quantity = $updateQuantity;
-            $orderItem->total = ($updatedQuantity * $orderItem->base_price);
+            $orderItem->total = ($updateQuantity * $orderItem->base_price);
 
             $item->stock += $quantity;
 
@@ -175,7 +175,7 @@ class SalerecordController extends Controller
 
             $orderItem->food_stock  -= $quantity;
             $orderItem->quantity = $updateQuantity;
-            $orderItem->total = ($updatedQuantity * $orderItem->base_price);
+            $orderItem->total = ($updateQuantity * $orderItem->base_price);
 
             $item->stock  -= $quantity;
             

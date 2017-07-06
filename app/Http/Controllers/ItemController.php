@@ -16,9 +16,12 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $items = Items::get();
+        $availableItems = Items::where('stock', '!=', '0')->get();
+
+        $notAvailableItems = Items::where('stock', '=', '0')->get();
+        
         return view('item_view')
-            ->with(compact('items'));
+            ->with(compact('availableItems', 'notAvailableItems'));
     }
 
     /**
