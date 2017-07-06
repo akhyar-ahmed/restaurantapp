@@ -111,7 +111,17 @@ class SalerecordController extends Controller
      */
     public function edit($id)
     {
-        //
+        //return "hello";
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+        }
+
+        $orderItem = Salerecords::find($id);
+       // return $orderItem;
+
+        return view('order_place_edit')
+            ->with(compact('orderItem'));
     }
 
     /**
@@ -123,7 +133,7 @@ class SalerecordController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return 'hello';
     }
 
     /**

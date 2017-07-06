@@ -21,7 +21,7 @@
 		<table class="table table-bordered table-hover">
 			<thead>
 				<tr>
-					<th>No</th>
+					<th>SL</th>
 					<th>Food Name</th>
 					<th>Quantity</th>
 					<th>Base Price</th>
@@ -34,7 +34,7 @@
 
 			<tr>
 				<td>
-					#
+					# 
 				</td>
 
 				<td>
@@ -54,7 +54,11 @@
 				</td>
 
 				<td>
-					<div>
+					<div>						
+						<form method="GET" action="{{ route('newsaleItem.update', $or->id) }}" style="display: inline-block;">
+							<input type="submit" value="Update" role="button" class="btn btn-warning btn-sm">
+						</form>
+
 						<form method="GET" action="{{ route('newsale.delete', $or->id) }}" style="display: inline-block;">
 							<input type="submit" value="Delete" role="button" class="btn btn-danger btn-sm">
 						</form>
