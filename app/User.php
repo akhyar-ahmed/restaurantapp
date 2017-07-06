@@ -31,6 +31,11 @@ class User extends Authenticatable
     {
     	return $this->hasMany('App\Model\Order');
     }
+
+    public function salerecords()
+    {
+        return $this->hasMany('App\Model\Salerecords');
+    }
     public function getId(){
         return $this->id;
     }

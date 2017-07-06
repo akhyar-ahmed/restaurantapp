@@ -14,8 +14,8 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li class="{{ Request::is('dashboard') ? "active": "" }}"><a href="/dashboard">Dashboard<span class="sr-only">(current)</span></a></li>
-      <li class="{{ Request::is('items') ? "active": "" }}"><a href="/items">Food-Items</a></li>
+      <li class="{{ Request::is('dashboard') ? "active": "" }} "><a href="/dashboard">Dashboard<span class="sr-only">(current)</span></a></li>
+      <li class="{{ Request::is('items') ? "active": "" }}  ? "active": "" }}"><a href="/items">Food-Items</a></li>
       <li class="{{ Request::is('food-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/food-orders">Food-Order</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">

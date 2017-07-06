@@ -64,12 +64,12 @@ class SalerecordController extends Controller
         //return $orderItem;
         if(count($orderItem)>0)
         {
-            Session::flash('danger', 'This Item was already Enrolled !');
+            Session::flash('danger', 'This Item was Already Enrolled !!');
             return redirect()->route('place.item');
         }
         //return $item->stock;
         if($item->stock < 0){
-            Session::flash('danger', 'Item quantity is out of stock!');
+            Session::flash('danger', 'Item Quantity is Out of Stock !!');
             return redirect()->route('place.item');
         }
         else{
@@ -88,7 +88,7 @@ class SalerecordController extends Controller
             $newItem->total = $total;
             
             $newItem->save();
-            Session::flash('success', 'Item Enrolled Successfully');
+            Session::flash('success', ' Item Enrolled Successfully !!');
             return redirect()->route('place.item');
         }
     }
@@ -141,7 +141,7 @@ class SalerecordController extends Controller
         $updateQuantity = $request->quantity;
         if ($prevQuantity == $updateQuantity) {
             
-            Session::flash('success', 'Item Updated Successfully');
+            Session::flash('success', ' Item Updated Successfully !!');
 
             return redirect()->route('place.item');
 
@@ -158,7 +158,7 @@ class SalerecordController extends Controller
             $orderItem->save();
             $item->save();     
 
-            Session::flash('success', 'Item Updated Successfully');
+            Session::flash('success', ' Item Updated Successfully !!');
             
             return redirect()->route('place.item');
 
@@ -168,7 +168,7 @@ class SalerecordController extends Controller
             
             if ($quantity > $item->stock) {
 
-                Session:: flash('danger', 'Item quantity is out of stock !');
+                Session:: flash('danger', ' Item Quantity is Out of Stock !!');
 
                 return redirect()->route('newsaleItem.update', $orderItem->id);
             }
@@ -182,7 +182,7 @@ class SalerecordController extends Controller
             $orderItem->save();
             $item->save();
             
-            Session::flash('success', 'Item Updated Successfully');
+            Session::flash('success', ' Item Updated Successfully !!');
             
             return redirect()->route('place.item');
         }
@@ -203,7 +203,7 @@ class SalerecordController extends Controller
         $item->stock += $order->quantity;
         $item->save();
         $order->delete();
-        Session:: flash('danger', 'Item Cancelled Successfully !');
+        Session:: flash('success', ' Item Cancelled Successfully !!');
 
         return redirect()->route('place.item');
     }
@@ -232,11 +232,10 @@ class SalerecordController extends Controller
             $item->stock += $order->quantity;
 
             $item->save();
+            $order->delete();
         }
 
-        $order->truncate();
-
-        Session::flash('success', 'Order Cancelled Successfully');
+        Session::flash('success', ' Order Cancelled Successfully !!');
 
         return redirect()->route('place.item');
     }

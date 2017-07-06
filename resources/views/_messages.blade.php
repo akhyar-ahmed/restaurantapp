@@ -6,7 +6,7 @@
 
 @if(Session::has('danger'))
   <div class="alert alert-danger" role="alert">
-      <strong> Oops! </strong> {{ Session::get('danger') }}
+      <strong> Error: </strong> {{ Session::get('danger') }}
   </div>
 @endif
 

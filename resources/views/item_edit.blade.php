@@ -9,16 +9,16 @@
             <form method="POST" action="{{ route('post.edit', $item->id) }}">
                 <td class="col-xs-9">
                     <div class="form-group col-xs-5">
-                        <input type="text" class="form-control" name="name" value="{{ $item->name }}" required="true">
+                        <input type="text" class="form-control" name="name" value="{{ $item->name }}" >
                     </div>
                     <div class="form-group col-xs-3">
-                        <input type="text" class="form-control" name="code" value="{{ $item->code }}" required="true">
+                        <input type="text" class="form-control" name="code" value="{{ $item->code }}" >
                     </div>
                     <div class="form-group col-xs-2">
-                        <input type="text" class="form-control" name="stock" value="{{ $item->stock }}" required="true">
+                        <input type="text" class="form-control" name="stock" value="{{ $item->stock }}" >
                     </div>
                     <div class="form-group col-xs-2">
-                        <input type="text" class="form-control" name="base_price" value="{{ $item->base_price }}" required="true">
+                        <input type="text" class="form-control" name="base_price" value="{{ $item->base_price }}" >
                     </div>
                 </td>
                 <td class="form-group col-xs-3">

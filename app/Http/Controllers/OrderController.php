@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Model\Orders;
+use App\User;
 use App\Http\Requests\OrderRequest;
 use App\Http\Requests\OrderManipulation;
 use App\Model\Order_manipulations;
@@ -52,11 +53,66 @@ class OrderController extends Controller
     {   
         if (Auth::check())
         {
-            $id = Auth::user()->getId();
+            $user_id = Auth::user()->getId();
         }
-        $items = Salerecords::where('user_id', '=', $id)->get();
-        return $items;
         
+        $items = Salerecords::where('user_id', '=', $user_id)->get();
+        //return $items;
+        $table_id = "";
+        $table_id = $request->table_id;
+
+        $category_id = $request->category_id; 
+
+        $order = new Orders;
+        $order->user_id = $user_id;
+
+        if ($category_id == 1 && $table_id != "") {
+            
+            $order->table_id = $table_id;
+
+        } else if ( $category_id == 1 && $table_id == "" ) {
+
+            Session:: flash('danger', ' Table ID Field Requird !!');
+
+            return redirect()->back();
+        }
+        else {
+         
+            $order->table_id = "";
+        }
+       // return $items;
+
+        $order->category_id = $category_id;
+        //return $order;
+        $order->save();
+        //return $order->id;
+        if(! is_null($items)) {
+
+            foreach ( $items as $itm ) {
+
+                $orderManipulation = new Order_manipulations;
+
+                $orderManipulation->order_id = $order->id;
+                $orderManipulation->item_id = $itm->item_id;
+                $orderManipulation->item_name = $itm->food_name;
+                $orderManipulation->quantity = $itm->quantity;
+                $orderManipulation->net_total = $itm->total;
+                $orderManipulation->is_paid  = '0';
+
+                $orderManipulation->save();
+
+                $itm->delete();
+            }
+        }
+
+        if($category_id == 1)
+            Session::flash('success', ' Onsite Order Enrolled Successfully !!');
+        else if($category_id == 2)
+            Session::flash('success', ' Take Away Order Enrolled Successfully !!');
+        else if($category_id == 3)
+            Session::flash('success', ' Online Order Enrolled Successfully !!');
+            
+        return redirect()->route('place.item');
     }
 
     /**

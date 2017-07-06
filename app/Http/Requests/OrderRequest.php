@@ -24,7 +24,7 @@ class OrderRequest extends FormRequest
     public function rules()
     {
         return [
-            'table_id' => 'required',
+            
             'category_id' => 'required'
         ];
     }
