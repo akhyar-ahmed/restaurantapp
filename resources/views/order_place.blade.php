@@ -71,27 +71,23 @@
 		</table>
 	</div>
 	<div class="container form-group col-xs-12 ">
-		<div class = "form-group col-xs-10" >
-			<form method="POST" action="{{ route('newsale.save') }}">
-				<div class = "form-group col-xs-10" >
-					<select class="form-control" name="table_id" required="true">
-						<option disabled selected value> Select a Table ID </option>
-						@foreach($table as $md)
-							<option name="medicine_id" value="{{ $md }}">{{ $md }}</option>
-						@endforeach
-					</select>					
-				</div>
-				<div class = " form-group col-xs-2">
-					<input type="hidden" name="_token" value="{{ csrf_token() }}">
-					<input type="submit" name="submit" value="Confirm" class="btn btn-success">
-				</div>	
-			</form>
-		</div>
-		<div class = "form-group col-xs-2"> 
-			<form method="GET" action="{{ route('newsale.clear') }}">
-				<input type="submit" name="submit" value="Cancel" class="btn btn-danger ">
-			</form>
-		</div>
+		<form method="POST" action="{{ route('newsale.save') }}">
+			<div class = "form-group col-xs-10" >
+				<select class="form-control" name="table_id" required="true">
+					<option disabled selected value> Select a Table ID </option>
+					@foreach($table as $md)
+						<option name="table_id" value="{{ $md }}">{{ $md }}</option>
+					@endforeach
+				</select>					
+			</div>
+			<div class = " form-group col-xs-1">
+				<input type="hidden" name="_token" value="{{ csrf_token() }}">
+				<input type="submit" name="submit" value="Confirm" class="btn btn-success">
+			</div>	
+			<div class = "form-group col-xs-1"> 
+				<a  href = "{{ route('newsale.clear') }}" class="btn btn-danger " role = "button">Cancel</a>
+			</div>
+		</form>
 	</div>
 @endif
 <br><br>

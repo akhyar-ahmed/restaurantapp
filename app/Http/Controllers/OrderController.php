@@ -48,7 +48,13 @@ class OrderController extends Controller
      */
     public function postOrderCreate(Request $request)
     {
-        return 'hello';
+        return $request;
+        
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+
     }
 
     /**
