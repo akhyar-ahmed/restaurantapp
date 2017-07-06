@@ -88,8 +88,7 @@
 			</form>
 		</div>
 		<div class = "form-group col-xs-2"> 
-			<form method="POST" action="{{ route('newsale.clear') }}">
-				<input type="hidden" name="_token" value="{{ csrf_token() }}">
+			<form method="GET" action="{{ route('newsale.clear') }}">
 				<input type="submit" name="submit" value="Cancel" class="btn btn-danger ">
 			</form>
 		</div>

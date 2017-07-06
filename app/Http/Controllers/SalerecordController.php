@@ -151,6 +151,7 @@ class SalerecordController extends Controller
             
             $orderItem->food_stock  += $quantity;
             $orderItem->quantity = $updateQuantity;
+            $orderItem->total = ($updatedQuantity * $orderItem->base_price);
 
             $item->stock += $quantity;
 
@@ -174,6 +175,7 @@ class SalerecordController extends Controller
 
             $orderItem->food_stock  -= $quantity;
             $orderItem->quantity = $updateQuantity;
+            $orderItem->total = ($updatedQuantity * $orderItem->base_price);
 
             $item->stock  -= $quantity;
             
@@ -206,13 +208,29 @@ class SalerecordController extends Controller
         return redirect()->route('place.item');
     }
     /**
-     * Clear the specified resource in storage.
+     * Delete the whole resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function postDeleteUserOrder(Request $request){
-        return "hello";
+    public function deleteUserOrder()
+    {
+
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+        }
+        
+        $order = Salerecords::where('user_id', '=', $user_id)->get();
+        
+        return $order;
+
+        foreach($order as $order) {
+
+            
+
+        }
+        die();
     }
 }

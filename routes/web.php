@@ -35,7 +35,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('addOrder', 'SalerecordController@postCreateSale');
     Route::get('/delete-item/{id}','SalerecordController@getDeleteItem')->name('newsale.delete');
     Route::post('/food-order/confirm','OrderController@postOrderCreate')->name('newsale.save');
-    Route::post('/food-order/clear','SalerecordController@postDeleteUserOrder')->name('newsale.clear');
+    Route::get('/food-order/clear','SalerecordController@deleteUserOrder')->name('newsale.clear');
     Route::get('/food-order/update/{id}','SalerecordController@edit')->name('newsaleItem.update');
     Route::post('/food-order/update/{id}','SalerecordController@update')->name('order.item.edit');
     ///
