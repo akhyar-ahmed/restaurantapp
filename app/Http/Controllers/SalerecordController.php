@@ -49,17 +49,36 @@ class SalerecordController extends Controller
      */
     public function postCreateSale(SalerecordRequest $request)
     {
-        if($request->stock < $request->quantity){
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+
+        $item = Items::find($request->id);
+        $item->stock -=$request->quantity;
+        $orderItem = Salerecords::where([
+                                        ['user_id', '=', $id],
+                                        ['item_id', '=', $request->id]
+                                        ])->get();
+        //return $orderItem;
+        if(count($orderItem)>0)
+        {
+            Session::flash('danger', 'This Item was already Enrolled !');
+            return redirect()->route('place.item');
+        }
+        //return $item->stock;
+        if($item->stock < 0){
             Session::flash('danger', 'Item quantity is out of stock!');
             return redirect()->route('place.item');
         }
         else{
+            $item->save();
             $newItem = new Salerecords;
             $user_id = $request->user()->id;
             $newItem->user_id = $user_id;
             $newItem->item_id = $request->id;
             $newItem->food_name = $request->name;
-            $newItem->food_stock = $request->stock;
+            $newItem->food_stock = $item->stock;
             $newItem->base_price = $request->base_price;
             $newItem->food_code = $request->code;
             $newItem->quantity = $request->quantity;
@@ -116,6 +135,11 @@ class SalerecordController extends Controller
     public function getDeleteItem($id)
     {
         $order = Salerecords::find($id);
+        //return $order->item_id;
+        $item = Items::find($order->item_id);
+        //return $item->stock;
+        $item->stock += $order->quantity;
+        $item->save();
         $order->delete();
         Session:: flash('danger', 'Item Cancelled Successfully !');
 
