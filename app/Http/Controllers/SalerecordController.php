@@ -27,6 +27,7 @@ class SalerecordController extends Controller
         }
         //return $table[6];
         $orderItem = Salerecords::where('user_id', '=', $id)->get();
+        //return $orderItem;
         return view('order_place')
             ->with(compact('table', 'id', 'orderItem'));
     }
@@ -133,7 +134,56 @@ class SalerecordController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return 'hello';
+        $orderItem = Salerecords::find($id);
+        $item = Items::find($orderItem->item_id);
+       // return $orderItem;
+        $prevQuantity = $orderItem->quantity;
+        $updateQuantity = $request->quantity;
+        if ($prevQuantity == $updateQuantity) {
+            
+            Session::flash('success', 'Item Enrolled Successfully');
+
+            return redirect()->route('place.item');
+
+        } else if ( $prevQuantity > $updateQuantity) {
+
+            $quantity = $prevQuantity - $updateQuantity;
+            
+            $orderItem->food_stock  += $quantity;
+            $orderItem->quantity = $updateQuantity;
+
+            $item->stock += $quantity;
+
+            $orderItem->save();
+            $item->save();     
+
+            Session::flash('success', 'Item Enrolled Successfully');
+            
+            return redirect()->route('place.item');
+
+        } else if ( $prevQuantity < $updateQuantity ) {
+            
+            $quantity = $updateQuantity - $prevQuantity;
+            
+            if ($quantity > $item->stock) {
+
+                Session:: flash('danger', 'Item quantity is out of stock !');
+
+                return redirect()->route('newsaleItem.update', $orderItem->id);
+            }
+
+            $orderItem->food_stock  -= $quantity;
+            $orderItem->quantity = $updateQuantity;
+
+            $item->stock  -= $quantity;
+            
+            $orderItem->save();
+            $item->save();
+            
+            Session::flash('success', 'Item Enrolled Successfully');
+            
+            return redirect()->route('place.item');
+        }
     }
 
     /**
