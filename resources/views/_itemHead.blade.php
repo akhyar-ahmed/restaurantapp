@@ -8,8 +8,10 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
     <style>
         body{
             background-image:url('http://jppromotions.com.au/wp-content/uploads/2015/10/brown-wood-background-1.jpg');
@@ -17,6 +19,8 @@
             background-attachment: fixed;
             opacity: 0.8;
             color: #f5f5f5;
+            font-family: Raleway, sans-serif;
+            font-size: 14px;
 
         }
         .navbar-inverse .navbar-brand{
