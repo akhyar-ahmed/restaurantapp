@@ -49,7 +49,7 @@ class ItemController extends Controller
             $item->save();
         }
         
-        Session:: flash('success', 'Food Item Stored Successfully!');
+        Session:: flash('success', ' Food Item Stored Successfully !!');
         
         return redirect()->route('item');
 
@@ -98,7 +98,7 @@ class ItemController extends Controller
 
         $item->save();
         
-        Session:: flash('success', 'Food Item Updated Successfully !');
+        Session:: flash('success', ' Food Item Updated Successfully !!');
 
         return redirect()->route('item');
     }
@@ -114,7 +114,7 @@ class ItemController extends Controller
         $item = Items::find($id);
         $item->delete();
 
-        Session:: flash('danger', 'Food Item Deleted Successfully !');
+        Session:: flash('success', ' Food Item Deleted Successfully !!');
 
         return redirect()->route('item');
     }

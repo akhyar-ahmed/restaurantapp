@@ -3,6 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use Session;
+use App\Model\Items;
+Use App\User;
+use Illuminate\Contracts\Validation\Validator;
+use App\Model\Salerecords;
+use App\Model\OnlineOrders;
+use App\Model\OnlineOrderManipulations;
+use App\Requests\OnlineOrderRequest;
 
 class OnlineOrderController extends Controller
 {
@@ -13,7 +22,14 @@ class OnlineOrderController extends Controller
      */
     public function index()
     {
-        //
+
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+
+       return "hello";
+
     }
 
     /**
@@ -40,12 +56,20 @@ class OnlineOrderController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+        //return $table[6];
+        $orderItem = Salerecords::where('user_id', '=', $id)->get();
+        //return $orderItem;
+        return view('online_order_place')
+            ->with(compact('table', 'id', 'orderItem'));
     }
 
     /**

@@ -80,12 +80,12 @@
 
 	  		<td>
 		  		<div>
-		              <form method="GET" action="#" style="display: inline-block;">
+		              <form method="GET" action="{{ route('get.edit', $items->id ) }}" style="display: inline-block;">
 		                <input type="hidden" name="_token" value="{{ csrf_token() }}">
 		                <input type="submit" value="Update" role="button" class="btn btn-warning btn-xs">
 		              </form>
-		       
-		              <form method="GET" action="#" style="display: inline-block;">
+
+		              <form method="GET" action="{{ route('get.delete', $items->id ) }}" style="display: inline-block;">
 		                <input type="hidden" name="_token" value="{{ csrf_token() }}">
 		                <input type="submit" value="Delete" role="button" class="btn btn-danger btn-xs">
 		              </form>
@@ -101,7 +101,7 @@
 @push('scripts')
 <script>
 	$(document).ready(function(){
-		$('#search_text').keyup(function(){
+		$('#search_customer_text').keyup(function(){
 			var txt = $(this).val();
 			if( txt != '') {
 				$.ajaxSetup({
@@ -143,7 +143,7 @@
 				});
 			}
 		});
-		$('#search_text').keydown(function(){
+		$('#search_customer_text').keydown(function(){
 			var txt = $(this).val();
 			if( txt != '') {
 				$.ajaxSetup({

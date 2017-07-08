@@ -46,7 +46,11 @@ class CustomerController extends Controller
         $customer->name = $customerName;
         $customer->phone = $request->caller_id;
         $customer->address = $request->address;
+
         $customer->save();
+
+        Session:: flash('success', ' Customer Enrolled Successfully !!');
+
         return redirect()->route('customer');
     }
 
@@ -69,7 +73,9 @@ class CustomerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $customer = Customers::find($id);
+        return view('customer_edit')
+            ->with(compact('customer'));
     }
 
     /**
@@ -79,9 +85,19 @@ class CustomerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CustomerRequest $request, $id)
     {
-        //
+        $item = Customers::find($id);
+        $itemName = ucfirst(strtolower($request->name));
+        $item->name = $itemName;
+        $item->phone = $request->caller_id;
+        $item->address = $request->address;
+
+        $item->save();
+        
+        Session:: flash('success', ' Customer Updated Successfully !!');
+
+        return redirect()->route('customer');
     }
 
     /**
@@ -90,8 +106,13 @@ class CustomerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
-        //
+        $customer = Customers::find($id);
+        $customer->delete();
+
+        Session:: flash('success', ' Customer Deleted Successfully !!');
+
+        return redirect()->route('customer');
     }
 }

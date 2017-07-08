@@ -200,8 +200,8 @@ class SearchController extends Controller
                                 <th>Updated at</th>
                                 <th>Actions</th>
                             </tr>';
-            $getEdit='#';
-            $delete='#';
+            $getEdit='/admin/customer/edit/';
+            $delete='/admin/customer/delete/';
             foreach($sql1 as $sql1){
                 $create = date('M j, Y', strtotime($sql1['created_at']));
                 $update = date('M j, Y', strtotime($sql1['updated_at']));
@@ -248,6 +248,90 @@ class SearchController extends Controller
         }
         else{
             $output .= '<h3 align = "center"> <u>Search Result</u> </h3> <h4 align = "center" >Customer Not Found !!</h4>';
+        }
+        return $output;
+    }
+
+    public function searchOnlineOrderFoodItem(Request $request){
+        
+        $output = "";
+        $value = $request->search;
+        $sql1 = Items::where('name', 'LIKE', '%'.$value.'%')
+                ->orWhere('code', 'LIKE', '%'.$value.'%')->get();
+        if( count($sql1)>0 && $value !=NULL ){
+            $output .= '<h3 align = "center"> <u> Search Result </u> </h3><br>';
+            $output .= '<div class = "container form-group col-xs-12">
+                            <div class = "form-group col-xs-1">
+                                <h4><u>SL.</u></h4>
+                            </div>
+                            <div class = "form-group col-xs-3">
+                                <h4><u>Food Name</u></h4>
+                            </div>
+                            <div class = "form-group col-xs-2">
+                                <h4><u>Menu ID</u></h4>
+                            </div>
+                            <div class = "form-group col-xs-1">
+                                <h4><u>Stock</u></h4>
+                            </div>
+                            <div class = "form-group col-xs-1">
+                                <h4><u>BP</u></h4>
+                            </div>
+                            <div class = "form-group col-xs-2">
+                                <h4><u>Quantity</u></h4>
+                            </div>
+                            <div class = "form-group col-xs-2">
+                                <h4><u>Actions</u></h4>
+                            </div>
+                        </div>';
+            $postOrder='/admin/addOnlineOrder';
+            $csrf = "{{!! csrf_token() !!}}";
+            foreach($sql1 as $sql1){
+
+                $output .= '<form method="POST" action="'.$postOrder.'">
+                                <div class = "container form-group col-xs-12">
+                                    <div class = "container form-group col-xs-1">
+                                        <input type="text" class="form-control" name="id" value ="'.$sql1['id'].'" placeholder="'.$sql1['id'].'">
+                                    </div>
+                                    <div class = "container form-group col-xs-3">
+                                        <input type="text" class="form-control" name="name" value ="'.$sql1['name'].'" placeholder="'.$sql1['name'].'">
+                                    </div>
+                                    <div class = "container form-group col-xs-2">
+                                        <input type="text" class="form-control" name="code" value ="'.$sql1['code'].'" placeholder="'.$sql1['code'].'">
+                                    </div>
+                                    <div class = "container form-group col-xs-1">
+                                        <input type="text" class="form-control" name="stock" value ="'.$sql1['stock'].'" placeholder="'.$sql1['stock'].'">
+                                    </div>
+                                    <div class = "container form-group col-xs-1">
+                                        <input type="text" class="form-control" name="base_price" value ="'.$sql1['base_price'].'" placeholder="£ '.$sql1['base_price'].'">
+                                    </div>
+                                    <div class = "container form-group col-xs-2">
+                                        <input type="text" class="form-control" name="quantity" placeholder="Quantity">
+                                    </div>
+                                    <div class = "container form-group col-xs-2">
+                                        <input type="submit" value="ADD" role="button" class="btn btn-primary btn-md">
+                                    </div>
+                                </div>
+                            </form>';
+            }
+
+            // foreach($sql2 as $sql2){
+            //     $output .= '
+            //                 <tr>
+            //                     <td>'.$sql2['id'].'</td>
+            //                     <td>'.$sql2['name'].'</td>
+            //                     <td>'.$sql2['code'].'</td>
+            //                     <td>'.$sql2['stock'].'</td>
+            //                     <td>'.$sql2['base_price'].'</td>
+            //                     <td>'.$sql2['created_at'].'</td>
+            //                     <td>'.$sql2['updated_at'].'</td>
+            //                 </tr>';  
+            // }
+        }
+        else if ($value == ''){
+            $output.="";
+        }
+        else{
+            $output .= '<h3 align = "center"> <u>Search Result</u> </h3> <h4 align = "center" >Food Item Not Found !!</h4>';
         }
         return $output;
     }

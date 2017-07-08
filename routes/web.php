@@ -29,8 +29,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/items/searchfood','SearchController@searchFoodItem');
     
     //Order Placement
-    Route::get('/food-orders', 'OrderController@index')->name('place.order');
-    Route::get('/foodorders', 'SalerecordController@index')->name('place.item');
+    //Route::get('/food-orders', 'OrderController@index')->name('place.order');
+    Route::get('/food-orders', 'SalerecordController@index')->name('place.item');
     Route::post('/food-orders/searchfood', 'SearchController@searchOrderFoodItem');
     Route::post('addOrder', 'SalerecordController@postCreateSale');
     Route::get('/delete-item/{id}','SalerecordController@getDeleteItem')->name('newsale.delete');
@@ -42,6 +42,16 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/admin/customer','CustomerController@index')->name('customer');
     Route::post('/customer/search','SearchController@searchCustomers');
-    Route::post('/customer/create','CustomerController@postCreate')->name('customer.create');
+    Route::post('/admin/customer/create','CustomerController@postCreate')->name('customer.create');
+    Route::get('/admin/customer/edit/{id}', 'CustomerController@edit')->name('get.edit');
+    Route::get('/admin/customer/delete/{id}','CustomerController@delete')->name('get.delete');
+    Route::post('/admin/customer/update/{id}','CustomerController@update')->name('post.update');
 
+    ///Online- OtherOrders 
+
+    Route::get('/admin/other-order','OnlineSalerecordController@index')->name('online.order');
+    Route::get('/admin/other-order/update/{id}','OnlineSalerecordController@edit')->name('online.newsaleItem.update');
+    Route::get('/admin/other-order/delete-item/{id}','OnlineSalerecordController@getDeleteItem')->name('online.newsale.delete');
+    Route::post('/admin/addOnlineOrder', 'OnlineSalerecordController@postCreateSale');
+    Route::post('/food-orders/searchOnlinefood', 'SearchController@searchOnlineOrderFoodItem');
 });
