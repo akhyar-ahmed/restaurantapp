@@ -58,29 +58,13 @@ class OrderController extends Controller
         
         $items = Salerecords::where('user_id', '=', $user_id)->get();
         //return $items;
-        $table_id = "";
         $table_id = $request->table_id;
 
         $category_id = $request->category_id; 
 
         $order = new Orders;
         $order->user_id = $user_id;
-
-        if ($category_id == 1 && $table_id != "") {
-            
-            $order->table_id = $table_id;
-
-        } else if ( $category_id == 1 && $table_id == "" ) {
-
-            Session:: flash('danger', ' Table ID Field Requird !!');
-
-            return redirect()->back();
-        }
-        else {
-         
-            $order->table_id = "";
-        }
-        //return $items;
+        $order->table_id = $table_id;
 
         $order->category_id = $category_id;
         //return $order;
@@ -104,13 +88,8 @@ class OrderController extends Controller
                 $itm->delete();
             }
         }
-
-        if($category_id == 1)
-            Session::flash('success', ' Onsite Order Enrolled Successfully !!');
-        else if($category_id == 2)
-            Session::flash('success', ' Take Away Order Enrolled Successfully !!');
-        else if($category_id == 3)
-            Session::flash('success', ' Online Order Enrolled Successfully !!');
+        
+        Session::flash('success', ' Onsite Order Enrolled Successfully !!');
             
         return redirect()->route('place.item');
     }
