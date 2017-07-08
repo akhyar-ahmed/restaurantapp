@@ -27,6 +27,11 @@
             color:#eee;
         }
 
+        .navbar-inverse{
+        padding-left:120px;
+        padding-right: 80px;
+        }
+
         .navbar-inverse .navbar-nav>li>a{
             color:#eee;
         }
