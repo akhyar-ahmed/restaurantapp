@@ -40,7 +40,14 @@ class CustomerController extends Controller
      */
     public function postCreate(CustomerRequest $request)
     {
-        return "hello"; 
+        //return "hello";
+        $customer = new Customers;
+        $customerName = ucfirst(strtolower($request->name)); 
+        $customer->name = $customerName;
+        $customer->phone = $request->caller_id;
+        $customer->address = $request->address;
+        $customer->save();
+        return redirect()->route('customer');
     }
 
     /**
