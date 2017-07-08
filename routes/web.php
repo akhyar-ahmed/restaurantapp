@@ -38,5 +38,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/food-order/clear','SalerecordController@deleteUserOrder')->name('newsale.clear');
     Route::get('/food-order/update/{id}','SalerecordController@edit')->name('newsaleItem.update');
     Route::post('/food-order/update/{id}','SalerecordController@update')->name('order.item.edit');
-    ///
+    ///Customers
+
+    Route::get('/admin/customer','CustomerController@index')->name('customer');
+    Route::post('/customer/search','SearchController@searchCustomers');
+    Route::post('/customer/create','CustomerController@postCreate')->name('customer.create');
+
 });

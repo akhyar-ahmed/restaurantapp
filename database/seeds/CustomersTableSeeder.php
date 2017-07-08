@@ -14,7 +14,7 @@ class CustomersTableSeeder extends Seeder
     {
         $data = [
             [
-                'name' => 'Tarek',
+                'name' => 'Sadul Hasan Tarek',
                 'phone' => '01673956622',
                 'address' => 'Dakshin, Kajol-Shah, Medical Road, Sylhet'
             ],

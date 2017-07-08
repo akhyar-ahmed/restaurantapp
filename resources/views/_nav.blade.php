@@ -17,7 +17,8 @@
     <ul class="nav navbar-nav">
       <li class="{{ Request::is('dashboard') ? "active": "" }} "><a href="/dashboard">Dashboard<span class="sr-only">(current)</span></a></li>
       <li class="{{ Request::is('items') ? "active": "" }}  ? "active": "" }}"><a href="/items">Food-Items</a></li>
-      <li class="{{ Request::is('food-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/food-orders">Food-Order</a></li>
+      <li class="{{ Request::is('food-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/food-orders">Onsite-Order</a></li>
+      <li class="{{ Request::is('admin/customer') ? "active": "" }}"><a href="/admin/customer">Customer</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">

@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\CustomerRequest;
+use App\Model\Customers;
+use Auth;
+use Session;
 
 class CustomerController extends Controller
 {
@@ -13,7 +17,9 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        //
+        $customers = Customers::all();
+        return view('customer_view')
+            ->with(compact('customers'));
     }
 
     /**
@@ -32,9 +38,9 @@ class CustomerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function postCreate(CustomerRequest $request)
     {
-        //
+        return "hello"; 
     }
 
     /**
