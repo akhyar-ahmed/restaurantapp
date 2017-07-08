@@ -50,8 +50,13 @@ Route::group(['middleware' => 'auth'], function () {
     ///Online- OtherOrders 
 
     Route::get('/admin/other-order','OnlineSalerecordController@index')->name('online.order');
-    Route::get('/admin/other-order/update/{id}','OnlineSalerecordController@edit')->name('online.newsaleItem.update');
+    Route::post('/admin/other-order/update/{id}','OnlineSalerecordController@update')->name('online.newsaleItem.update');
+    Route::get('/admin/other-order/edit/{id}','OnlineSalerecordController@edit')->name('online.newsaleItem.edit');
     Route::get('/admin/other-order/delete-item/{id}','OnlineSalerecordController@getDeleteItem')->name('online.newsale.delete');
     Route::post('/admin/addOnlineOrder', 'OnlineSalerecordController@postCreateSale');
     Route::post('/food-orders/searchOnlinefood', 'SearchController@searchOnlineOrderFoodItem');
+    Route::post('/customer/search/online','SearchController@searchOnlineCustomers');
+    Route::post('/other-order/confirm','OnlineOrderController@postOrderCreate')->name('online.newsale.save');
+    Route::get('/other-order/clear','OnlineSalerecordController@deleteUserOrder')->name('online.newsale.clear');
+    Route::get('/admin/online-customer/add/{id}','OnlineSalerecordController@getCustomers')->name('get.customer');
 });

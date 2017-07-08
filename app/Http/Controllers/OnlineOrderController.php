@@ -10,8 +10,9 @@ Use App\User;
 use Illuminate\Contracts\Validation\Validator;
 use App\Model\Salerecords;
 use App\Model\OnlineOrders;
+use App\Model\Customers;
 use App\Model\OnlineOrderManipulations;
-use App\Requests\OnlineOrderRequest;
+use App\Http\Requests\OnlineOrderRequest;
 
 class OnlineOrderController extends Controller
 {
@@ -48,9 +49,52 @@ class OnlineOrderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function postOrderCreate(OnlineOrderRequest $request)
+    {   // return $request;
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+        }
+        
+        $items = Salerecords::where('user_id', '=', $user_id)->get();
+        //return $items;
+        $customer = Customers::where('phone', '=',$request->caller_id)->get();
+        
+        foreach($customer as $customer)
+            $customer_id = $customer->id;        
+
+        $category_id = $request->category_id; 
+
+        $order = new OnlineOrders;
+        $order->user_id = $user_id;
+        $order->customer_id = $customer_id;
+
+        $order->category_id = $category_id;
+        //return $order;
+        $order->save();
+        //return $order->id;
+        if(! is_null($items)) {
+
+            foreach ( $items as $itm ) {
+
+                $orderManipulation = new OnlineOrderManipulations;
+
+                $orderManipulation->online_order_id = $order->id;
+                $orderManipulation->item_id = $itm->item_id;
+                $orderManipulation->item_name = $itm->food_name;
+                $orderManipulation->quantity = $itm->quantity;
+                $orderManipulation->net_total = $itm->total;
+                $orderManipulation->is_paid  = '0';
+
+                $orderManipulation->save();
+
+                $itm->delete();
+            }
+        }
+        
+        Session::flash('success', ' Onsite Order Enrolled Successfully !!');
+            
+        return redirect()->route('place.item');
     }
 
     /**

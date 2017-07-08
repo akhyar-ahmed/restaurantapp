@@ -4,8 +4,7 @@
 
 @section('content')
     <div class = "page-header container col-xs-12 form-group">	
-    		<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Your Online Order Here)</h3>
-
+		<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Your Online Order Here)</h3>	
     </div>
     <div class = "container col-xs-12 form-group">
         @include('_orderSearch')
@@ -56,7 +55,7 @@
 
 				<td>
 					<div>						
-						<form method="GET" action="{{ route('online.newsaleItem.update', $or->id) }}" style="display: inline-block;">
+						<form method="GET" action="{{ route('online.newsaleItem.edit', $or->id) }}" style="display: inline-block;">
 							<input type="submit" value="Update" role="button" class="btn btn-warning btn-sm">
 						</form>
 
@@ -72,9 +71,9 @@
 		</table>
 	</div>
 	<div class="container form-group col-xs-12 ">
-		<form method="POST" action="{{ route('newsale.save') }}">
+		<form method="POST" action="{{ route('online.newsale.save') }}">
             <div class = "form-group col-xs-5">
-                @include('_customerSearching')
+                @include('_onlineCustomerSearching')
             </div>
 			<div class = "form-group col-xs-5">
 				<select class = "form-control" name="category_id">
@@ -87,7 +86,7 @@
 				<input type="submit" name="submit" value="Confirm" class="btn btn-success">
 			</div>	
 			<div class = "form-group col-xs-1"> 
-				<a  href = "{{ route('newsale.clear') }}" class="btn btn-danger " role = "button">Cancel</a>
+				<a  href = "{{ route('online.newsale.clear') }}" class="btn btn-danger " role = "button">Cancel</a>
 			</div>
 		</form>
         <div id="search_result" class = "container form-group col-xs-12"></div>
@@ -193,7 +192,7 @@
 					}
 				});
 				$.ajax({
-					url: "/customer/search",
+					url: "/customer/search/online",
 					method: "POST",
 					data: {
 						search:txt
@@ -214,7 +213,7 @@
 					}
 				});
 				$.ajax({
-					url: "/customer/search",
+					url: "/customer/search/online",
 					method: "POST",
 					data: {
 						search:txt
@@ -235,7 +234,7 @@
 					}
 				});
 				$.ajax({
-					url: "/customer/search",
+					url: "/customer/search/online",
 					method: "POST",
 					data: {
 						search:txt
@@ -256,7 +255,7 @@
 					}
 				});
 				$.ajax({
-					url: "/customer/search",
+					url: "/customer/search/online",
 					method: "POST",
 					data: {
 						search:txt

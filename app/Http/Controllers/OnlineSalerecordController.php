@@ -9,6 +9,7 @@ use Auth;
 Use App\User;
 Use App\Model\Items;
 use Session;
+use App\Model\Customers;
 use Illuminate\Contracts\Validation\Validator;
 
 class OnlineSalerecordController extends Controller
@@ -26,10 +27,11 @@ class OnlineSalerecordController extends Controller
             $id = Auth::user()->getId();
         }
         //return $table[6];
+        $searchCustomer = new Customers;
         $orderItem = Salerecords::where('user_id', '=', $id)->get();
         //return $orderItem;
         return view('online_order_place')
-            ->with(compact('id', 'orderItem'));
+            ->with(compact('id', 'orderItem', 'searchCustomer'));
     }
 
     /**
@@ -100,9 +102,18 @@ class OnlineSalerecordController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function getCustomers($id)
     {
-        //
+        $searchCustomer = Customers::find($id);
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+        }
+        //return $table[6];
+        $orderItem = Salerecords::where('user_id', '=', $user_id)->get();
+        //return $orderItem;
+        return view('online_order_place')
+            ->with(compact('user_id', 'orderItem', 'searchCustomer'));
     }
 
     /**
@@ -161,7 +172,7 @@ class OnlineSalerecordController extends Controller
 
             Session::flash('success', ' Item Updated Successfully !!');
             
-            return redirect()->route('onlien.order');
+            return redirect()->route('online.order');
 
         } else if ( $prevQuantity < $updateQuantity ) {
             
@@ -171,7 +182,7 @@ class OnlineSalerecordController extends Controller
 
                 Session:: flash('danger', ' Item Quantity is Out of Stock !!');
 
-                return redirect()->route('newsaleItem.update', $orderItem->id);
+                return redirect()->route('online.newsaleItem.edit', $orderItem->id);
             }
 
             $orderItem->food_stock  -= $quantity;
@@ -185,7 +196,7 @@ class OnlineSalerecordController extends Controller
             
             Session::flash('success', ' Item Updated Successfully !!');
             
-            return redirect()->route('place.item');
+            return redirect()->route('online.order');
         }
     }
 
@@ -206,7 +217,7 @@ class OnlineSalerecordController extends Controller
         $order->delete();
         Session:: flash('success', ' Item Cancelled Successfully !!');
 
-        return redirect()->route('place.item');
+        return redirect()->route('online.order');
     }
     /**
      * Delete the whole resource in storage.
