@@ -17,13 +17,17 @@ class OnlineOrdersTableSeeder extends Seeder
             [
                 'user_id' => '1',
                 'customer_id' => '1',
-                'category_id' => '1'
+                'category_id' => '1',
+                'total_item' => '2',
+                'is_paid' => '0'
             ],
 
             [
                 'user_id' => '1',
                 'customer_id' => '2',
-                'category_id' => '2'
+                'category_id' => '2',
+                'total_item' => '1',
+                'is_paid'=>'1'
             ]
         ];
 

@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Model\Orders;
+use App\Model\OnlineOrders;
+use Auth;
+use App\User;
+use App\Model\Customers;
 
 class DashboardController extends Controller
 {
@@ -13,8 +18,84 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $onsiteOrders = $this->getNoOfOnsiteOrders();
+        $takeAwayOrders = $this->getNoOfTakeAwayOrders();
+        $homeDeliveryOrders = $this->getNoOfHomeDeliveryOrders();
+
+        $takeAwayName = [];
+        $takeAwayCusName = [];
+        $onsiteWaiterName = [];
+        $homeDeliveryName = [];
+        $homeDeliveryCusName = [] ;
+        
+
+
+        foreach($onsiteOrders as $orders => $ind)
+            $onsiteWaiterName[$orders] = User::find($ind->user_id);
+
+        foreach($takeAwayOrders as $ind => $orders)
+        {
+            //return $takeAwayName = $orders;
+            $takeAwayName[$ind] = User::find($orders->user_id);
+            $takeAwatCusName[$ind] = Customers::find($orders->customer_id);        
+        }
+
+        foreach($homeDeliveryOrders as $ind => $orders)
+        {
+            //return $takeAwayName = $orders;
+            $homeDeliveryName[$ind] = User::find($orders->user_id);
+            $homeDeliveryCusName[$ind] = Customers::find($orders->customer_id);        
+        }
+
+
+        //return $homeDeliveryCusName;
+
+        return view('dashboard')->with(compact('onsiteOrders','takeAwayOrders','homeDeliveryOrders', 'onsiteWaiterName', 'takeAwayName', 'takeAwayCusName', 'homeDeliveryName', 'homeDeliveryCusName'));
     }
+
+    /**
+     * Show the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+     public function getNoOfOnsiteOrders()
+     {
+         $orders = Orders::where('is_paid', '=', '0')->get();
+         return $orders;
+     }
+
+
+    /**
+     * Show the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+     public function getNoOfTakeAwayOrders()
+     {
+         $orders = OnlineOrders::where([
+                ['is_paid', '=', '0'],
+                ['category_id', '=', '2']
+            ])->get();
+         return $orders;
+     }
+
+
+
+    /**
+     * Show the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+     public function getNoOfHomeDeliveryOrders()
+     {
+         $orders = OnlineOrders::where([
+                ['is_paid', '=', '0'],
+                ['category_id', '=', '1']
+            ])->get();
+         return $orders;
+     }
+
+
 
     /**
      * Show the form for creating a new resource.

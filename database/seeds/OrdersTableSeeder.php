@@ -17,43 +17,50 @@ class OrdersTableSeeder extends Seeder
             [
                 'user_id' => '1',
                 'table_id' => "C-01",
-                'category_id' => '1'
+                'total_item' => '2',
+                'is_paid' => '0'
             ],
 
             [
                 'user_id' => '1',
                 'table_id' => "C-10",
-                'category_id' => '1'
+                'total_item' => '1',
+                'is_paid' => '1'
             ],
 
             [
                 'user_id' => '2',
                 'table_id' => "C-01",
-                'category_id' => '1'
+                'total_item' => '2',
+                'is_paid' => '0'
             ],
 
             [
                 'user_id' => '1',
                 'table_id' => "C-12",
-                'category_id' => '1'
+                'total_item' => '1',
+                'is_paid' => '1'
             ],
 
             [
                 'user_id' => '2',
                 'table_id' => "C-17",
-                'category_id' => '1'
+                'total_item' => '1',
+                'is_paid' => '0'
             ],
 
             [
                 'user_id' => '1',
                 'table_id' => "C-12",
-                'category_id' => '1'
+                'total_item' => '1',
+                'is_paid' => '0'
             ],
 
             [
                 'user_id' => '2',
                 'table_id' => "C-37",
-                'category_id' => '1'
+                'total_item' => '1',
+                'is_paid' => '1'
             ]
 
         ];

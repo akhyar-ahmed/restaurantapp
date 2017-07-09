@@ -19,8 +19,7 @@ class Order_manipulationsTableSeeder extends Seeder
                 'item_id' => '12',
                 'item_name' => "Chicken Samucha",
                 'quantity' => '02',
-                'net_total' => '4.00',
-                'is_paid' => '0'
+                'net_total' => '4.00'
             ],
 
             [
@@ -28,8 +27,7 @@ class Order_manipulationsTableSeeder extends Seeder
                 'item_id' => '20',
                 'item_name' => "Beaf Samucha",
                 'quantity' => '01',
-                'net_total' => '2.00',
-                'is_paid' => '0'
+                'net_total' => '2.00'
             ],
 
             [
@@ -37,8 +35,7 @@ class Order_manipulationsTableSeeder extends Seeder
                 'item_id' => '6',
                 'item_name' => "Beaf Burger",
                 'quantity' => '04',
-                'net_total' => '8.00',
-                'is_paid' => '1'
+                'net_total' => '8.00'
             ],
 
             [
@@ -46,8 +43,7 @@ class Order_manipulationsTableSeeder extends Seeder
                 'item_id' => '9',
                 'item_name' => "Tuna Burger",
                 'quantity' => '02',
-                'net_total' => '2.00',
-                'is_paid' => '0'
+                'net_total' => '2.00'
             ],
 
             [
@@ -55,8 +51,7 @@ class Order_manipulationsTableSeeder extends Seeder
                 'item_id' => '6',
                 'item_name' => "Beaf Bugder",
                 'quantity' => '01',
-                'net_total' => '2.00',
-                'is_paid' => '0'
+                'net_total' => '2.00'
             ],
 
             [
@@ -64,16 +59,14 @@ class Order_manipulationsTableSeeder extends Seeder
                 'item_id' => '18',
                 'item_name' => "Chicken Soup",
                 'quantity' => '02',
-                'net_total' => '4.00',
-                'is_paid' => '1'
+                'net_total' => '4.00'
             ],
             [
                 'order_id' => '5',
                 'item_id' => '22',
                 'item_name' => "Chicken Pot Pie",
                 'quantity' => '02',
-                'net_total' => '4.00',
-                'is_paid' => '0'
+                'net_total' => '4.00'
             ],
 
             [
@@ -81,8 +74,7 @@ class Order_manipulationsTableSeeder extends Seeder
                 'item_id' => '27',
                 'item_name' => "Chicken Pizz",
                 'quantity' => '01',
-                'net_total' => '1.00',
-                'is_paid' => '0'
+                'net_total' => '1.00'
             ],
 
             [
@@ -90,8 +82,7 @@ class Order_manipulationsTableSeeder extends Seeder
                 'item_id' => '22',
                 'item_name' => "Chicken Pot Pie",
                 'quantity' => '04',
-                'net_total' => '8.00',
-                'is_paid' => '1'
+                'net_total' => '8.00'
             ]
 
         ];

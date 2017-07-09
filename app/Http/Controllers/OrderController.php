@@ -64,7 +64,8 @@ class OrderController extends Controller
         $order->user_id = $user_id;
         $order->table_id = $table_id;
 
-        $order->category_id = $category_id;
+        $order->total_item = count($items);
+        $order->is_paid = '0';
         //return $order;
         $order->save();
         //return $order->id;
@@ -79,7 +80,6 @@ class OrderController extends Controller
                 $orderManipulation->item_name = $itm->food_name;
                 $orderManipulation->quantity = $itm->quantity;
                 $orderManipulation->net_total = $itm->total;
-                $orderManipulation->is_paid  = '0';
 
                 $orderManipulation->save();
 

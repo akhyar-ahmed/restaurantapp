@@ -20,7 +20,6 @@ class CreateOnlineOrderManipulationsTable extends Migration
             $table->string('item_name');
             $table->integer('quantity');
             $table->double('net_total',7,3);
-            $table->integer('is_paid');
             $table->timestamps();
 
             $table->foreign('online_order_id')

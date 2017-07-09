@@ -70,6 +70,8 @@ class OnlineOrderController extends Controller
         $order->customer_id = $customer_id;
 
         $order->category_id = $category_id;
+        $order->total_items = count($items);
+        $order->is_paid = '0';
         //return $order;
         $order->save();
         //return $order->id;
@@ -84,7 +86,6 @@ class OnlineOrderController extends Controller
                 $orderManipulation->item_name = $itm->food_name;
                 $orderManipulation->quantity = $itm->quantity;
                 $orderManipulation->net_total = $itm->total;
-                $orderManipulation->is_paid  = '0';
 
                 $orderManipulation->save();
 

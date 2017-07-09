@@ -18,6 +18,8 @@ class CreateOnlineOrdersTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->integer('customer_id')->unsigned();
             $table->integer('category_id');
+            $table->integer('total_item');
+            $table->integer('is_paid');
             $table->timestamps();
             
             $table->foreign('user_id')

@@ -17,7 +17,8 @@ class CreateOrdersTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->string('table_id');
-            $table->integer('category_id');
+            $table->integer('total_item');
+            $table->integer('is_paid');
             $table->timestamps();
             
             $table->foreign('user_id')
