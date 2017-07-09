@@ -26,6 +26,8 @@ class OrderController extends Controller
         if (Auth::check())
         {
             $id = Auth::user()->getId();
+        } else {
+            return redirect()->route('logout');
         }
 
         return "hello";

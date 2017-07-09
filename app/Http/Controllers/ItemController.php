@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Model\Items;
 use App\Http\Requests\ItemRequest;
 use Session;
+use Auth;
+Use App\User;
 
 class ItemController extends Controller
 {
@@ -16,12 +18,27 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $availableItems = Items::where('stock', '!=', '0')->get();
 
-        $notAvailableItems = Items::where('stock', '=', '0')->get();
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+            $admin = User::find($id);
+
+            $availableItems = Items::where('stock', '!=', '0')->get();
+            $notAvailableItems = Items::where('stock', '=', '0')->get();
+            
+            if($admin->type == 1) {
+                return view('item_view')
+                    ->with(compact('availableItems', 'notAvailableItems'));
+            }
+            else if($admin->type == 0 ){
+               return  redirect()->route('place.item');
+            }
+        } else {
+            return  redirect()->route('logout');
+        }
         
-        return view('item_view')
-            ->with(compact('availableItems', 'notAvailableItems'));
+
     }
 
     /**
@@ -75,9 +92,23 @@ class ItemController extends Controller
      */
     public function getEdit($id)
     {
-        $item = Items::find($id);
-        return view('item_edit')
-            ->with(compact('item'));
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+            $item = Items::find($id);
+            
+            if($admin->type == 1) {
+                return view('item_edit')
+                    ->with(compact('item'));
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        }
     }
 
     /**

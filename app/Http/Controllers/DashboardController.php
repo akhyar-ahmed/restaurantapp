@@ -49,8 +49,17 @@ class DashboardController extends Controller
 
 
         //return $homeDeliveryCusName;
-
-        return view('dashboard')->with(compact('onsiteOrders', 'takeAwayOrders', 'homeDeliveryOrders', 'onsiteWaiterName', 'takeAwayName', 'takeAwayCusName', 'homeDeliveryName', 'homeDeliveryCusName'));
+        if(Auth::check())
+         {
+            $admin = User::find(Auth::user()->getId());
+            
+            if($admin->type == 1)
+                return view('dashboard')->with(compact('onsiteOrders', 'takeAwayOrders', 'homeDeliveryOrders', 'onsiteWaiterName', 'takeAwayName', 'takeAwayCusName', 'homeDeliveryName', 'homeDeliveryCusName'));
+            else if($admin->type ==0 )
+                return redirect()->route('place.item');
+         } else {
+             return redirect()->route('logout');
+         }
     }
 
     /**

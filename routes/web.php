@@ -15,6 +15,8 @@ Route::get('/', 'AuthController@index')->name('login')->middleware('guest');
 Route::post('/auth', ['uses' => 'AuthController@login', 'as' => 'auth'])->middleware('guest');
 
 Route::group(['middleware' => 'auth'], function () {
+
+   // Route::get('/user-home','SalerecordControlller@index')->name('place.item.user');
     
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 

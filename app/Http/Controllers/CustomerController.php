@@ -7,6 +7,7 @@ use App\Http\Requests\CustomerRequest;
 use App\Model\Customers;
 use Auth;
 use Session;
+use App\User;
 
 class CustomerController extends Controller
 {
@@ -17,9 +18,24 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        $customers = Customers::all();
-        return view('customer_view')
-            ->with(compact('customers'));
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+            $customers = Customers::all();
+            
+            if($admin->type == 1) {
+                return view('customer_view')
+                    ->with(compact('customers'));
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        } 
+
     }
 
     /**
@@ -73,9 +89,23 @@ class CustomerController extends Controller
      */
     public function edit($id)
     {
-        $customer = Customers::find($id);
-        return view('customer_edit')
-            ->with(compact('customer'));
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+            $customer = Customers::find($id);
+            
+            if($admin->type == 1) {
+                return view('customer_edit')
+                    ->with(compact('customer'));
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        } 
     }
 
     /**

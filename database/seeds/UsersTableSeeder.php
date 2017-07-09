@@ -17,35 +17,35 @@ class UsersTableSeeder extends Seeder
                 'name' => "Nabil",
                 'email' => "nabilkeya@gmail.com",
                 'password' => bcrypt('secret'),
-                'admin' => '1'
+                'type' => '1'
             ],
 
             [
                 'name' => "Akhyar",
                 'email' => "akhyar@gmail.com",
                 'password' =>  bcrypt('secret'),
-                'admin' => '1'
+                'type' => '1'
             ],
 
             [
                 'name' => "Mr. X",
-                'email' => "xxx@gamil.com",
+                'email' => "xxx@gmail.com",
                 'password' => bcrypt('secret'),
-                'admin' => '0'
+                'type' => '0'
             ],
             
             [
                 'name' => "Mr. Y",
-                'email' => "yyy@gamil.com",
+                'email' => "yyy@gmail.com",
                 'password' => bcrypt('secret'),
-                'admin' => '0'
+                'type' => '0'
             ],
 
             [
                 'name' => "Mr. Z",
-                'email' => "zzz@gamil.com",
+                'email' => "zzz@gmail.com",
                 'password' => bcrypt('secret'),
-                'admin' => '0'
+                'type' => '0'
             ]
 
         ];

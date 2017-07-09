@@ -21,17 +21,29 @@ class OnlineSalerecordController extends Controller
      */
     public function index()
     {
-        $table = ["C-01","C-03","C-08","C-10","C-11","C-12","C-13","C-17","C-19","C-37"];
         if (Auth::check())
         {
+            $table = ["C-01","C-03","C-08","C-10","C-11","C-12","C-13","C-17","C-19","C-37"];
             $id = Auth::user()->getId();
+            $admin = User::find($id);
+
+            $searchCustomer = new Customers;
+            $orderItem = Salerecords::where('user_id', '=', $id)->get();
+            
+            if($admin->type == 1) {
+                return view('online_order_place')
+                    ->with(compact('id', 'orderItem', 'searchCustomer'));
+            }
+            else if($admin->type == 0 ){
+                 return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
         }
         //return $table[6];
-        $searchCustomer = new Customers;
-        $orderItem = Salerecords::where('user_id', '=', $id)->get();
+       
         //return $orderItem;
-        return view('online_order_place')
-            ->with(compact('id', 'orderItem', 'searchCustomer'));
+
     }
 
     /**
@@ -104,16 +116,30 @@ class OnlineSalerecordController extends Controller
      */
     public function getCustomers($id)
     {
-        $searchCustomer = Customers::find($id);
+        
         if (Auth::check())
         {
             $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+ 
+            $orderItem = Salerecords::where('user_id', '=', $user_id)->get();
+            $searchCustomer = Customers::find($id);
+            
+            if($admin->type == 1) {
+                return view('online_order_place')
+                    ->with(compact('user_id', 'orderItem', 'searchCustomer'));
+            }
+            else if($admin->type == 0 ){
+                 return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
         }
         //return $table[6];
-        $orderItem = Salerecords::where('user_id', '=', $user_id)->get();
+       
         //return $orderItem;
-        return view('online_order_place')
-            ->with(compact('user_id', 'orderItem', 'searchCustomer'));
+        // return view('online_order_place')
+        //     ->with(compact('user_id', 'orderItem', 'searchCustomer'));
     }
 
     /**
@@ -128,13 +154,25 @@ class OnlineSalerecordController extends Controller
         if (Auth::check())
         {
             $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+ 
+            $orderItem = Salerecords::find($id);
+            
+            if($admin->type == 1) {
+                return view('online_order_place_edit')
+                    ->with(compact('orderItem'));
+            }
+            else if($admin->type == 0 ){
+                 return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
         }
 
-        $orderItem = Salerecords::find($id);
+       
        // return $orderItem;
 
-        return view('online_order_place_edit')
-            ->with(compact('orderItem'));
+
     }
 
     /**
@@ -232,6 +270,9 @@ class OnlineSalerecordController extends Controller
         if (Auth::check())
         {
             $user_id = Auth::user()->getId();
+        }
+        else{
+            return redirect()->route('logout');
         }
         
         $order = Salerecords::where('user_id', '=', $user_id)->get();

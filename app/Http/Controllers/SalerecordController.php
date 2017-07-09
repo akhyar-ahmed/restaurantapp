@@ -24,12 +24,23 @@ class SalerecordController extends Controller
         if (Auth::check())
         {
             $id = Auth::user()->getId();
+            $admin = User::find($id);
+
+            $orderItem = Salerecords::where('user_id', '=', $id)->get();
+            
+            if($admin->type == 1) {
+                return view('order_place')
+                    ->with(compact('table', 'id', 'orderItem'));
+            }
+            else if($admin->type == 0 )
+                  return view('user_order_place')
+                    ->with(compact('table', 'id', 'orderItem'));
+        } else {
+             return redirect()->route('logout');
         }
-        //return $table[6];
-        $orderItem = Salerecords::where('user_id', '=', $id)->get();
-        //return $orderItem;
-        return view('order_place')
-            ->with(compact('table', 'id', 'orderItem'));
+        
+        
+        
     }
 
     /**
@@ -112,17 +123,28 @@ class SalerecordController extends Controller
      */
     public function edit($id)
     {
-        //return "hello";
         if (Auth::check())
         {
+
             $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+            
+            $orderItem = Salerecords::find($id);
+            if($admin->type == 1) {
+                return view('order_place_edit')
+                    ->with(compact('orderItem'));
+            }
+            else if($admin->type == 0 )
+                return view('user_order_place_edit')
+                    ->with(compact('orderItem'));
+        } else {
+             return redirect()->route('logout');
         }
 
-        $orderItem = Salerecords::find($id);
+       
        // return $orderItem;
 
-        return view('order_place_edit')
-            ->with(compact('orderItem'));
+
     }
 
     /**

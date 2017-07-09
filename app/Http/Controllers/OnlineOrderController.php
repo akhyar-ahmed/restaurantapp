@@ -95,7 +95,7 @@ class OnlineOrderController extends Controller
         
         Session::flash('success', ' Onsite Order Enrolled Successfully !!');
             
-        return redirect()->route('place.item');
+        return redirect()->route('online.order');
     }
 
     /**
@@ -108,13 +108,21 @@ class OnlineOrderController extends Controller
     {
         if (Auth::check())
         {
-            $id = Auth::user()->getId();
-        }
-        //return $table[6];
-        $orderItem = Salerecords::where('user_id', '=', $id)->get();
-        //return $orderItem;
-        return view('online_order_place')
-            ->with(compact('table', 'id', 'orderItem'));
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+            $orderItem = Salerecords::where('user_id', '=', $user_id)->get();
+            
+            if($admin->type == 1) {
+                return view('online_order_place')
+                    ->with(compact('table', 'id', 'orderItem'));
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        } 
     }
 
     /**
