@@ -21,7 +21,6 @@ class DashboardController extends Controller
         $onsiteOrders = $this->getNoOfOnsiteOrders();
         $takeAwayOrders = $this->getNoOfTakeAwayOrders();
         $homeDeliveryOrders = $this->getNoOfHomeDeliveryOrders();
-
         $takeAwayName = [];
         $takeAwayCusName = [];
         $onsiteWaiterName = [];
@@ -37,8 +36,9 @@ class DashboardController extends Controller
         {
             //return $takeAwayName = $orders;
             $takeAwayName[$ind] = User::find($orders->user_id);
-            $takeAwatCusName[$ind] = Customers::find($orders->customer_id);        
+            $takeAwayCusName[$ind] = Customers::find($orders->customer_id);        
         }
+        //return $takeAwayCusName;
 
         foreach($homeDeliveryOrders as $ind => $orders)
         {
@@ -50,7 +50,7 @@ class DashboardController extends Controller
 
         //return $homeDeliveryCusName;
 
-        return view('dashboard')->with(compact('onsiteOrders','takeAwayOrders','homeDeliveryOrders', 'onsiteWaiterName', 'takeAwayName', 'takeAwayCusName', 'homeDeliveryName', 'homeDeliveryCusName'));
+        return view('dashboard')->with(compact('onsiteOrders', 'takeAwayOrders', 'homeDeliveryOrders', 'onsiteWaiterName', 'takeAwayName', 'takeAwayCusName', 'homeDeliveryName', 'homeDeliveryCusName'));
     }
 
     /**
