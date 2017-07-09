@@ -70,7 +70,7 @@ class OnlineOrderController extends Controller
         $order->customer_id = $customer_id;
 
         $order->category_id = $category_id;
-        $order->total_items = count($items);
+        $order->total_item = count($items);
         $order->is_paid = '0';
         //return $order;
         $order->save();
