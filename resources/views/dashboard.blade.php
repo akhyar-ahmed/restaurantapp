@@ -62,7 +62,7 @@
                                 </thead>
                                 <tbody>
                                 @foreach($onsiteOrders as $ind => $orders)
-                                    <tr>
+                                    <tr id="row">
                                         <td> # </td>
                                         <td> {{ $orders->table_id }} </td>
                                         <td> {{ $onsiteWaiterName[$ind]->name }} </td>
@@ -125,7 +125,7 @@
                                 </thead>
                                 <tbody>
                                 @foreach($takeAwayOrders as $ind => $orders)
-                                    <tr>
+                                    <tr id="row">
                                         <td> # </td>
                                         <td> {{ $takeAwayName[$ind]->name }} </td>
                                         <td> {{ $orders->total_item }} </td>
@@ -189,7 +189,7 @@
                                 </thead>
                                 <tbody>
                                 @foreach($homeDeliveryOrders as $ind => $orders)
-                                    <tr>
+                                    <tr id="row">
                                         <td> # </td>
                                         <td> {{ $homeDeliveryName[$ind]->name }} </td>
                                         <td> {{ $orders->total_item }} </td>

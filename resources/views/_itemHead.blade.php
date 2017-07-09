@@ -41,6 +41,7 @@
         #edit:hover{
             background-color: transparent;
         }
+        #row:hover {background-color: #211e1d;}
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
