@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Model\Items;
 use App\Model\Customers;
+use Auth;
+use App\User;
 
 class SearchController extends Controller
 {
@@ -83,7 +85,25 @@ class SearchController extends Controller
         else{
             $output .= '<h3 align = "center"> <u>Search Result</u> </h3> <h4 align = "center" >Food Item Not Found !!</h4>';
         }
-        return $output;
+
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+            $item = Items::find($id);
+            
+            if($admin->type == 1) {
+                return $output;
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        }
+
+        
     }
 
     /**
@@ -249,7 +269,24 @@ class SearchController extends Controller
         else{
             $output .= '<h3 align = "center"> <u>Search Result</u> </h3> <h4 align = "center" >Customer Not Found !!</h4>';
         }
-        return $output;
+
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+            $item = Items::find($id);
+            
+            if($admin->type == 1) {
+                return $output;
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        }
+
     }
 
     public function searchOnlineOrderFoodItem(Request $request){
@@ -333,7 +370,23 @@ class SearchController extends Controller
         else{
             $output .= '<h3 align = "center"> <u>Search Result</u> </h3> <h4 align = "center" >Food Item Not Found !!</h4>';
         }
-        return $output;
+
+         if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+            
+            if($admin->type == 1) {
+                return $output;
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        }
+
+        
     }
 
 /**
@@ -404,7 +457,23 @@ class SearchController extends Controller
         else{
             $output .= '<h3 align = "center"> <u>Search Result</u> </h3> <h4 align = "center" >Customer Not Found !!</h4>';
         }
-        return $output;
+
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+            
+            if($admin->type == 1) {
+                return $output;
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        }
+
+       
     }
 
 
