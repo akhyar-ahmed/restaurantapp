@@ -1,6 +1,6 @@
  
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
+  <nav class="navbar navbar-inverse navbar-fixed-top col-xs-12">
+  <div class="container">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -9,7 +9,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="{{ route('home') }}">Restaurant Management</a>
+    <a class="navbar-brand" href="{{ route('home') }}">Restaurant App</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,6 +20,7 @@
       <li class="{{ Request::is('admin/customer') ? "active": "" }}"><a href="/admin/customer">Customer</a></li>      
       <li class="{{ Request::is('food-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/food-orders">Onsite-Order</a></li>
       <li class="{{ Request::is('admin/other-order') ?  "active": "" }} "><a href="/admin/other-order">Other-Order</a></li>
+      <li class="{{ Request::is('admin/other-order') ?  "active": "" }} "><a href="/admin/other-order">Accounts</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
