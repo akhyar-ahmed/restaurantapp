@@ -16,35 +16,55 @@ class UsersTableSeeder extends Seeder
             [
                 'name' => "Nabil",
                 'email' => "nabilkeya@gmail.com",
+                'temp_pass' => "secret",
                 'password' => bcrypt('secret'),
+                'address' => "Shubidbazar, Sylhet-3100",
+                'Phone' => "017jhdgbhj",
+                'sup_admin' => '1',
                 'type' => '1'
             ],
 
             [
                 'name' => "Akhyar",
                 'email' => "akhyar@gmail.com",
+                'temp_pass' => "secret",
                 'password' =>  bcrypt('secret'),
+                'address' => "Mejortilla, Sylhet-3100",
+                'Phone' => "01686477544",
+                'sup_admin' => '1',
                 'type' => '1'
             ],
 
             [
                 'name' => "Mr. X",
                 'email' => "xxx@gmail.com",
+                'temp_pass' => "secret",
                 'password' => bcrypt('secret'),
-                'type' => '0'
+                'address' => "Chowhatta, Sylhet-3100",
+                'Phone' => "01816xxxxxx",
+                'sup_admin' => '0',
+                'type' => '1'
             ],
             
             [
                 'name' => "Mr. Y",
                 'email' => "yyy@gmail.com",
+                'temp_pass' => "secret",
                 'password' => bcrypt('secret'),
-                'type' => '0'
+                'address' => "Shubidbazar, Sylhet-3100",
+                'Phone' => "017jhdgbhj",
+                'sup_admin' => '0',
+                'type' => '1'
             ],
 
             [
                 'name' => "Mr. Z",
                 'email' => "zzz@gmail.com",
+                'temp_pass' => "secret",
                 'password' => bcrypt('secret'),
+                'address' => "Shubidbazar, Sylhet-3100",
+                'Phone' => "017jhdgbhj",
+                'sup_admin' => '0',
                 'type' => '0'
             ]
 

@@ -22,6 +22,15 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/home', 'DashboardController@index')->name('home');
     Route::post('/logout', 'AuthController@logout')->name('logout');
+
+    //USer routes
+    Route::get('/home/user','UserController@index')->name('get.user');
+    Route::get('/home/user/create','UserController@create')->name('user.create');
+
+
+
+
+
     //Items route
     Route::get('/items','ItemController@index')->name('item');
     Route::post('/items/create','ItemController@postCreate')->name('create');
