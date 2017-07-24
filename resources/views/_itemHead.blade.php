@@ -14,7 +14,7 @@
 
     <style>
         body{
-            background-image:url('http://jppromotions.com.au/wp-content/uploads/2015/10/brown-wood-background-1.jpg');
+            background-image:url('image/bp2.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             opacity: 0.8;
