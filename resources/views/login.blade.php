@@ -13,7 +13,7 @@
       body {
         font-family: "Open Sans", sans-serif;
         height: 100vh;
-        background-image: url("https://www.healthydiningfinder.com/getattachment/372bfd3b-de4a-4066-b15c-57b54b2e3df5/Can-I-Find-Healthy-Choices-at-Mexican-Restaurants.aspx");
+        background-image: url("image/bp1.jpg");
         background-size: cover;
 
         }
