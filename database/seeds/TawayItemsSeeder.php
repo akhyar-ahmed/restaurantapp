@@ -110,9 +110,75 @@ class TawayItemsSeeder extends Seeder
             ],
 
             [
-                'name' => "bla bla",
-                'category' => "main_meal",
-                'base_price' => '1.00'
+                'name' => "Strawberry Shake",
+                'category' => "Drinks & Desert",
+                'base_price' => '2.50'
+            ],
+
+            [
+                'name' => "Chocolate Shake",
+                'category' => "Drinks & Desert",
+                'base_price' => '2.50'
+            ],
+
+            [
+                'name' => "Ice cream Funnel Shake",
+                'category' => "Drinks & Desert",
+                'base_price' => '2.50'
+            ],
+
+            [
+                'name' => "Pepsi 0.33L",
+                'category' => "Drinks & Desert",
+                'base_price' => '1.20'
+            ],
+
+            [
+                'name' => "Pepsi 1.5L",
+                'category' => "Drinks & Desert",
+                'base_price' => '3.00'
+            ],
+
+            [
+                'name' => "Diet Pepsi 0.33L",
+                'category' => "Drinks & Desert",
+                'base_price' => '1.20'
+            ],
+
+            [
+                'name' => "Diet Pepsi 1.5L",
+                'category' => "Drinks & Desert",
+                'base_price' => '3.00'
+            ],
+
+            [
+                'name' => "7up 0.33L",
+                'category' => "Drinks & Desert",
+                'base_price' => '1.20'
+            ],
+
+            [
+                'name' => "7up 1.5L",
+                'category' => "Drinks & Desert",
+                'base_price' => '3.00'
+            ],
+
+            [
+                'name' => "Tango 0.33L",
+                'category' => "Drinks & Desert",
+                'base_price' => '1.20'
+            ],
+
+            [
+                'name' => "Tango 1.5L",
+                'category' => "Drinks & Desert",
+                'base_price' => '3.00'
+            ],
+
+            [
+                'name' => "Ayran",
+                'category' => "Drinks & Desert",
+                'base_price' => '1.20'
             ]
 
         ];
