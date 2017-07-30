@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use App\User;
 
 class TawayOrderController extends Controller
 {
@@ -13,7 +15,22 @@ class TawayOrderController extends Controller
      */
     public function index()
     {
-        //
+        if (Auth::check()){
+
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+          //  $customers = Customers::all();
+            
+            if($admin->type == 1) {
+                return view('tawayOrders');
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        } 
     }
 
     /**

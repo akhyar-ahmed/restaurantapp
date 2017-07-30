@@ -70,4 +70,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/other-order/confirm','OnlineOrderController@postOrderCreate')->name('online.newsale.save');
     Route::get('/other-order/clear','OnlineSalerecordController@deleteUserOrder')->name('online.newsale.clear');
     Route::get('/admin/online-customer/add/{id}','OnlineSalerecordController@getCustomers')->name('get.customer');
+
+    //Taway-Orders
+    Route::get('/taway-orders', 'TawayOrderController@index')->name('taway-orders');   
+
+
 });
