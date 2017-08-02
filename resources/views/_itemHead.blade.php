@@ -43,6 +43,10 @@
         }
         #row:hover {background-color: #211e1d;}
         .a:hover{color: black;}
+
+        .nav-tabs>li>a:hover{background-color: #211e1d;}
+        .nav-tabs>li>a:visited{background-color: #211e1d;}
+        .nav-tabs>li>a:active{background-color: #211e1d;}
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

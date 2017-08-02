@@ -13,14 +13,38 @@
     <div class="card text-center">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" >
-            <li class="nav-item">
-                <a class="" href="#" style="color:white">Active</a>
+            <li class="nav-item" id="mitem">
+                <a class="TItem" href="#" style="color:white">Drinks</a>
             </li>
             <li class="nav-item">
-                <a class="" href="#" style="color:white">Link</a>
+                <a class="TItem" href="#" style="color:white">Dessert & Ice Cream</a>
             </li>
             <li class="nav-item">
-                <a class="" href="#" style="color:white">Disabled</a>
+                <a class="TItem" href="#" style="color:white">Sides</a>
+            </li>
+			<li class="nav-item">
+                <a class="TItem" href="#" style="color:white">Pizza</a>
+            </li>
+			<li class="nav-item">
+                <a class="TItem" href="#" style="color:white">Curry</a>
+            </li>
+			<li class="nav-item">
+                <a class="TItem" href="#" style="color:white">Shawarma</a>
+            </li>
+			<li class="nav-item">
+                <a class="TItem" href="#" style="color:white">Wrap</a>
+            </li>
+			<li class="nav-item">
+                <a class="TItem" href="#" style="color:white">Burgers</a>
+            </li>
+			<li class="nav-item">
+                <a class="TItem" href="#" style="color:white">Grilled</a>
+            </li>
+			<li class="nav-item">
+                <a class="TItem" href="#" style="color:white"> Salads & cold Mezze</a>
+            </li>
+			<li class="nav-item">
+                <a class="TItem" href="#" style="color:white">Special deals</a>
             </li>
             </ul>
         </div>
