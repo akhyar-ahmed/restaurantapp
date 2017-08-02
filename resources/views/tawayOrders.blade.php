@@ -12,15 +12,15 @@
     </div>
     <div class="card text-center">
         <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
+            <ul class="nav nav-tabs card-header-tabs" >
             <li class="nav-item">
-                <a class="nav active" href="#">Active</a>
+                <a class="" href="#" style="color:white">Active</a>
             </li>
             <li class="nav-item">
-                <a class="nav" href="#">Link</a>
+                <a class="" href="#" style="color:white">Link</a>
             </li>
             <li class="nav-item">
-                <a class="nav" href="#">Disabled</a>
+                <a class="" href="#" style="color:white">Disabled</a>
             </li>
             </ul>
         </div>
