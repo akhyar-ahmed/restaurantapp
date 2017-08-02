@@ -582,7 +582,151 @@ class TawayItemsSeeder extends Seeder
                 'name' => "Jagic",
                 'category' => "Cold mezze",
                 'base_price' => '2.50'
-            ]
+            ],
+
+            [
+                'name' => "Margherita Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '2.99'
+            ],
+
+            [
+                'name' => "Margherita Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '4.99'
+            ],
+
+            [
+                'name' => "Margherita Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '7.99'
+            ],
+
+            [
+                'name' => "Margherita Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "MFree Choice Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '3.99'
+            ],
+
+            [
+                'name' => "Free Choice Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '5.99'
+            ],
+
+            [
+                'name' => "Free Choice Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '8.99'
+            ],
+
+            [
+                'name' => "Free Choice Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '11.99'
+            ],
+
+            [
+                'name' => "Hawaiian Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '3.99'
+            ],
+
+            [
+                'name' => "Hawaiian Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '5.99'
+            ],
+
+            [
+                'name' => "Hawaiian Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '8.99'
+            ],
+
+            [
+                'name' => "Hawaiian Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '11.99'
+            ],
+
+            [
+                'name' => "Classic Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '3.99'
+            ],
+
+            [
+                'name' => "Classic Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '5.99'
+            ],
+
+            [
+                'name' => "Classic Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '8.99'
+            ],
+
+            [
+                'name' => "Classic Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '11.99'
+            ],
+
+            [
+                'name' => "American Hot Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '3.99'
+            ],
+
+            [
+                'name' => "American Hot Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '5.99'
+            ],
+
+            [
+                'name' => "American Hot Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '8.99'
+            ],
+
+            [
+                'name' => "American Hot Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '11.99'
+            ],
+
+            [
+                'name' => "BBQ Feast Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '3.99'
+            ],
+
+            [
+                'name' => "BBQ Feast Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '5.99'
+            ],
+
+            [
+                'name' => "BBQ Feast Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '8.99'
+            ],
+
+            [
+                'name' => "BBQ Feast Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '11.99'
+            ],
 
         ];
         
