@@ -113,16 +113,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 
 			
@@ -151,7 +142,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Carrot Juice</h5>
+							<h5 class="card-title">Chamomile Tea</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -162,7 +153,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Apple juice</h5>
+							<h5 class="card-title">Jeanine Tea </h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -171,9 +162,9 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="https://ehonami.blob.core.windows.net/media/2016/05/can-peppermint-tea-pep-up-your-memory-800x600.jpg" alt="Card image cap" width="120" height="80">
 						<div class="card-block">
-							<h5 class="card-title">Lemonade</h5>
+							<h5 class="card-title">Peppermint Tea</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -182,25 +173,16 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="https://cdn.authoritynutrition.com/wp-content/uploads/2013/09/cup-of-green-tea-with-leaves.jpg" alt="Green Tea" width="120" height="80">
 						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
+							<h5 class="card-title">Green Tea</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 
 			
@@ -218,7 +200,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title"> English Tea</h5>
+							<h5 class="card-title">Coffee latte</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -229,7 +211,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Carrot Juice</h5>
+							<h5 class="card-title">Cappuccino</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -240,7 +222,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Apple juice</h5>
+							<h5 class="card-title">American</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -251,7 +233,7 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Lemonade</h5>
+							<h5 class="card-title">Espresso</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -262,23 +244,14 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
+							<h5 class="card-title">Hot chocolate</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 
 			
@@ -296,7 +269,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title"> English Tea</h5>
+							<h5 class="card-title">Banana shake</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -307,7 +280,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Carrot Juice</h5>
+							<h5 class="card-title">Strawberry shake</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -318,7 +291,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Apple juice</h5>
+							<h5 class="card-title">Chocolate shake</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -329,7 +302,7 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Lemonade</h5>
+							<h5 class="card-title">Ice cream funnel shake</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -340,23 +313,14 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
+							<h5 class="card-title">Orio milkshake</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 
 
@@ -369,9 +333,34 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						<img class="card-img-top img-responsive"  src="http://www.suntory.co.jp/softdrink/news/l_img/l_sbf0135-1.jpg" alt="Card image cap" width="120" height="80">
 						<div class="card-block">
-							<h5 class="card-title"> English Tea</h5>
+							<h5 class="card-title">Pepsi</h5>
+							    <div class="radio">
+									<label><input type="radio" name="optradio">0.33L</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="optradio">1.5 L</label>
+								</div>
+										
+								
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-2">
+					<div class="card" >
+						<img class="card-img-top img-responsive"  src="http://delivice.com/wp-content/uploads/2016/06/3607834_orig.jpg" alt="Card image cap" width="120" height="80" >
+						<div class="card-block">
+							<h5 class="card-title">Diet Pepsi</h5>
+								<div class="radio">
+									<label><input type="radio" name="optradio">0.33L</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="optradio">1.5 L</label>
+								</div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -382,29 +371,13 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Carrot Juice</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Apple juice</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Lemonade</h5>
+							<h5 class="card-title">7up</h5>
+								<div class="radio">
+									<label><input type="radio" name="optradio">0.33L</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="optradio">1.5 L</label>
+								</div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -415,7 +388,8 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
+							<h5 class="card-title">Tango orange</h5>
+								
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -426,12 +400,47 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
+							<h5 class="card-title">Tango apple</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
+
+				<div class="col-xs-2">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="Card image cap">
+						<div class="card-block">
+							<h5 class="card-title">Fanta</h5>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+				<br/>
+				<div class="col-xs-2">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="Card image cap">
+						<div class="card-block">
+							<h5 class="card-title">Miranda orange</h5>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-2">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="Card image cap">
+						<div class="card-block">
+							<h5 class="card-title">Ayran</h5>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				
 			</div>
 
 			
