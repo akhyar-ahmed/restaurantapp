@@ -359,10 +359,6 @@
 				</div>
 			</div>
 
-			
-
-			
->>>>>>> 48a76d0d557de18129cceedcf5dfe4bd4340402f
 
         </div>
 
