@@ -336,10 +336,10 @@
 						<img class="card-img-top "  src="...." alt="Card image cap" >
 						<div class="card-block">
 							<h5 class="card-title">Pepsi</h5>
-							    <div class="radio">
+							    <div class="radio-inline">
 									<label><input type="radio" name="optradio">0.33L</label>
 								</div>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">1.5 L</label>
 								</div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -353,10 +353,10 @@
 						<img class="card-img-top img-responsive"  src="..." alt="Card image cap" >
 						<div class="card-block">
 							<h5 class="card-title">Diet Pepsi</h5>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">0.33L</label>
 								</div>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">1.5 L</label>
 								</div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -370,10 +370,10 @@
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">7up</h5>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">0.33L</label>
 								</div>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">1.5 L</label>
 								</div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>

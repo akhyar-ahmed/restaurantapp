@@ -55,15 +55,15 @@
 			<h3 align="left"><u>Burgers</u></h3><br/>
 			<div class="row-xs-12" >
 
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<div class="card">
 						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Beef burger</h5>
-                                    <div class="radio">
+                                    <div class="radio-inline">
                                         <label><input type="radio" name="optradio">Regular</label>
                                     </div>
-                                    <div class="radio">
+                                    <div class="radio-inline">
                                         <label><input type="radio" name="optradio">Large</label>
                                     </div>
                                     <div class="checkbox">
@@ -75,15 +75,15 @@
 					</div>
 				</div>
 
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Chicken fillet burger</h5>
-                                <div class="radio">
+                                <div class="radio-inline">
                                     <label><input type="radio" name="optradio">Regular</label>
                                 </div>
-                                <div class="radio">
+                                <div class="radio-inline">
                                     <label><input type="radio" name="optradio">Large</label>
                                 </div>
                                 <div class="checkbox">
@@ -95,7 +95,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -109,7 +109,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -123,7 +123,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">

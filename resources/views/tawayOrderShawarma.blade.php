@@ -52,36 +52,69 @@
 		<br>
         <div class="container card-block">
 
-			<h3 align="left"><u>Special Deals</u></h3><br/>
+			<h3 align="left"><u>Shawarma</u></h3><br/>
 			<div class="row-xs-12" >
 
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<div class="card">
 						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Daily deal</h5>
+							<h5 class="card-title">Chicken shawarma</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Family platter</h5>
+							<h5 class="card-title">Lamb shawarma</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Mix grill family deal</h5>
+							<h5 class="card-title">Buffalo shawarma chicken</h5>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-2">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="Card image cap">
+						<div class="card-block">
+							<h5 class="card-title">Buffalo shawarma lamb</h5>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-2">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="Card image cap">
+						<div class="card-block">
+							<h5 class="card-title">Shawarma special</h5>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-xs-2">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="Card image cap">
+						<div class="card-block">
+							<h5 class="card-title">Mix shawarma</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -89,9 +122,13 @@
 				</div>
 
 				
+			</div>
 
-       	 	</div>
-		</div>
+			
+
+			
+
+        </div>
 
 		
 
