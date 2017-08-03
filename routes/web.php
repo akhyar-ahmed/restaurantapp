@@ -72,7 +72,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin/online-customer/add/{id}','OnlineSalerecordController@getCustomers')->name('get.customer');
 
     //Taway-Orders
-    Route::get('/taway-orders', 'TawayOrderController@index')->name('taway-orders');   
+    Route::get('/taway-orders', 'TakeAwayItemController@index')->name('taway-orders');   
 
 
 });
