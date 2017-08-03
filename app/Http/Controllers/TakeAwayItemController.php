@@ -42,8 +42,24 @@ class TakeAwayItemController extends Controller
                 $salad = TawayItems::where('category', '=', "Salad")->get();
                 $coldmezze = TawayItems::where('category', '=', "Cold mezze")->get();
                 $specialdeals = TawayItems::where('category', '=', "Special meals")->get();
+                
                 return view('tawayOrders')
-                    ->with(compact());
+                    ->with(compact('freshJuice'))
+                    ->with(compact('tea'))
+                    ->with(compact('coffie'))
+                    ->with(compact('milkshake'))
+                    ->with(compact('softDrinks'))
+                    ->with(compact('diserts'))
+                    ->with(compact('sides'))
+                    ->with(compact('pizza'))
+                    ->with(compact('curry'))
+                    ->with(compact('shawarma'))
+                    ->with(compact('wrap'))
+                    ->with(compact('burgers'))
+                    ->with(compact('grilled'))
+                    ->with(compact('salad'))
+                    ->with(compact('coldmezze'))
+                    ->with(compact('specialdeals'));
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
