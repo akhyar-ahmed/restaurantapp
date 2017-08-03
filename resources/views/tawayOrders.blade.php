@@ -333,13 +333,13 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top "  src="http://www.suntory.co.jp/softdrink/news/l_img/l_sbf0135-1.jpg" alt="Card image cap" width="120" height="80">
+						<img class="card-img-top img-responsive "  src="" alt="Card image cap" width="120" height="80">
 						<div class="card-block">
 							<h5 class="card-title">Pepsi</h5>
-							    <div class="radio">
+							    <div class="radio-inline">
 									<label><input type="radio" name="optradio">0.33L</label>
 								</div>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">1.5 L</label>
 								</div>
 										
@@ -352,13 +352,13 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top img-responsive"  src="http://delivice.com/wp-content/uploads/2016/06/3607834_orig.jpg" alt="Card image cap" width="120" height="80" >
+						<img class="card-img-top img-responsive"  src="" alt="Card image cap" width="120" height="80" >
 						<div class="card-block">
 							<h5 class="card-title">Diet Pepsi</h5>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">0.33L</label>
 								</div>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">1.5 L</label>
 								</div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -372,10 +372,10 @@
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">7up</h5>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">0.33L</label>
 								</div>
-								<div class="radio">
+								<div class="radio-inline">
 									<label><input type="radio" name="optradio">1.5 L</label>
 								</div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
