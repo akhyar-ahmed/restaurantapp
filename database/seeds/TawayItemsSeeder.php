@@ -1188,7 +1188,7 @@ class TawayItemsSeeder extends Seeder
                 'name' => "Ice creams",
                 'category' => "Ice creams",
                 'base_price' => '39.99'
-            ],
+            ]
 
 
 
