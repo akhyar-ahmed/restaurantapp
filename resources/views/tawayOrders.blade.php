@@ -329,11 +329,11 @@
 		<div class="container card-box">
 
 			<h3 align="left"><u>Soft Drinks</u></h3><br/>
-			<div class="row-xs-12" >
+			<div class="container row-xs-12" >
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top "  src="http://www.suntory.co.jp/softdrink/news/l_img/l_sbf0135-1.jpg" alt="Card image cap" width="120" height="80">
+						<img class="card-img-top "  src="...." alt="Card image cap" >
 						<div class="card-block">
 							<h5 class="card-title">Pepsi</h5>
 							    <div class="radio">
@@ -342,8 +342,6 @@
 								<div class="radio">
 									<label><input type="radio" name="optradio">1.5 L</label>
 								</div>
-										
-								
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -352,7 +350,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top img-responsive"  src="http://delivice.com/wp-content/uploads/2016/06/3607834_orig.jpg" alt="Card image cap" width="120" height="80" >
+						<img class="card-img-top img-responsive"  src="..." alt="Card image cap" >
 						<div class="card-block">
 							<h5 class="card-title">Diet Pepsi</h5>
 								<div class="radio">
@@ -388,8 +386,7 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Tango orange</h5>
-								
+							<h5 class="card-title">Tango orange</h5>			
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -407,6 +404,10 @@
 					</div>
 				</div>
 
+			</div>
+			<br>
+			<div class="container row-xs-12">
+
 				<div class="col-xs-2">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
@@ -417,9 +418,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="container row-xs-12">
+				
 				<div class="col-xs-2">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
@@ -440,18 +439,10 @@
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
-				</div>
-
-				
+				</div>	
 			</div>
 
-			
-
-			
-
         </div>
-
-
 		
     </div>
 </div>
