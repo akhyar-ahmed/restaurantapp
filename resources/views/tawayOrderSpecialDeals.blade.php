@@ -59,7 +59,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Orange Juice</h5>
+							<h5 class="card-title">Daily deal</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -70,7 +70,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Carrot Juice</h5>
+							<h5 class="card-title">Family platter</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -81,7 +81,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Apple juice</h5>
+							<h5 class="card-title">Mix grill family deal</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>

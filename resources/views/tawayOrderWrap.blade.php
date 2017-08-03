@@ -55,66 +55,84 @@
 			<h3 align="left"><u>Wrap</u></h3><br/>
 			<div class="row-xs-12" >
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
 						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Orange Juice</h5>
+							<h5 class="card-title">Chicken shawarma wrap</h5>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="">Add Chips Drinks</label>
+                                    </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Carrot Juice</h5>
+							<h5 class="card-title">Lamb shawarma wrap</h5>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                                </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Apple juice</h5>
+							<h5 class="card-title">Kofta wrap</h5>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Lemonade</h5>
+							<h5 class="card-title">Chicken shish kebab wrap</h5>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
+							<h5 class="card-title"> Lamb shish kebab wrap</h5>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
-							<h5 class="card-title">Mix Fruit</h5>
+							<h5 class="card-title">Mix shawarma wrap</h5>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
