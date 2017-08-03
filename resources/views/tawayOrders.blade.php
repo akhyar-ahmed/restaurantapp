@@ -49,8 +49,7 @@
             </ul>
         </div>
         <div class="card-block">
-            <h4 class="card-title">Special title treatment</h4>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+//add cards here
         </div>
         </div>
 
