@@ -333,7 +333,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top img-responsive"  src="http://www.suntory.co.jp/softdrink/news/l_img/l_sbf0135-1.jpg" alt="Card image cap" width="120" height="80">
+						<img class="card-img-top "  src="http://www.suntory.co.jp/softdrink/news/l_img/l_sbf0135-1.jpg" alt="Card image cap" width="120" height="80">
 						<div class="card-block">
 							<h5 class="card-title">Pepsi</h5>
 							    <div class="radio">
