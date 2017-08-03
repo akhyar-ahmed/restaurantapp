@@ -417,7 +417,9 @@
 						</div>
 					</div>
 				</div>
-				<br/>
+			</div>
+
+			<div class="container row-xs-12">
 				<div class="col-xs-2">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
