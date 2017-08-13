@@ -14,7 +14,7 @@
     <div class="card text-center">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" >
-            <li class="nav-item" id="mitem">
+            <li class="nav-item">
                 <a class="TItem" href="#" style="color:white">Drinks</a>
             </li>
             <li class="nav-item">
@@ -162,7 +162,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="https://ehonami.blob.core.windows.net/media/2016/05/can-peppermint-tea-pep-up-your-memory-800x600.jpg" alt="Card image cap" width="120" height="80">
+						<img class="card-img-top" src="....." alt="Card image cap" width="120" height="80">
 						<div class="card-block">
 							<h5 class="card-title">Peppermint Tea</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -173,7 +173,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="https://cdn.authoritynutrition.com/wp-content/uploads/2013/09/cup-of-green-tea-with-leaves.jpg" alt="Green Tea" width="120" height="80">
+						<img class="card-img-top" src="..." alt="Green Tea" width="120" height="80">
 						<div class="card-block">
 							<h5 class="card-title">Green Tea</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -452,6 +452,8 @@
 @push('scripts')
 <script>
 	$(document).ready(function(){
+
+
 		$('#search_text').keyup(function(){
 			var txt = $(this).val();
 			if( txt != '') {
