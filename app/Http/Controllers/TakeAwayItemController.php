@@ -26,48 +26,6 @@ class TakeAwayItemController extends Controller
             
             if($admin->type == 1) {
 
-                $items[] = [
-                    
-                    [
-                        "drinks"
-                    ],
-                    
-                    [
-                        "deserts"
-                    ],
-                    
-                    [
-                        "sides"
-                    ],
-                    
-                    [
-                        "pizza"
-                    ],
-                    
-                    [
-                        "curry"
-                    ],
-                    
-                    [
-                        "wrap"
-                    ],
-                    
-                    [
-                        "burgers"
-                    ],
-                    
-                    [
-                        "grill"
-                    ],
-                    
-                    [
-                        "salads"
-                    ],
-                    
-                    [
-                        "specials"
-                    ]
-                ];
 /*                 $freshJuice = TawayItems::where('category', '=', "Fresh Juice")->get();
                 $tea = TawayItems::where('category', '=', "Tea")->get();
                 $coffie = TawayItems::where('category', '=', "Coffie")->get();
@@ -85,7 +43,7 @@ class TakeAwayItemController extends Controller
                 $coldmezze = TawayItems::where('category', '=', "Cold mezze")->get();
                 $specialdeals = TawayItems::where('category', '=', "Special meals")->get(); */
 
-                
+                //return $items;
                 return view('tawayOrders');
                 /* return view('tawayOrders')
                     ->with(compact('freshJuice'))
