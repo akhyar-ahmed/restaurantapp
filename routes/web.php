@@ -72,7 +72,18 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin/online-customer/add/{id}','OnlineSalerecordController@getCustomers')->name('get.customer');
 
     //Taway-Orders
-    Route::get('/taway-orders', 'TakeAwayItemController@index')->name('taway-orders');   
+    Route::get('/taway-orders', 'TakeAwayItemController@index')->name('taway-orders');  
+    Route::get('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::get('/taway-orders/desert','TakeAwayItemController@desert')->name('taway-orders-desert'); 
+    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
 
 
 });

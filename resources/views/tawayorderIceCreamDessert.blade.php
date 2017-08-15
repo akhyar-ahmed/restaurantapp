@@ -14,7 +14,7 @@
     <div class="card text-center">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" >
-            <li class="nav-item" id="mitem">
+            <li class="nav-item" >
                 <a class="TItem" href="#" style="color:white">Drinks</a>
             </li>
             <li class="nav-item">
@@ -49,17 +49,16 @@
             </li>
             </ul>
         </div>
-		<br>
+		
         <div class="container card-block">
-
-			<h3 align="left"><u>Desserts</u></h3><br/>
+		<br>
+			<h3 align="left"><u>Cakes</u></h3><br/>
 			<div class="row-xs-12" >
 
 				<div class="col-xs-12">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						
 						<div class="card-block">
-							<h5 class="card-title">Cakes</h5>
                             <div class="checkbox-inline">
                                 <label><input type="checkbox" value="">White fruits</label>
                             </div>
@@ -90,25 +89,24 @@
 
         <div class="container card-block">
 
-			<h3 align="left"><u>Desserts</u></h3><br/>
+			<h3 align="left"><u>Ice-Creams</u></h3><br/>
 			<div class="row-xs-12" >
 
 				<div class="col-xs-12">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+					
 						<div class="card-block">
-							<h5 class="card-title">Ice-Creams</h5>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox-inline" value="">Chocolate ice cream</label>
+                                <label><input type="checkbox" value="">Chocolate ice cream</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox-inline" value=""> Banana funnel ice cream </label>
+                                <label><input type="checkbox" value=""> Banana funnel ice cream </label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox-inline" value="">Kiwi ice cream</label>
+                                <label><input type="checkbox" value="">Kiwi ice cream</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox-inline" value="">Venilla ice cream</label>
+                                <label><input type="checkbox" value="">Venilla ice cream</label>
                             </div>
                             
                             <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>

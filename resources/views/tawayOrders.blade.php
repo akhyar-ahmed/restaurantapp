@@ -1,4 +1,4 @@
-@extends('main')
+@extends('item_main')
 
 @section('title', "| TakeAway-Orders ")
 
@@ -15,10 +15,10 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" >
             <li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id = "0">Drinks</a>
+                <a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white" id = "0">Drinks</a>
             </li>
             <li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id = "1">Dessert & Ice Cream</a>
+                <a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" id = "1">Dessert & Ice Cream</a>
             </li>
             <li class="nav-item">
                 <a class="TItem" href="#" style="color:white" id = "2">Sides</a>
@@ -71,7 +71,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Carrot Juice</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -82,7 +82,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Apple juice</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -93,7 +93,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Lemonade</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -104,7 +104,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Mix Fruit</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -140,7 +140,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Chamomile Tea</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -151,7 +151,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Jeanine Tea </h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -162,7 +162,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="....." alt="Card image cap" width="120" height="80">
+						<img class="card-img-top" src="" alt="Card image cap" width="120" height="80">
 						<div class="card-block">
 							<h5 class="card-title">Peppermint Tea</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -173,7 +173,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Green Tea" width="120" height="80">
+						<img class="card-img-top" src="" alt="Green Tea" width="120" height="80">
 						<div class="card-block">
 							<h5 class="card-title">Green Tea</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -209,7 +209,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Cappuccino</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -220,7 +220,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">American</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -231,7 +231,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Espresso</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -242,7 +242,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Hot chocolate</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -278,7 +278,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Strawberry shake</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -289,7 +289,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Chocolate shake</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -300,7 +300,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Ice cream funnel shake</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -311,7 +311,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Orio milkshake</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -333,7 +333,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top "  src="...." alt="Card image cap" >
+						<img class="card-img-top "  src="" alt="Card image cap" >
 						<div class="card-block">
 							<h5 class="card-title">Pepsi</h5>
 							    <div class="radio-inline">
@@ -350,7 +350,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top img-responsive"  src="..." alt="Card image cap" >
+						<img class="card-img-top img-responsive"  src="" alt="Card image cap" >
 						<div class="card-block">
 							<h5 class="card-title">Diet Pepsi</h5>
 								<div class="radio-inline">
@@ -367,7 +367,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">7up</h5>
 								<div class="radio-inline">
@@ -384,7 +384,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Tango orange</h5>			
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -395,7 +395,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Tango apple</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -410,7 +410,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Fanta</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -421,7 +421,7 @@
 				
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Miranda orange</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -432,7 +432,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Ayran</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -452,7 +452,43 @@
 @push('scripts')
 <script>
 	$(document).ready(function(){
+		$('.TItem').click(function(){
+			var id = $(this).attr('id');
+			if( id == 0){
 
+
+			}
+			else if( id == 1){
+
+			}
+			else if(id == 2){
+
+			}
+			else if(id==3){
+
+			}
+			else if( id == 4){
+
+			}
+			else if( id == 5){
+
+			}
+			else if( id == 6){
+
+			}
+			else if( id == 7){
+				
+			}
+			else if( id == 8){
+				
+			}
+			else if( id == 9){
+				
+			}
+			else if( id == 10){
+				
+			}
+		});
 
 		$('#search_text').keyup(function(){
 			var txt = $(this).val();
