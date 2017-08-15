@@ -264,7 +264,7 @@
 
 		<div class="container card-box">
 
-			<h3 align="left"><u>Milkshakes</u></h3><br/>
+			<h3 align="left"><u>Milk Shakes</u></h3><br/>
 			<div class="row-xs-12" >
 
 				<div class="col-xs-2">
