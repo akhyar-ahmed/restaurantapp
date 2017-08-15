@@ -57,7 +57,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h5 class="card-title">Chicken shish kebab</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -68,7 +68,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Lamb shish kebab</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -79,7 +79,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Kofta kebab</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -90,7 +90,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Mix shish kebab (Large)</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -101,7 +101,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Mix Grill kebab</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -112,7 +112,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Large mix grill</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -123,7 +123,7 @@
 				<br><br><br><br><br><br><br>
                 <div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Full chicken grill</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -134,7 +134,7 @@
 
                 <div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Half  chicken grilled</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -145,7 +145,7 @@
 
                 <div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Grilled salmon</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -156,7 +156,7 @@
 
                 <div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Halloumi aubergine</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>

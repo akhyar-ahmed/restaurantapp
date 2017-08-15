@@ -58,7 +58,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h5 class="card-title">Orange Juice</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -69,7 +69,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Carrot Juice</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -80,7 +80,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Apple juice</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -91,7 +91,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Lemonade</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -102,7 +102,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Mix Fruit</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -113,7 +113,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Mix Fruit</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>

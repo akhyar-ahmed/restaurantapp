@@ -57,7 +57,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h5 class="card-title">Beef burger</h5>
                                     <div class="radio-inline">
@@ -77,7 +77,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Chicken fillet burger</h5>
                                 <div class="radio-inline">
@@ -97,7 +97,7 @@
 
 				<div class="col-xs-2">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Chicken Zinger Burger</h5>
                             <div class="checkbox">
@@ -111,7 +111,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Fish burger</h5>
                             <div class="checkbox">
@@ -125,7 +125,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Veg burger</h5>
                             <div class="checkbox">
