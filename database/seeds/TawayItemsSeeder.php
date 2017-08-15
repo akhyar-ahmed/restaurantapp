@@ -295,6 +295,12 @@ class TawayItemsSeeder extends Seeder
                 'category' => "Curry",
                 'base_price' => '5.99'
             ],
+
+            [
+                'name' => "Auvergne curry",
+                'category' => "Curry",
+                'base_price' => '5.50'
+            ],
             
             [
                 'name' => "Chicken Shish Kebab Regular",

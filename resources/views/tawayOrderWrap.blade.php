@@ -58,11 +58,11 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chicken shawarma wrap</h5>
+							<h4 class="card-title">Chicken shawarma wrap</h4>
                                     <div class="checkbox">
-                                        <label><input type="checkbox" value="">Add Chips Drinks</label>
+									<label><input type="checkbox" value="">Add Chips Drinks</label>
                                     </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -72,11 +72,11 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Lamb shawarma wrap</h5>
+							<h4 class="card-title">Lamb shawarma wrap</h4>
                                 <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+									<label><input type="checkbox" value="">Add Chips Drinks</label>
                                 </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -86,26 +86,29 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Kofta wrap</h5>
+							<h4 class="card-title">Kofta wrap</h4>
                             <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+							<label><input type="checkbox" value="">Add Chips Drinks</label>
                             </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
-				<br><br><br><br><br><br><br>
+			</div>
+
+			<div class="row-sx-12">
+
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chicken shish kebab wrap</h5>
-                            <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
-                            </div>
+							<h4 class="card-title">Chicken shawarma wrap</h4>
+                                    <div class="checkbox">
+									<label><input type="checkbox" value="">Add Chips Drinks</label>
+                                    </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -113,13 +116,13 @@
 				</div>
 
 				<div class="col-xs-4">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card" >
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title"> Lamb shish kebab wrap</h5>
-                            <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
-                            </div>
+							<h4 class="card-title">Lamb shawarma wrap</h>
+                                <div class="checkbox">
+								<label><input type="checkbox" value="">Add Chips Drinks</label>
+                                </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -127,12 +130,12 @@
 				</div>
 
 				<div class="col-xs-4">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card" >
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Mix shawarma wrap</h5>
+							<h4 class="card-title">Kofta wrap</h4>
                             <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                                <label><input type="checkbox" value="">Add Chips Drinks</label>
                             </div>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>

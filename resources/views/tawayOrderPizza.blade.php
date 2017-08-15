@@ -56,11 +56,11 @@
 			<h3 align="left"><u>Pizza</u></h3><br/>
 			<div class="row-xs-12" >
 
-				<div class="col-xs-3">
+				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h5 class="card-title">Margherita Pizza</h5>
+							<h4 class="card-title">Margherita Pizza</h4>
                                     <div class="radio">
                                         <label><input type="radio" name="optradio">7" small</label>
                                     </div>
@@ -86,11 +86,11 @@
 					</div>
 				</div>
 
-				<div class="col-xs-3">
+				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Free Choice Pizza</h5>
+							<h4 class="card-title">Free Choice</h4>
                                     <div class="radio">
                                         <label><input type="radio" name="optradio">7" small</label>
                                     </div>
@@ -116,41 +116,11 @@
 					</div>
 				</div>
 
-				<div class="col-xs-3">
+				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Hawaiian Pizza</h5>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">7" small</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">9" Medium</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">12" Large</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">15" Super</label>
-                                    </div>
-                                    
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">deep pan</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">thin crust</label>
-                                    </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-3">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Classic Pizza</h5>
+							<h4 class="card-title">Hawaiian Pizza</h4>
                                     <div class="radio">
                                         <label><input type="radio" name="optradio">7" small</label>
                                     </div>
@@ -176,14 +146,42 @@
 					</div>
 				</div>
             </div>
-            <br>
             <div class="row-xs-12">
-				<div class="col-xs-3">
-                <br>
+				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">American Hot Pizza</h5>
+							<h4 class="card-title">Classic Pizza</h4>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">7" small</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">9" Medium</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">12" Large</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">15" Super</label>
+                                    </div>
+                                    
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="">deep pan</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="">thin crust</label>
+                                    </div>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+            
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">American Hot</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -209,12 +207,42 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">BBQ Feast Pizza</h5>
+							<h4 class="card-title">BBQ Feast</h4>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">7" small</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">9" Medium</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">12" Large</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">15" Super</label>
+                                </div>
+                                
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">deep pan</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">thin crust</label>
+                                </div>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="row-xs-12">
+                <div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">BBQ Chicken</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -240,12 +268,11 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+                <div class="col-xs-4">
+                    <div class="card">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">BBQ Chicken Pizza</h5>
+							<h4 class="card-title">Chicken Supreme</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -271,12 +298,11 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chicken Supreme Pizza</h5>
+							<h4 class="card-title">Vegetarian Pizza</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -301,17 +327,16 @@
 						</div>
 					</div>
 				</div>
-
-				
-			</div>
+            </div>
             
             <div class="row-xs-12">
-                <div class="col-xs-3">
-                <br>
+
+                <div class="col-xs-4">
+                
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Vegetarian Pizza</h5>
+							<h4 class="card-title">Vegetarian Hot</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -337,12 +362,12 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
+                
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Vegetarian Hot Pizza</h5>
+							<h4 class="card-title">Vegetarian Sweet</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -368,43 +393,12 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
+                
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Vegetarian Sweet Pizza</h5>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">7" small</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">9" Medium</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">12" Large</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">15" Super</label>
-                                </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
-                                </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-                <div class="col-xs-3">
-                <br>
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Meat Lovers Pizza</h5>
+							<h4 class="card-title">Meat Lovers</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -432,12 +426,11 @@
             </div>
             
             <div class="row-xs-12">    
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Pepperoni Plus Pizza</h5>
+							<h4 class="card-title">Pepperoni Plus</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -463,12 +456,11 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Pepperoni Pizza</h5>
+							<h4 class="card-title">Pepperoni Pizza</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -494,12 +486,12 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
+                
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Seafood Pizza</h5>
+							<h4 class="card-title">Seafood Pizza</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -524,46 +516,107 @@
 						</div>
 					</div>
 				</div>
-                <div class="col-xs-3">
-                <br>
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Arian Special Pizza</h5>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">7" small</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">9" Medium</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">12" Large</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">15" Super</label>
-                                </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
-                                </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
             </div>
-            
+            <div class="row-sx-12">
+                <div class="col-xs-4">
+                
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Arian Special</h4>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">7" small</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">9" Medium</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">12" Large</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">15" Super</label>
+                                </div>
+                                
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">deep pan</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">thin crust</label>
+                                </div>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-xs-4">
+               
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Spinach lovers</h4>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">7" small</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">9" Medium</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">12" Large</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">15" Super</label>
+                                </div>
+                                
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">deep pan</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">thin crust</label>
+                                </div>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-xs-4">
+                
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Arian Continental</h4>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">7" small</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">9" Medium</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">12" Large</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">15" Super</label>
+                                </div>
+                                
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">deep pan</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">thin crust</label>
+                                </div>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+            </div>
             <div class="row-xs-12">
-                <div class="col-xs-3">
-                <br>
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+                <div class="col-xs-4">
+                	<div class="card">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Spinach lovers Pizza</h5>
+							<h4 class="card-title">Beefeater Pizza</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -589,74 +642,12 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
+                
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Arian Continental Pizza</h5>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">7" small</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">9" Medium</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">12" Large</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">15" Super</label>
-                                </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
-                                </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-                <div class="col-xs-3">
-                <br>
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Beefeater Pizza</h5>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">7" small</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">9" Medium</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">12" Large</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">15" Super</label>
-                                </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
-                                </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-                <div class="col-xs-3">
-                <br>
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">New York Style Pizza</h5>
+							<h4 class="card-title">NewYork Style</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -683,16 +674,46 @@
 				</div>
                 
 
+                <div class="col-xs-4">
+                    
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Chicken Hot</h4>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">7" small</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">9" Medium</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">12" Large</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">15" Super</label>
+                                </div>
+                                
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">deep pan</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">thin crust</label>
+                                </div>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
             </div>
             
             <div class="row-xs-12">
-            
-                <div class="col-xs-3">
-                    <br>
+
+                <div class="col-xs-4">
+                
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chicken Hot Pizza</h5>
+							<h4 class="card-title">Maxican Hot</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -718,12 +739,12 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
+                
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Maxican Hot Pizza</h5>
+							<h4 class="card-title">Chicken Donner</h4>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">7" small</label>
                                 </div>
@@ -749,45 +770,14 @@
 					</div>
 				</div>
 
-                <div class="col-xs-3">
-                <br>
+                <div class="col-xs-4">
+                
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chicken Donner Pizza</h5>
+							<h4 class="card-title">Lamb Donner</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio">7" small</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">9" Medium</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">12" Large</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">15" Super</label>
-                                </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
-                                </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-                <div class="col-xs-3">
-                <br>
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Lamb Donner Pizza</h5>
-                                <div class="radio">
-                                    <label><input type="radio" name="optradio">7" small</label>
+                                    <label><input type="radio" name="optradio"> 7" small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio">9" Medium</label>

@@ -53,13 +53,59 @@
         <div class="container card-block">
 
 			<h3 align="left"><u>Burgers</u></h3><br/>
+			
+			<div class="row-xs-12" >
+				<div class="col-xs-4">
+					<div class="card" >
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Chicken Zinger</h4>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Fish burger</h4>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Veg burger</h4>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
 			<div class="row-xs-12" >
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h5 class="card-title">Beef burger</h5>
+							<h4 class="card-title">Beef burger</h4>
                                     <div class="radio-inline">
                                         <label><input type="radio" name="optradio">Regular</label>
                                     </div>
@@ -75,11 +121,11 @@
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chicken fillet burger</h5>
+							<h4 class="card-title">Chicken fillet</h4>
                                 <div class="radio-inline">
                                     <label><input type="radio" name="optradio">Regular</label>
                                 </div>
@@ -94,50 +140,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="col-xs-2">
-					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
-						<div class="card-block">
-							<h5 class="card-title">Chicken Zinger Burger</h5>
-                            <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
-                            </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="">
-						<div class="card-block">
-							<h5 class="card-title">Fish burger</h5>
-                            <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
-                            </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="">
-						<div class="card-block">
-							<h5 class="card-title">Veg burger</h5>
-                            <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
-                            </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				
 			</div>
 
 			

@@ -56,194 +56,191 @@
 			<h3 align="left"><u>Sides</u></h3><br/>
 			<div class="row-xs-12" >
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
-						
+					<img class="card-img-top" src="..." alt="">	
 						<div class="card-block">
-							<h5 class="card-title">BBQ wings</h5>
+							<h4 class="card-title">BBQ wings</h4>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chicken Dippers</h5>
+							<h4 class="card-title">Chicken Dippers</h4>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Garlic bread</h5>
+							<h4 class="card-title">Garlic bread</h4>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Chicken nuggets</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title"> Ponds fried cheese</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Fried mushrooms</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-				<br><br><br><br><br><br><br>
 			</div>
-			
-			<div class="row-xs-12">
 
-				<div class="col-xs-2">
+			</div class="row-xs-12">
+				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Onion rings</h5>
+							<h4 class="card-title">Chicken nuggets</h4>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">mozzarella sticks</h5>
+							<h4 class="card-title">Ponds fried cheese</h4>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">potato wedges</h5>
+							<h4 class="card-title">Fried mushrooms</h4>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Falafel</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Kubba</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Rice</h5>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<br><br><br><br><br><br><br>
-
 
 			</div>
 			
 			<div class="row-xs-12">
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chips</h5>
+							<h4 class="card-title">Chicken nuggets</h4>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-10">
+
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Ponds fried cheese</h4>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Fried mushrooms</h4>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row-xs-12">
+
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Falafel</h4>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Kubba</h4>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Rice</h4>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="row-xs-12">
+
+				<div class="col-xs-4">
+					<div class="card">
+						<div class="card-block">
+							<h4 class="card-title">Chips</h4>
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-8">
 					<div class="card">
 						<h4 class="card-title">Dips</h4>
 						<div class="card-block">
-							<div class="row-xs-10">
-								<label class="checkbox-inline col-xs-2">
-									<input type="checkbox" value="">Garlic
-								</label>
-								<label class="checkbox-inline col-xs-2">
-									<input type="checkbox" value="">mayonnaise
-								</label>
-								<label class="checkbox-inline col-xs-2">
-									<input type="checkbox" value="">Catchup
-								</label>
-								<label class="checkbox-inline col-xs-2">
-									<input type="checkbox" value="">tartar
-								</label>
-								<label class="checkbox-inline col-xs-2">
-									<input type="checkbox" value="">Burger sauce
-								</label>
-							<div>
-							<div class="row-xs-10">
-								<label class="checkbox-inline col-xs-2">
-									<input type="checkbox" value="">chilli
-								</label>
-								<label class="checkbox-inline col-xs-2">
-									<input type="checkbox" value="">Sweet chilli
-								</label>
-								<div class= "col-xs-6">
-								</div>
-								<br>
-								<br>
+							<div class="checkbox-inline">
+								<lebel><input type="checkbox" value="">Garlic</lebel>
 							</div>
-							<div class="row-xs-10">
-								<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-								<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<div class="checkbox-inline">
+								<lebel><input type="checkbox" value="">mayonnaise</lebel>
 							</div>
+							<div class="checkbox-inline">
+								<lebel><input type="checkbox" value="">Catchup</lebel>
+							</div>
+							<div class="checkbox-inline">
+								<lebel><input type="checkbox" value="">tartar</lebel>
+							</div>
+							<div class="checkbox-inline">
+								<lebel><input type="checkbox" value="">Burger sauce</lebel>
+							</div>
+							<div class="checkbox-inline">
+								<lebel><input type="checkbox" value="">chilli</lebel>
+							</div>
+							<div class="checkbox-inline">
+								<lebel><input type="checkbox" value="">Sweet chilli</lebel>
+							</div>
+							<br>
+							
+							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							
 						</div>
 					</div>
 				</div>
