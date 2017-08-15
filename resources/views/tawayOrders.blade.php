@@ -1,7 +1,7 @@
 @extends('item_main')
 
 @section('title', "| TakeAway-Orders ")
-
+ 
 @section('content')
 <div class="container">
     <div class = "page-header container col-xs-12 form-group">

@@ -13,41 +13,42 @@
     </div>
     <div class="card text-center">
         <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs" >
-            <li class="nav-item" id="mitem">
-                <a class="TItem" href="#" style="color:white" id="0">Drinks</a>
-            </li>
-            <li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="1">Dessert & Ice Cream</a>
-            </li>
-            <li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="2">Sides</a>
-            </li>
+			<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="3">Pizza</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white" id = "0">Drinks</a>
+			</li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="4">Curry</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" id = "1">Dessert & Ice Cream</a>
+			</li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="5">Shawarma</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" id = "2">Sides</a>
+			</li>
+
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="6">Wrap</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" id="3">Pizza</a>
+			</li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="7">Burgers</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" id="4">Curry</a>
+			</li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="8">Grilled</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" id="5">Shawarma</a>
+			</li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="9"> Salads & cold Mezze</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" id="6">Wrap</a>
+			</li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white" id="10">Special deals</a>
-            </li>
-            </ul>
+				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" id="7">Burgers</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" id="8">Grilled</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" id="9"> Salads & cold Mezze</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" id="10">Special deals</a>
+			</li>
+			</ul>
         </div>
 		
         <div class="container card-block">
