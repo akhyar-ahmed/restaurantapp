@@ -75,15 +75,15 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/taway-orders', 'TakeAwayItemController@index')->name('taway-orders');  
     Route::get('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
     Route::get('/taway-orders/desert','TakeAwayItemController@desert')->name('taway-orders-desert'); 
-    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
-    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
-    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
-    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
-    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
-    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
-    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
-    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
-    Route::post('/taway-orders/drinks','TakeAwayItemController@drinks')->name('taway-orders-drinks'); 
+    Route::get('/taway-orders/sides','TakeAwayItemController@sides')->name('taway-orders-sides'); 
+    Route::get('/taway-orders/pizza','TakeAwayItemController@pizza')->name('taway-orders-pizza'); 
+    Route::get('/taway-orders/curry','TakeAwayItemController@curry')->name('taway-orders-curry'); 
+    Route::get('/taway-orders/shawarma','TakeAwayItemController@shawarma')->name('taway-orders-shawarma'); 
+    Route::get('/taway-orders/wrap','TakeAwayItemController@wrap')->name('taway-orders-wrap'); 
+    Route::get('/taway-orders/burgers','TakeAwayItemController@burgers')->name('taway-orders-burgers'); 
+    Route::get('/taway-orders/grilled','TakeAwayItemController@grilled')->name('taway-orders-grilled'); 
+    Route::get('/taway-orders/salads','TakeAwayItemController@salads')->name('taway-orders-salads'); 
+    Route::get('/taway-orders/spdeals','TakeAwayItemController@spdeals')->name('taway-orders-spdeals'); 
 
 
 });

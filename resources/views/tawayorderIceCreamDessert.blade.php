@@ -13,7 +13,7 @@
     </div>
     <div class="card text-center">
         <div class="card-header">
-            <<ul class="nav nav-tabs card-header-tabs" >
+            <ul class="nav nav-tabs card-header-tabs" >
             <li class="nav-item" id="mitem">
                 <a class="TItem" href="#" style="color:white" id="0">Drinks</a>
             </li>

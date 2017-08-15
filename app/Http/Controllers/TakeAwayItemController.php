@@ -89,6 +89,87 @@ class TakeAwayItemController extends Controller
         return view('tawayorderIceCreamDessert');
     }
 
+        /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function sides(){
+        return view('tawayOrderSides');
+    }    
+    
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function pizza(){
+        return view('tawayOrderPizza');
+    }
+        
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function curry(){
+        return view('tawayOrderCurry');
+    } 
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function shawarma(){
+        return view('tawayOrderShawarma');
+    }
+    
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function wrap(){
+        return view('tawayOrderWrap');
+    }   
+    
+     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function burgers(){
+        return view('tawayOrderburgers');
+    }    
+    
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function grilled(){
+        return view('tawayOrderGrilled');
+    }
+    
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function salads(){
+        return view('tawayOrderSaladsMezze');
+    }    
+    
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function spdeals(){
+        return view('tawayOrderSpecialDeals');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
