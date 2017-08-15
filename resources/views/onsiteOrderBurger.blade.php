@@ -15,37 +15,71 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" >
             <li class="nav-item" id="mitem">
-                <a class="TItem" href="#" style="color:white">Drinks</a>
+                <a class="OItem" href="#" style="color:white" id="0">Drinks</a>
             </li>
             <li class="nav-item">
-                <a class="TItem" href="#" style="color:white">Dessert & Ice Cream</a>
+                <a class="OItem" href="#" style="color:white" id="1">Dessert & Ice Cream</a>
             </li>
             <li class="nav-item">
-                <a class="TItem" href="#" style="color:white">Sides</a>
+                <a class="OItem" href="#" style="color:white" id="2">Sides</a>
             </li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white">Pizza</a>
+                <a class="OItem" href="#" style="color:white" id="3">Pizza</a>
             </li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white">Curry</a>
+                <a class="OItem" href="#" style="color:white" id="4">Curry</a>
             </li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white">Shawarma</a>
+                <a class="OItem" href="#" style="color:white" id="5">Shawarma</a>
             </li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white">Wrap</a>
+                <a class="OItem" href="#" style="color:white" id="6">Wrap</a>
             </li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white">Burgers</a>
+                <a class="OItem" href="#" style="color:white" id="7">Burgers</a>
             </li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white">Grilled</a>
+                <a class="OItem" href="#" style="color:white" id="8">Grilled</a>
             </li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white"> Salads & cold Mezze</a>
+                <a class="OItem" href="#" style="color:white" id="9"> Salads & cold Mezze</a>
             </li>
 			<li class="nav-item">
-                <a class="TItem" href="#" style="color:white">Special deals</a>
+                <a class="OItem" href="#" style="color:white" id="10">Special deals</a>
+            </li>
+            </ul><ul class="nav nav-tabs card-header-tabs" >
+            <li class="nav-item" id="mitem">
+                <a class="OItem" href="#" style="color:white" id="0">Drinks</a>
+            </li>
+            <li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="1">Dessert & Ice Cream</a>
+            </li>
+            <li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="2">Sides</a>
+            </li>
+			<li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="3">Pizza</a>
+            </li>
+			<li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="4">Curry</a>
+            </li>
+			<li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="5">Shawarma</a>
+            </li>
+			<li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="6">Wrap</a>
+            </li>
+			<li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="7">Burgers</a>
+            </li>
+			<li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="8">Grilled</a>
+            </li>
+			<li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="9"> Salads & cold Mezze</a>
+            </li>
+			<li class="nav-item">
+                <a class="OItem" href="#" style="color:white" id="10">Special deals</a>
             </li>
             </ul>
         </div>
