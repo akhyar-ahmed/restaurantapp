@@ -58,7 +58,7 @@
 
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						
 						<div class="card-block">
 							<h5 class="card-title">BBQ wings</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -200,7 +200,6 @@
 			<div class="row-xs-12">
 				<div class="col-xs-2">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
 							<h5 class="card-title">Chips</h5>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -210,32 +209,41 @@
 				</div>
 				<div class="col-xs-10">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<h4 class="card-title">Dips</h4>
 						<div class="card-block">
-							<h5 class="card-title">Dips</h5>
-								<label class="checkbox-inline">
+							<div class="row-xs-10">
+								<label class="checkbox-inline col-xs-2">
 									<input type="checkbox" value="">Garlic
 								</label>
-								<label class="checkbox-inline">
+								<label class="checkbox-inline col-xs-2">
 									<input type="checkbox" value="">mayonnaise
 								</label>
-								<label class="checkbox-inline">
+								<label class="checkbox-inline col-xs-2">
 									<input type="checkbox" value="">Catchup
 								</label>
-								<label class="checkbox-inline">
+								<label class="checkbox-inline col-xs-2">
 									<input type="checkbox" value="">tartar
 								</label>
-								<label class="checkbox-inline">
+								<label class="checkbox-inline col-xs-2">
 									<input type="checkbox" value="">Burger sauce
 								</label>
-								<label class="checkbox-inline">
+							<div>
+							<div class="row-xs-10">
+								<label class="checkbox-inline col-xs-2">
 									<input type="checkbox" value="">chilli
 								</label>
-								<label class="checkbox-inline">
+								<label class="checkbox-inline col-xs-2">
 									<input type="checkbox" value="">Sweet chilli
-								</label><br>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+								</label>
+								<div class= "col-xs-6">
+								</div>
+								<br>
+								<br>
+							</div>
+							<div class="row-xs-10">
+								<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+								<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							</div>
 						</div>
 					</div>
 				</div>
