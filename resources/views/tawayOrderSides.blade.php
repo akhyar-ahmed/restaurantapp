@@ -121,7 +121,9 @@
 						</div>
 					</div>
 				</div>
+				<br><br><br><br><br><br><br>
 			</div>
+			
 			<div class="row-xs-12">
 
 				<div class="col-xs-2">
@@ -190,12 +192,13 @@
 					</div>
 				</div>
 
-
+				<br><br><br><br><br><br><br>
 
 
 			</div>
+			
 			<div class="row-xs-12">
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -205,7 +208,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-8">
+				<div class="col-xs-10">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -230,7 +233,7 @@
 								</label>
 								<label class="checkbox-inline">
 									<input type="checkbox" value="">Sweet chilli
-								</label>
+								</label><br>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>

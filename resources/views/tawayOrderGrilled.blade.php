@@ -120,7 +120,7 @@
 						</div>
 					</div>
 				</div>
-
+				<br><br><br><br><br><br><br>
                 <div class="col-xs-2">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">

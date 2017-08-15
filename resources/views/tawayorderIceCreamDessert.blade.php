@@ -77,7 +77,7 @@
                             </div>
                             <div class="checkbox-inline">
                                 <label><input type="checkbox" value="">Cheesecake</label>
-                            </div>
+                            </div><br>
                             <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
                             <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -109,7 +109,7 @@
                             <div class="checkbox-inline">
                                 <label><input type="checkbox" value="">Venilla ice cream</label>
                             </div>
-                            
+                            <br>
                             <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
                             <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>

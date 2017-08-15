@@ -176,8 +176,10 @@
 					</div>
 				</div>
             </div>
+            <br>
             <div class="row-xs-12">
 				<div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -208,6 +210,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -238,6 +241,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -268,6 +272,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -299,8 +304,10 @@
 
 				
 			</div>
+            
             <div class="row-xs-12">
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -331,6 +338,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -361,6 +369,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -391,6 +400,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -420,8 +430,10 @@
 					</div>
 				</div>
             </div>
-            <div class="row-xa-12">    
+            
+            <div class="row-xs-12">    
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -452,6 +464,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -482,6 +495,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -511,6 +525,7 @@
 					</div>
 				</div>
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -541,8 +556,10 @@
 				</div>
 
             </div>
+            
             <div class="row-xs-12">
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -573,6 +590,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -603,6 +621,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -633,6 +652,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -661,11 +681,14 @@
 						</div>
 					</div>
 				</div>
+                
 
             </div>
-
+            
             <div class="row-xs-12">
+            
                 <div class="col-xs-3">
+                    <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -696,6 +719,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -726,6 +750,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
@@ -756,6 +781,7 @@
 				</div>
 
                 <div class="col-xs-3">
+                <br>
 					<div class="card">
 						<img class="card-img-top" src="..." alt="Card image cap">
 						<div class="card-block">
