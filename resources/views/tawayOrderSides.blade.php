@@ -58,7 +58,7 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-					<img class="card-img-top" src="..." alt="">	
+						<img class="card-img-top" src="..." alt="">	
 						<div class="card-block">
 							<h4 class="card-title">BBQ wings</h4>
 							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -123,10 +123,11 @@
 						</div>
 					</div>
 				</div>
-
+			
 			</div>
 			
 			<div class="row-xs-12">
+			
 				<div class="col-xs-4">
 					<div class="card">
 						<img class="card-img-top" src="..." alt="">
