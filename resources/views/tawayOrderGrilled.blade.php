@@ -60,8 +60,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Chicken shish kebab</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -71,8 +71,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Lamb shish kebab</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -82,8 +82,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Kofta kebab</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -94,8 +94,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Mix shish kebab (Large)</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -105,8 +105,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Mix Grill kebab</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -116,8 +116,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Large mix grill</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -128,8 +128,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Full chicken grill</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -139,8 +139,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Half  chicken grilled</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -150,8 +150,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Grilled salmon</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -162,8 +162,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Halloumi aubergine</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="10"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -187,6 +187,19 @@
 @push('scripts')
 <script>
 	$(document).ready(function(){
+		$('a').click(function(){
+			var id = $(this).attr('id');
+			var val = $(this).attr('value');
+			if( id == "add"){
+				alert(id+" "+val);
+				
+
+			}
+			else if( id == "minus"){
+				alert(id+" "+val);
+			}
+		});
+
 		$('#search_text').keyup(function(){
 			var txt = $(this).val();
 			if( txt != '') {

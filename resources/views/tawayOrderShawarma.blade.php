@@ -61,8 +61,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Chicken shawarma</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -72,8 +72,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Lamb shawarma</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" vaue="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -83,8 +83,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Buffalo shawarma chicken</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -96,8 +96,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Buffalo shawarma lamb</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -107,8 +107,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Shawarma special</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -118,8 +118,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Mix shawarma</h4>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-success" id="add" value="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a href="#" class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -144,92 +144,106 @@
 
 @push('scripts')
 <script>
-	$(document).ready(function(){
-		$('#search_text').keyup(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
+$(document).ready(function(){
+	$('a').click(function(){
+		var id = $(this).attr('id');
+		var val = $(this).attr('value');
+		if( id == "add"){
+			alert(id+" "+val);
+			
 
-			}
-			else {
-				$('#result').html('');
-
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-			}
-		});
-		$('#search_text').keydown(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-
-			}
-			else {
-				$('#result').html('');
-				
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-			}
-		});
+		}
+		else if( id == "minus"){
+			alert(id+" "+val);
+		}
 	});
+
+	$('#search_text').keyup(function(){
+		var txt = $(this).val();
+		if( txt != '') {
+			$.ajaxSetup({
+			headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
+			$.ajax({
+				url: "/food-orders/searchfood",
+				method: "POST",
+				data: {
+					search:txt
+					},
+				dataType: "text",
+				success: function(data){
+					$('#result').html(data);
+				}
+			});
+
+		}
+		else {
+			$('#result').html('');
+
+			$.ajaxSetup({
+			headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
+			$.ajax({
+				url: "/food-orders/searchfood",
+				method: "POST",
+				data: {
+					search:txt
+					},
+				dataType: "text",
+				success: function(data){
+					$('#result').html(data);
+				}
+			});
+		}
+	});
+	$('#search_text').keydown(function(){
+		var txt = $(this).val();
+		if( txt != '') {
+			$.ajaxSetup({
+			headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
+			$.ajax({
+				url: "/food-orders/searchfood",
+				method: "POST",
+				data: {
+					search:txt
+					},
+				dataType: "text",
+				success: function(data){
+					$('#result').html(data);
+				}
+			});
+
+		}
+		else {
+			$('#result').html('');
+			
+			$.ajaxSetup({
+			headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
+			$.ajax({
+				url: "/food-orders/searchfood",
+				method: "POST",
+				data: {
+					search:txt
+					},
+				dataType: "text",
+				success: function(data){
+					$('#result').html(data);
+				}
+			});
+		}
+	});
+});
 </script>
 @endpush
+
 
