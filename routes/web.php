@@ -84,6 +84,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/taway-orders/grilled','TakeAwayItemController@grilled')->name('taway-orders-grilled'); 
     Route::get('/taway-orders/salads','TakeAwayItemController@salads')->name('taway-orders-salads'); 
     Route::get('/taway-orders/spdeals','TakeAwayItemController@spdeals')->name('taway-orders-spdeals'); 
-
+    Route::get('/taway-orders/preview','TawayOrderController@preview')->name('taway-orders-preview');
 
 });

@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
+use App\Model\Salerecords;
+use App\Model\TawayItems;
+use Session;
 
 
 class TawayOrderController extends Controller
@@ -33,6 +36,41 @@ class TawayOrderController extends Controller
         } else {
              return redirect()->route('logout');
         } 
+    }
+
+
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function preview()
+    {
+        //return "FUCK OFF BITCHES !!";
+        if (Auth::check()){
+
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+          //  $customers = Customers::all();
+            
+            if($admin->type == 1) {
+                $orderItem = Salerecords::where('user_id','=',$user_id)->get();
+                //return $orderItem;
+
+                return view('tAwayPreview')
+                    ->with(compact('orderItem'));
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        } 
+        
+
+        
     }
 
     /**
