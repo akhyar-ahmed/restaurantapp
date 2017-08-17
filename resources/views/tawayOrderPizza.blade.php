@@ -4,12 +4,17 @@
 
 @section('content')
 <div class="container">
-    <div class = "page-header container col-xs-12 form-group">
-		<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Your Customer Order Here)</h3>
-	</div>
+<div class = "page-header container col-xs-12 form-group">
+    <div class = "col-xs-10">
+        <h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Take-Away Orders)</h3>
+    </div>
+    <div class = "col-xs-2"  >
+        <a href= "{{ route('taway-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
+    </div>
+    </div>
 
-	<div id="result" class = "container form-group col-xs-12">
-    
+    <div id="result" class = "container form-group col-xs-12">
+
     </div>
     <div class="card text-center">
         <div class="card-header">
