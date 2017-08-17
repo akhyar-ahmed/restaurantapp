@@ -132,7 +132,7 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Chicken nuggets</h4>
+							<h4 class="card-title">Onion Rings</h4>
 							<a href="#" class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -143,7 +143,7 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Ponds fried cheese</h4>
+							<h4 class="card-title">Mozzarella sticks</h4>
 							<a href="#" class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -154,7 +154,7 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Fried mushrooms</h4>
+							<h4 class="card-title">Potato wedges</h4>
 							<a href="#" class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
