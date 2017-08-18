@@ -11,6 +11,7 @@ Use App\Model\Items;
 use Session;
 use App\Model\Customers;
 use Illuminate\Contracts\Validation\Validator;
+use App\Model\TawayItems;
 
 class OnlineSalerecordController extends Controller
 {
@@ -49,11 +50,20 @@ class OnlineSalerecordController extends Controller
     /**
      * Show the form for creating a new resource.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function addDrinks(Request $request)
     {
-        //
+        //return $request;
+        $item = TawayItems::where('category', '=', "Fresh Juice")
+                           ->orWhere('category', '=', "Tea")
+                           ->orWhere('category', '=', "Coffie")
+                           ->orWhere('category', '=', "Milkshake")
+                           ->orWhere('category', '=', "Soft Drinks")->get();
+        return $item;
+    
+        
     }
 
     /**

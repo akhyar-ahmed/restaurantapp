@@ -15,11 +15,12 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li class="{{ Request::is('dashboard') ? "active": "" }} "><a href="/dashboard">Dashboard<span class="sr-only">(current)</span></a></li>
+      <li class="{{ Request::is('dashboard') ? "active": "" }} "><a href="/dashboard">D-Board<span class="sr-only">(current)</span></a></li>
       <li class="{{ Request::is('admin/customer') ? "active": "" }}"><a href="/admin/customer">Customer</a></li>      
-      <li class="{{ Request::is('food-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/food-orders">Onsite-Order</a></li>
-      <li class="{{ Request::is('taway-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/taway-orders">TakeAway-Order</a></li>
-      <li class="{{ Request::is('food-orders') ?  "active": "" }} "><a href="/food-orders">Accounts</a></li>
+      <li class="{{ Request::is('food-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/food-orders">Onsite</a></li>
+      <li class="{{ Request::is('taway-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/taway-orders">T-Away</a></li>
+      <li class=""><a href="#">H-Delivery</a></li>
+      <li class="{{ Request::is('food-orders') ?  "active": "" }} "><a href="/food-orders">Acc.</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
