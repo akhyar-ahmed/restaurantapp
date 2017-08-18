@@ -61,7 +61,12 @@ class OnlineSalerecordController extends Controller
                            ->orWhere('category', '=', "Coffie")
                            ->orWhere('category', '=', "Milkshake")
                            ->orWhere('category', '=', "Soft Drinks")->get();
-        return $item;
+        
+        foreach($item as $key=>$value){
+            if($request->item == $key+1) {
+                return $value['name'];
+            }
+        }
     
         
     }

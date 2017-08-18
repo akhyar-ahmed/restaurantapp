@@ -343,10 +343,10 @@
 						<div class="card-block">
 							<h4 class="card-title">Pepsi</h4>
 							    <div class="radio-inline">
-									<label><input type="radio" name="optradio">0.33L</label>
+									<label><input type="radio" id ='21' name="optradio">0.33L</label>
 								</div>
 								<div class="radio-inline">
-									<label><input type="radio" name="optradio">1.5 L</label>
+									<label><input type="radio" id= '22' name="optradio">1.5 L</label>
 								</div>
 							<a href="#" class="btn btn-success" id = "add" value = '21'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger" id = "minus" value = '21'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -360,10 +360,10 @@
 						<div class="card-block">
 							<h4 class="card-title">Diet Pepsi</h4>
 								<div class="radio-inline">
-									<label><input type="radio" name="optradio">0.33L</label>
+									<label><input type="radio" id='23' name="optradio">0.33L</label>
 								</div>
 								<div class="radio-inline">
-									<label><input type="radio" name="optradio">1.5 L</label>
+									<label><input type="radio" id = '24'name="optradio">1.5 L</label>
 								</div>
 							<a href="#" class="btn btn-success" id = "add" value = '22'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger" id = "minus" value = '22'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -377,10 +377,10 @@
 						<div class="card-block">
 							<h4 class="card-title">7up</h4>
 								<div class="radio-inline">
-									<label><input type="radio" name="optradio">0.33L</label>
+									<label><input type="radio" id = '25' name="optradio">0.33L</label>
 								</div>
 								<div class="radio-inline">
-									<label><input type="radio" name="optradio">1.5 L</label>
+									<label><input type="radio" id = '26' name="optradio">1.5 L</label>
 								</div>
 							<a href="#" class="btn btn-success" id = "add" value = '23'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a href="#" class="btn btn-danger" id = "minus" value = '23'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -481,7 +481,7 @@
 					
 				}
 				else{
-					alert('radio');
+					
 				}
 
 			}
