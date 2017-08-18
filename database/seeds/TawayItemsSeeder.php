@@ -242,6 +242,27 @@ class TawayItemsSeeder extends Seeder
                 'base_price' => '2.00'
             ],
 
+            
+
+            [
+                'name' => "Chicken Zinger Burger",
+                'category' => "Burgers",
+                'base_price' => '5.00'
+            ],
+
+
+            [
+                'name' => "Fish Burger",
+                'category' => "Burgers",
+                'base_price' => '3.50'
+            ],
+
+            [
+                'name' => "Veg Burger",
+                'category' => "Burgers",
+                'base_price' => '3.50'
+            ],
+
             [
                 'name' => "Beef Burger Regular",
                 'category' => "Burgers",
@@ -264,25 +285,6 @@ class TawayItemsSeeder extends Seeder
                 'name' => "Chicken Fillet Burger Large",
                 'category' => "Burgers",
                 'base_price' => '4.99'
-            ],
-
-            [
-                'name' => "Chicken Zinger Burger",
-                'category' => "Burgers",
-                'base_price' => '5.00'
-            ],
-
-
-            [
-                'name' => "Fish Burger",
-                'category' => "Burgers",
-                'base_price' => '3.50'
-            ],
-
-            [
-                'name' => "Veg Burger",
-                'category' => "Burgers",
-                'base_price' => '3.50'
             ],
 
             [
@@ -427,6 +429,12 @@ class TawayItemsSeeder extends Seeder
                 'name' => "shawarma special",
                 'category' => "Shawarma",
                 'base_price' => '5.50'
+            ],
+
+            [
+                'name' => "Mix Shawarma",
+                'category' => "Shawarma",
+                'base_price' => '5.99'
             ],
 
             [
@@ -640,7 +648,7 @@ class TawayItemsSeeder extends Seeder
             ],
 
             [
-                'name' => "MFree Choice Pizza 7",
+                'name' => "Free Choice Pizza 7",
                 'category' => "Pizza",
                 'base_price' => '3.99'
             ],

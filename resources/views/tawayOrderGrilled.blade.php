@@ -65,6 +65,12 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Chicken shish kebab</h4>
+								<div class="radio-inline">
+                                    <label><input type="radio" name="optradio">Regular</label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label><input type="radio" name="optradio">Large</label>
+                                </div>
 							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -76,6 +82,12 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Lamb shish kebab</h4>
+								<div class="radio-inline">
+                                    <label><input type="radio" name="optradio">Regular</label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label><input type="radio" name="optradio">Large</label>
+                                </div>
 							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -87,6 +99,12 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Kofta kebab</h4>
+								<div class="radio-inline">
+                                    <label><input type="radio" name="optradio">Regular</label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label><input type="radio" name="optradio">Large</label>
+                                </div>
 							<a  class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -166,9 +184,19 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Halloumi aubergine</h4>
+							<h4 class="card-title">Grilled Salmon</h4>
 							<a  class="btn btn-success" id="add" value="10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="10"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Halloumi aubergine</h4>
+							<a  class="btn btn-success" id="add" value="11"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="11"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
