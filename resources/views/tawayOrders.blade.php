@@ -70,8 +70,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Orange Juice</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '1' ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '1'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '1' ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '1'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -81,8 +81,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Carrot Juice</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '2'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '2'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '2'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '2'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -92,8 +92,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Apple juice</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '3'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '3'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '3'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '3'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -104,8 +104,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Lemonade</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '4'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '4'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '4'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '4'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -115,8 +115,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Mix Fruit</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '5'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '5'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '5'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '5'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -134,8 +134,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title"> English Tea</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '6'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '6'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '6'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '6'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -145,8 +145,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Chamomile Tea</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '7'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '7'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '7'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '7'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -156,8 +156,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Jeanine Tea</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '8'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '8'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '8'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '8'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -169,8 +169,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Peppermint Tea</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '9'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '9'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '9'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '9'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -180,8 +180,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Green Tea</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '10'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '10'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '10'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '10'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -205,8 +205,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Coffee latte</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '11'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '11'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '11'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '11'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -216,8 +216,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Cappuccino</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '12'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '12'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '12'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '12'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -227,8 +227,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">American</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '13'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '13'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '13'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '13'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -239,8 +239,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Espresso</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '14'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '14'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '14'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '14'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -250,8 +250,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Hot chocolate</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '15'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '15'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '15'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '15'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -275,8 +275,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Banana shake</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '16'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '16'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '16'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '16'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -286,8 +286,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Strawberry shake</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '17'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '17'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '17'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '17'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -297,8 +297,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Chocolate shake</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '18'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '18'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '18'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '18'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -309,8 +309,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Ice cream funnel shake</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '19'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '19'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '19'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '19'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -320,8 +320,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Orio milkshake</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '20'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '20'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '20'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '20'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -348,8 +348,8 @@
 								<div class="radio-inline">
 									<label><input type="radio" id= '22' name="optradio">1.5 L</label>
 								</div>
-							<a href="#" class="btn btn-success" id = "add" value = '21'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '21'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '21'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '21'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -365,8 +365,8 @@
 								<div class="radio-inline">
 									<label><input type="radio" id = '24'name="optradio">1.5 L</label>
 								</div>
-							<a href="#" class="btn btn-success" id = "add" value = '22'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '22'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '22'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '22'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -382,8 +382,8 @@
 								<div class="radio-inline">
 									<label><input type="radio" id = '26' name="optradio">1.5 L</label>
 								</div>
-							<a href="#" class="btn btn-success" id = "add" value = '23'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '23'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '23'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '23'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -395,8 +395,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Tango orange</h4>			
-							<a href="#" class="btn btn-success" id = "add" value = '24'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '24'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '24'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '24'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -406,8 +406,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Tango apple</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '25'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '25'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '25'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '25'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -416,9 +416,15 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Fanta</h4>
-							<a href="#" class="btn btn-success" id = "add" value = '26'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id = "minus" value = '26'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Fanta Orange</h4>
+							<div class="radio-inline">
+								<label><input type="radio" name="optradio">0.33L</label>
+							</div>
+							<div class="radio-inline">
+								<label><input type="radio" name="optradio">1.5 L</label>
+							</div>
+							<a  class="btn btn-success" id = "add" value = '26'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '26'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>

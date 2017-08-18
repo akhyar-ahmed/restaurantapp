@@ -160,19 +160,38 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "7up 1.5L",
                 'category' => "Soft Drinks",
-                'base_price' => '3.00'
+                'base_price' => '2.50'
             ],
 
             [
-                'name' => "Tango 0.33L",
+                'name' => "Tango Orange 0.33L",
                 'category' => "Soft Drinks",
                 'base_price' => '1.20'
             ],
 
             [
-                'name' => "Tango 1.5L",
+                'name' => "Tango Apple 0.33L",
                 'category' => "Soft Drinks",
-                'base_price' => '3.00'
+                'base_price' => '1.20'
+            ],
+
+            [
+                'name' => "Fanta 0.33L",
+                'category' => "Soft Drinks",
+                'base_price' => '1.20'
+            ],
+
+            [
+                'name' => "Fanta 1.5L",
+                'category' => "Soft Drinks",
+                'base_price' => '2.50'
+            ],
+
+            [
+                'name' => "Miranda Orange 0.33L",
+                'category' => "Soft Drinks",
+                'base_price' => '1.20'
+
             ],
 
             [
