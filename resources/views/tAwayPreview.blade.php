@@ -39,11 +39,11 @@
 				</td>
 
 				<td>
-					{{ $or->base_price }}
+					£ {{ $or->base_price }}
 				</td>
 
 				<td>
-					{{ $or->total }}
+					£ {{ $or->total }}
 				</td>
 			</tr>
 			@endforeach
