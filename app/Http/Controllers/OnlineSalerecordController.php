@@ -55,6 +55,10 @@ class OnlineSalerecordController extends Controller
      */
     public function addDrinks(Request $request)
     {
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
         //return $request;
         $item = TawayItems::where('category', '=', "Fresh Juice")
                            ->orWhere('category', '=', "Tea")
@@ -65,6 +69,11 @@ class OnlineSalerecordController extends Controller
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
                 return $value['name'];
+                $orderItem = Salerecords::where([
+                                                ['user_id','=', $id],
+                                                ['food_name','=',$value['name']]
+                ])->get();
+
             }
         }
     

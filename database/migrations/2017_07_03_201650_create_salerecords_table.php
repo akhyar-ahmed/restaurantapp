@@ -18,7 +18,6 @@ class CreateSalerecordsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->integer('item_id')->unsigned();
             $table->string('food_name');
-            $table->integer('food_stock');
             $table->string('food_code');
             $table->double('base_price',7,3);
             $table->integer('quantity');
