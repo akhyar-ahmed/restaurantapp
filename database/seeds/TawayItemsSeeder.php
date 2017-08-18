@@ -128,6 +128,12 @@ class TawayItemsSeeder extends Seeder
             ],
 
             [
+                'name' => "Orio Milk Shake",
+                'category' => "Milkshake",
+                'base_price' => '2.50'
+            ],
+
+            [
                 'name' => "Pepsi 0.33L",
                 'category' => "Soft Drinks",
                 'base_price' => '1.20'
