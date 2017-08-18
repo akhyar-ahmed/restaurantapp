@@ -343,13 +343,13 @@
 						<div class="card-block">
 							<h4 class="card-title">Pepsi</h4>
 							    <div class="radio-inline">
-									<label><input type="radio" id ='21' name="optradio">0.33L</label>
+									<label><input type="radio" value = '21' name="radio">0.33L</label>
 								</div>
 								<div class="radio-inline">
-									<label><input type="radio" id= '22' name="optradio">1.5 L</label>
+									<label><input type="radio" value = '22' name="radio">1.5 L</label>
 								</div>
-							<a  class="btn btn-success" id = "add" value = '21'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id = "minus" value = '21'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = 'A'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = 'A'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -360,13 +360,13 @@
 						<div class="card-block">
 							<h4 class="card-title">Diet Pepsi</h4>
 								<div class="radio-inline">
-									<label><input type="radio" id='23' name="optradio">0.33L</label>
+									<label><input type="radio" value = '23' name="radio">0.33L</label>
 								</div>
 								<div class="radio-inline">
-									<label><input type="radio" id = '24'name="optradio">1.5 L</label>
+									<label><input type="radio" value = '24'name="radio">1.5 L</label>
 								</div>
-							<a  class="btn btn-success" id = "add" value = '22'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id = "minus" value = '22'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = 'B'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = 'B'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -377,13 +377,13 @@
 						<div class="card-block">
 							<h4 class="card-title">7up</h4>
 								<div class="radio-inline">
-									<label><input type="radio" id = '25' name="optradio">0.33L</label>
+									<label><input type="radio" value = '25' name="radio" value='25'>0.33L</label>
 								</div>
 								<div class="radio-inline">
-									<label><input type="radio" id = '26' name="optradio">1.5 L</label>
+									<label><input type="radio" value = '26' name="radio">1.5 L</label>
 								</div>
-							<a  class="btn btn-success" id = "add" value = '23'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id = "minus" value = '23'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = 'C'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = 'C'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -395,8 +395,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Tango orange</h4>			
-							<a  class="btn btn-success" id = "add" value = '24'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id = "minus" value = '24'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '27'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '27'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -406,8 +406,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Tango apple</h4>
-							<a  class="btn btn-success" id = "add" value = '25'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id = "minus" value = '25'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = '28'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '28'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -418,13 +418,13 @@
 						<div class="card-block">
 							<h4 class="card-title">Fanta Orange</h4>
 							<div class="radio-inline">
-								<label><input type="radio" name="optradio">0.33L</label>
+								<label><input type="radio" value = '29' name="radio">0.33L</label>
 							</div>
 							<div class="radio-inline">
-								<label><input type="radio" name="optradio">1.5 L</label>
+								<label><input type="radio" value = '30' name="radio">1.5 L</label>
 							</div>
-							<a  class="btn btn-success" id = "add" value = '26'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id = "minus" value = '26'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id = "add" value = 'D'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = 'D'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -435,8 +435,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Miranda orange</h4>
-							<a class="btn btn-success" id = "add" value = '27'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a class="btn btn-danger" id = "minus" value = '27'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a class="btn btn-success" id = "add" value = '31'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id = "minus" value = '31'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -446,8 +446,8 @@
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Ayran</h4>
-							<a class="btn btn-success" id = "add" value = '28'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id = "minus" value = '28'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a class="btn btn-success" id = "add" value = '32'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id = "minus" value = '32'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>	
@@ -467,7 +467,7 @@
 			var id = $(this).attr('id');
 			var val = $(this).attr('value');
 			if( id == "add"){
-				if(val != "21" && val !="22" && val != "23" ){
+				if(val != "A" && val !="B" && val != "C" && val!="D" ){
 					$.ajaxSetup({
 					headers: {
 							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -488,6 +488,92 @@
 				}
 				else{
 					
+					var inputVal = $('input:radio[name=radio]:checked').val();
+					//alert(inputVal+" "+val);
+					//alert($('input:radio[name=optradio]:checked').val());
+					if( (inputVal=="21" || inputVal=="22") && val == "A"){
+						//alert($('input:radio[name=radio]:checked').val());
+
+						$.ajaxSetup({
+							headers: {
+									'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+								}
+							});
+
+						$.ajax({
+							url: "/taway-orders/add-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+
+					}
+					else if( (inputVal=="23" || inputVal=="24") && val == "B"){
+						//alert($('input:radio[name=radio]:checked').val());
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+
+						$.ajax({
+							url: "/taway-orders/add-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					else if( (inputVal=="25" || inputVal=="26") && val == "C"){
+						//alert($('input:radio[name=radio]:checked').val());
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/taway-orders/add-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					else if( (inputVal=="29" || inputVal=="30") && val == "D"){
+						//alert($('input:radio[name=radio]:checked').val());
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/taway-orders/add-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					else{
+						alert('Please Correctly Select Radio Button');
+					}
 				}
 
 			}
