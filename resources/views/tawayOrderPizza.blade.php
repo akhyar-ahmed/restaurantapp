@@ -85,8 +85,8 @@
                                     <div class="checkbox">
                                         <label><input type="checkbox" value="">thin crust</label>
                                     </div>
-							<a href="#" class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -115,8 +115,8 @@
                                     <div class="checkbox">
                                         <label><input type="checkbox" value="">thin crust</label>
                                     </div>
-							<a href="#" class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -145,8 +145,8 @@
                                     <div class="checkbox">
                                         <label><input type="checkbox" value="">thin crust</label>
                                     </div>
-							<a href="#" class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -176,8 +176,8 @@
                                     <div class="checkbox">
                                         <label><input type="checkbox" value="">thin crust</label>
                                     </div>
-							<a href="#" class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -206,8 +206,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -236,8 +236,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" vaue="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" vaue="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -267,8 +267,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -297,8 +297,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -327,8 +327,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -361,8 +361,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="10"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="10"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -392,8 +392,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="11"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" va;ue="11"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="11"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" va;ue="11"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -423,8 +423,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="12"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="12"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="12"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="12"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -455,8 +455,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="13"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="13"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="13"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="13"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -485,8 +485,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="14"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" va;ue="14"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="14"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" va;ue="14"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -516,8 +516,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="15"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="15"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="15"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="15"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -548,8 +548,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="16"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="16"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="16"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="16"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -579,8 +579,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="17"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="17"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="17"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="17"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -610,8 +610,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="18"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="18"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="18"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="18"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -641,8 +641,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="19"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="19"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="19"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="19"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -672,8 +672,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="20"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"id="minus" value="20"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="20"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger"id="minus" value="20"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -704,8 +704,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="21"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="21"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="21"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="21"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -738,8 +738,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="22"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="22"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="22"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="22"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -769,8 +769,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="23"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" vaue="23"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="23"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" vaue="23"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -800,8 +800,8 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">thin crust</label>
                                 </div>
-							<a href="#" class="btn btn-success" id="add" value="24"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="24"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="24"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="24"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>

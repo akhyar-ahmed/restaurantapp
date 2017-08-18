@@ -63,33 +63,33 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h5 class="card-title"> Fattoush </h5>
-							<a href="#" class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Fattoush</h4>
+							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chicken Caesar salad</h5>
-							<a href="#" class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Chicken Caesar salad</h4>
+							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Green salad </h5>
-							<a href="#" class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Green salad</h4>
+							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -98,22 +98,22 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Tabula</h5>
-							<a href="#" class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Tabula</h4>
+							<a  class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Greek Salad</h5>
-							<a href="#" class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Greek Salad</h4>
+							<a  class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -134,33 +134,33 @@
             <div class="row-xs-12">
                 <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Hummus</h5>
-							<a href="#" class="btn btn-success" id="add" value="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Hummus</h4>
+							<a class="btn btn-success" id="add" value="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
                 <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Moutabil</h5>
-							<a href="#" class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Moutabil</h4>
+							<a class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
                 <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Coleslaw</h5>
-							<a href="#" class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Coleslaw</h4>
+							<a class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -169,22 +169,22 @@
 
                 <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title"> Mix olives</h5>
-							<a href="#" class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Mix olives</h4>
+							<a  class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
                 <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Jagic</h5>
-							<a href="#" class="btn btn-success" id="add" value="10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger" id="minus" value="10"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<h4 class="card-title">Jagic</h4>
+							<a class="btn btn-success" id="add" value="10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="10"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
