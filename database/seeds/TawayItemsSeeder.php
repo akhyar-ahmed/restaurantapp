@@ -3,7 +3,7 @@
 use App\Model\TawayItems;
 use Illuminate\Database\Seeder;
 
-class TawayItemsSeeder extends Seeder
+class TawayItemsSeeder extends Seeder 
 {
     /**
      * Run the database seeds.
@@ -17,31 +17,31 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Fresh Orange Juice",
                 'category' => "Fresh Juice",
-                'base_price' => '3.00'
+                'base_price' => '2.80'
             ],
 
             [
                 'name' => "Fresh Carrot Juice",
                 'category' => "Fresh Juice",
-                'base_price' => '3.00'
+                'base_price' => '2.80'
             ],
 
             [
                 'name' => "Fresh Apple Juice",
                 'category' => "Fresh Juice",
-                'base_price' => '3.00'
+                'base_price' => '2.80'
             ],
 
             [
                 'name' => "Fresh Lemonade",
                 'category' => "Fresh Juice",
-                'base_price' => '3.00'
+                'base_price' => '2.80'
             ],
 
             [
                 'name' => "Mix Fresh Juice",
                 'category' => "Fresh Juice",
-                'base_price' => '3.00'
+                'base_price' => '2.80'
             ],
 
             [
@@ -76,61 +76,61 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Coffie Latte",
                 'category' => "Coffie",
-                'base_price' => '2.00'
+                'base_price' => '1.95'
             ],
 
             [
                 'name' => "Cappuccino",
                 'category' => "Coffie",
-                'base_price' => '2.00'
+                'base_price' => '1.95'
             ],
 
             [
                 'name' => "American Coffie",
                 'category' => "Coffie",
-                'base_price' => '2.00'
+                'base_price' => '1.95'
             ],
 
             [
                 'name' => "Espresso Coffie",
                 'category' => "Coffie",
-                'base_price' => '2.00'
+                'base_price' => '1.95'
             ],
 
             [
                 'name' => "Hot Chocolate",
                 'category' => "Coffie",
-                'base_price' => '2.00'
+                'base_price' => '1.95'
             ],
 
             [
                 'name' => "Banana Shake",
                 'category' => "Milkshake",
-                'base_price' => '2.50'
+                'base_price' => '2.80'
             ],
 
             [
                 'name' => "Strawberry Shake",
                 'category' => "Milkshake",
-                'base_price' => '2.50'
+                'base_price' => '2.80'
             ],
 
             [
                 'name' => "Chocolate Shake",
                 'category' => "Milkshake",
-                'base_price' => '2.50'
+                'base_price' => '2.80'
             ],
 
             [
                 'name' => "Ice cream Funnel Shake",
                 'category' => "Milkshake",
-                'base_price' => '2.50'
+                'base_price' => '2.80'
             ],
 
             [
                 'name' => "Orio Milk Shake",
                 'category' => "Milkshake",
-                'base_price' => '2.50'
+                'base_price' => '2.80'
             ],
 
             [
@@ -215,7 +215,7 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Lamb Shawarma Wrap",
                 'category' => "Wrap",
-                'base_price' => '4.99'
+                'base_price' => '4.50'
             ],
 
             [
@@ -234,6 +234,12 @@ class TawayItemsSeeder extends Seeder
                 'name' => "Lamb Shish Kebab Wrap",
                 'category' => "Wrap",
                 'base_price' => '5.50'
+            ],
+
+            [
+                'name' => "Mix Shawarma Wrap",
+                'category' => "Wrap",
+                'base_price' => '4.50'
             ],
 
             [
@@ -266,13 +272,13 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Beef Burger Regular",
                 'category' => "Burgers",
-                'base_price' => '5.50'
+                'base_price' => '4.50'
             ],
 
             [
                 'name' => "Beef Burger Large",
                 'category' => "Burgers",
-                'base_price' => '6.99'
+                'base_price' => '5.99'
             ],
 
             [
@@ -302,7 +308,7 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Lamb Curry",
                 'category' => "Curry",
-                'base_price' => '5.99'
+                'base_price' => '6.50'
             ],
 
             [
@@ -314,13 +320,13 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Okra Curry",
                 'category' => "Curry",
-                'base_price' => '5.99'
+                'base_price' => '5.50'
             ],
 
             [
                 'name' => " Beans Curry",
                 'category' => "Curry",
-                'base_price' => '5.99'
+                'base_price' => '5.50'
             ],
 
             [
@@ -338,7 +344,7 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Chicken Shish Kebab large",
                 'category' => "Grilled",
-                'base_price' => '7.50'
+                'base_price' => '7.99'
             ],
 
             [
@@ -350,25 +356,25 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Lamb Shish Kebab large",
                 'category' => "Grilled",
-                'base_price' => '7.99'
+                'base_price' => '8.99'
             ],
 
             [
                 'name' => "Kofta Kebab Regular",
                 'category' => "Grilled",
-                'base_price' => '4.99'
+                'base_price' => '5.50'
             ],
 
             [
                 'name' => "Kofta Kebab large",
                 'category' => "Grilled",
-                'base_price' => '6.99'
+                'base_price' => '7.99'
             ],
 
             [
                 'name' => "Mixed Shish Kebab Large",
                 'category' => "Grilled",
-                'base_price' => '7.99'
+                'base_price' => '8.99'
             ],
 
             [
@@ -399,6 +405,12 @@ class TawayItemsSeeder extends Seeder
                 'name' => "Halloumi Aubergine",
                 'category' => "Grilled",
                 'base_price' => '4.99'
+            ],
+
+            [
+                'name' => "Large Mix Grill",
+                'category' => "Grilled",
+                'base_price' => '21.99'
             ],
 
             [
@@ -596,31 +608,31 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Hummus",
                 'category' => "Cold mezze",
-                'base_price' => '2.50'
+                'base_price' => '2.99'
             ],
 
             [
                 'name' => "Moutabil",
                 'category' => "Cold mezze",
-                'base_price' => '2.50'
+                'base_price' => '2.99'
             ],
 
             [
                 'name' => "Coleslaw",
                 'category' => "Cold mezze",
-                'base_price' => '2.50'
+                'base_price' => '2.99'
             ],
 
             [
                 'name' => "Mix olives",
                 'category' => "Cold mezze",
-                'base_price' => '2.50'
+                'base_price' => '2.99'
             ],
 
             [
                 'name' => "Jagic",
                 'category' => "Cold mezze",
-                'base_price' => '2.50'
+                'base_price' => '2.99'
             ],
 
             [
@@ -1220,13 +1232,19 @@ class TawayItemsSeeder extends Seeder
             [
                 'name' => "Cakes",
                 'category' => "Desserts",
-                'base_price' => '34.99'
+                'base_price' => '2.95'
             ],
 
             [
-                'name' => "Ice creams",
+                'name' => "Ice cream",
                 'category' => "Ice creams",
-                'base_price' => '39.99'
+                'base_price' => '2.80'
+            ],
+
+            [
+                'name' => "Ice cream Fruits salad ",
+                'category' => "Ice creams",
+                'base_price' => '4.80'
             ]
 
 

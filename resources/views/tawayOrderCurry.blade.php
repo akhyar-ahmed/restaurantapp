@@ -115,7 +115,7 @@
 							<a  class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
-				</div>
+				</div> 
 
 				<div class="col-xs-4">
 					<div class="card">

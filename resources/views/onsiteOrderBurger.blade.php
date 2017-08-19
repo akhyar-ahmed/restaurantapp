@@ -1,99 +1,117 @@
 @extends('main')
 
-@section('title', "| TakeAway-Orders ")
+@section('title', "| OnSite-Orders ")
 
 @section('content')
+
 <div class="container">
-    <div class = "page-header container col-xs-12 form-group">
-		<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Your Customer Order Here)</h3>
+<div class = "page-header container col-xs-12 form-group">
+	<div class = "col-xs-10">
+		<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Take-Away Orders)</h3>
+	</div>
+	<div class = "col-xs-2"  >
+		<a href= "{{ route('taway-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
+	</div>
 	</div>
 
 	<div id="result" class = "container form-group col-xs-12">
-    
-    </div>
+
+	</div>
     <div class="card text-center">
         <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs" >
-            <li class="nav-item" id="mitem">
-                <a class="OItem" href="#" style="color:white" id="0">Drinks</a>
-            </li>
-            <li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="1">Dessert & Ice Cream</a>
-            </li>
-            <li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="2">Sides</a>
-            </li>
+			<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="3">Pizza</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white" id = "0">Drinks</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="4">Curry</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" id = "1">Dessert & Ice Cream</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="5">Shawarma</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" id = "2">Sides</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="6">Wrap</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" id="3">Pizza</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="7">Burgers</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" id="4">Curry</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="8">Grilled</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" id="5">Shawarma</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="9"> Salads & cold Mezze</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" id="6">Wrap</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="10">Special deals</a>
-            </li>
-            </ul><ul class="nav nav-tabs card-header-tabs" >
-            <li class="nav-item" id="mitem">
-                <a class="OItem" href="#" style="color:white" id="0">Drinks</a>
-            </li>
-            <li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="1">Dessert & Ice Cream</a>
-            </li>
-            <li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="2">Sides</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" id="7">Burgers</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="3">Pizza</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" id="8">Grilled</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="4">Curry</a>
-            </li>
+				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" id="9"> Salads & cold Mezze</a>
+			</li>
 			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="5">Shawarma</a>
-            </li>
-			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="6">Wrap</a>
-            </li>
-			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="7">Burgers</a>
-            </li>
-			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="8">Grilled</a>
-            </li>
-			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="9"> Salads & cold Mezze</a>
-            </li>
-			<li class="nav-item">
-                <a class="OItem" href="#" style="color:white" id="10">Special deals</a>
-            </li>
-            </ul>
+				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" id="10">Special deals</a>
+			</li>
+			</ul>
         </div>
 		<br>
         <div class="container card-block">
 
 			<h3 align="left"><u>Burgers</u></h3><br/>
+			
+			<div class="row-xs-12" >
+				<div class="col-xs-4">
+					<div class="card" >
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Chicken Zinger</h4>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
+							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Fish burger</h4>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
+							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Veg burger</h4>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                            </div>
+							<a  class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
 			<div class="row-xs-12" >
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="Card image cap">
+						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h5 class="card-title">Beef burger</h5>
+							<h4 class="card-title">Beef burger</h4>
                                     <div class="radio-inline">
                                         <label><input type="radio" name="optradio">Regular</label>
                                     </div>
@@ -103,17 +121,17 @@
                                     <div class="checkbox">
                                         <label><input type="checkbox" value="">Add Chips Drinks</label>
                                     </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+									<a  class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+									<a  class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
+						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Chicken fillet burger</h5>
+							<h4 class="card-title">Chicken fillet</h4>
                                 <div class="radio-inline">
                                     <label><input type="radio" name="optradio">Regular</label>
                                 </div>
@@ -123,55 +141,11 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">Add Chips Drinks</label>
                                 </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-xs-2">
-					<div class="card" >
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Chicken Zinger Burger</h5>
-                            <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
-                            </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Fish burger</h5>
-                            <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
-                            </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-2">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-block">
-							<h5 class="card-title">Veg burger</h5>
-                            <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
-                            </div>
-							<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-				
 			</div>
 
 			
@@ -192,6 +166,19 @@
 @push('scripts')
 <script>
 	$(document).ready(function(){
+		$('a').click(function(){
+			var id = $(this).attr('id');
+			var val = $(this).attr('value');
+			if( id == "add"){
+				alert(id+" "+val);
+				
+
+			}
+			else if( id == "minus"){
+				alert(id+" "+val);
+			}
+		});
+
 		$('#search_text').keyup(function(){
 			var txt = $(this).val();
 			if( txt != '') {

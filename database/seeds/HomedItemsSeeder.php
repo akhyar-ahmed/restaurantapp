@@ -24,7 +24,7 @@ class HomedItemsSeeder extends Seeder
             [
                 'name' => "Lamb Shawarma Wrap",
                 'category' => "Wrap",
-                'base_price' => '5.99'
+                'base_price' => '5.50'
             ],
 
             [
@@ -46,6 +46,12 @@ class HomedItemsSeeder extends Seeder
             ],
 
             [
+                'name' => "Mix Shawarma Wrap",
+                'category' => "Wrap",
+                'base_price' => '5.50'
+            ],
+
+            [
                 'name' => "Additional",
                 'category' => "Wrap",
                 'base_price' => '2.00'
@@ -54,13 +60,13 @@ class HomedItemsSeeder extends Seeder
             [
                 'name' => "Beef Burger Regular",
                 'category' => "Burgers",
-                'base_price' => '6.50'
+                'base_price' => '5.50'
             ],
 
             [
                 'name' => "Beef Burger Large",
                 'category' => "Burgers",
-                'base_price' => '7.99'
+                'base_price' => '6.99'
             ],
 
             [
@@ -110,7 +116,7 @@ class HomedItemsSeeder extends Seeder
             [
                 'name' => "Lamb Curry",
                 'category' => "Curry",
-                'base_price' => '6.99'
+                'base_price' => '7.50'
             ],
 
             [
@@ -122,43 +128,43 @@ class HomedItemsSeeder extends Seeder
             [
                 'name' => "Okra Curry",
                 'category' => "Curry",
-                'base_price' => '6.99'
+                'base_price' => '6.50'
             ],
 
             [
                 'name' => " Beans Curry",
                 'category' => "Curry",
-                'base_price' => '6.99'
+                'base_price' => '6.50'
             ],
             
             [
                 'name' => "Chicken Shish Kebab Regular",
                 'category' => "Grilled",
-                'base_price' => '6.50'
+                'base_price' => '7.99'
             ],
 
             [
                 'name' => "Chicken Shish Kebab large",
                 'category' => "Grilled",
-                'base_price' => '8.50'
+                'base_price' => '7.99'
             ],
 
             [
                 'name' => "Lamb Shish Kebab Regular",
                 'category' => "Grilled",
-                'base_price' => '6.99'
+                'base_price' => '8.50'
             ],
 
             [
                 'name' => "Lamb Shish Kebab large",
                 'category' => "Grilled",
-                'base_price' => '8.99'
+                'base_price' => '8.50'
             ],
 
             [
                 'name' => "Kofta Kebab Regular",
                 'category' => "Grilled",
-                'base_price' => '5.99'
+                'base_price' => '7.99'
             ],
 
             [
@@ -170,11 +176,11 @@ class HomedItemsSeeder extends Seeder
             [
                 'name' => "Mixed Shish Kebab Large",
                 'category' => "Grilled",
-                'base_price' => '8.99'
+                'base_price' => '9.99'
             ],
 
             [
-                'name' => "Mixed Grilled large",
+                'name' => "Mixed Grilled",
                 'category' => "Grilled",
                 'base_price' => '12.99'
             ],
@@ -203,6 +209,7 @@ class HomedItemsSeeder extends Seeder
                 'base_price' => '5.99'
             ],
 
+
             [
                 'name' => "Chicken shawarma",
                 'category' => "Shawarma",
@@ -212,7 +219,7 @@ class HomedItemsSeeder extends Seeder
             [
                 'name' => "Lamb shawarma",
                 'category' => "Shawarma",
-                'base_price' => '6.50'
+                'base_price' => '6.99'
             ],            
 
             [
@@ -231,6 +238,12 @@ class HomedItemsSeeder extends Seeder
                 'name' => "shawarma special",
                 'category' => "Shawarma",
                 'base_price' => '6.50'
+            ],
+
+            [
+                'name' => "Mix Shawarma",
+                'category' => "Shawarma",
+                'base_price' => '6.99'
             ],
 
             [
@@ -266,7 +279,7 @@ class HomedItemsSeeder extends Seeder
             [
                 'name' => "Fried mushrooms",
                 'category' => "Sides",
-                'base_price' => '3.0'
+                'base_price' => '3.00'
             ],
 
             [
@@ -302,7 +315,7 @@ class HomedItemsSeeder extends Seeder
             [
                 'name' => "Rice",
                 'category' => "Sides",
-                'base_price' => '3.90'
+                'base_price' => '3.99'
             ],
 
             [
@@ -392,31 +405,643 @@ class HomedItemsSeeder extends Seeder
             [
                 'name' => "Hummus",
                 'category' => "Cold mezze",
-                'base_price' => '2.99'
+                'base_price' => '3.50'
             ],
 
             [
                 'name' => "Moutabil",
                 'category' => "Cold mezze",
-                'base_price' => '2.99'
+                'base_price' => '3.50'
             ],
 
             [
                 'name' => "Coleslaw",
                 'category' => "Cold mezze",
-                'base_price' => '2.99'
+                'base_price' => '3.50'
             ],
 
             [
                 'name' => "Mix olives",
                 'category' => "Cold mezze",
-                'base_price' => '2.99'
+                'base_price' => '3.50'
             ],
 
             [
                 'name' => "Jagic",
                 'category' => "Cold mezze",
-                'base_price' => '2.99'
+                'base_price' => '3.50'
+            ],
+
+            [
+                'name' => "Margherita Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '.99'
+            ],
+
+            [
+                'name' => "Margherita Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '5.99'
+            ],
+
+            [
+                'name' => "Margherita Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.00'
+            ],
+
+            [
+                'name' => "Margherita Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '10'
+            ],
+
+            [
+                'name' => "Free Choice Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Free Choice Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Free Choice Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Free Choice Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Hawaiian Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Hawaiian Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Hawaiian Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Hawaiian Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Classic Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Classic Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Classic Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Classic Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "American Hot Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "American Hot Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "American Hot Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "American Hot Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "BBQ Feast Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "BBQ Feast Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "BBQ Feast Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "BBQ Feast Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "BBQ Chicken Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "BBQ Chicken Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "BBQ Chicken Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "BBQ Chicken Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Chicken Supreme Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Chicken Supreme Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Chicken Supreme Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Chicken Supreme Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Vegetarian Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Vegetarian Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Vegetarian Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Vegetarian Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Vegetarian hot Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Vegetarian hot Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Vegetarian hot Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Vegetarian hot Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Vegetarian Sweet Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Vegetarian Sweet Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Vegetarian Sweet Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Vegetarian Sweet Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Meat Lovers Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Meat Lovers Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Meat Lovers Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Meat Lovers Pizzaa 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Pepperoni Plus Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Pepperoni Plus Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Pepperoni Plus Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Pepperoni Plus Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Pepperoni Lovers Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Pepperoni Lovers Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Pepperoni Lovers Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Pepperoni Lovers Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Seafood Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Seafood Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Seafood Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Seafood Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Arian Special Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Arian Special Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Arian Special Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Arian Special Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Spinach Lovers Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Spinach Lovers Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Spinach Lovers Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Spinach Lovers Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Arian Continental Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Arian Continental Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Arian Continental Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Arian Continental Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Beefeater Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Beefeater Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Beefeater Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Beefeater Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "New York Style Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "New York Style Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "New York Style Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "New York Style Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Chicken Hot Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Chicken Hot Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Chicken Hot Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Chicken Hot Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Maxican Hot Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Maxican Hot Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Maxican Hot Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Mexican Hot Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Chicken Donner Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Chicken Donner Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Chicken Donner Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Chicken Donner Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Lamb Donner Pizza 7",
+                'category' => "Pizza",
+                'base_price' => '5.00'
+            ],
+
+            [
+                'name' => "Lamb Donner Pizza 9",
+                'category' => "Pizza",
+                'base_price' => '7.00'
+            ],
+
+            [
+                'name' => "Lamb Donner Pizza 12",
+                'category' => "Pizza",
+                'base_price' => '9.99'
+            ],
+
+            [
+                'name' => "Lamb Donner Pizza 15",
+                'category' => "Pizza",
+                'base_price' => '12.99'
+            ],
+
+            [
+                'name' => "Daily deal ",
+                'category' => "Special deals",
+                'base_price' => '5.50'
+            ],
+
+            [
+                'name' => "Family platter",
+                'category' => "Special deals",
+                'base_price' => '39.99'
+            ],
+
+            [
+                'name' => "Mix grill family deal",
+                'category' => "Special deals",
+                'base_price' => '44.99'
+            ],
+
+            [
+                'name' => "Cakes",
+                'category' => "Desserts",
+                'base_price' => '3.20'
+            ],
+
+            [
+                'name' => "Ice creams",
+                'category' => "Ice creams",
+                'base_price' => '3.30'
+            ],
+
+            [
+                'name' => "Ice cream Fruits salad ",
+                'category' => "Ice creams",
+                'base_price' => '5.30'
             ]
 
         ];

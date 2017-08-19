@@ -133,6 +133,19 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-xs-4">
+					<div class="card" >
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Mix Shawarma Wrap</h4>
+                                <div class="checkbox">
+								<label><input type="checkbox" value="">Add Chips Drinks</label>
+                                </div>
+							<a class="btn btn-success" id="add" value="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			
