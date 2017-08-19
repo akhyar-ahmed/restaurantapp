@@ -1,6 +1,6 @@
 @extends('main')
 
-@section('title', "| OnSite-Orders ")
+@section('title', "| TakeAway-Orders ")
 
 @section('content')
 <div class="container">
@@ -17,9 +17,7 @@
 
 	</div>
     <div class="card text-center">
-
         <div class="card-header">
-		
 			<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
 				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white" id = "0">Drinks</a>
@@ -68,13 +66,13 @@
 						<div class="card-block">
 							<h4 class="card-title">Chicken shish kebab</h4>
 								<div class="radio-inline">
-                                    <label><input type="radio" name="optradio">Regular</label>
+                                    <label><input type="radio" name="optradio" value="1">Regular</label>
                                 </div>
                                 <div class="radio-inline">
-                                    <label><input type="radio" name="optradio">Large</label>
+                                    <label><input type="radio" name="optradio" value="2">Large</label>
                                 </div>
-							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="A"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="A"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -85,13 +83,13 @@
 						<div class="card-block">
 							<h4 class="card-title">Lamb shish kebab</h4>
 								<div class="radio-inline">
-                                    <label><input type="radio" name="optradio">Regular</label>
+                                    <label><input type="radio" name="optradio" value="3">Regular</label>
                                 </div>
                                 <div class="radio-inline">
-                                    <label><input type="radio" name="optradio">Large</label>
+                                    <label><input type="radio" name="optradio" value="4">Large</label>
                                 </div>
-							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="B"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -102,13 +100,13 @@
 						<div class="card-block">
 							<h4 class="card-title">Kofta kebab</h4>
 								<div class="radio-inline">
-                                    <label><input type="radio" name="optradio">Regular</label>
+                                    <label><input type="radio" name="optradio" value="5">Regular</label>
                                 </div>
                                 <div class="radio-inline">
-                                    <label><input type="radio" name="optradio">Large</label>
+                                    <label><input type="radio" name="optradio" value="6">Large</label>
                                 </div>
-							<a  class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="C"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="C"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -119,8 +117,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Mix shish kebab (Large)</h4>
-							<a  class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -130,8 +128,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Mix Grill kebab</h4>
-							<a  class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -141,40 +139,6 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Large mix grill</h4>
-							<a  class="btn btn-success" id="add" value="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row-xs-12">
-                <div class="col-xs-4">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="">
-						<div class="card-block">
-							<h4 class="card-title">Full chicken grill</h4>
-							<a  class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-                <div class="col-xs-4">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="">
-						<div class="card-block">
-							<h4 class="card-title">Half  chicken grilled</h4>
-							<a  class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-
-                <div class="col-xs-4">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="">
-						<div class="card-block">
-							<h4 class="card-title">Grilled salmon</h4>
 							<a  class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -186,9 +150,43 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Grilled Salmon</h4>
+							<h4 class="card-title">Full chicken grill</h4>
 							<a  class="btn btn-success" id="add" value="10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="10"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Half  chicken grilled</h4>
+							<a  class="btn btn-success" id="add" value="11"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="11"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Grilled salmon</h4>
+							<a  class="btn btn-success" id="add" value="12"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="12"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-xs-12">
+                <div class="col-xs-4">
+					<div class="card">
+						<img class="card-img-top" src="..." alt="">
+						<div class="card-block">
+							<h4 class="card-title">Grilled Salmon</h4>
+							<a  class="btn btn-success" id="add" value="13"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="13"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -197,8 +195,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Halloumi aubergine</h4>
-							<a  class="btn btn-success" id="add" value="11"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="11"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="14"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="14"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -207,8 +205,8 @@
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Large Mix Grill</h4>
-							<a  class="btn btn-success" id="add" value="12"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="12"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="15"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="15"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>

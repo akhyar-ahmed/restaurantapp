@@ -113,16 +113,16 @@
 						<div class="card-block">
 							<h4 class="card-title">Beef burger</h4>
                                     <div class="radio-inline">
-                                        <label><input type="radio" name="optradio">Regular</label>
+                                        <label><input type="radio" name="optradio" value="4">Regular</label>
                                     </div>
                                     <div class="radio-inline">
-                                        <label><input type="radio" name="optradio">Large</label>
+                                        <label><input type="radio" name="optradio" value="5">Large</label>
                                     </div>
                                     <div class="checkbox">
                                         <label><input type="checkbox" value="">Add Chips Drinks</label>
                                     </div>
-									<a  class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-									<a  class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+									<a  class="btn btn-success" id="add" value="A"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+									<a  class="btn btn-danger" id="minus" value="A"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -133,16 +133,16 @@
 						<div class="card-block">
 							<h4 class="card-title">Chicken fillet</h4>
                                 <div class="radio-inline">
-                                    <label><input type="radio" name="optradio">Regular</label>
+                                    <label><input type="radio" name="optradio" value="6">Regular</label>
                                 </div>
                                 <div class="radio-inline">
-                                    <label><input type="radio" name="optradio">Large</label>
+                                    <label><input type="radio" name="optradio" value="7">Large</label>
                                 </div>
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">Add Chips Drinks</label>
                                 </div>
-							<a  class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a  class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="B"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
