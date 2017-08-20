@@ -50,13 +50,13 @@
 		</table>
 	</div>
 	<div class="container form-group col-xs-12 ">
-		<form method="POST" action="#">
+		<form method="POST" action="{{ route('confirm-order') }}">
 			<div class = "form-group col-xs-2">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 				<input type="submit" name="submit" value="Confirm" class="btn btn-success btn-md">
 			</div>	
 			<div class = "form-group col-xs-1"> 
-				<a  href = "{{ route('newsale.clear') }}" class="btn btn-danger btn-md" role = "button">Cancel</a>
+				<a  href = "{{ route('order-clear') }}" class="btn btn-danger btn-md" role = "button">Cancel</a>
             </div>
 
 		</form>

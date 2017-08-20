@@ -16,19 +16,14 @@ class CreateTawayOrdersTable extends Migration
         Schema::create('tawayOrders', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->integer('customer_id')->unsigned();
-            $table->integer('category_id');
             $table->integer('total_item');
+            $table->double('grand_total',10,3);
             $table->integer('is_paid');
             $table->timestamps();
 
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users')->onDelete('cascade');
-            
-            $table->foreign('customer_id')
-                ->references('id')
-                ->on('customers')->onDelete('cascade');
             
         });
     }

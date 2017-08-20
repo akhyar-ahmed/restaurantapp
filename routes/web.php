@@ -87,5 +87,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/taway-orders/preview','TawayOrderController@preview')->name('taway-orders-preview');
     Route::post('/taway-orders/add-drinks','OnlineSalerecordController@addDrinks');
     Route::post('/taway-orders/delete-drinks','OnlineSalerecordController@deleteDrinks');
+    Route::post('/taway-orders/condirm-drinks','tawayOrderController@confirmOrder')->name('confirm-order');
+    Route::get('/taway-orders/allDeletge-drinks','OnlineSalerecordController@deleteOrder')->name('order-clear');
 
 });

@@ -7,6 +7,8 @@ use Auth;
 use App\User;
 use App\Model\Salerecords;
 use App\Model\TawayItems;
+use App\Model\TawayOrders;
+use App\Model\TawayOrderManipulations;
 use Session;
 
 
@@ -72,6 +74,25 @@ class TawayOrderController extends Controller
 
         
     }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+     public function confirmOrder(Request $request){
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+        else{
+            return redirect()->route('logout');        
+        }
+        $orderItems = Salerecords::where('user_id', '=', $id)->get();
+        return $orderItems;
+        
+     }
 
     /**
      * Show the form for creating a new resource.

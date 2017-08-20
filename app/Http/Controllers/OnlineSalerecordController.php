@@ -107,7 +107,7 @@ class OnlineSalerecordController extends Controller
         
     }
 
-/**
+    /**
      * Show the form for creating a new resource.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -154,10 +154,9 @@ class OnlineSalerecordController extends Controller
                 }
 
             }
-        }
-    
-        
+        }    
     }
+
 
 
     /**
