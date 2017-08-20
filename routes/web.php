@@ -88,6 +88,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/taway-orders/add-drinks','OnlineSalerecordController@addDrinks');
     Route::post('/taway-orders/delete-drinks','OnlineSalerecordController@deleteDrinks');
     Route::post('/taway-orders/condirm-drinks','tawayOrderController@confirmOrder')->name('confirm-order');
-    Route::get('/taway-orders/allDeletge-drinks','OnlineSalerecordController@deleteOrder')->name('order-clear');
+    Route::get('/taway-orders/allDelet-drinks','OnlineSalerecordController@deleteUserOrder')->name('order-clear');
 
 });

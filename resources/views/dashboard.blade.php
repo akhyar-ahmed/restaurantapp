@@ -117,8 +117,7 @@
                                     <th> # </th>
                                     <th> User Name </th>
                                     <th> Total Items </th>
-                                    <th> Customer Name </th>
-                                    <th> Customer Address </th>
+                                    <th> Grand Total </th>
                                     <th> Enrollement Time </th>
                                     <th> Action </th>
                                 </tr>
@@ -129,8 +128,7 @@
                                         <td> # </td>
                                         <td> {{ $takeAwayName[$ind]->name }} </td>
                                         <td> {{ $orders->total_item }} </td>
-                                        <td> {{ $takeAwayCusName[$ind]->name }} </td>
-                                        <td> {{ $takeAwayCusName[$ind]->address }} </td>
+                                        <td>£ {{ $orders->grand_total }} </td>
                                         <td> {{ $orders->updated_at }} </td>
                                         <td>
                                             <a href="#" class="btn btn-success btn-xs"> Approve </a>

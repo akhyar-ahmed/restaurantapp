@@ -384,15 +384,11 @@ class OnlineSalerecordController extends Controller
 
         foreach($order as $order) {
 
-            $item = Items::find($order->item_id);
-            $item->stock += $order->quantity;
-
-            $item->save();
             $order->delete();
         }
 
         Session::flash('success', ' Order Cancelled Successfully !!');
 
-        return redirect()->route('online.order');
+        return redirect()->route('taway-orders');
     }
 }

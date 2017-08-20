@@ -82,6 +82,7 @@ class TawayOrderController extends Controller
      * @return \Illuminate\Http\Response
      */
      public function confirmOrder(Request $request){
+       
         if (Auth::check())
         {
             $id = Auth::user()->getId();
@@ -89,9 +90,44 @@ class TawayOrderController extends Controller
         else{
             return redirect()->route('logout');        
         }
+       
         $orderItems = Salerecords::where('user_id', '=', $id)->get();
-        return $orderItems;
+       // return $orderItems;
+        $total_item;
+        $grand_total=0;
+       
+        foreach($orderItems as $indx=>$order){
+            $total_item=$indx;
+            $grand_total+=$order->total;
+
+        }
+       
+        $total_item++;
+        //return $grand_total;
+       
+        $tawayOrder = new TawayOrders;
+        $tawayOrder->user_id = $id;
+        $tawayOrder->total_item = $total_item; 
+        $tawayOrder->grand_total = $grand_total;
+        $tawayOrder->is_paid = 0;
         
+        $tawayOrder->save();
+        foreach($orderItems as $indx=>$order){
+            $tawayMani = new TawayOrderManipulations;
+
+            $tawayMani->order_id = $tawayOrder->id;
+            $tawayMani->food_name = $order->food_name;
+            $tawayMani->quantity = $order->quantity;
+            $tawayMani->base_price = $order->base_price;
+            $tawayMani->net_total = $order->total; 
+            $tawayMani->save();
+            $order->delete();
+        }
+       
+        Session::flash('success', ' Take-Away Order Enrolled Successfully !!');
+       
+        return $this->index();
+
      }
 
     /**
