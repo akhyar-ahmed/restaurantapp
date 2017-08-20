@@ -67,22 +67,22 @@
 						<div class="card-block">
 						<h4 class="card-title">Cake</h4>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">White fruits</label>
+                                <label><input type="checkbox" name = "cake" value="1">White fruits</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Choco choco cream</label>
+                                <label><input type="checkbox" name = "cake" value="2">Choco choco cream</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Tarte strawberry</label>
+                                <label><input type="checkbox" name = "cake" value="3">Tarte strawberry</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Termeso</label>
+                                <label><input type="checkbox" name = "cake" value="4">Termeso</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Chocolate fudge cake</label>
+                                <label><input type="checkbox" name = "cake" value="5">Chocolate fudge cake</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Cheesecake</label>
+                                <label><input type="checkbox" name = "cake" value="6">Cheesecake</label>
                             </div><br>
                             <a  class="btn btn-success" id="add" value="A"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
                             <a  class="btn btn-danger" id="minus" value="A"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -105,16 +105,16 @@
 						<div class="card-block">
 							<h4 class="card-title">Ice Creams</h4>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Chocolate ice cream</label>
+                                <label><input type="checkbox" name = "ice-creams" value="1">Chocolate ice cream</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value=""> Banana funnel ice cream </label>
+                                <label><input type="checkbox" name = "ice-creams" value="2"> Banana funnel ice cream </label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Kiwi ice cream</label>
+                                <label><input type="checkbox" name = "ice-creams" value="3">Kiwi ice cream</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Venilla ice cream</label>
+                                <label><input type="checkbox" name = "ice-creams" value="4">Venilla ice cream</label>
                             </div>
                             <br>
                             <a  class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
