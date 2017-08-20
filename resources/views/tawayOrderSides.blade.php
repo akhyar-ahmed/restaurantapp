@@ -224,25 +224,25 @@
 						<div class="card-block">
 							<h4 class="card-title">Dips</h4>
 								<label class="checkbox-inline">
-									<input type="checkbox" value="">Garlic
+									<input type="checkbox" name="dips" value="1">Garlic
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" value="">mayonnaise
+									<input type="checkbox" name="dips" value="2">mayonnaise
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" value="">Catchup
+									<input type="checkbox" name="dips" value="3">Catchup
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" value="">tartar
+									<input type="checkbox" name="dips" value="4">tartar
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" value="">Burger sauce
+									<input type="checkbox" name="dips" value="5">Burger sauce
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" value="">chilli
+									<input type="checkbox" name="dips" value="6">chilli
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" value="">Sweet chilli
+									<input type="checkbox" name="dips" value="7">Sweet chilli
 								</label><br>
 							<a class="btn btn-success" id="add" value="14"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="14"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>

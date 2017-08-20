@@ -67,7 +67,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Chicken Zinger</h4>
                             <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                                    <label><input type="checkbox" value="chips">Add Chips Drinks</label>
                             </div>
 							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -81,7 +81,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Fish burger</h4>
                             <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                                    <label><input type="checkbox" value="chips">Add Chips Drinks</label>
                             </div>
 							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -95,7 +95,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Veg burger</h4>
                             <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                                    <label><input type="checkbox" value="chips">Add Chips Drinks</label>
                             </div>
 							<a  class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -119,7 +119,7 @@
                                         <label><input type="radio" name="optradio" value="5">Large</label>
                                     </div>
                                     <div class="checkbox">
-                                        <label><input type="checkbox" value="">Add Chips Drinks</label>
+                                        <label><input type="checkbox" value="chips">Add Chips Drinks</label>
                                     </div>
 									<a  class="btn btn-success" id="add" value="A"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 									<a  class="btn btn-danger" id="minus" value="A"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -139,7 +139,7 @@
                                     <label><input type="radio" name="optradio" value="7">Large</label>
                                 </div>
                                 <div class="checkbox">
-                                    <label><input type="checkbox" value="">Add Chips Drinks</label>
+                                    <label><input type="checkbox" value="chips">Add Chips Drinks</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="B"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
