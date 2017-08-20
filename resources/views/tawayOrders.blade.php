@@ -578,7 +578,114 @@
 
 			}
 			else if( id == "minus"){
-				alert(id+" "+val);
+				if(val != "A" && val !="B" && val != "C" && val!="D" ){
+					$.ajaxSetup({
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+					$.ajax({
+						url: "/taway-orders/delete-drinks",
+						method: "POST",
+						data: {
+							item:val
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+					
+				}
+				else{
+					
+					var inputVal = $('input:radio[name=radio]:checked').val();
+					//alert(inputVal+" "+val);
+					//alert($('input:radio[name=optradio]:checked').val());
+					if( (inputVal=="21" || inputVal=="22") && val == "A"){
+						//alert($('input:radio[name=radio]:checked').val());
+
+						$.ajaxSetup({
+							headers: {
+									'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+								}
+							});
+
+						$.ajax({
+							url: "/taway-orders/delete-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+
+					}
+					else if( (inputVal=="23" || inputVal=="24") && val == "B"){
+						//alert($('input:radio[name=radio]:checked').val());
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+
+						$.ajax({
+							url: "/taway-orders/delete-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					else if( (inputVal=="25" || inputVal=="26") && val == "C"){
+						//alert($('input:radio[name=radio]:checked').val());
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/taway-orders/delete-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					else if( (inputVal=="29" || inputVal=="30") && val == "D"){
+						//alert($('input:radio[name=radio]:checked').val());
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/taway-orders/delete-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					else{
+						alert('Please Correctly Select Radio Button');
+					}
+				}
 			}
 		});
 

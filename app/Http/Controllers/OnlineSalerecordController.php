@@ -107,6 +107,59 @@ class OnlineSalerecordController extends Controller
         
     }
 
+/**
+     * Show the form for creating a new resource.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function deleteDrinks(Request $request)
+    {
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+        //return $request;
+        $item = TawayItems::where('category', '=', "Fresh Juice")
+                           ->orWhere('category', '=', "Tea")
+                           ->orWhere('category', '=', "Coffie")
+                           ->orWhere('category', '=', "Milkshake")
+                           ->orWhere('category', '=', "Soft Drinks")->get();
+        //return count($item);
+        foreach($item as $key=>$value){
+            if($request->item == $key+1) {
+                //return $value['name'];
+                $orderItem = Salerecords::where([
+                                                ['user_id','=', $id],
+                                                ['food_name','=',$value['name']]
+                ])->get();
+                //return count($orderItem);
+                if(count($orderItem)>0){
+                    
+                    foreach($orderItem as $order) {
+                        $item = Salerecords::find($order['id']);
+                        break;
+                    }
+                    //$item = Salerecords::find($orderItem['id']);
+                    $item->quantity -=1;
+                    $item->total = $item->quantity * $item->base_price;
+                    
+                    if($item->quantity <= 0)
+                        $item->delete();
+                    else
+                        $item->save();
+                    return 'success'; 
+                } else {
+                    return 'success, item not found';
+                }
+
+            }
+        }
+    
+        
+    }
+
+
     /**
      * Store a newly created resource in storage.
      *

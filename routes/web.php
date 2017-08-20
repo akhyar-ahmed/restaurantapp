@@ -86,5 +86,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/taway-orders/spdeals','TakeAwayItemController@spdeals')->name('taway-orders-spdeals'); 
     Route::get('/taway-orders/preview','TawayOrderController@preview')->name('taway-orders-preview');
     Route::post('/taway-orders/add-drinks','OnlineSalerecordController@addDrinks');
+    Route::post('/taway-orders/delete-drinks','OnlineSalerecordController@deleteDrinks');
 
 });
