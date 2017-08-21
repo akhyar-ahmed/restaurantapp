@@ -77,12 +77,12 @@
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="4">15" Super</label>
                                     </div>
-                                    
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">deep pan</label>
+                                    <hr>
+                                    <div class="radio">
+                                        <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                     </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">thin crust</label>
+                                    <div class="radio">
+                                        <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                     </div>
 							<a  class="btn btn-success" id="add" value="a"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="a"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -107,12 +107,12 @@
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="8">15" Super</label>
                                     </div>
-                                    
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">deep pan</label>
+                                    <hr>
+                                    <div class="radio">
+                                        <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                     </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">thin crust</label>
+                                    <div class="radio">
+                                        <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                     </div>
 							<a  class="btn btn-success" id="add" value="b"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="b"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -137,12 +137,12 @@
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="12">15" Super</label>
                                     </div>
-                                    
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">deep pan</label>
+                                    <hr>
+                                    <div class="radio">
+                                        <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                     </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">thin crust</label>
+                                    <div class="radio">
+                                        <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                     </div>
 							<a  class="btn btn-success" id="add" value="c"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="c"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -168,12 +168,12 @@
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="15">15" Super</label>
                                     </div>
-                                    
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">deep pan</label>
+                                    <hr>
+                                    <div class="radio">
+                                        <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                     </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">thin crust</label>
+                                    <div class="radio">
+                                        <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                     </div>
 							<a  class="btn btn-success" id="add" value="d"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="d"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -198,12 +198,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="20">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="e"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="e"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -228,12 +228,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="24">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" vaue="f"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="f"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -259,12 +259,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="28">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="g"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="g"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -289,12 +289,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="32">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="h"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="h"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -319,12 +319,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="36">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="i"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="i"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -353,12 +353,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="40">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="j"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="k"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -384,12 +384,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="44">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="k"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" va;ue="k"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -415,12 +415,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="48">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="l"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="l"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -447,12 +447,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio"value="52">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="m"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="m"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -477,12 +477,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="56">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="n"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" va;ue="n"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -508,12 +508,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="60">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="o"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="o"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -540,12 +540,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="64">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="p"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="p"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -571,12 +571,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="68">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="q"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="q"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -602,12 +602,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="72">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="r"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="r"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -633,12 +633,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="76">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="s"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="s"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -664,12 +664,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="80">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="t"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger"id="minus" value="t"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -696,12 +696,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="84">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="u"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="u"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -730,12 +730,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="88">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="v"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="v"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -761,12 +761,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="92">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="w"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" vaue="w"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -792,12 +792,12 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="96">15" Super</label>
                                 </div>
-                                
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">deep pan</label>
+                                <hr>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="">thin crust</label>
+                                <div class="radio">
+                                    <label><input type="radio"  name="radio1" value="thin">thin crust</label>
                                 </div>
 							<a  class="btn btn-success" id="add" value="x"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="x"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
