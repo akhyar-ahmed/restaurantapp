@@ -141,105 +141,52 @@
 
 @push('scripts')
 <script>
-	$(document).ready(function(){
-		$('a').click(function(){
-			var id = $(this).attr('id');
-			var val = $(this).attr('value');
-			if( id == "add"){
-				alert(id+" "+val);
-				
+$(document).ready(function(){
+	$('a').click(function(){
+		var id = $(this).attr('id');
+		var val = $(this).attr('value');
+		if( id == "add"){
+			alert(id+" "+val);
 
-			}
-			else if( id == "minus"){
-				alert(id+" "+val);
-			}
-		});
-
-		$('#search_text').keyup(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
+			$.ajaxSetup({
+				headers: {
 						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 					}
 				});
 				$.ajax({
-					url: "/food-orders/searchfood",
+					url: "/taway-orders/add-curry",
 					method: "POST",
 					data: {
-						search:txt
+						item:val
 						},
 					dataType: "text",
 					success: function(data){
-						$('#result').html(data);
+						console.log(data);
 					}
 				});
-
-			}
-			else {
-				$('#result').html('');
-
-				$.ajaxSetup({
-        		headers: {
+			
+		}
+		else if( id == "minus"){
+			alert(id+" "+val);
+			$.ajaxSetup({
+				headers: {
 						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 					}
 				});
 				$.ajax({
-					url: "/food-orders/searchfood",
+					url: "/taway-orders/delete-curry",
 					method: "POST",
 					data: {
-						search:txt
+						item:val
 						},
 					dataType: "text",
 					success: function(data){
-						$('#result').html(data);
+						console.log(data);
 					}
 				});
 			}
-		});
-		$('#search_text').keydown(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-
-			}
-			else {
-				$('#result').html('');
-				
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-			}
-		});
 	});
+});
 </script>
 @endpush
 

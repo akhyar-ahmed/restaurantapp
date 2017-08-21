@@ -120,11 +120,7 @@ class OnlineSalerecordController extends Controller
             $id = Auth::user()->getId();
         }
         //return $request;
-        $item = TawayItems::where('category', '=', "Fresh Juice")
-                           ->orWhere('category', '=', "Tea")
-                           ->orWhere('category', '=', "Coffie")
-                           ->orWhere('category', '=', "Milkshake")
-                           ->orWhere('category', '=', "Soft Drinks")->get();
+        $item = TawayItems::where('category', '=', "Curry")->get();
         //return count($item);
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
@@ -180,11 +176,7 @@ class OnlineSalerecordController extends Controller
             $id = Auth::user()->getId();
         }
         //return $request;
-        $item = TawayItems::where('category', '=', "Fresh Juice")
-                           ->orWhere('category', '=', "Tea")
-                           ->orWhere('category', '=', "Coffie")
-                           ->orWhere('category', '=', "Milkshake")
-                           ->orWhere('category', '=', "Soft Drinks")->get();
+        $item = TawayItems::where('category', '=', "Shawarma")->get();
         //return count($item);
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
@@ -240,11 +232,8 @@ class OnlineSalerecordController extends Controller
             $id = Auth::user()->getId();
         }
         //return $request;
-        $item = TawayItems::where('category', '=', "Fresh Juice")
-                           ->orWhere('category', '=', "Tea")
-                           ->orWhere('category', '=', "Coffie")
-                           ->orWhere('category', '=', "Milkshake")
-                           ->orWhere('category', '=', "Soft Drinks")->get();
+        $item = TawayItems::where('category', '=', "Salads")
+                           ->orWhere('category', '=', "Cold mezze")->get();
         //return count($item);
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
@@ -300,11 +289,7 @@ class OnlineSalerecordController extends Controller
             $id = Auth::user()->getId();
         }
         //return $request;
-        $item = TawayItems::where('category', '=', "Fresh Juice")
-                           ->orWhere('category', '=', "Tea")
-                           ->orWhere('category', '=', "Coffie")
-                           ->orWhere('category', '=', "Milkshake")
-                           ->orWhere('category', '=', "Soft Drinks")->get();
+        $item = TawayItems::where('category', '=', "Special deals")->get();
         //return count($item);
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
@@ -410,11 +395,7 @@ class OnlineSalerecordController extends Controller
             $id = Auth::user()->getId();
         }
         //return $request;
-        $item = TawayItems::where('category', '=', "Fresh Juice")
-                           ->orWhere('category', '=', "Tea")
-                           ->orWhere('category', '=', "Coffie")
-                           ->orWhere('category', '=', "Milkshake")
-                           ->orWhere('category', '=', "Soft Drinks")->get();
+        $item = TawayItems::where('category', '=', "Curry")->get();
         //return count($item);
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
@@ -460,11 +441,7 @@ class OnlineSalerecordController extends Controller
             $id = Auth::user()->getId();
         }
         //return $request;
-        $item = TawayItems::where('category', '=', "Fresh Juice")
-                           ->orWhere('category', '=', "Tea")
-                           ->orWhere('category', '=', "Coffie")
-                           ->orWhere('category', '=', "Milkshake")
-                           ->orWhere('category', '=', "Soft Drinks")->get();
+        $item = TawayItems::where('category', '=', "Shawarma")->get();
         //return count($item);
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
@@ -510,11 +487,8 @@ class OnlineSalerecordController extends Controller
             $id = Auth::user()->getId();
         }
         //return $request;
-        $item = TawayItems::where('category', '=', "Fresh Juice")
-                           ->orWhere('category', '=', "Tea")
-                           ->orWhere('category', '=', "Coffie")
-                           ->orWhere('category', '=', "Milkshake")
-                           ->orWhere('category', '=', "Soft Drinks")->get();
+        $item = TawayItems::where('category', '=', "Salads")
+                           ->orWhere('category', '=', "Cold mezze")->get();
         //return count($item);
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
@@ -560,11 +534,7 @@ class OnlineSalerecordController extends Controller
             $id = Auth::user()->getId();
         }
         //return $request;
-        $item = TawayItems::where('category', '=', "Fresh Juice")
-                           ->orWhere('category', '=', "Tea")
-                           ->orWhere('category', '=', "Coffie")
-                           ->orWhere('category', '=', "Milkshake")
-                           ->orWhere('category', '=', "Soft Drinks")->get();
+        $item = TawayItems::where('category', '=', "Special deals")->get();
         //return count($item);
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
