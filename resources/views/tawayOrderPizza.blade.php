@@ -77,7 +77,7 @@
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="4">15" Super</label>
                                     </div>
-                                    <hr>
+                                    __________________
                                     <div class="radio">
                                         <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                     </div>
@@ -86,7 +86,7 @@
                                     </div>
 							<a  class="btn btn-success" id="add" value="a"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="a"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                        </div>
 					</div>
 				</div>
 
@@ -107,7 +107,7 @@
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="8">15" Super</label>
                                     </div>
-                                    <hr>
+                                    __________________
                                     <div class="radio">
                                         <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                     </div>
@@ -116,7 +116,8 @@
                                     </div>
 							<a  class="btn btn-success" id="add" value="b"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="b"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                            
+                        </div>
 					</div>
 				</div>
 
@@ -137,7 +138,7 @@
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="12">15" Super</label>
                                     </div>
-                                    <hr>
+                                    __________________
                                     <div class="radio">
                                         <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                     </div>
@@ -146,10 +147,13 @@
                                     </div>
 							<a  class="btn btn-success" id="add" value="c"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="c"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                            
+                        </div>
 					</div>
 				</div>
+                <hr>
             </div>
+            
             <div class="row-xs-12">
 				<div class="col-xs-4">
 					<div class="card">
@@ -168,7 +172,7 @@
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="15">15" Super</label>
                                     </div>
-                                    <hr>
+                                    __________________
                                     <div class="radio">
                                         <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                     </div>
@@ -198,7 +202,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="20">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -228,7 +232,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="24">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -259,7 +263,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="28">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -289,7 +293,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="32">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -319,7 +323,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="36">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -353,7 +357,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="40">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -384,7 +388,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="44">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -415,7 +419,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="48">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -447,7 +451,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio"value="52">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -477,7 +481,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="56">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -508,7 +512,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="60">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -540,7 +544,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="64">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -571,7 +575,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="68">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -602,7 +606,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="72">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -633,7 +637,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="76">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -664,7 +668,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="80">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -696,7 +700,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="84">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -730,7 +734,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="88">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -761,7 +765,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="92">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
@@ -792,7 +796,7 @@
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="96">15" Super</label>
                                 </div>
-                                <hr>
+                                __________________
                                 <div class="radio">
                                     <label><input type="radio"  name="radio1" value="deep">deep pan</label>
                                 </div>
