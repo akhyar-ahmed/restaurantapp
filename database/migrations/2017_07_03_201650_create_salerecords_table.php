@@ -16,7 +16,7 @@ class CreateSalerecordsTable extends Migration
         Schema::create('salerecords', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->integer('item_id')->unsigned();
+            $table->integer('item_id');
             $table->string('food_name');
             $table->string('food_code');
             $table->double('base_price',7,3);
@@ -28,9 +28,6 @@ class CreateSalerecordsTable extends Migration
                 ->references('id')
                 ->on('users')->onDelete('cascade');
             
-            $table->foreign('item_id')
-                ->references('id')
-                ->on('items')->onDelete('cascade');
 
         });
     }

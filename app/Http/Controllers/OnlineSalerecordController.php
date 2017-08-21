@@ -307,7 +307,7 @@ class OnlineSalerecordController extends Controller
                     }
                     //$item = Salerecords::find($orderItem['id']);
                     $item->quantity +=1;
-                    $item->total = $item->quantity * $item->base_price;
+                    $item->total = ($item->quantity * $item->base_price);
 
                     $item->save();
                     return 'success'; 
@@ -324,6 +324,7 @@ class OnlineSalerecordController extends Controller
                     
                     $newItem->save();
                     return 'success';
+                    
                 }
 
             }

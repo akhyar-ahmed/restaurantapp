@@ -62,7 +62,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h5 class="card-title">Daily deal</h5>
 							<a class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -73,7 +72,6 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Family platter</h5>
 							<a class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -84,7 +82,6 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h5 class="card-title">Mix grill family deal</h5>
 							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -114,28 +111,27 @@ $(document).ready(function(){
 		var id = $(this).attr('id');
 		var val = $(this).attr('value');
 		if( id == "add"){
-			alert(id+" "+val);
-
+			//alert(id+" "+val);
 			$.ajaxSetup({
-				headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/taway-orders/add-spdeals",
-					method: "POST",
-					data: {
-						item:val
-						},
-					dataType: "text",
-					success: function(data){
-						console.log(data);
-					}
-				});
+			headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
+			$.ajax({
+				url: "/taway-orders/add-spdeals",
+				method: "POST",
+				data: {
+					item:val
+					},
+				dataType: "text",
+				success: function(data){
+					console.log(data);
+				}
+			});
 			
 		}
 		else if( id == "minus"){
-			alert(id+" "+val);
+			//alert(id+" "+val);
 			$.ajaxSetup({
 				headers: {
 						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
