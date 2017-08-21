@@ -276,97 +276,44 @@ $(document).ready(function(){
 		var val = $(this).attr('value');
 		if( id == "add"){
 			alert(id+" "+val);
-			
 
+			$.ajaxSetup({
+				headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
+				$.ajax({
+					url: "",
+					method: "POST",
+					data: {
+						item:val
+						},
+					dataType: "text",
+					success: function(data){
+						console.log(data);
+					}
+				});
+			
 		}
 		else if( id == "minus"){
 			alert(id+" "+val);
-		}
-	});
-
-	$('#search_text').keyup(function(){
-		var txt = $(this).val();
-		if( txt != '') {
 			$.ajaxSetup({
-			headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				}
-			});
-			$.ajax({
-				url: "/food-orders/searchfood",
-				method: "POST",
-				data: {
-					search:txt
-					},
-				dataType: "text",
-				success: function(data){
-					$('#result').html(data);
-				}
-			});
-
-		}
-		else {
-			$('#result').html('');
-
-			$.ajaxSetup({
-			headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				}
-			});
-			$.ajax({
-				url: "/food-orders/searchfood",
-				method: "POST",
-				data: {
-					search:txt
-					},
-				dataType: "text",
-				success: function(data){
-					$('#result').html(data);
-				}
-			});
-		}
-	});
-	$('#search_text').keydown(function(){
-		var txt = $(this).val();
-		if( txt != '') {
-			$.ajaxSetup({
-			headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				}
-			});
-			$.ajax({
-				url: "/food-orders/searchfood",
-				method: "POST",
-				data: {
-					search:txt
-					},
-				dataType: "text",
-				success: function(data){
-					$('#result').html(data);
-				}
-			});
-
-		}
-		else {
-			$('#result').html('');
-			
-			$.ajaxSetup({
-			headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				}
-			});
-			$.ajax({
-				url: "/food-orders/searchfood",
-				method: "POST",
-				data: {
-					search:txt
-					},
-				dataType: "text",
-				success: function(data){
-					$('#result').html(data);
-				}
-			});
-		}
+				headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
+				$.ajax({
+					url: "",
+					method: "POST",
+					data: {
+						item:val
+						},
+					dataType: "text",
+					success: function(data){
+						console.log(data);
+					}
+				});
+			}
 	});
 });
 </script>
