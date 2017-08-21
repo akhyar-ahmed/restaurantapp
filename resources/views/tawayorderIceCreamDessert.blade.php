@@ -127,8 +127,8 @@
 					<div class="card">
 						<div class="card-block">
 							<h4 class="card-title">Ice cream Fruits salad </h4>
-							<a class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -151,15 +151,40 @@
 			var id = $(this).attr('id');
 			var val = $(this).attr('value');
 			if( id == "add"){
-				alert(id+" "+val);
+				//alert(id+" "+val);
 				
-				if(val != 'A' || val != 'B' )
+				if(val != 'A' && val != 'B' )
 					alert("Not a or b");
 				else{
-					var favorite = [];
-					$.each($("input[name='']:checked"), function(){            
-						favorite.push($(this).val());
-					});
+						if(val == 'A'){
+							var favorite = [];
+							var cake = ["White","Choco","Tarte","Termeso","Chocolate","Chessecake"];
+							$.each($("input[name='cake']:checked"), function(){           
+								favorite.push($(this).val());
+							});
+
+							if(favorite.length==0)
+								alert("Select Checkbox Properly !!");
+							else{
+								alert(favorite.length);
+							}
+							
+						}
+						else if(val=='B'){
+							var favorite = [];
+							$.each($("input[name='ice-creams']:checked"), function(){            
+								favorite.push($(this).val());
+							});
+
+							if(favorite.length==0)
+								alert("Select Checkbox Properly !!");
+							else{
+								alert(favorite.length);
+							}
+							
+						}
+
+					
 				}
 				
 

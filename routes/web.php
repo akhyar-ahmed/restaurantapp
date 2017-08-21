@@ -86,8 +86,17 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/taway-orders/spdeals','TakeAwayItemController@spdeals')->name('taway-orders-spdeals'); 
     Route::get('/taway-orders/preview','TawayOrderController@preview')->name('taway-orders-preview');
     Route::post('/taway-orders/add-drinks','OnlineSalerecordController@addDrinks');
+    Route::post('/taway-orders/add-curry','OnlineSalerecordController@addCurry');
+    Route::post('/taway-orders/add-shawarma','OnlineSalerecordController@addShawarma');
+    Route::post('/taway-orders/add-salads','OnlineSalerecordController@addSalads');
+    Route::post('/taway-orders/add-spdeals','OnlineSalerecordController@addSpdeals');
+    Route::post('/taway-orders/add-drinks','OnlineSalerecordController@addDrinks');
     Route::post('/taway-orders/delete-drinks','OnlineSalerecordController@deleteDrinks');
-    Route::post('/taway-orders/condirm-drinks','tawayOrderController@confirmOrder')->name('confirm-order');
+    Route::post('/taway-orders/delete-curry','OnlineSalerecordController@deleteCurry');
+    Route::post('/taway-orders/delete-shawarma','OnlineSalerecordController@deleteShawarma');
+    Route::post('/taway-orders/delete-salads','OnlineSalerecordController@deleteSalads');
+    Route::post('/taway-orders/delete-spdeals','OnlineSalerecordController@deleteSpdeals');
+    Route::post('/taway-orders/confirm-orders','tawayOrderController@confirmOrder')->name('confirm-order');
     Route::get('/taway-orders/allDelet-drinks','OnlineSalerecordController@deleteUserOrder')->name('order-clear');
 
 });
