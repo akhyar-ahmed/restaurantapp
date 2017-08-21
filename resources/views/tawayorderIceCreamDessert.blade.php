@@ -158,15 +158,34 @@
 				else{
 						if(val == 'A'){
 							var favorite = [];
+							var toppings="";
 							var cake = ["White","Choco","Tarte","Termeso","Chocolate","Chessecake"];
 							$.each($("input[name='cake']:checked"), function(){           
 								favorite.push($(this).val());
+								toppings+=(cake[$(this).val() -1 ]+" ");
 							});
-
+							toppings+="cake";
+							alert(toppings);
 							if(favorite.length==0)
 								alert("Select Checkbox Properly !!");
 							else{
-								alert(favorite.length);
+								//alert(favorite.length);
+								$.ajaxSetup({
+								headers: {
+										'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+									}
+								});
+								$.ajax({
+									url: "/taway-orders/add-cake",
+									method: "POST",
+									data: {
+										item:val
+										},
+									dataType: "text",
+									success: function(data){
+										console.log(data);
+									}
+								});
 							}
 							
 						}
