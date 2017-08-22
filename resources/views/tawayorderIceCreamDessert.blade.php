@@ -127,8 +127,8 @@
 					<div class="card">
 						<div class="card-block">
 							<h4 class="card-title">Ice cream Fruits salad </h4>
-							<a class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -153,63 +153,145 @@
 			if( id == "add"){
 				//alert(id+" "+val);
 				
-				if(val != 'A' && val != 'B' )
-					alert("Not a or b");
-				else{
-						if(val == 'A'){
-							var favorite = [];
-							var toppings="";
-							var cake = ["White","Choco","Tarte","Termeso","Chocolate","Chessecake"];
-							$.each($("input[name='cake']:checked"), function(){           
-								favorite.push($(this).val());
-								toppings+=(cake[$(this).val() -1 ]+" ");
-							});
-							toppings+="cake";
-							alert(toppings);
-							if(favorite.length==0)
-								alert("Select Checkbox Properly !!");
-							else{
-								//alert(favorite.length);
-								$.ajaxSetup({
-								headers: {
-										'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-									}
-								});
-								$.ajax({
-									url: "/taway-orders/add-cake",
-									method: "POST",
-									data: {
-										item:val
-										},
-									dataType: "text",
-									success: function(data){
-										console.log(data);
-									}
-								});
+				if(val == 'A'){
+					var favorite = [];
+					var toppings="";
+					var cake = ["White","Choco","Tarte","Termeso","Chocolate","Chesse"];
+					$.each($("input[name='cake']:checked"), function(){           
+						favorite.push($(this).val());
+						toppings+=(cake[$(this).val() -1 ]+" ");
+					});
+					toppings+="Cake";
+					//alert(toppings);
+					if(favorite.length==0)
+						alert("Select Checkbox Properly !!");
+					else{
+						//alert(favorite.length);
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 							}
-							
-						}
-						else if(val=='B'){
-							var favorite = [];
-							$.each($("input[name='ice-creams']:checked"), function(){            
-								favorite.push($(this).val());
-							});
-
-							if(favorite.length==0)
-								alert("Select Checkbox Properly !!");
-							else{
-								alert(favorite.length);
+						});
+						$.ajax({
+							url: "/taway-orders/add-cake",
+							method: "POST",
+							data: {
+								item:val,
+								topping:toppings
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
 							}
-							
-						}
-
+						});
+					}
 					
 				}
-				
+				else if(val=='B' || val==3){
+					var favorite = [];
+					var toppings="";
+					var ice = ["Chocolate","Banana","Kiwi","Venilla"];
+					$.each($("input[name='ice-creams']:checked"), function(){            
+						favorite.push($(this).val());
+						toppings+=(ice[$(this).val() -1 ]+" ");
 
+					});
+					toppings+="Ice Creams";
+					if(favorite.length==0 && val=='B')
+						alert("Select Checkbox Properly !!");
+					else{
+						//alert(favorite.length);
+						$.ajaxSetup({
+							headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/taway-orders/add-cake",
+							method: "POST",
+							data: {
+								item:val,
+								topping:toppings
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					
+				}
 			}
 			else if( id == "minus"){
-				alert(id+" "+val);
+				//alert(id+" "+val);
+				if(val == 'A'){
+					var favorite = [];
+					var toppings="";
+					var cake = ["White","Choco","Tarte","Termeso","Chocolate","Chesse"];
+					$.each($("input[name='cake']:checked"), function(){           
+						favorite.push($(this).val());
+						toppings+=(cake[$(this).val() -1 ]+" ");
+					});
+					toppings+="Cake";
+					//alert(toppings);
+					if(favorite.length==0)
+						alert("Select Checkbox Properly !!");
+					else{
+						//alert(favorite.length);
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/taway-orders/delete-cake",
+							method: "POST",
+							data: {
+								item:val,
+								topping:toppings
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					
+				}
+				else if(val=='B' || val==3){
+					var favorite = [];
+					var toppings="";
+					var ice = ["Chocolate","Banana","Kiwi","Venilla"];
+					$.each($("input[name='ice-creams']:checked"), function(){            
+						favorite.push($(this).val());
+						toppings+=(ice[$(this).val() -1 ]+" ");
+
+					});
+					toppings+="Ice Creams";
+					if(favorite.length==0 && val=='B')
+						alert("Select Checkbox Properly !!");
+					else{
+						//alert(favorite.length);
+						$.ajaxSetup({
+							headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/taway-orders/delete-cake",
+							method: "POST",
+							data: {
+								item:val,
+								topping:toppings
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					
+				}
 			}
 		});
 
