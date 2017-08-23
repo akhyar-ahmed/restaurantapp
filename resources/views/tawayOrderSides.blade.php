@@ -62,7 +62,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">BBQ wings</h4>
 							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -73,7 +72,6 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Chicken Dippers</h4>
 							<a class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -84,7 +82,6 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Garlic bread</h4>
 							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -99,7 +96,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Chicken nuggets</h4>
 							<a class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -110,7 +106,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title"> Ponds fried cheese</h4>
 							<a class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -121,7 +116,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Fried mushrooms</h4>
 							<a class="btn btn-success" id="add" value="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -136,7 +130,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Onion rings</h4>
 							<a class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -147,9 +140,8 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">mozzarella sticks</h4>
+							<h4 class="card-title">Mozzarella sticks</h4>
 							<a class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -158,9 +150,8 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">potato wedges</h4>
+							<h4 class="card-title">Potato wedges</h4>
 							<a class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -173,7 +164,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Falafel</h4>
 							<a class="btn btn-success" id="add" value="10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -184,7 +174,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Kubba</h4>
 							<a class="btn btn-success" id="add" value="11"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -195,7 +184,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Rice</h4>
 							<a class="btn btn-success" id="add" value="12"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -210,7 +198,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Chips</h4>
 							<a class="btn btn-success" id="add" value="13"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -220,32 +207,31 @@
 				</div>
 				<div class="col-xs-8">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Dips</h4>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="1">Garlic
+									<input type="checkbox" name="dips" value="14">Garlic
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="2">mayonnaise
+									<input type="checkbox" name="dips" value="15">mayonnaise
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="3">Catchup
+									<input type="checkbox" name="dips" value="16">Catchup
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="4">tartar
+									<input type="checkbox" name="dips" value="17">tartar
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="5">Burger sauce
+									<input type="checkbox" name="dips" value="18">Burger sauce
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="6">chilli
+									<input type="checkbox" name="dips" value="19">chilli
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="7">Sweet chilli
+									<input type="checkbox" name="dips" value="20">Sweet chilli
 								</label><br>
-							<a class="btn btn-success" id="add" value="14"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a class="btn btn-danger" id="minus" value="14"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a class="btn btn-success" id="add" value="A"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="A"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -276,23 +262,27 @@ $(document).ready(function(){
 		var val = $(this).attr('value');
 		if( id == "add"){
 			alert(id+" "+val);
+			if(val != 'A'){
 
-			$.ajaxSetup({
-				headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "",
-					method: "POST",
-					data: {
-						item:val
-						},
-					dataType: "text",
-					success: function(data){
-						console.log(data);
-					}
-				});
+				$.ajaxSetup({
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+					$.ajax({
+						url: "/taway-orders/add-sides",
+						method: "POST",
+						data: {
+							item:val
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+			} else{
+
+			}
 			
 		}
 		else if( id == "minus"){
@@ -303,7 +293,7 @@ $(document).ready(function(){
 					}
 				});
 				$.ajax({
-					url: "",
+					url: "/taway-orders/delete-sides",
 					method: "POST",
 					data: {
 						item:val
