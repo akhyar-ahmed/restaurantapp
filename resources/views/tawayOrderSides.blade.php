@@ -196,53 +196,49 @@
 
 			<div class="row-xs-12">
 
-				<div class="col-xs-6">
+				<div class="col-xs-4">
 					<div class="card">
 						<div class="card-block">
 							<h4 class="card-title">Chips</h4>
-							<a class="btn btn-success" id="add" value="13"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a class="btn btn-danger" id="minus" value="13"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<div class="radio-inline">
+								<label><input type="radio" value = '13' name="radio">Regular</label>
+							</div>
+							<div class="radio-inline">
+								<label><input type="radio" value = '14' name="radio">Large</label>
+							</div>
+							<a class="btn btn-success" id="add" value="A"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="A"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-6">
-					<div class="card">
-						<div class="card-block">
-							<h4 class="card-title">Chips Large</h4>
-							<a class="btn btn-success" id="add" value="14"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a class="btn btn-danger" id="minus" value="14"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row-xs-12">
-				<div class="col-xs-12">
+				
+				<div class="col-xs-8">
 					<div class="card">
 						<div class="card-block">
 							<h4 class="card-title">Dips</h4>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="14">Garlic
+									<input type="checkbox" name="dips" value="15">Garlic
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="15">mayonnaise
+									<input type="checkbox" name="dips" value="16">mayonnaise
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="16">Catchup
+									<input type="checkbox" name="dips" value="17">Catchup
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="17">tartar
+									<input type="checkbox" name="dips" value="18">tartar
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="18">Burger sauce
+									<input type="checkbox" name="dips" value="19">Burger sauce
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="19">chilli
+									<input type="checkbox" name="dips" value="20">chilli
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="20">Sweet chilli
+									<input type="checkbox" name="dips" value="21">Sweet chilli
 								</label><br>
-							<a class="btn btn-success" id="add" value="A"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a class="btn btn-danger" id="minus" value="A"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<a class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="B"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
