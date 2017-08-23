@@ -91,7 +91,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Apple juice</h4>
+							<h4 class="card-title">Apple Juice</h4>
 							<a  class="btn btn-success" id = "add" value = '3'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '3'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -204,7 +204,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Coffee latte</h4>
+							<h4 class="card-title">Coffee Latte</h4>
 							<a  class="btn btn-success" id = "add" value = '11'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '11'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -249,7 +249,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Hot chocolate</h4>
+							<h4 class="card-title">Hot Chocolate</h4>
 							<a  class="btn btn-success" id = "add" value = '15'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '15'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -274,7 +274,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Banana shake</h4>
+							<h4 class="card-title">Banana Shake</h4>
 							<a  class="btn btn-success" id = "add" value = '16'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '16'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -285,7 +285,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Strawberry shake</h4>
+							<h4 class="card-title">Strawberry Shake</h4>
 							<a  class="btn btn-success" id = "add" value = '17'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '17'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -296,7 +296,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Chocolate shake</h4>
+							<h4 class="card-title">Chocolate Shake</h4>
 							<a  class="btn btn-success" id = "add" value = '18'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '18'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -308,7 +308,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Ice cream funnel shake</h4>
+							<h4 class="card-title">Ice Cream Funnel Shake</h4>
 							<a  class="btn btn-success" id = "add" value = '19'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '19'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -319,7 +319,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Orio milkshake</h4>
+							<h4 class="card-title">Orio Milkshake</h4>
 							<a  class="btn btn-success" id = "add" value = '20'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '20'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -434,7 +434,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Miranda orange</h4>
+							<h4 class="card-title">Miranda Orange</h4>
 							<a class="btn btn-success" id = "add" value = '31'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id = "minus" value = '31'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>

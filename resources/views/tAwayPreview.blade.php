@@ -3,8 +3,43 @@
 @section('title', "| Food-Orders ")
 
 @section('content')
-    <div class = "page-header container col-xs-12 form-group">
-		<h1 style="text-align:left; display:inline">Preview</h1>
+    <div class = "container col-xs-12 form-group"><br>
+		<h1 style="text-align:left; display:inline">Preview</h1><hr>
+		<ul class="nav nav-tabs card-header-tabs" >
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white">Drinks</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" >Sides</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" >Pizza</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" >Curry</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" >Shawarma</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" >Wrap</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" >Burgers</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" >Grilled</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" > Salads & cold Mezze</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" >Special deals</a>
+			</li>
+			</ul>
 	</div>
 
 	@if(count($orderItem))

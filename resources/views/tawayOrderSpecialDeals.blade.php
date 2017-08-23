@@ -63,7 +63,7 @@
 				<div class="col-xs-4">
 					<div class="card">
 						<div class="card-block">
-							<h5 class="card-title">Daily deal</h5>
+							<h5 class="card-title">Daily Deal</h5>
 							<a class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -73,7 +73,7 @@
 				<div class="col-xs-4">
 					<div class="card" >
 						<div class="card-block">
-							<h5 class="card-title">Family platter</h5>
+							<h5 class="card-title">Family Platter</h5>
 							<a class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -83,7 +83,7 @@
 				<div class="col-xs-4">
 					<div class="card" >
 						<div class="card-block">
-							<h5 class="card-title">Mix grill family deal</h5>
+							<h5 class="card-title">Mix Grill Family Deal</h5>
 							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>

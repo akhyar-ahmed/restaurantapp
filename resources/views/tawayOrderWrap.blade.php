@@ -64,7 +64,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Chicken shawarma wrap</h4>
+							<h4 class="card-title">Chicken Shawarma Srap</h4>
                                     <div class="checkbox">
 									<label><input type="checkbox" name="chips" value="1">Add Chips Drinks</label>
                                     </div>
@@ -78,7 +78,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Lamb shawarma wrap</h4>
+							<h4 class="card-title">Lamb Shawarma Wrap</h4>
                                 <div class="checkbox">
 									<label><input type="checkbox" name="chips" value="1">Add Chips Drinks</label>
                                 </div>
@@ -92,7 +92,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Chicken Shish Kebab Wrap</h4>
+							<h4 class="card-title">Chicken Shish Kebab</h4>
                             <div class="checkbox">
 							<label><input type="checkbox" name="chips" value="1">Add Chips Drinks</label>
                             </div>
