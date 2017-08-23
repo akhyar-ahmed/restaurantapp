@@ -89,6 +89,7 @@
 							<h4 class="card-title">Buffalo Chicken</h4>
 							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<br><br><br><br>
 						</div>
 					</div>
 				</div>

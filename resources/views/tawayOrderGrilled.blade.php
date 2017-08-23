@@ -107,6 +107,7 @@
                                 </div><br>
 							<a  class="btn btn-success" id="add" value="C"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="C"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<br><br><br><br>
 						</div>
 					</div>
 				</div>
@@ -141,6 +142,7 @@
 							<h4 class="card-title">Large Mix Grill</h4>
 							<a  class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<br><br><br><br>
 						</div>
 					</div>
 				</div>
@@ -175,6 +177,7 @@
 							<h4 class="card-title">Grilled Salmon</h4>
 							<a  class="btn btn-success" id="add" value="12"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="12"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<br><br><br><br>
 						</div>
 					</div>
 				</div>
