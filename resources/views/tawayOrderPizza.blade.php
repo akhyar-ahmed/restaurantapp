@@ -62,7 +62,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Margherita Pizza</h4>
                                     <div class="radio">
@@ -92,7 +91,6 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Free Choice</h4>
                                     <div class="radio">
