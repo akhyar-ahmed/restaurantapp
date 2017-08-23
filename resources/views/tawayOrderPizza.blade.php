@@ -85,6 +85,7 @@
                                     </div>
 							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+                            
                         </div>
 					</div>
 				</div>
@@ -144,7 +145,7 @@
                                     </div>
 							<a  class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-                            
+                            <br><br><br><br>
                         </div>
 					</div>
 				</div>
@@ -235,7 +236,8 @@
                                 </div>
 							<a  class="btn btn-success" id="add" vaue="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                            <br><br><br><br>
+                        </div>
 					</div>
 				</div>
             </div>
@@ -323,7 +325,8 @@
                                 </div>
 							<a  class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                            <br><br><br><br>
+                        </div>
 					</div>
 				</div>
             </div>
@@ -416,7 +419,8 @@
                                 </div>
 							<a  class="btn btn-success" id="add" value="12"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="12"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                            <br><br><br><br>
+                        </div>
 					</div>
 				</div>
             </div>
@@ -506,7 +510,8 @@
                                 </div>
 							<a  class="btn btn-success" id="add" value="15"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="15"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                            <br><br><br><br>
+                        </div>
 					</div>
 				</div>
             </div>
@@ -597,7 +602,8 @@
                                 </div>
 							<a  class="btn btn-success" id="add" value="18"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="18"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                            <br><br><br><br>
+                        </div>
 					</div>
 				</div>
             </div>
@@ -688,7 +694,8 @@
                                 </div>
 							<a  class="btn btn-success" id="add" value="21"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="21"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                            <br><br><br><br>
+                        </div>
 					</div>
 				</div>
             </div>
@@ -781,7 +788,8 @@
                                 </div>
 							<a  class="btn btn-success" id="add" value="24"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="24"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
+                            <br><br><br><br>
+                        </div>
 					</div>
 				</div>  
             </div>
