@@ -91,7 +91,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Apple juice</h4>
+							<h4 class="card-title">Apple Juice</h4>
 							<a  class="btn btn-success" id = "add" value = '3'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '3'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -204,7 +204,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Coffee latte</h4>
+							<h4 class="card-title">Coffee Latte</h4>
 							<a  class="btn btn-success" id = "add" value = '11'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '11'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -249,7 +249,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Hot chocolate</h4>
+							<h4 class="card-title">Hot Chocolate</h4>
 							<a  class="btn btn-success" id = "add" value = '15'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '15'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -274,7 +274,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Banana shake</h4>
+							<h4 class="card-title">Banana Shake</h4>
 							<a  class="btn btn-success" id = "add" value = '16'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '16'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -285,7 +285,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Strawberry shake</h4>
+							<h4 class="card-title">Strawberry Shake</h4>
 							<a  class="btn btn-success" id = "add" value = '17'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '17'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -296,7 +296,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Chocolate shake</h4>
+							<h4 class="card-title">Chocolate Shake</h4>
 							<a  class="btn btn-success" id = "add" value = '18'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '18'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -308,7 +308,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Ice cream funnel shake</h4>
+							<h4 class="card-title">Ice Cream Funnel Shake</h4>
 							<a  class="btn btn-success" id = "add" value = '19'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '19'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -319,7 +319,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Orio milkshake</h4>
+							<h4 class="card-title">Orio Milkshake</h4>
 							<a  class="btn btn-success" id = "add" value = '20'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id = "minus" value = '20'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -434,7 +434,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Miranda orange</h4>
+							<h4 class="card-title">Miranda Orange</h4>
 							<a class="btn btn-success" id = "add" value = '31'><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id = "minus" value = '31'><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -578,92 +578,114 @@
 
 			}
 			else if( id == "minus"){
-				alert(id+" "+val);
-			}
-		});
+				if(val != "A" && val !="B" && val != "C" && val!="D" ){
+					$.ajaxSetup({
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+					$.ajax({
+						url: "/taway-orders/delete-drinks",
+						method: "POST",
+						data: {
+							item:val
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+					
+				}
+				else{
+					
+					var inputVal = $('input:radio[name=radio]:checked').val();
+					//alert(inputVal+" "+val);
+					//alert($('input:radio[name=optradio]:checked').val());
+					if( (inputVal=="21" || inputVal=="22") && val == "A"){
+						//alert($('input:radio[name=radio]:checked').val());
 
-		$('#search_text').keyup(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
+						$.ajaxSetup({
+							headers: {
+									'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+								}
+							});
 
-			}
-			else {
-				$('#result').html('');
+						$.ajax({
+							url: "/taway-orders/delete-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
 
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-			}
-		});
-		$('#search_text').keydown(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
+					else if( (inputVal=="23" || inputVal=="24") && val == "B"){
+						//alert($('input:radio[name=radio]:checked').val());
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
 
-			}
-			else {
-				$('#result').html('');
-				
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						$.ajax({
+							url: "/taway-orders/delete-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
 					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
+					else if( (inputVal=="25" || inputVal=="26") && val == "C"){
+						//alert($('input:radio[name=radio]:checked').val());
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/taway-orders/delete-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
 					}
-				});
+					else if( (inputVal=="29" || inputVal=="30") && val == "D"){
+						//alert($('input:radio[name=radio]:checked').val());
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/taway-orders/delete-drinks",
+							method: "POST",
+							data: {
+								item:inputVal
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					else{
+						alert('Please Correctly Select Radio Button');
+					}
+				}
 			}
 		});
 	});
