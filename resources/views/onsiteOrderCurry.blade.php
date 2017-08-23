@@ -1,6 +1,6 @@
 @extends('main')
 
-@section('title', "| OnSite-Orders ")
+@section('title', "| TakeAway-Orders ")
 
 @section('content')
 <div class="container">
@@ -18,40 +18,39 @@
 	</div>
     <div class="card text-center">
         <div class="card-header">
-			<ul class="nav nav-tabs card-header-tabs" >
+		<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white" id = "0">Drinks</a>
+				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white">Drinks</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" id = "1">Dessert & Ice Cream</a>
+				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" id = "2">Sides</a>
-			</li>
-
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" id="3">Pizza</a>
+				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" >Sides</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" id="4">Curry</a>
+				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" >Pizza</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" id="5">Shawarma</a>
+				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" >Curry</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" id="6">Wrap</a>
+				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" >Shawarma</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" id="7">Burgers</a>
+				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" >Wrap</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" id="8">Grilled</a>
+				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" >Burgers</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" id="9"> Salads & cold Mezze</a>
+				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" >Grilled</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" id="10">Special deals</a>
+				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" > Salads & cold Mezze</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" >Special deals</a>
 			</li>
 			</ul>
         </div>
@@ -76,7 +75,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">lamb</h4>
+							<h4 class="card-title">Lamb</h4>
 							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -142,105 +141,52 @@
 
 @push('scripts')
 <script>
-	$(document).ready(function(){
-		$('a').click(function(){
-			var id = $(this).attr('id');
-			var val = $(this).attr('value');
-			if( id == "add"){
-				alert(id+" "+val);
-				
+$(document).ready(function(){
+	$('a').click(function(){
+		var id = $(this).attr('id');
+		var val = $(this).attr('value');
+		if( id == "add"){
+			alert(id+" "+val);
 
-			}
-			else if( id == "minus"){
-				alert(id+" "+val);
-			}
-		});
-
-		$('#search_text').keyup(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
+			$.ajaxSetup({
+				headers: {
 						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 					}
 				});
 				$.ajax({
-					url: "/food-orders/searchfood",
+					url: "/taway-orders/add-curry",
 					method: "POST",
 					data: {
-						search:txt
+						item:val
 						},
 					dataType: "text",
 					success: function(data){
-						$('#result').html(data);
+						console.log(data);
 					}
 				});
-
-			}
-			else {
-				$('#result').html('');
-
-				$.ajaxSetup({
-        		headers: {
+			
+		}
+		else if( id == "minus"){
+			alert(id+" "+val);
+			$.ajaxSetup({
+				headers: {
 						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 					}
 				});
 				$.ajax({
-					url: "/food-orders/searchfood",
+					url: "/taway-orders/delete-curry",
 					method: "POST",
 					data: {
-						search:txt
+						item:val
 						},
 					dataType: "text",
 					success: function(data){
-						$('#result').html(data);
+						console.log(data);
 					}
 				});
 			}
-		});
-		$('#search_text').keydown(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-
-			}
-			else {
-				$('#result').html('');
-				
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-			}
-		});
 	});
+});
 </script>
 @endpush
 

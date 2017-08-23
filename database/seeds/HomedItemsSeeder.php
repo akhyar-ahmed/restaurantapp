@@ -12,7 +12,7 @@ class HomedItemsSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
+    { 
         $data = [
 
             [
@@ -64,26 +64,6 @@ class HomedItemsSeeder extends Seeder
             ],
 
             [
-                'name' => "Beef Burger Large",
-                'category' => "Burgers",
-                'base_price' => '6.99'
-            ],
-
-            [
-                'name' => "Chicken Fillet Burger Regular",
-                'category' => "Burgers",
-                'base_price' => '4.50'
-            ],
-
-            [
-                'name' => "Chicken Fillet Burger Large",
-                'category' => "Burgers",
-                'base_price' => '5.99'
-            ],
-
-            
-
-            [
                 'name' => "Chicken Zinger Burger",
                 'category' => "Burgers",
                 'base_price' => '6.00'
@@ -99,6 +79,24 @@ class HomedItemsSeeder extends Seeder
                 'name' => "Veg Burger",
                 'category' => "Burgers",
                 'base_price' => '4.50'
+            ],
+
+            [
+                'name' => "Beef Burger Large",
+                'category' => "Burgers",
+                'base_price' => '6.99'
+            ],
+
+            [
+                'name' => "Chicken Fillet Burger Regular",
+                'category' => "Burgers",
+                'base_price' => '4.50'
+            ],
+
+            [
+                'name' => "Chicken Fillet Burger Large",
+                'category' => "Burgers",
+                'base_price' => '5.99'
             ],
 
             [
@@ -136,41 +134,47 @@ class HomedItemsSeeder extends Seeder
                 'category' => "Curry",
                 'base_price' => '6.50'
             ],
+
+            [
+                'name' => "Auvergne curry",
+                'category' => "Curry",
+                'base_price' => '6.50'
+            ],
             
             [
                 'name' => "Chicken Shish Kebab Regular",
                 'category' => "Grilled",
-                'base_price' => '7.99'
+                'base_price' => '6.50'
             ],
 
             [
                 'name' => "Chicken Shish Kebab large",
                 'category' => "Grilled",
-                'base_price' => '7.99'
+                'base_price' => '8.99'
             ],
 
             [
                 'name' => "Lamb Shish Kebab Regular",
                 'category' => "Grilled",
-                'base_price' => '8.50'
+                'base_price' => '6.99'
             ],
 
             [
                 'name' => "Lamb Shish Kebab large",
                 'category' => "Grilled",
-                'base_price' => '8.50'
+                'base_price' => '9.99'
             ],
 
             [
                 'name' => "Kofta Kebab Regular",
                 'category' => "Grilled",
-                'base_price' => '7.99'
+                'base_price' => '6.50'
             ],
 
             [
                 'name' => "Kofta Kebab large",
                 'category' => "Grilled",
-                'base_price' => '7.99'
+                'base_price' => '8.99'
             ],
 
             [
