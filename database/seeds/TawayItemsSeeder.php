@@ -534,43 +534,7 @@ class TawayItemsSeeder extends Seeder
             ],
 
             [
-                'name' => "Garlic Sauce",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "mayonnaise",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Catchup",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Tartar",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Burger sauce",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Chilli Sauce",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Sweet Chilli Sauce",
+                'name' => "Dips",
                 'category' => "Sides",
                 'base_price' => '0.50'
             ],
