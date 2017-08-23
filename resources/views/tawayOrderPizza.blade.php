@@ -66,7 +66,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Margherita Pizza</h4>
                                     <div class="radio">
-                                        <label><input type="radio" name="optradio" value="1">7" small</label>
+                                        <label><input type="radio" name="optradio" value="1">7" Small</label>
                                     </div>
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="2">9" Medium</label>
@@ -96,7 +96,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Free Choice</h4>
                                     <div class="radio">
-                                        <label><input type="radio" name="optradio" value="5">7" small</label>
+                                        <label><input type="radio" name="optradio" value="5">7" Small</label>
                                     </div>
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="6">9" Medium</label>
@@ -127,7 +127,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Hawaiian Pizza</h4>
                                     <div class="radio">
-                                        <label><input type="radio" name="optradio" value="9">7" small</label>
+                                        <label><input type="radio" name="optradio" value="9">7" Small</label>
                                     </div>
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="10">9" Medium</label>
@@ -161,7 +161,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Classic Pizza</h4>
                                     <div class="radio">
-                                        <label><input type="radio" name="optradio" value="13">7" small</label>
+                                        <label><input type="radio" name="optradio" value="13">7" Small</label>
                                     </div>
                                     <div class="radio">
                                         <label><input type="radio" name="optradio" value="14">9" Medium</label>
@@ -191,7 +191,7 @@
 						<div class="card-block">
 							<h4 class="card-title">American Hot</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="17">7" small</label>
+                                    <label><input type="radio" name="optradio" value="17">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="18">9" Medium</label>
@@ -221,7 +221,7 @@
 						<div class="card-block">
 							<h4 class="card-title">BBQ Feast</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="21">7" small</label>
+                                    <label><input type="radio" name="optradio" value="21">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="22">9" Medium</label>
@@ -252,7 +252,7 @@
 						<div class="card-block">
 							<h4 class="card-title">BBQ Chicken</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="25">7" small</label>
+                                    <label><input type="radio" name="optradio" value="25">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="26">9" Medium</label>
@@ -282,7 +282,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Chicken Supreme</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="29">7" small</label>
+                                    <label><input type="radio" name="optradio" value="29">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="30">9" Medium</label>
@@ -312,7 +312,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Vegetarian Pizza</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="33">7" small</label>
+                                    <label><input type="radio" name="optradio" value="33">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="34">9" Medium</label>
@@ -346,7 +346,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Vegetarian Hot</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="37">7" small</label>
+                                    <label><input type="radio" name="optradio" value="37">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="38">9" Medium</label>
@@ -377,7 +377,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Vegetarian Sweet</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="41">7" small</label>
+                                    <label><input type="radio" name="optradio" value="41">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="42">9" Medium</label>
@@ -408,7 +408,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Meat Lovers</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="45">7" small</label>
+                                    <label><input type="radio" name="optradio" value="45">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="46">9" Medium</label>
@@ -440,7 +440,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Pepperoni Plus</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="49">7" small</label>
+                                    <label><input type="radio" name="optradio" value="49">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="50">9" Medium</label>
@@ -470,7 +470,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Pepperoni Pizza</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="53">7" small</label>
+                                    <label><input type="radio" name="optradio" value="53">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="54">9" Medium</label>
@@ -501,7 +501,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Seafood Pizza</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="57">7" small</label>
+                                    <label><input type="radio" name="optradio" value="57">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="58">9" Medium</label>
@@ -533,7 +533,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Arian Special</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="61">7" small</label>
+                                    <label><input type="radio" name="optradio" value="61">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="62">9" Medium</label>
@@ -564,7 +564,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Spinach lovers</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="65">7" small</label>
+                                    <label><input type="radio" name="optradio" value="65">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="66">9" Medium</label>
@@ -595,7 +595,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Arian Continental</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="69">7" small</label>
+                                    <label><input type="radio" name="optradio" value="69">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="70">9" Medium</label>
@@ -626,7 +626,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Beefeater Pizza</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="73">7" small</label>
+                                    <label><input type="radio" name="optradio" value="73">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="74">9" Medium</label>
@@ -657,7 +657,7 @@
 						<div class="card-block">
 							<h4 class="card-title">NewYork Style</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="77">7" small</label>
+                                    <label><input type="radio" name="optradio" value="77">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="78">9" Medium</label>
@@ -689,7 +689,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Chicken Hot</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="81">7" small</label>
+                                    <label><input type="radio" name="optradio" value="81">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="82">9" Medium</label>
@@ -723,7 +723,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Maxican Hot</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="85">7" small</label>
+                                    <label><input type="radio" name="optradio" value="85">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="86">9" Medium</label>
@@ -754,7 +754,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Chicken Donner</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="89">7" small</label>
+                                    <label><input type="radio" name="optradio" value="89">7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="90">9" Medium</label>
@@ -785,7 +785,7 @@
 						<div class="card-block">
 							<h4 class="card-title">Lamb Donner</h4>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio" value="93"> 7" small</label>
+                                    <label><input type="radio" name="optradio" value="93"> 7" Small</label>
                                 </div>
                                 <div class="radio">
                                     <label><input type="radio" name="optradio" value="94">9" Medium</label>

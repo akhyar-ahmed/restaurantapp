@@ -83,7 +83,7 @@
 				<div class="col-xs-4">
 					<div class="card" >
 						<div class="card-block">
-							<h4 class="card-title">Garlic bread</h4>
+							<h4 class="card-title">Garlic Bread</h4>
 							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -97,7 +97,7 @@
 				<div class="col-xs-4">
 					<div class="card">
 						<div class="card-block">
-							<h4 class="card-title">Chicken nuggets</h4>
+							<h4 class="card-title">Chicken Nuggets</h4>
 							<a class="btn btn-success" id="add" value="4"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="4"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -107,7 +107,7 @@
 				<div class="col-xs-4">
 					<div class="card">
 						<div class="card-block">
-							<h4 class="card-title"> Ponds fried cheese</h4>
+							<h4 class="card-title"> Ponds Fried Cheese</h4>
 							<a class="btn btn-success" id="add" value="5"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="5"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -117,7 +117,7 @@
 				<div class="col-xs-4">
 					<div class="card">
 						<div class="card-block">
-							<h4 class="card-title">Fried mushrooms</h4>
+							<h4 class="card-title">Fried Mushrooms</h4>
 							<a class="btn btn-success" id="add" value="6"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="6"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -131,7 +131,7 @@
 				<div class="col-xs-4">
 					<div class="card">
 						<div class="card-block">
-							<h4 class="card-title">Onion rings</h4>
+							<h4 class="card-title">Onion Rings</h4>
 							<a class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -141,7 +141,7 @@
 				<div class="col-xs-4">
 					<div class="card">
 						<div class="card-block">
-							<h4 class="card-title">Mozzarella sticks</h4>
+							<h4 class="card-title">Mozzarella Sticks</h4>
 							<a class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -151,7 +151,7 @@
 				<div class="col-xs-4">
 					<div class="card">
 						<div class="card-block">
-							<h4 class="card-title">Potato wedges</h4>
+							<h4 class="card-title">Potato Wedges</h4>
 							<a class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -196,7 +196,7 @@
 
 			<div class="row-xs-12">
 
-				<div class="col-xs-4">
+				<div class="col-xs-6">
 					<div class="card">
 						<div class="card-block">
 							<h4 class="card-title">Chips</h4>
@@ -205,7 +205,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-8">
+				<div class="col-xs-6">
+					<div class="card">
+						<div class="card-block">
+							<h4 class="card-title">Chips Large</h4>
+							<a class="btn btn-success" id="add" value="14"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-danger" id="minus" value="14"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-xs-12">
+				<div class="col-xs-12">
 					<div class="card">
 						<div class="card-block">
 							<h4 class="card-title">Dips</h4>

@@ -79,7 +79,7 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Fish burger</h4>
+							<h4 class="card-title">Fish Burger</h4>
                             <div class="checkbox">
                                     <label><input type="checkbox" value="chips">Add Chips Drinks</label>
                             </div>
@@ -93,7 +93,7 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Veg burger</h4>
+							<h4 class="card-title">Veg Burger</h4>
                             <div class="checkbox">
                                     <label><input type="checkbox" value="chips">Add Chips Drinks</label>
                             </div>
@@ -111,7 +111,7 @@
 					<div class="card">
 						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Beef burger</h4>
+							<h4 class="card-title">Beef Burger</h4>
                                     <div class="radio-inline">
                                         <label><input type="radio" name="optradio" value="4">Regular</label>
                                     </div>
@@ -131,7 +131,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Chicken fillet</h4>
+							<h4 class="card-title">Chicken Fillet</h4>
                                 <div class="radio-inline">
                                     <label><input type="radio" name="optradio" value="6">Regular</label>
                                 </div>
