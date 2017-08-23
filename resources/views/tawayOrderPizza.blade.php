@@ -807,116 +807,57 @@
                     alert("Select Radio Button Properly");
                 else {
                 
-                $.ajaxSetup({
-        		    headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
 
-				$.ajax({
-					url: "/taway-orders/add-pizza",
-					method: "POST",
-					data: {
-						val:inputVal,
-                        comp:compval
-						},
-					dataType: "text",
-					success: function(data){
-						console.log(data);
-					}
-				});
+                    $.ajax({
+                        url: "/taway-orders/add-pizza",
+                        method: "POST",
+                        data: {
+                            val:inputVal,
+                            comp:compval
+                            },
+                        dataType: "text",
+                        success: function(data){
+                            console.log(data);
+                        }
+                    });
                 }
                     //alert(inputVal + " "+ compval);
 				
 
 			}
 			else if( id == "minus"){
-				alert(id+" "+val);
-			}
-		});
+				//alert(id+" "+val);
+                var inputVal = $('input:radio[name=optradio]:checked').val();
+                var  compval = $('input:radio[name=radio1]:checked').val();
+                var radioval=val*4;
+                if((radioval != inputVal)&&(radioval != inputVal-1) && (radioval != inputVal-2) && (radioval != inputVal-3) && (compval!="deep") && (compval!="thin") )
+                    alert("Select Radio Button Properly");
+                else {
+                
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
 
-		$('#search_text').keyup(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-
-			}
-			else {
-				$('#result').html('');
-
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-			}
-		});
-		$('#search_text').keydown(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-
-			}
-			else {
-				$('#result').html('');
-				
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
+                    $.ajax({
+                        url: "/taway-orders/delete-pizza",
+                        method: "POST",
+                        data: {
+                            val:inputVal,
+                            comp:compval
+                            },
+                        dataType: "text",
+                        success: function(data){
+                            console.log(data);
+                        }
+                    });
+                }
 			}
 		});
 	});

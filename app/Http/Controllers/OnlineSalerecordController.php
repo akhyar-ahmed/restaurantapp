@@ -416,21 +416,21 @@ class OnlineSalerecordController extends Controller
     */
     public function addPizza(Request $request)
     {
-        return $request;
+       // return $request;
         if (Auth::check())
         {
             $id = Auth::user()->getId();
         }
         //return $request;
-        $item = TawayItems::where('category', '=', "Salads")
-                           ->orWhere('category', '=', "Cold mezze")->get();
+        $item = TawayItems::where('category', '=', "Pizza")->get();
         //return count($item);
         foreach($item as $key=>$value){
-            if($request->item == $key+1) {
+            if($request->val == $key+1) {
                 //return $value['name'];
+                $name = $value['name']." ".$request->comp;
                 $orderItem = Salerecords::where([
                                                 ['user_id','=', $id],
-                                                ['food_name','=',$value['name']]
+                                                ['food_name','=',$name]
                 ])->get();
                 //return count($orderItem);
                 if(count($orderItem)>0){
@@ -449,7 +449,7 @@ class OnlineSalerecordController extends Controller
                     $newItem = new Salerecords;
                     $newItem->user_id = $id;
                     $newItem->item_id = $value['id'];
-                    $newItem->food_name = $value['name'];
+                    $newItem->food_name = $name;
                     $newItem->base_price = $value['base_price'];
                     $newItem->food_code = $value['category'];
                     $newItem->quantity = 1;
@@ -711,6 +711,52 @@ class OnlineSalerecordController extends Controller
         }    
     }
 
+    /**
+    * Show the form for creating a new resource.
+    *
+    * @param  \Illuminate\Http\Request  $request
+    * @return \Illuminate\Http\Response
+    */
+    public function deletePizza(Request $request)
+    {
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+        //return $request;
+        $item = TawayItems::where('category', '=', "Pizza")->get();
+        //return count($item);
+        foreach($item as $key=>$value){
+            if($request->val == $key+1) {
+                //return $value['name'];
+                $name = $value['name']." ".$request->comp;
+                $orderItem = Salerecords::where([
+                                                ['user_id','=', $id],
+                                                ['food_name','=',$name]
+                ])->get();
+                //return count($orderItem);
+                if(count($orderItem)>0){
+                    
+                    foreach($orderItem as $order) {
+                        $item = Salerecords::find($order['id']);
+                        break;
+                    }
+                    //$item = Salerecords::find($orderItem['id']);
+                    $item->quantity -=1;
+                    $item->total = $item->quantity * $item->base_price;
+                    
+                    if($item->quantity <= 0)
+                        $item->delete();
+                    else
+                        $item->save();
+                    return 'success'; 
+                } else {
+                    return 'success, item not found';
+                }
+
+            }
+        }    
+    }
     /**
      * Show the form for creating a new resource.
      *
