@@ -221,25 +221,25 @@
 						<div class="card-block">
 							<h4 class="card-title">Dips</h4>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="15">Garlic
+									<input type="checkbox" name="dips" value="1">Garlic
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="16">Mayonnaise
+									<input type="checkbox" name="dips" value="2">Mayonnaise
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="17">Catchup
+									<input type="checkbox" name="dips" value="3">Catchup
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="18">Tartar
+									<input type="checkbox" name="dips" value="4">Tartar
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="19">Burger sauce
+									<input type="checkbox" name="dips" value="5">Burger sauce
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="20">Chilli
+									<input type="checkbox" name="dips" value="6">Chilli
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="21">Sweet chilli
+									<input type="checkbox" name="dips" value="7">Sweet chilli
 								</label><br>
 							<a class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden=""></span></a>
 							<a class="btn btn-danger" id="minus" value="B"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -269,10 +269,11 @@
 <script>
 $(document).ready(function(){
 	$('a').click(function(){
+
 		var id = $(this).attr('id');
 		var val = $(this).attr('value');
 		if( id == "add"){
-			alert(id+" "+val);
+			//alert(id+" "+val);
 			if(val != 'A' && val!='B'){
 
 				$.ajaxSetup({
@@ -291,29 +292,141 @@ $(document).ready(function(){
 							console.log(data);
 						}
 					});
-			} else{
-
+			} else if(val == 'A') {
+				var inputVal = $('input:radio[name=radio]:checked').val();
+				if(inputVal != 13 && inputVal != 14)
+					alert("Select Radio Button Properly !!");
+				else{
+					
+					$.ajaxSetup({
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+					$.ajax({
+						url: "/taway-orders/add-sides",
+						method: "POST",
+						data: {
+							item:inputVal
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+				}
+			} else if(val == 'B') {
+				var favorite = [];
+				var toppings="";
+				var dips = ["Garlic","Mayonnaise","Catchup","Tartar","Burger Sauce","Chilli Sauce", "Sweet Chilli"];
+				
+				$.each($("input[name='dips']:checked"), function(){           
+					favorite.push($(this).val());
+					toppings+=(dips[$(this).val() -1 ]+" ");
+				});
+				//alert(toppings);
+				if(favorite.length==0)
+					alert("Select Checkbox Properly !!");
+				else{
+					//alert(favorite.length);
+					$.ajaxSetup({ 
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+					$.ajax({
+						url: "/taway-orders/add-sides",
+						method: "POST",
+						data: {
+							item:15,
+							topping:toppings
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+				}
 			}
 			
 		}
 		else if( id == "minus"){
-			alert(id+" "+val);
-			$.ajaxSetup({
-				headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
+			//alert(id+" "+val);
+			if(val != 'A' && val!='B'){
+
+				$.ajaxSetup({
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+					$.ajax({
+						url: "/taway-orders/delete-sides",
+						method: "POST",
+						data: {
+							item:val
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+			} else if(val == 'A') {
+				var inputVal = $('input:radio[name=radio]:checked').val();
+				//alert(inputVal);
+				if(inputVal != 13 && inputVal != 14)
+					alert("Select Radio Button Properly !!");
+				else{
+					
+					$.ajaxSetup({
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+					$.ajax({
+						url: "/taway-orders/delete-sides",
+						method: "POST",
+						data: {
+							item:inputVal
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+				}
+			} else if(val == 'B') {
+				var favorite = [];
+				var toppings="";
+				var dips = ["Garlic","Mayonnaise","Catchup","Tartar","Burger Sauce","Chilli Sauce", "Sweet Chilli"];
+				
+				$.each($("input[name='dips']:checked"), function(){           
+					favorite.push($(this).val());
+					toppings+=(dips[$(this).val() -1 ]+" ");
 				});
-				$.ajax({
-					url: "/taway-orders/delete-sides",
-					method: "POST",
-					data: {
-						item:val
-						},
-					dataType: "text",
-					success: function(data){
-						console.log(data);
-					}
-				});
+				//alert(toppings);
+				if(favorite.length==0)
+					alert("Select Checkbox Properly !!");
+				else{
+					//alert(favorite.length);
+					$.ajaxSetup({ 
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+					$.ajax({
+						url: "/taway-orders/delete-sides",
+						method: "POST",
+						data: {
+							item:15,
+							topping:toppings
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+				}
+			}
 			}
 	});
 });

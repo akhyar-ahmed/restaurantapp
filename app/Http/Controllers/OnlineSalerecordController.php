@@ -313,10 +313,16 @@ class OnlineSalerecordController extends Controller
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
                 //return $value['name'];
-                $orderItem = Salerecords::where([
-                                                ['user_id','=', $id],
-                                                ['food_name','=',$value['name']]
-                ])->get();
+                if($request->item != 15)
+                    $orderItem = Salerecords::where([
+                                                    ['user_id','=', $id],
+                                                    ['food_name','=',$value['name']]
+                    ])->get();
+                else 
+                    $orderItem = Salerecords::where([
+                                                    ['user_id','=', $id],
+                                                    ['food_name','=',$request->topping]
+                    ])->get();
                 //return count($orderItem);
                 if(count($orderItem)>0){
                     
@@ -334,7 +340,10 @@ class OnlineSalerecordController extends Controller
                     $newItem = new Salerecords;
                     $newItem->user_id = $id;
                     $newItem->item_id = $value['id'];
-                    $newItem->food_name = $value['name'];
+                    if($request->item != 15)
+                        $newItem->food_name = $value['name'];
+                    else
+                        $newItem->food_name = $request->topping;
                     $newItem->base_price = $value['base_price'];
                     $newItem->food_code = $value['category'];
                     $newItem->quantity = 1;
@@ -591,10 +600,16 @@ class OnlineSalerecordController extends Controller
         foreach($item as $key=>$value){
             if($request->item == $key+1) {
                 //return $value['name'];
-                $orderItem = Salerecords::where([
-                                                ['user_id','=', $id],
-                                                ['food_name','=',$value['name']]
-                ])->get();
+                if($request->item != 15)
+                    $orderItem = Salerecords::where([
+                                                    ['user_id','=', $id],
+                                                    ['food_name','=',$value['name']]
+                    ])->get();
+                else 
+                    $orderItem = Salerecords::where([
+                                                    ['user_id','=', $id],
+                                                    ['food_name','=',$request->topping]
+                    ])->get();
                 //return count($orderItem);
                 if(count($orderItem)>0){
                     

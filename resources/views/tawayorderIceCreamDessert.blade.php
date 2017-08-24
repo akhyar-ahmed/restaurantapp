@@ -167,7 +167,7 @@
 						alert("Select Checkbox Properly !!");
 					else{
 						//alert(favorite.length);
-						$.ajaxSetup({
+						$.ajaxSetup({ 
 						headers: {
 								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 							}
