@@ -13,7 +13,7 @@ class CreateTawayOrderManipulationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tawayOrderManipulations', function (Blueprint $table) {
+        Schema::create('taway_order_manipulations', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order_id')->unsigned();
             $table->string('food_name');
@@ -24,7 +24,7 @@ class CreateTawayOrderManipulationsTable extends Migration
 
             $table->foreign('order_id')
                 ->references('id')
-                ->on('tawayOrders')->onDelete('cascade');
+                ->on('taway_orders')->onDelete('cascade');
         });
     }
 
@@ -35,6 +35,6 @@ class CreateTawayOrderManipulationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tawayOrderManipulations');
+        Schema::dropIfExists('taway_order_manipulations');
     }
 }

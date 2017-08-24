@@ -13,7 +13,7 @@ class CreateTawayItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tawayItems', function (Blueprint $table) {
+        Schema::create('taway_items', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('category');
@@ -29,6 +29,6 @@ class CreateTawayItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tawayItems');
+        Schema::dropIfExists('taway_items');
     }
 }

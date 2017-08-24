@@ -13,7 +13,7 @@ class CreateHomedOrdersTable extends Migration
      */
     public function up()
     {
-        Schema::create('homedOrders', function (Blueprint $table) {
+        Schema::create('homed_orders', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('customer_id')->unsigned();
@@ -40,6 +40,6 @@ class CreateHomedOrdersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('homedOrders');
+        Schema::dropIfExists('homed_orders');
     }
 }

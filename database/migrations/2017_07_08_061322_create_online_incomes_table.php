@@ -13,7 +13,7 @@ class CreateOnlineIncomesTable extends Migration
      */
     public function up()
     {
-        Schema::create('onlineIncomes', function (Blueprint $table) {
+        Schema::create('online_incomes', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('online_order_id')->unsigned();
             $table->double('grand_total',7,3);
@@ -21,7 +21,7 @@ class CreateOnlineIncomesTable extends Migration
 
             $table->foreign('online_order_id')
                 ->references('id')
-                ->on('onlineOrders')->onDelete('cascade');
+                ->on('online_orders')->onDelete('cascade');
         });
     }
 
@@ -32,6 +32,6 @@ class CreateOnlineIncomesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('onlineIncomes');
+        Schema::dropIfExists('online_incomes');
     }
 }

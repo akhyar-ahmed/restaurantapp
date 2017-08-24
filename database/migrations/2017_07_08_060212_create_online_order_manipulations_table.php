@@ -24,7 +24,7 @@ class CreateOnlineOrderManipulationsTable extends Migration
 
             $table->foreign('online_order_id')
                 ->references('id')
-                ->on('onlineOrders')->onDelete('cascade');
+                ->on('online_orders')->onDelete('cascade');
 
             $table->foreign('item_id')
                 ->references('id')
@@ -39,7 +39,7 @@ class CreateOnlineOrderManipulationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('onlineOrderManipulations');
+        Schema::dropIfExists('online_order_manipulations');
     }
 }
 

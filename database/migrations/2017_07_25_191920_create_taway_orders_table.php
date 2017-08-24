@@ -13,7 +13,7 @@ class CreateTawayOrdersTable extends Migration
      */
     public function up()
     {
-        Schema::create('tawayOrders', function (Blueprint $table) {
+        Schema::create('taway_orders', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('total_item');
@@ -35,6 +35,6 @@ class CreateTawayOrdersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tawayOrders');
+        Schema::dropIfExists('taway_orders');
     }
 }
