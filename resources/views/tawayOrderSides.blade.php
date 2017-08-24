@@ -220,26 +220,26 @@
 					<div class="card">
 						<div class="card-block">
 							<h4 class="card-title">Dips</h4>
-								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="1">Garlic
+								<label class="radio-inline">
+									<input type="radio" name="dips" value="1">Garlic
 								</label>
-								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="2">Mayonnaise
+								<label class="radio-inline">
+									<input type="radio" name="dips" value="2">Mayonnaise
 								</label>
-								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="3">Catchup
+								<label class="radio-inline">
+									<input type="radio" name="dips" value="3">Catchup
 								</label>
-								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="4">Tartar
+								<label class="radio-inline">
+									<input type="radio" name="dips" value="4">Tartar
 								</label>
-								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="5">Burger sauce
+								<label class="radio-inline">
+									<input type="radio" name="dips" value="5">Burger sauce
 								</label>
-								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="6">Chilli
+								<label class="radio-inline">
+									<input type="radio" name="dips" value="6">Chilli
 								</label>
-								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="7">Sweet chilli
+								<label class="radio-inline">
+									<input type="radio" name="dips" value="7">Sweet chilli
 								</label><br>
 							<a class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden=""></span></a>
 							<a class="btn btn-danger" id="minus" value="B"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
@@ -325,8 +325,9 @@ $(document).ready(function(){
 					toppings+=(dips[$(this).val() -1 ]+" ");
 				});
 				//alert(toppings);
+				//alert(favorite.length);
 				if(favorite.length==0)
-					alert("Select Checkbox Properly !!");
+					alert("Select Radio Button Properly !!");
 				else{
 					//alert(favorite.length);
 					$.ajaxSetup({ 
@@ -339,7 +340,8 @@ $(document).ready(function(){
 						method: "POST",
 						data: {
 							item:15,
-							topping:toppings
+							topping:toppings,
+							qua:favorite.length
 							},
 						dataType: "text",
 						success: function(data){
@@ -403,9 +405,9 @@ $(document).ready(function(){
 					favorite.push($(this).val());
 					toppings+=(dips[$(this).val() -1 ]+" ");
 				});
-				//alert(toppings);
+				//alert(favorite.length);
 				if(favorite.length==0)
-					alert("Select Checkbox Properly !!");
+					alert("Select Radio Button Properly !!");
 				else{
 					//alert(favorite.length);
 					$.ajaxSetup({ 
@@ -418,7 +420,8 @@ $(document).ready(function(){
 						method: "POST",
 						data: {
 							item:15,
-							topping:toppings
+							topping:toppings,
+							qua:favorite.length
 							},
 						dataType: "text",
 						success: function(data){

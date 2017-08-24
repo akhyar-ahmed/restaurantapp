@@ -303,6 +303,7 @@ class OnlineSalerecordController extends Controller
     */
     public function addSides(Request $request)
     {
+        //return $request->qua;
         if (Auth::check())
         {
             $id = Auth::user()->getId();
@@ -331,7 +332,11 @@ class OnlineSalerecordController extends Controller
                         break;
                     }
                     //$item = Salerecords::find($orderItem['id']);
-                    $item->quantity +=1;
+                    if($request->item != 15 )
+                        $item->quantity +=1;
+                    else
+                        $item->quantity += $request->qua;
+                        
                     $item->total = $item->quantity * $item->base_price;
 
                     $item->save();
@@ -341,12 +346,19 @@ class OnlineSalerecordController extends Controller
                     $newItem->user_id = $id;
                     $newItem->item_id = $value['id'];
                     if($request->item != 15)
-                        $newItem->food_name = $value['name'];
+                        {
+                            $newItem->food_name = $value['name'];
+                            $newItem->quantity = 1;
+                            
+                        }
                     else
-                        $newItem->food_name = $request->topping;
+                        {
+                            $newItem->food_name = $request->topping;
+                            $newItem->quantity = $request->qua;
+                        }
                     $newItem->base_price = $value['base_price'];
                     $newItem->food_code = $value['category'];
-                    $newItem->quantity = 1;
+                    
                     $total = ($value['base_price']);
                     $newItem->total = $total;
                     
