@@ -220,24 +220,24 @@
 									<input type="checkbox" name="dips" value="15">Garlic
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="16">mayonnaise
+									<input type="checkbox" name="dips" value="16">Mayonnaise
 								</label>
 								<label class="checkbox-inline">
 									<input type="checkbox" name="dips" value="17">Catchup
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="18">tartar
+									<input type="checkbox" name="dips" value="18">Tartar
 								</label>
 								<label class="checkbox-inline">
 									<input type="checkbox" name="dips" value="19">Burger sauce
 								</label>
 								<label class="checkbox-inline">
-									<input type="checkbox" name="dips" value="20">chilli
+									<input type="checkbox" name="dips" value="20">Chilli
 								</label>
 								<label class="checkbox-inline">
 									<input type="checkbox" name="dips" value="21">Sweet chilli
 								</label><br>
-							<a class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden=""></span></a>
 							<a class="btn btn-danger" id="minus" value="B"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
@@ -269,7 +269,7 @@ $(document).ready(function(){
 		var val = $(this).attr('value');
 		if( id == "add"){
 			alert(id+" "+val);
-			if(val != 'A'){
+			if(val != 'A' && val!='B'){
 
 				$.ajaxSetup({
 					headers: {
