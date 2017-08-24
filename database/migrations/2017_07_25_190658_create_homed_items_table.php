@@ -13,7 +13,7 @@ class CreateHomedItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('homedItems', function (Blueprint $table) {
+        Schema::create('homed_items', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('category');
@@ -29,6 +29,6 @@ class CreateHomedItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('homedItems');
+        Schema::dropIfExists('homed_items');
     }
 }

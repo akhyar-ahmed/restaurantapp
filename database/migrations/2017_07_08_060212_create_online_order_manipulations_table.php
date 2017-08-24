@@ -13,7 +13,7 @@ class CreateOnlineOrderManipulationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('onlineOrderManipulations', function (Blueprint $table) {
+        Schema::create('online_order_manipulations', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('online_order_id')->unsigned();
             $table->integer('item_id')->unsigned();

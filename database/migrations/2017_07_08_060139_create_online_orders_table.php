@@ -13,7 +13,7 @@ class CreateOnlineOrdersTable extends Migration
      */
     public function up()
     {
-        Schema::create('onlineOrders', function (Blueprint $table) {
+        Schema::create('online_orders', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('customer_id')->unsigned();
@@ -39,6 +39,6 @@ class CreateOnlineOrdersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('onlineOrders');
+        Schema::dropIfExists('online_orders');
     }
 }
