@@ -96,6 +96,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/taway-orders/add-pizza','OnlineSalerecordController@addPizza');
     Route::post('/taway-orders/add-wrap','OnlineSalerecordController@addWrap');
     Route::post('/taway-orders/add-burger','OnlineSalerecordController@addBurger');
+    Route::post('/taway-orders/add-grill','OnlineSalerecordController@addGrill');
+
+//Delete T-Away
     Route::post('/taway-orders/delete-drinks','OnlineSalerecordController@deleteDrinks');
     Route::post('/taway-orders/delete-curry','OnlineSalerecordController@deleteCurry');
     Route::post('/taway-orders/delete-shawarma','OnlineSalerecordController@deleteShawarma');
@@ -106,6 +109,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/taway-orders/delete-cake','OnlineSalerecordController@deleteCake');
     Route::post('/taway-orders/delete-pizza','OnlineSalerecordController@deletePizza');
     Route::post('/taway-orders/delete-burger','OnlineSalerecordController@deleteBurger');
+    Route::post('/taway-orders/delete-grill','OnlineSalerecordController@deleteGrill');
+
+//T-Away Preview
     Route::post('/taway-orders/confirm-orders','TawayOrderController@confirmOrder')->name('confirm-order');
     Route::get('/taway-orders/allDelet-drinks','OnlineSalerecordController@deleteUserOrder')->name('order-clear');
 

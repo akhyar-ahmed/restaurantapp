@@ -210,7 +210,7 @@ $(document).ready(function(){
 		var id = $(this).attr('id');
 		var val = $(this).attr('value');
 		if( id == "add"){
-			alert(id+" "+val);
+			//alert(id+" "+val);
 
 			$.ajaxSetup({
 				headers: {
@@ -231,7 +231,7 @@ $(document).ready(function(){
 			
 		}
 		else if( id == "minus"){
-			alert(id+" "+val);
+			//alert(id+" "+val);
 			$.ajaxSetup({
 				headers: {
 						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
