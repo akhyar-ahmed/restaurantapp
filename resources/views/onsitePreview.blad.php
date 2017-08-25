@@ -4,10 +4,13 @@
 
 @section('content')
     <div class = "container col-xs-12 form-group"><br>
-		
+    <div class="col-xs-4">
 		<h1 style="text-align:left; display:inline">Preview</h1>
-		
-		<hr>
+		</div>
+		<div class = "form-group col-xs-8">
+			<input type="hidden" name="_token" value="{{ csrf_token() }}">
+			<input type = "text" name = "search_text" id = "search_customer_text" placeholder = "Search Customer by Name or Caller ID" class = "form-control"/>
+		</div><hr>
 		<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
 				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white">Drinks</a>

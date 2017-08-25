@@ -4,10 +4,7 @@
 
 @section('content')
     <div class = "container col-xs-12 form-group"><br>
-		
-		<h1 style="text-align:left; display:inline">Preview</h1>
-		
-		<hr>
+		<h1 style="text-align:left; display:inline">Preview</h1><hr>
 		<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
 				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white">Drinks</a>
