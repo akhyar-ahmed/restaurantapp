@@ -18,6 +18,7 @@ class TakeAwayItemController extends Controller
     public function index()
     {
         if (Auth::check()){
+
             $user_id = Auth::user()->getId();
             $admin = User::find($user_id);
 
@@ -25,7 +26,42 @@ class TakeAwayItemController extends Controller
             
             if($admin->type == 1) {
 
+/*                 $freshJuice = TawayItems::where('category', '=', "Fresh Juice")->get();
+                $tea = TawayItems::where('category', '=', "Tea")->get();
+                $coffie = TawayItems::where('category', '=', "Coffie")->get();
+                $milkshake = TawayItems::where('category', '=', "Milkshake")->get();
+                $softDrinks = TawayItems::where('category', '=', "Soft Drinks")->get();
+                $diserts = TawayItems::where('category', '=', "Diserts")->get();
+                $sides = TawayItems::where('category', '=', "Sides")->get();
+                $pizza = TawayItems::where('category', '=', "Pizza")->get();
+                $curry = TawayItems::where('category', '=', "Curry")->get();
+                $shawarma = TawayItems::where('category', '=', "Shawarma")->get();
+                $wrap = TawayItems::where('category', '=', "Wrap")->get();
+                $burgers = TawayItems::where('category', '=', "Burgers")->get();
+                $grilled = TawayItems::where('category', '=', "Grilled")->get();
+                $salad = TawayItems::where('category', '=', "Salad")->get();
+                $coldmezze = TawayItems::where('category', '=', "Cold mezze")->get();
+                $specialdeals = TawayItems::where('category', '=', "Special meals")->get(); */
+
+                //return $items;
                 return view('tawayOrders');
+                /* return view('tawayOrders')
+                    ->with(compact('freshJuice'))
+                    ->with(compact('tea'))
+                    ->with(compact('coffie'))
+                    ->with(compact('milkshake'))
+                    ->with(compact('softDrinks'))
+                    ->with(compact('diserts'))
+                    ->with(compact('sides'))
+                    ->with(compact('pizza'))
+                    ->with(compact('curry'))
+                    ->with(compact('shawarma'))
+                    ->with(compact('wrap'))
+                    ->with(compact('burgers'))
+                    ->with(compact('grilled'))
+                    ->with(compact('salad'))
+                    ->with(compact('coldmezze'))
+                    ->with(compact('specialdeals')); */
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -41,7 +77,6 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function drinks(){
-
         return redirect()->route('taway-orders');
     }
 
@@ -51,24 +86,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function desert(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-
-          //  $customers = Customers::all();
-            
-            if($admin->type == 1) {
-
-                return view('tawayorderIceCreamDessert');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
-        
+        return view('tawayorderIceCreamDessert');
     }
 
         /**
@@ -77,21 +95,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function sides(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-            
-            if($admin->type == 1) {
-
-                return view('tawayOrderSides');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
+        return view('tawayOrderSides');
     }    
     
     /**
@@ -100,20 +104,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function pizza(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-            if($admin->type == 1) {
-
-                return view('tawayOrderPizza');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
+        return view('tawayOrderPizza');
     }
         
     /**
@@ -122,23 +113,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function curry(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-
-          //  $customers = Customers::all();
-            
-            if($admin->type == 1) {
-
-                return view('tawayOrderCurry');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
+        return view('tawayOrderCurry');
     } 
 
     /**
@@ -147,23 +122,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function shawarma(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-
-          //  $customers = Customers::all();
-            
-            if($admin->type == 1) {
-
-                return view('tawayOrderShawarma');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
+        return view('tawayOrderShawarma');
     }
     
     /**
@@ -172,23 +131,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function wrap(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-
-          //  $customers = Customers::all();
-            
-            if($admin->type == 1) {
-
-                return view('tawayOrderWrap');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
+        return view('tawayOrderWrap');
     }   
     
      /**
@@ -197,23 +140,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function burgers(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-
-          //  $customers = Customers::all();
-            
-            if($admin->type == 1) {
-
-                return view('tawayOrderburgers');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
+        return view('tawayOrderburgers');
     }    
     
     /**
@@ -222,23 +149,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function grilled(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-
-          //  $customers = Customers::all();
-            
-            if($admin->type == 1) {
-
-                return view('tawayOrderGrilled');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
+        return view('tawayOrderGrilled');
     }
     
     /**
@@ -247,23 +158,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function salads(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-
-          //  $customers = Customers::all();
-            
-            if($admin->type == 1) {
-
-                return view('tawayOrderSaladsMezze');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
+        return view('tawayOrderSaladsMezze');
     }    
     
     /**
@@ -272,22 +167,7 @@ class TakeAwayItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function spdeals(){
-        if (Auth::check()){
-
-            $user_id = Auth::user()->getId();
-            $admin = User::find($user_id);
-
-          //  $customers = Customers::all();
-            
-            if($admin->type == 1) {
-                return view('tawayOrderSpecialDeals');
-            }
-            else if($admin->type == 0 ){
-                return redirect()->route('place.item');
-            }
-        } else {
-             return redirect()->route('logout');
-        } 
+        return view('tawayOrderSpecialDeals');
     }
 
     /**
