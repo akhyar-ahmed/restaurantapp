@@ -8,9 +8,9 @@ use App\User;
 use App\Model\TawayItems;
 use Sesssion;
 
-class TakeAwayItemController extends Controller
+class OnsiteItemController extends Controller
 {
-    /**
+   /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -25,7 +25,7 @@ class TakeAwayItemController extends Controller
             
             if($admin->type == 1) {
 
-                return view('tawayOrders');
+                return view('onsiteOrderDrinks');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -356,4 +356,3 @@ class TakeAwayItemController extends Controller
         //
     }
 }
-

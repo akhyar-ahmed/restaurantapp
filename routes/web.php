@@ -84,7 +84,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/taway-orders/grilled','TakeAwayItemController@grilled')->name('taway-orders-grilled'); 
     Route::get('/taway-orders/salads','TakeAwayItemController@salads')->name('taway-orders-salads'); 
     Route::get('/taway-orders/spdeals','TakeAwayItemController@spdeals')->name('taway-orders-spdeals'); 
+    
+    //T-away Preview
     Route::get('/taway-orders/preview','TawayOrderController@preview')->name('taway-orders-preview');
+    
+    //T-away item Add
     Route::post('/taway-orders/add-drinks','OnlineSalerecordController@addDrinks');
     Route::post('/taway-orders/add-curry','OnlineSalerecordController@addCurry');
     Route::post('/taway-orders/add-shawarma','OnlineSalerecordController@addShawarma');
@@ -98,7 +102,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/taway-orders/add-burger','OnlineSalerecordController@addBurger');
     Route::post('/taway-orders/add-grill','OnlineSalerecordController@addGrill');
 
-//Delete T-Away
+    //Delete T-Away
     Route::post('/taway-orders/delete-drinks','OnlineSalerecordController@deleteDrinks');
     Route::post('/taway-orders/delete-curry','OnlineSalerecordController@deleteCurry');
     Route::post('/taway-orders/delete-shawarma','OnlineSalerecordController@deleteShawarma');
@@ -111,8 +115,21 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/taway-orders/delete-burger','OnlineSalerecordController@deleteBurger');
     Route::post('/taway-orders/delete-grill','OnlineSalerecordController@deleteGrill');
 
-//T-Away Preview
+    //T-Away Preview
     Route::post('/taway-orders/confirm-orders','TawayOrderController@confirmOrder')->name('confirm-order');
     Route::get('/taway-orders/allDelet-drinks','OnlineSalerecordController@deleteUserOrder')->name('order-clear');
 
+    //Onsite-Orders
+    Route::get('/onsite-orders', 'OnsiteItemController@index')->name('onsite-orders');
+    Route::get('/onsite-orders/drinks','OnsiteItemController@drinks')->name('onsite-orders-drinks'); 
+    Route::get('/onsite-orders/desert','OnsiteItemController@desert')->name('onsite-orders-desert'); 
+    Route::get('/onsite-orders/sides','OnsiteItemController@sides')->name('onsite-orders-sides'); 
+    Route::get('/onsite-orders/pizza','OnsiteItemController@pizza')->name('onsite-orders-pizza'); 
+    Route::get('/onsite-orders/curry','OnsiteItemController@curry')->name('onsite-orders-curry'); 
+    Route::get('/onsite-orders/shawarma','OnsiteItemController@shawarma')->name('onsite-orders-shawarma'); 
+    Route::get('/onsite-orders/wrap','OnsiteItemController@wrap')->name('onsite-orders-wrap'); 
+    Route::get('/onsite-orders/burgers','OnsiteItemController@burgers')->name('onsite-orders-burgers'); 
+    Route::get('/onsite-orders/grilled','OnsiteItemController@grilled')->name('onsite-orders-grilled'); 
+    Route::get('/onsite-orders/salads','OnsiteItemController@salads')->name('onsite-orders-salads'); 
+    Route::get('/onsite-orders/spdeals','OnsiteItemController@spdeals')->name('onsite-orders-spdeals'); 
 });
