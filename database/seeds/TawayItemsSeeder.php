@@ -241,15 +241,7 @@ class TawayItemsSeeder extends Seeder
                 'category' => "Wrap",
                 'base_price' => '4.50'
             ],
-
-            [
-                'name' => "Additional",
-                'category' => "Wrap",
-                'base_price' => '2.00'
-            ],
-
             
-
             [
                 'name' => "Chicken Zinger Burger",
                 'category' => "Burgers",
@@ -291,12 +283,6 @@ class TawayItemsSeeder extends Seeder
                 'name' => "Chicken Fillet Burger Large",
                 'category' => "Burgers",
                 'base_price' => '4.99'
-            ],
-
-            [
-                'name' => "Additional",
-                'category' => "Burgers",
-                'base_price' => '2.00'
             ],
 
             [
