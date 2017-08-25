@@ -102,7 +102,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/taway-orders/delete-spdeals','OnlineSalerecordController@deleteSpdeals');
     Route::post('/taway-orders/delete-cake','OnlineSalerecordController@deleteCake');
     Route::post('/taway-orders/delete-pizza','OnlineSalerecordController@deletePizza');
-    Route::post('/taway-orders/confirm-orders','tawayOrderController@confirmOrder')->name('confirm-order');
+    Route::post('/taway-orders/confirm-orders','TawayOrderController@confirmOrder')->name('confirm-order');
     Route::get('/taway-orders/allDelet-drinks','OnlineSalerecordController@deleteUserOrder')->name('order-clear');
 
 });

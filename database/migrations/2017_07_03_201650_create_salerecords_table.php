@@ -19,7 +19,7 @@ class CreateSalerecordsTable extends Migration
             $table->integer('item_id');
             $table->string('food_name');
             $table->string('food_code');
-            $table->double('base_price',7,3);
+            $table->double('base_price',7,2);
             $table->integer('quantity');
             $table->double('total',10,3);
             $table->timestamps();
