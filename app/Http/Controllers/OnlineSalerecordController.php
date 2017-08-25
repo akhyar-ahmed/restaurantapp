@@ -372,6 +372,82 @@ class OnlineSalerecordController extends Controller
         
     }
 
+/**
+    * Show the form for creating a new resource.
+    *
+    * @param  \Illuminate\Http\Request  $request
+    * @return \Illuminate\Http\Response
+    */
+    public function addWrap(Request $request)
+    {
+        //return $request->qua;
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+        //return $request;
+        $item = TawayItems::where('category', '=', "Wrap")->get();
+        //return count($item);
+        foreach($item as $key=>$value){
+            if($request->item == $key+1) {
+                //return $value['name'];
+                if($request->addi != 1)
+                    $orderItem = Salerecords::where([
+                                                    ['user_id','=', $id],
+                                                    ['food_name','=',$value['name']]
+                    ])->get();
+                else 
+                    $orderItem = Salerecords::where([
+                                                    ['user_id','=', $id],
+                                                    ['food_name','=',$value['name']."-add chips & drinks"]
+                    ])->get();
+                //return count($orderItem);
+                if(count($orderItem)>0){
+                    
+                    foreach($orderItem as $order) {
+                        $item = Salerecords::find($order['id']);
+                        break;
+                    }
+
+                    $item->quantity +=1;
+                    $item->total = $item->quantity * $item->base_price;
+
+                    $item->save();
+
+                    return 'success'; 
+
+                } else {
+                    $newItem = new Salerecords;
+                    $newItem->user_id = $id;
+                    $newItem->item_id = $value['id'];
+                    if($request->addi != 1)
+                        {
+                            $newItem->food_name = $value['name'];
+                            $newItem->base_price = $value['base_price'];
+                            
+                        }
+                    else
+                        {
+                            $newItem->food_name = $value['name']."-add chips & drinks";
+                            $newItem->base_price = ($value['base_price'] + 2.00);
+                        }
+                    $newItem->quantity = 1;
+                    
+                    $newItem->food_code = $value['category'];
+                    
+                    $total = $newItem->base_price;
+                    $newItem->total = $total;
+                    
+                    $newItem->save();
+                    return 'success';
+                }
+
+            }
+        }
+    
+        
+    }
+
     /**
     * Show the form for creating a new resource.
     *
@@ -646,6 +722,57 @@ class OnlineSalerecordController extends Controller
         }    
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function deleteWrap(Request $request)
+    {
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+        }
+        //return $request;
+        $item = TawayItems::where('category', '=', "Wrap")->get();
+        //return count($item);
+        foreach($item as $key=>$value){
+            if($request->item == $key+1) {
+                //return $value['name'];
+                if($request->addi != 1)
+                    $orderItem = Salerecords::where([
+                                                    ['user_id','=', $id],
+                                                    ['food_name','=',$value['name']]
+                    ])->get();
+                else 
+                    $orderItem = Salerecords::where([
+                                                    ['user_id','=', $id],
+                                                    ['food_name','=',$value['name']." add chips & drinks"]
+                    ])->get();
+                //return count($orderItem);
+                if(count($orderItem)>0){
+                    
+                    foreach($orderItem as $order) {
+                        $item = Salerecords::find($order['id']);
+                        break;
+                    }
+                    //$item = Salerecords::find($orderItem['id']);
+                    $item->quantity -=1;
+                    $item->total = $item->quantity * $item->base_price;
+                    
+                    if($item->quantity <= 0)
+                        $item->delete();
+                    else
+                        $item->save();
+                    return 'success'; 
+                } else {
+                    return 'success, item not found';
+                }
+
+            }
+        }    
+    }
     /**
      * Show the form for creating a new resource.
      *

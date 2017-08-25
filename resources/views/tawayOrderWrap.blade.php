@@ -165,14 +165,98 @@ $(document).ready(function(){
 		var val = $(this).attr('value');
 		if( id == "add"){
 			//alert(id+" "+val);
-			if($('input:checkbox[name=chips]:checked').val() != val)
-				alert("Dhur Chudir Vai thik kori mar");
-			else
-				alert($('input:checkbox[name=chips]:checked').val());
-
+			if($('input:checkbox[name=chips]:checked').val()){
+				if($('input:checkbox[name=chips]:checked').val() != val)
+					alert("Please Perfectly Select The Checkbox !!");
+				else{
+					
+					//alert($('input:checkbox[name=chips]:checked').val());
+					$.ajaxSetup({ 
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+					$.ajax({
+						url: "/taway-orders/add-wrap",
+						method: "POST",
+						data: {
+							item:val,
+							addi:1
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+				}
+			}
+			else{
+				$.ajaxSetup({ 
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+				$.ajax({
+					url: "/taway-orders/add-wrap",
+					method: "POST",
+					data: {
+						item:val,
+						addi:0
+						},
+					dataType: "text",
+					success: function(data){
+						console.log(data);
+					}
+				});
+				
+			}
 		}
 		else if( id == "minus"){
-			alert(id+" "+val);
+			if($('input:checkbox[name=chips]:checked').val()){
+				if($('input:checkbox[name=chips]:checked').val() != val)
+					alert("Please Perfectly Select The Checkbox !!");
+				else{
+					
+					//alert($('input:checkbox[name=chips]:checked').val());
+					$.ajaxSetup({ 
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+					$.ajax({
+						url: "/taway-orders/delete-wrap",
+						method: "POST",
+						data: {
+							item:val,
+							addi:1
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+				}
+			}
+			else{
+				$.ajaxSetup({ 
+					headers: {
+							'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+				$.ajax({
+					url: "/taway-orders/delete-wrap",
+					method: "POST",
+					data: {
+						item:val,
+						addi:0
+						},
+					dataType: "text",
+					success: function(data){
+						console.log(data);
+					}
+				});
+				
+			}
 		}
 	});
 });
