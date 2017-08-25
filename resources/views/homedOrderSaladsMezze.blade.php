@@ -76,7 +76,7 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Chicken Caesar salad</h4>
+							<h4 class="card-title">Chicken Caesar Salad</h4>
 							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -87,9 +87,10 @@
 					<div class="card" >
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Green salad</h4>
+							<h4 class="card-title">Green Salad</h4>
 							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<br><br><br><br>
 						</div>
 					</div>
 				</div>
@@ -161,6 +162,7 @@
 							<h4 class="card-title">Coleslaw</h4>
 							<a class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<br><br><br><br>
 						</div>
 					</div>
 				</div>
@@ -171,7 +173,7 @@
 					<div class="card">
 						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Mix olives</h4>
+							<h4 class="card-title">Mix Olives</h4>
 							<a  class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -203,105 +205,52 @@
 
 @push('scripts')
 <script>
-	$(document).ready(function(){
-		$('a').click(function(){
-			var id = $(this).attr('id');
-			var val = $(this).attr('value');
-			if( id == "add"){
-				alert(id+" "+val);
-				
+$(document).ready(function(){
+	$('a').click(function(){
+		var id = $(this).attr('id');
+		var val = $(this).attr('value');
+		if( id == "add"){
+			alert(id+" "+val);
 
-			}
-			else if( id == "minus"){
-				alert(id+" "+val);
-			}
-		});
-
-		$('#search_text').keyup(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
+			$.ajaxSetup({
+				headers: {
 						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 					}
 				});
 				$.ajax({
-					url: "/food-orders/searchfood",
+					url: "/homed-orders/add-salads",
 					method: "POST",
 					data: {
-						search:txt
+						item:val
 						},
 					dataType: "text",
 					success: function(data){
-						$('#result').html(data);
+						console.log(data);
 					}
 				});
-
-			}
-			else {
-				$('#result').html('');
-
-				$.ajaxSetup({
-        		headers: {
+			
+		}
+		else if( id == "minus"){
+			alert(id+" "+val);
+			$.ajaxSetup({
+				headers: {
 						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 					}
 				});
 				$.ajax({
-					url: "/food-orders/searchfood",
+					url: "/homed-orders/delete-salads",
 					method: "POST",
 					data: {
-						search:txt
+						item:val
 						},
 					dataType: "text",
 					success: function(data){
-						$('#result').html(data);
+						console.log(data);
 					}
 				});
 			}
-		});
-		$('#search_text').keydown(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-
-			}
-			else {
-				$('#result').html('');
-				
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-			}
-		});
 	});
+});
 </script>
 @endpush
 

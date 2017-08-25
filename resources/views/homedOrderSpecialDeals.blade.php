@@ -20,38 +20,37 @@
         <div class="card-header">
 			<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white" id = "0">Drinks</a>
+				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white">Drinks</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" id = "1">Dessert & Ice Cream</a>
+				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" id = "2">Sides</a>
-			</li>
-
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" id="3">Pizza</a>
+				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" >Sides</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" id="4">Curry</a>
+				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" >Pizza</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" id="5">Shawarma</a>
+				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" >Curry</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" id="6">Wrap</a>
+				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" >Shawarma</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" id="7">Burgers</a>
+				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" >Wrap</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" id="8">Grilled</a>
+				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" >Burgers</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" id="9"> Salads & cold Mezze</a>
+				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" >Grilled</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" id="10">Special deals</a>
+				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" > Salads & cold Mezze</a>
+			</li>
+			<li class="nav-item">
+				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" >Special deals</a>
 			</li>
 			</ul>
         </div>
@@ -63,9 +62,8 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h5 class="card-title">Daily deal</h5>
+							<h5 class="card-title">Daily Deal</h5>
 							<a class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -74,9 +72,8 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Family platter</h5>
+							<h5 class="card-title">Family Platter</h5>
 							<a class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -85,9 +82,8 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h5 class="card-title">Mix grill family deal</h5>
+							<h5 class="card-title">Mix Grill Family Deal</h5>
 							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -115,98 +111,44 @@ $(document).ready(function(){
 		var id = $(this).attr('id');
 		var val = $(this).attr('value');
 		if( id == "add"){
-			alert(id+" "+val);
+			//alert(id+" "+val);
+			$.ajaxSetup({
+			headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
+			$.ajax({
+				url: "/homed-orders/add-spdeals",
+				method: "POST",
+				data: {
+					item:val
+					},
+				dataType: "text",
+				success: function(data){
+					console.log(data);
+				}
+			});
 			
-
 		}
 		else if( id == "minus"){
-			alert(id+" "+val);
-		}
-	});
-
-	$('#search_text').keyup(function(){
-		var txt = $(this).val();
-		if( txt != '') {
+			//alert(id+" "+val);
 			$.ajaxSetup({
-			headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				}
-			});
-			$.ajax({
-				url: "/food-orders/searchfood",
-				method: "POST",
-				data: {
-					search:txt
-					},
-				dataType: "text",
-				success: function(data){
-					$('#result').html(data);
-				}
-			});
-
-		}
-		else {
-			$('#result').html('');
-
-			$.ajaxSetup({
-			headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				}
-			});
-			$.ajax({
-				url: "/food-orders/searchfood",
-				method: "POST",
-				data: {
-					search:txt
-					},
-				dataType: "text",
-				success: function(data){
-					$('#result').html(data);
-				}
-			});
-		}
-	});
-	$('#search_text').keydown(function(){
-		var txt = $(this).val();
-		if( txt != '') {
-			$.ajaxSetup({
-			headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				}
-			});
-			$.ajax({
-				url: "/food-orders/searchfood",
-				method: "POST",
-				data: {
-					search:txt
-					},
-				dataType: "text",
-				success: function(data){
-					$('#result').html(data);
-				}
-			});
-
-		}
-		else {
-			$('#result').html('');
-			
-			$.ajaxSetup({
-			headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				}
-			});
-			$.ajax({
-				url: "/food-orders/searchfood",
-				method: "POST",
-				data: {
-					search:txt
-					},
-				dataType: "text",
-				success: function(data){
-					$('#result').html(data);
-				}
-			});
-		}
+				headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
+				$.ajax({
+					url: "/homed-orders/delete-spdeals",
+					method: "POST",
+					data: {
+						item:val
+						},
+					dataType: "text",
+					success: function(data){
+						console.log(data);
+					}
+				});
+			}
 	});
 });
 </script>

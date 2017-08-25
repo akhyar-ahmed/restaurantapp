@@ -20,38 +20,38 @@
         <div class="card-header">
 			<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white" id = "0">Drinks</a>
+				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white" >Drinks</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" id = "1">Dessert & Ice Cream</a>
+				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" id = "2">Sides</a>
+				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" >Sides</a>
 			</li>
 
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" id="3">Pizza</a>
+				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" >Pizza</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" id="4">Curry</a>
+				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" >Curry</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" id="5">Shawarma</a>
+				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" >Shawarma</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" id="6">Wrap</a>
+				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" >Wrap</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" id="7">Burgers</a>
+				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" >Burgers</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" id="8">Grilled</a>
+				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" >Grilled</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" id="9"> Salads & cold Mezze</a>
+				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" > Salads & cold Mezze</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" id="10">Special deals</a>
+				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" >Special deals</a>
 			</li>
 			</ul>
         </div>
@@ -67,25 +67,25 @@
 						<div class="card-block">
 						<h4 class="card-title">Cake</h4>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">White fruits</label>
+                                <label><input type="checkbox" name = "cake" value="1">White Fruits</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Choco choco cream</label>
+                                <label><input type="checkbox" name = "cake" value="2">Choco Choco Cream</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Tarte strawberry</label>
+                                <label><input type="checkbox" name = "cake" value="3">Tarte Strawberry</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Termeso</label>
+                                <label><input type="checkbox" name = "cake" value="4">Termeso</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Chocolate fudge cake</label>
+                                <label><input type="checkbox" name = "cake" value="5">Chocolate Fudge Cake</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Cheesecake</label>
+                                <label><input type="checkbox" name = "cake" value="6">Cheesecake</label>
                             </div><br>
-                            <a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-                            <a  class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+                            <a  class="btn btn-success" id="add" value="A"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                            <a  class="btn btn-danger" id="minus" value="A"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -105,29 +105,28 @@
 						<div class="card-block">
 							<h4 class="card-title">Ice Creams</h4>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Chocolate ice cream</label>
+                                <label><input type="checkbox" name = "ice-creams" value="1">Chocolate IceCream</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value=""> Banana funnel ice cream </label>
+                                <label><input type="checkbox" name = "ice-creams" value="2"> Banana Funnel Ice-Cream </label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Kiwi ice cream</label>
+                                <label><input type="checkbox" name = "ice-creams" value="3">Kiwi Ice-Cream</label>
                             </div>
                             <div class="checkbox-inline">
-                                <label><input type="checkbox" value="">Venilla ice cream</label>
+                                <label><input type="checkbox" name = "ice-creams" value="4">Venilla Ice-Cream</label>
                             </div>
                             <br>
-                            <a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-                            <a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+                            <a  class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                            <a  class="btn btn-danger" id="minus" value="B"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Ice cream Fruits salad </h4>
+							<h4 class="card-title">Ice-Cream Fruits Salad </h4>
 							<a class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -152,99 +151,150 @@
 			var id = $(this).attr('id');
 			var val = $(this).attr('value');
 			if( id == "add"){
-				alert(id+" "+val);
+				//alert(id+" "+val);
 				
+				if(val == 'A'){
+					var favorite = [];
+					var toppings="";
+					var cake = ["White","Choco","Tarte","Termeso","Chocolate","Chesse"];
+					$.each($("input[name='cake']:checked"), function(){           
+						favorite.push($(this).val());
+						toppings+=(cake[$(this).val() -1 ]+" ");
+					});
+					toppings+="Cake";
+					//alert(toppings);
+					if(favorite.length==0)
+						alert("Select Checkbox Properly !!");
+					else{
+						//alert(favorite.length);
+						$.ajaxSetup({ 
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/homed-orders/add-cake",
+							method: "POST",
+							data: {
+								item:val,
+								topping:toppings
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					
+				}
+				else if(val=='B' || val==3){
+					var favorite = [];
+					var toppings="";
+					var ice = ["Chocolate","Banana","Kiwi","Venilla"];
+					$.each($("input[name='ice-creams']:checked"), function(){            
+						favorite.push($(this).val());
+						toppings+=(ice[$(this).val() -1 ]+" ");
 
+					});
+					toppings+="Ice Creams";
+					if(favorite.length==0 && val=='B')
+						alert("Select Checkbox Properly !!");
+					else{
+						//alert(favorite.length);
+						$.ajaxSetup({
+							headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/homed-orders/add-cake",
+							method: "POST",
+							data: {
+								item:val,
+								topping:toppings
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					
+				}
 			}
 			else if( id == "minus"){
-				alert(id+" "+val);
+				//alert(id+" "+val);
+				if(val == 'A'){
+					var favorite = [];
+					var toppings="";
+					var cake = ["White","Choco","Tarte","Termeso","Chocolate","Chesse"];
+					$.each($("input[name='cake']:checked"), function(){           
+						favorite.push($(this).val());
+						toppings+=(cake[$(this).val() -1 ]+" ");
+					});
+					toppings+="Cake";
+					//alert(toppings);
+					if(favorite.length==0)
+						alert("Select Checkbox Properly !!");
+					else{
+						//alert(favorite.length);
+						$.ajaxSetup({
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/homed-orders/delete-cake",
+							method: "POST",
+							data: {
+								item:val,
+								topping:toppings
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					
+				}
+				else if(val=='B' || val==3){
+					var favorite = [];
+					var toppings="";
+					var ice = ["Chocolate","Banana","Kiwi","Venilla"];
+					$.each($("input[name='ice-creams']:checked"), function(){            
+						favorite.push($(this).val());
+						toppings+=(ice[$(this).val() -1 ]+" ");
+
+					});
+					toppings+="Ice Creams";
+					if(favorite.length==0 && val=='B')
+						alert("Select Checkbox Properly !!");
+					else{
+						//alert(favorite.length);
+						$.ajaxSetup({
+							headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+						$.ajax({
+							url: "/homed-orders/delete-cake",
+							method: "POST",
+							data: {
+								item:val,
+								topping:toppings
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					}
+					
+				}
 			}
 		});
 
-		$('#search_text').keyup(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-
-			}
-			else {
-				$('#result').html('');
-
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-			}
-		});
-		$('#search_text').keydown(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-
-			}
-			else {
-				$('#result').html('');
-				
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
-			}
-		});
 	});
 </script>
 @endpush
