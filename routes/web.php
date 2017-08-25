@@ -115,9 +115,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/taway-orders/delete-burger','OnlineSalerecordController@deleteBurger');
     Route::post('/taway-orders/delete-grill','OnlineSalerecordController@deleteGrill');
 
-    //T-Away Preview
-    Route::post('/taway-orders/confirm-orders','TawayOrderController@confirmOrder')->name('confirm-order');
-    Route::get('/taway-orders/allDelet-drinks','OnlineSalerecordController@deleteUserOrder')->name('order-clear');
+    // Confirm T-away orders
+    Route::post('/taway-orders/confirm-orders','TawayOrderController@confirmOrder')->name('taway-confirm-order');
+    
+    //Delete All orders
+    Route::get('allDelete-orders','OnlineSalerecordController@deleteUserOrder')->name('order-clear');
 
     //Onsite-Orders
     Route::get('/onsite-orders', 'OnsiteItemController@index')->name('onsite-orders');
@@ -131,5 +133,53 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/onsite-orders/burgers','OnsiteItemController@burgers')->name('onsite-orders-burgers'); 
     Route::get('/onsite-orders/grilled','OnsiteItemController@grilled')->name('onsite-orders-grilled'); 
     Route::get('/onsite-orders/salads','OnsiteItemController@salads')->name('onsite-orders-salads'); 
-    Route::get('/onsite-orders/spdeals','OnsiteItemController@spdeals')->name('onsite-orders-spdeals'); 
+    Route::get('/onsite-orders/spdeals','OnsiteItemController@spdeals')->name('onsite-orders-spdeals');
+    
+    //Onsite Preview
+    Route::get('/onsite-orders/preview','OnsiteOrderController@preview')->name('onsite-orders-preview');
+
+    //Onsite item Add
+    Route::post('/onsite-orders/add-drinks','OnlineSalerecordController@addDrinks');
+    Route::post('/onsite-orders/add-curry','OnlineSalerecordController@addCurry');
+    Route::post('/onsite-orders/add-shawarma','OnlineSalerecordController@addShawarma');
+    Route::post('/onsite-orders/add-salads','OnlineSalerecordController@addSalads');
+    Route::post('/onsite-orders/add-spdeals','OnlineSalerecordController@addSpdeals');
+    Route::post('/onsite-orders/add-drinks','OnlineSalerecordController@addDrinks');
+    Route::post('/onsite-orders/add-cake','OnlineSalerecordController@addCake');
+    Route::post('/onsite-orders/add-sides','OnlineSalerecordController@addSides');
+    Route::post('/onsite-orders/add-pizza','OnlineSalerecordController@addPizza');
+    Route::post('/onsite-orders/add-wrap','OnlineSalerecordController@addWrap');
+    Route::post('/onsite-orders/add-burger','OnlineSalerecordController@addBurger');
+    Route::post('/onsite-orders/add-grill','OnlineSalerecordController@addGrill');
+
+    //Delete Onsite
+    Route::post('/onsite-orders/delete-drinks','OnlineSalerecordController@deleteDrinks');
+    Route::post('/onsite-orders/delete-curry','OnlineSalerecordController@deleteCurry');
+    Route::post('/onsite-orders/delete-shawarma','OnlineSalerecordController@deleteShawarma');
+    Route::post('/onsite-orders/delete-wrap','OnlineSalerecordController@deleteWrap');
+    Route::post('/onsite-orders/delete-sides','OnlineSalerecordController@deleteSides');
+    Route::post('/onsite-orders/delete-salads','OnlineSalerecordController@deleteSalads');
+    Route::post('/onsite-orders/delete-spdeals','OnlineSalerecordController@deleteSpdeals');
+    Route::post('/onsite-orders/delete-cake','OnlineSalerecordController@deleteCake');
+    Route::post('/onsite-orders/delete-pizza','OnlineSalerecordController@deletePizza');
+    Route::post('/onsite-orders/delete-burger','OnlineSalerecordController@deleteBurger');
+    Route::post('/onsite-orders/delete-grill','OnlineSalerecordController@deleteGrill'); 
+
+    // Confirm T-away orders
+    Route::post('/onsite-orders/confirm-orders','OnsiteOrderController@confirmOrder')->name('onsite-confirm-order');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

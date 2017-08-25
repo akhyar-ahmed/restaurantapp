@@ -1,15 +1,15 @@
 @extends('main')
 
-@section('title', "| TakeAway-Orders ")
+@section('title', "| Onsite-Orders ")
 
 @section('content')
 <div class="container">
 <div class = "page-header container col-xs-12 form-group">
 	<div class = "col-xs-10">
-		<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Take-Away Orders)</h3>
+		<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Onsite Orders)</h3>
 	</div>
 	<div class = "col-xs-2"  >
-		<a href= "{{ route('taway-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
+		<a href= "{{ route('onsite-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
 	</div>
 	</div>
 
@@ -167,7 +167,7 @@
 						alert("Select Checkbox Properly !!");
 					else{
 						//alert(favorite.length);
-						$.ajaxSetup({
+						$.ajaxSetup({ 
 						headers: {
 								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 							}

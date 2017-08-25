@@ -42,7 +42,7 @@ class OnsiteItemController extends Controller
      */
     public function drinks(){
 
-        return redirect()->route('taway-orders');
+        return redirect()->route('onsite-orders');
     }
 
     /**
@@ -60,7 +60,7 @@ class OnsiteItemController extends Controller
             
             if($admin->type == 1) {
 
-                return view('tawayorderIceCreamDessert');
+                return view('onsiteOrderIceCreamDesserts');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -84,7 +84,7 @@ class OnsiteItemController extends Controller
             
             if($admin->type == 1) {
 
-                return view('tawayOrderSides');
+                return view('onsiteOrderSides');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -106,7 +106,7 @@ class OnsiteItemController extends Controller
             $admin = User::find($user_id);
             if($admin->type == 1) {
 
-                return view('tawayOrderPizza');
+                return view('onsiteOrderPizza');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -131,7 +131,7 @@ class OnsiteItemController extends Controller
             
             if($admin->type == 1) {
 
-                return view('tawayOrderCurry');
+                return view('onsiteOrderCurry');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -156,7 +156,7 @@ class OnsiteItemController extends Controller
             
             if($admin->type == 1) {
 
-                return view('tawayOrderShawarma');
+                return view('onsiteOrderShawarma');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -181,7 +181,7 @@ class OnsiteItemController extends Controller
             
             if($admin->type == 1) {
 
-                return view('tawayOrderWrap');
+                return view('onsiteOrderWrap');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -206,7 +206,7 @@ class OnsiteItemController extends Controller
             
             if($admin->type == 1) {
 
-                return view('tawayOrderburgers');
+                return view('onsiteOrderBurger');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -231,7 +231,7 @@ class OnsiteItemController extends Controller
             
             if($admin->type == 1) {
 
-                return view('tawayOrderGrilled');
+                return view('onsiteOrderGrilled');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -256,7 +256,7 @@ class OnsiteItemController extends Controller
             
             if($admin->type == 1) {
 
-                return view('tawayOrderSaladsMezze');
+                return view('onsiteOrderSaladsMezze');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');
@@ -280,7 +280,7 @@ class OnsiteItemController extends Controller
           //  $customers = Customers::all();
             
             if($admin->type == 1) {
-                return view('tawayOrderSpecialDeals');
+                return view('onsiteOrderSpecialDeals');
             }
             else if($admin->type == 0 ){
                 return redirect()->route('place.item');

@@ -88,7 +88,7 @@
 		</table>
 	</div>
 	<div class="container form-group col-xs-12 ">
-		<form method="POST" action="{{ route('confirm-order') }}">
+		<form method="POST" action="{{ route('taway-confirm-order') }}">
 			<div class = "form-group col-xs-2">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 				<input type="submit" name="submit" value="Confirm" class="btn btn-success btn-md">

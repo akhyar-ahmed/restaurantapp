@@ -9,7 +9,7 @@
 			<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Onsite Orders)</h3>
 		</div>
 		<div class = "col-xs-2"  >
-			<a href= "{{ route('taway-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
+			<a href= "{{ route('onsite-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
 		</div>
 	</div>
 
@@ -20,38 +20,38 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" >
             <li class="nav-item">
-                <a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white">Drinks</a>
+                <a class="TItem" href="{{ route('onsite-orders-drinks') }}" style="color:white">Drinks</a>
             </li>
             <li class="nav-item">
-                <a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
+                <a class="TItem" href="{{ route('onsite-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
             </li>
             <li class="nav-item">
-                <a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" >Sides</a>
+                <a class="TItem" href="{{ route('onsite-orders-sides') }}" style="color:white" >Sides</a>
             </li>
 
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" >Pizza</a>
+				<a class="TItem" href="{{ route('onsite-orders-pizza') }}" style="color:white" >Pizza</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" >Curry</a>
+				<a class="TItem" href="{{ route('onsite-orders-curry') }}" style="color:white" >Curry</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" >Shawarma</a>
+				<a class="TItem" href="{{ route('onsite-orders-shawarma') }}" style="color:white" >Shawarma</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" >Wrap</a>
+				<a class="TItem" href="{{ route('onsite-orders-wrap') }}" style="color:white" >Wrap</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" >Burgers</a>
+				<a class="TItem" href="{{ route('onsite-orders-burgers') }}" style="color:white" >Burgers</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" >Grilled</a>
+				<a class="TItem" href="{{ route('onsite-orders-grilled') }}" style="color:white" >Grilled</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" > Salads & cold Mezze</a>
+				<a class="TItem" href="{{ route('onsite-orders-salads') }}" style="color:white" > Salads & cold Mezze</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" >Special deals</a>
+				<a class="TItem" href="{{ route('onsite-orders-spdeals') }}" style="color:white" >Special deals</a>
 			</li>
 			</ul>
 
