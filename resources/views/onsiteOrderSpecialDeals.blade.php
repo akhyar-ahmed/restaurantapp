@@ -118,7 +118,7 @@ $(document).ready(function(){
 				}
 			});
 			$.ajax({
-				url: "/taway-orders/add-spdeals",
+				url: "/onsite-orders/add-spdeals",
 				method: "POST",
 				data: {
 					item:val
@@ -138,7 +138,7 @@ $(document).ready(function(){
 					}
 				});
 				$.ajax({
-					url: "/taway-orders/delete-spdeals",
+					url: "/onsite-orders/delete-spdeals",
 					method: "POST",
 					data: {
 						item:val
