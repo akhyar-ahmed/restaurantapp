@@ -9,7 +9,7 @@
 		<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Take-Away Orders)</h3>
 	</div>
 	<div class = "col-xs-2"  >
-		<a href= "{{ route('taway-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
+		<a href= "{{ route('homed-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
 	</div>
 	</div>
 
@@ -18,41 +18,38 @@
 	</div>
     <div class="card text-center">
         <div class="card-header">
-			<ul class="nav nav-tabs card-header-tabs" >
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white" id = "0">Drinks</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" id = "1">Dessert & Ice Cream</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" id = "2">Sides</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" id="3">Pizza</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" id="4">Curry</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" id="5">Shawarma</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" id="6">Wrap</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" id="7">Burgers</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" id="8">Grilled</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" id="9"> Salads & cold Mezze</a>
-			</li>
-			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" id="10">Special deals</a>
-			</li>
-			</ul>
+		<ul class="nav nav-tabs card-header-tabs" >
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homed-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
+		</li>
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homed-orders-sides') }}" style="color:white" >Sides</a>
+		</li>
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homed-orders-pizza') }}" style="color:white" >Pizza</a>
+		</li>
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homed-orders-curry') }}" style="color:white" >Curry</a>
+		</li>
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homed-orders-shawarma') }}" style="color:white" >Shawarma</a>
+		</li>
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homd-orders-wrap') }}" style="color:white" >Wrap</a>
+		</li>
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homed-orders-burgers') }}" style="color:white" >Burgers</a>
+		</li>
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homed-orders-grilled') }}" style="color:white" >Grilled</a>
+		</li>
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homed-orders-salads') }}" style="color:white" > Salads & cold Mezze</a>
+		</li>
+		<li class="nav-item">
+			<a class="TItem" href="{{ route('homed-orders-spdeals') }}" style="color:white" >Special deals</a>
+		</li>
+		</ul>
         </div>
 		<br>
         <div class="container card-block">
@@ -62,51 +59,49 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
-							<h4 class="card-title">Chicken shish kebab</h4>
+							<h4 class="card-title">Chicken Shish Kebab</h4>
 								<div class="radio-inline">
-                                    <label><input type="radio" name="optradio" value="1">Regular</label>
+                                    <label><input type="radio" name="radio" value="1">Regular</label>
                                 </div>
                                 <div class="radio-inline">
-                                    <label><input type="radio" name="optradio" value="2">Large</label>
-                                </div>
-							<a  class="btn btn-success" id="add" value="A"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="A"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+                                    <label><input type="radio" name="radio" value="2">Large</label>
+                                </div><br>
+							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-4" >
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Lamb shish kebab</h4>
+							<h4 class="card-title">Lamb Shish Kebab</h4>
 								<div class="radio-inline">
-                                    <label><input type="radio" name="optradio" value="3">Regular</label>
+                                    <label><input type="radio" name="radio" value="3">Regular</label>
                                 </div>
                                 <div class="radio-inline">
-                                    <label><input type="radio" name="optradio" value="4">Large</label>
-                                </div>
-							<a  class="btn btn-success" id="add" value="B"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="B"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+                                    <label><input type="radio" name="radio" value="4">Large</label>
+                                </div><br>
+							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-4" >
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Kofta kebab</h4>
+							<h4 class="card-title">Kofta Kebab</h4>
 								<div class="radio-inline">
-                                    <label><input type="radio" name="optradio" value="5">Regular</label>
+                                    <label><input type="radio" name="radio" value="5">Regular</label>
                                 </div>
                                 <div class="radio-inline">
-                                    <label><input type="radio" name="optradio" value="6">Large</label>
-                                </div>
-							<a  class="btn btn-success" id="add" value="C"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="C"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+                                    <label><input type="radio" name="radio" value="6">Large</label>
+                                </div><br>
+							<a  class="btn btn-success" id="add" value="3"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a  class="btn btn-danger" id="minus" value="3"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<br><br><br><br>
 						</div>
 					</div>
 				</div>
@@ -114,9 +109,8 @@
 			<div class="row-xs-12">
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Mix shish kebab (Large)</h4>
+							<h4 class="card-title">Mix Shish Kebab-L</h4>
 							<a  class="btn btn-success" id="add" value="7"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="7"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -125,9 +119,8 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Mix Grill kebab</h4>
+							<h4 class="card-title">Mix Grill Kebab</h4>
 							<a  class="btn btn-success" id="add" value="8"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="8"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -136,11 +129,11 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Large mix grill</h4>
+							<h4 class="card-title">Large Mix Grill</h4>
 							<a  class="btn btn-success" id="add" value="9"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="9"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<br><br><br><br>
 						</div>
 					</div>
 				</div>
@@ -148,9 +141,8 @@
 			<div class="row-xs-12">
                 <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Full chicken grill</h4>
+							<h4 class="card-title">Full Chicken Grill</h4>
 							<a  class="btn btn-success" id="add" value="10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="10"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -159,9 +151,8 @@
 
                 <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Half  chicken grilled</h4>
+							<h4 class="card-title">Half Chicken Grilled</h4>
 							<a  class="btn btn-success" id="add" value="11"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="11"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
@@ -170,58 +161,28 @@
 
                 <div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Grilled salmon</h4>
+							<h4 class="card-title">Grilled Salmon</h4>
 							<a  class="btn btn-success" id="add" value="12"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="12"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+							<br><br><br><br>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row-xs-12">
-                <div class="col-xs-4">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="">
-						<div class="card-block">
-							<h4 class="card-title">Grilled Salmon</h4>
-							<a  class="btn btn-success" id="add" value="13"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="13"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
+                
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
-							<h4 class="card-title">Halloumi aubergine</h4>
+							<h4 class="card-title">Halloumi Aubergine</h4>
 							<a  class="btn btn-success" id="add" value="14"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 							<a  class="btn btn-danger" id="minus" value="14"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-4">
-					<div class="card">
-						<img class="card-img-top" src="..." alt="">
-						<div class="card-block">
-							<h4 class="card-title">Large Mix Grill</h4>
-							<a  class="btn btn-success" id="add" value="15"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-							<a  class="btn btn-danger" id="minus" value="15"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
 			</div>
-
-			
-
-			
-
-        </div>
-
-		
-
-
-		
+        </div>	
     </div>
 </div>
 
@@ -234,97 +195,178 @@
 			var id = $(this).attr('id');
 			var val = $(this).attr('value');
 			if( id == "add"){
-				alert(id+" "+val);
-				
+				if( val != 1 && val != 2 && val != 3){
+					
+					$.ajaxSetup({ 
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
 
-			}
-			else if( id == "minus"){
-				alert(id+" "+val);
-			}
-		});
+					$.ajax({
+						url: "/homed-orders/add-grill",
+						method: "POST",
+						data: {
+							item:val
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+				}
+				else{
+					 var val1 = $('input:radio[name=radio]:checked').val();
+					 if(val1 && val != 2 && val != 3 && (val1 == 1 || val1==2) ){
+						//alert(val1);
+						$.ajaxSetup({ 
+							headers: {
+									'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
 
-		$('#search_text').keyup(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
+						$.ajax({
+							url: "/homed-orders/add-grill",
+							method: "POST",
+							data: {
+								item:val1
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					 }
+					 else if(val1 && val != 1 && val != 3 && (val1 == 3 || val1==4) ){
+						//alert(val1);
+						$.ajaxSetup({ 
+							headers: {
+									'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
 
-			}
-			else {
-				$('#result').html('');
+						$.ajax({
+							url: "/homed-orders/add-grill",
+							method: "POST",
+							data: {
+								item:val1
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					 }
+					 else if(val1 && val != 1 && val != 2 && (val1 == 5 || val1==6)){
+						//alert(val1);
+						$.ajaxSetup({ 
+							headers: {
+									'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
 
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
+						$.ajax({
+							url: "/homed-orders/add-grill",
+							method: "POST",
+							data: {
+								item:val1
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					 }
+					 else
+					 	alert("Check Radio Button Properly !!");
+				}
 			}
-		});
-		$('#search_text').keydown(function(){
-			var txt = $(this).val();
-			if( txt != '') {
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
+			else if( id == "minus" ){
+				if( val != 1 && val != 2 && val != 3){
+					
+					$.ajaxSetup({ 
+						headers: {
+								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
 
-			}
-			else {
-				$('#result').html('');
-				
-				$.ajaxSetup({
-        		headers: {
-						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-					}
-				});
-				$.ajax({
-					url: "/food-orders/searchfood",
-					method: "POST",
-					data: {
-						search:txt
-						},
-					dataType: "text",
-					success: function(data){
-						$('#result').html(data);
-					}
-				});
+					$.ajax({
+						url: "/homed-orders/delete-grill",
+						method: "POST",
+						data: {
+							item:val
+							},
+						dataType: "text",
+						success: function(data){
+							console.log(data);
+						}
+					});
+				}
+				else{
+					 var val1 = $('input:radio[name=radio]:checked').val();
+					 if(val1 && val != 2 && val != 3 && (val1 == 1 || val1==2) ){
+						// alert(val1);
+						$.ajaxSetup({ 
+							headers: {
+									'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+
+						$.ajax({
+							url: "/homed-orders/delete-grill",
+							method: "POST",
+							data: {
+								item:val1
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					 }
+					 else if(val1 && val != 1 && val != 3 && (val1 == 3 || val1==4) ){
+						//alert(val1);
+						$.ajaxSetup({ 
+							headers: {
+									'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+
+						$.ajax({
+							url: "/homed-orders/delete-grill",
+							method: "POST",
+							data: {
+								item:val1
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					 }
+					 else if(val1 && val != 1 && val != 2 &&  (val1 == 5 || val1==6)){
+						//alert(val1);
+						$.ajaxSetup({ 
+							headers: {
+									'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+							}
+						});
+
+						$.ajax({
+							url: "/homed-orders/delete-grill",
+							method: "POST",
+							data: {
+								item:val1
+								},
+							dataType: "text",
+							success: function(data){
+								console.log(data);
+							}
+						});
+					 }
+					 else
+					 	alert("Check Radio Button Properly !!");
+				}
 			}
 		});
 	});
