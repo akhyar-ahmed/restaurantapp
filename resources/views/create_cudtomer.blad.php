@@ -1,5 +1,5 @@
 
-
+<div class="continer">
 <form class="form-horizontal" action="">
     <div class="form-group">
       <label class="control-label col-sm-4" for="email">First Name</label>
@@ -43,3 +43,5 @@
       </div>
     </div>
   </form>
+
+  </div>
