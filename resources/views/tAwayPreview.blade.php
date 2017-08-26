@@ -94,7 +94,7 @@
 				<input type="submit" name="submit" value="Confirm" class="btn btn-success btn-md">
 			</div>	
 			<div class = "form-group col-xs-1"> 
-				<a  href = "{{ route('order-clear') }}" class="btn btn-danger btn-md" role = "button">Cancel</a>
+				<a  href = "{{ route('taway-order-clear') }}" class="btn btn-danger btn-md" role = "button">Cancel</a>
             </div>
 
 		</form>

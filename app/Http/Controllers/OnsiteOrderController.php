@@ -10,6 +10,9 @@ use App\Model\TawayItems;
 use App\Model\OnsiteOrders;
 use App\Model\OnsiteOrderManipulations;
 use Session;
+use App\Model\Customers;
+use Illuminate\Contracts\Validation\Validator;
+
 
 class OnsiteOrderController extends Controller
 {
@@ -54,7 +57,50 @@ class OnsiteOrderController extends Controller
 
         
     }
-/**
+
+    /**
+     * Delete the whole resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function deleteUserOrder()
+    {
+        if (Auth::check()){
+
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+          //  $customers = Customers::all();
+            
+            if($admin->type == 1) {
+                //$orderItem = Salerecords::where('user_id','=',$user_id)->get();
+                //return $orderItem;
+
+                $order = Salerecords::where('user_id', '=', $user_id)->get();
+        
+                //return $order;
+
+                foreach($order as $order) {
+
+                    $order->delete();
+                }
+
+                Session::flash('success', ' Order Cancelled Successfully !!');
+
+                return redirect()->route('onsite-orders');
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        }         
+        
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @param  \Illuminate\Http\Request  $request

@@ -118,8 +118,8 @@ Route::group(['middleware' => 'auth'], function () {
     // Confirm T-away orders
     Route::post('/taway-orders/confirm-orders','TawayOrderController@confirmOrder')->name('taway-confirm-order');
     
-    //Delete All orders
-    Route::get('allDelete-orders','OnlineSalerecordController@deleteUserOrder')->name('order-clear');
+    //Delete t-away All orders
+    Route::get('/taway-orders/allDelete-orders','OnlineSalerecordController@deleteUserOrder')->name('taway-order-clear');
 
     //Onsite-Orders
     Route::get('/onsite-orders', 'OnsiteItemController@index')->name('onsite-orders');
@@ -168,7 +168,8 @@ Route::group(['middleware' => 'auth'], function () {
     // Confirm T-away orders
     Route::post('/onsite-orders/confirm-orders','OnsiteOrderController@confirmOrder')->name('onsite-confirm-order');
 
-
+    //delete onsite Orders
+    Route::get('/onsite-orders/allDelete-orders','OnsiteOrderController@deleteUserOrder')->name('onsite-order-clear');
 
 
 
