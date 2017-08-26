@@ -1,6 +1,6 @@
 @extends('item_main')
 
-@section('title', "| TakeAway-Orders ")
+@section('title', "| Onsite-Orders ")
  
 @section('content')
 <div class="container">
