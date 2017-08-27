@@ -10,7 +10,7 @@
 		<h1 style="text-align:center; display:inline">Place Onsite Orders</h1>
 	</div>
 	<div class = "col-xs-2"  >
-		<a href= "{{ route('onsite-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
+		<a href= "{{ route('onsite-orders-preview') }}" class = "btn btn-md btn-primary" role= "button" >Preview</a>
 	</div>
 	</div>
 

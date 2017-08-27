@@ -15,7 +15,7 @@
 	</div>
 
 	<div class = "col-xs-2"  >
-		<a href= "{{ route('homed-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
+		<a href= "{{ route('homed-orders-preview') }}" class = "btn btn-md btn-primary" role= "button" >Preview</a>
 	</div>
 	
 	</div>
