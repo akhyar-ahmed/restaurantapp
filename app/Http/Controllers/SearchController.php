@@ -196,19 +196,22 @@ class SearchController extends Controller
         return $output;
     }
 
-/**
+    /**
      * Get Responsive Search for the Food table.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function searchCustomers(Request $request){
-        
+        //return "hello";
         $output = "";
         $value = $request->search;
-        $sql1 = Customers::where('name', 'LIKE', '%'.$value.'%')
+        $sql1 = Customers::where('first_name', 'LIKE', '%'.$value.'%')
+                ->orWhere('last_name', 'LIKE', '%'.$value.'%')
                 ->orWhere('phone', 'LIKE', '%'.$value.'%')->get();
+        
         if( count($sql1)>0 && $value !=NULL ){
+            
             $output .= '<h3 align = "center"> <u> Search Result </u> </h3>';
             $output .= '<table class = "table table-bordered table-hover">
                             <tr> 
@@ -217,31 +220,29 @@ class SearchController extends Controller
                                 <th>Caller ID</th>
                                 <th>Address</th>
                                 <th>Created at</th>
-                                <th>Updated at</th>
                                 <th>Actions</th>
                             </tr>';
+            //return $output;
             $getEdit='/admin/customer/edit/';
             $delete='/admin/customer/delete/';
-            foreach($sql1 as $sql1){
-                $create = date('M j, Y', strtotime($sql1['created_at']));
-                $update = date('M j, Y', strtotime($sql1['updated_at']));
+            foreach($sql1 as $sql){
+                $create = date('M j, Y', strtotime($sql['created_at']));
                 $output .= '
                             <tr>
-                                <td>'.$sql1['id'].'</td>
-                                <td>'.$sql1['name'].'</td>
-                                <td>'.$sql1['phone'].'</td>
-                                <td>'.$sql1['address'].'</td>
+                                <td>'.$sql['id'].'</td>
+                                <td>'.$sql['first_name']." ".$sql['last_name'].'</td>
+                                <td>'.$sql['phone'].'</td>
+                                <td>1. '.$sql['address_one']." 2. ".$sql['address_two'].'</td>
                                 <td>'.$create.'</td>
-                                <td>'.$update.'</td>
                                 <td>
                                     <div>
-                                        <form method="GET" action="'.$getEdit. $sql1['id'].'" style="display: inline-block;">
-                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                        <form method="GET" action="'.$getEdit. $sql['id'].'" style="display: inline-block;">
+                                            
                                             <input type="submit" value="Update" role="button" class="btn btn-warning btn-xs">
                                         </form>
                                 
-                                        <form method="GET" action="'.$delete. $sql1['id'].'" style="display: inline-block;">
-                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                        <form method="GET" action="'.$delete. $sql['id'].'" style="display: inline-block;">
+                                            
                                             <input type="submit" value="Delete" role="button" class="btn btn-danger btn-xs">
                                         </form>
                                     </div>
@@ -249,6 +250,7 @@ class SearchController extends Controller
                             </tr>';
             }
             $output .= '</table>';
+            //return $output;
 
             // foreach($sql2 as $sql2){
             //     $output .= '
@@ -275,7 +277,7 @@ class SearchController extends Controller
             $user_id = Auth::user()->getId();
             $admin = User::find($user_id);
 
-            $item = Items::find($id);
+            //$item = Items::find($id);
             
             if($admin->type == 1) {
                 return $output;
@@ -288,6 +290,99 @@ class SearchController extends Controller
         }
 
     }
+
+    /**
+     * Get Responsive Search for the Food table.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function getHomedCustomers(Request $request){
+        //return "hello";
+        $output = "";
+        $value = $request->search;
+        $sql1 = Customers::where('first_name', 'LIKE', '%'.$value.'%')
+                ->orWhere('last_name', 'LIKE', '%'.$value.'%')
+                ->orWhere('phone', 'LIKE', '%'.$value.'%')->get();
+        
+        if( count($sql1)>0 && $value !=NULL ){
+            
+            $output .= '<h3 align = "center"> <u> Search Result </u> </h3>';
+            $output .= '<table class = "table table-bordered table-hover">
+                            <tr> 
+                                <th>SL.</th>
+                                <th>Full Name</th>
+                                <th>Caller ID</th>
+                                <th>Address</th>
+                                <th>Actions</th>
+                            </tr>';
+            //return $output;
+            $getEdit='/customer/homed-add/';
+            foreach($sql1 as $sql){
+                $create = date('M j, Y', strtotime($sql['created_at']));
+                $output .= '
+                            <tr>
+                                <td>'.$sql['id'].'</td>
+                                <td>'.$sql['first_name']." ".$sql['last_name'].'</td>
+                                <td>'.$sql['phone'].'</td>
+                                <td>1. '.$sql['address_one']."  2. ".$sql['address_two'].'</td>
+                                <td>
+                                    <div>
+                                        <form method="GET" action="'.$getEdit. $sql['id'].'" style="display: inline-block;">
+                                            
+                                            <input type="submit" value="ADD" role="button" class="btn btn-success btn-sm">
+                                        </form>
+                                    </div>
+	                            </td>
+                            </tr>';
+            }
+            $output .= '</table>';
+            //return $output;
+
+            // foreach($sql2 as $sql2){
+            //     $output .= '
+            //                 <tr>
+            //                     <td>'.$sql2['id'].'</td>
+            //                     <td>'.$sql2['name'].'</td>
+            //                     <td>'.$sql2['code'].'</td>
+            //                     <td>'.$sql2['stock'].'</td>
+            //                     <td>'.$sql2['base_price'].'</td>
+            //                     <td>'.$sql2['created_at'].'</td>
+            //                     <td>'.$sql2['updated_at'].'</td>
+            //                 </tr>';  
+            // }
+        }
+        else if ($value == ''){
+            $output.="";
+        }
+        else{
+            $output .= '<h3 align = "center"> <u>Search Result</u> </h3> <h4 align = "center" >Customer Not Found !!</h4>';
+        }
+
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+            //$item = Items::find($id);
+            
+            if($admin->type == 1) {
+                return $output;
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        }
+
+    }     
+
+
+    /**
+    *
+    *
+    **/
 
     public function searchOnlineOrderFoodItem(Request $request){
         

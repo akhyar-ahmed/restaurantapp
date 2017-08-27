@@ -49,8 +49,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/food-order/clear','SalerecordController@deleteUserOrder')->name('newsale.clear');
     Route::get('/food-order/update/{id}','SalerecordController@edit')->name('newsaleItem.update');
     Route::post('/food-order/update/{id}','SalerecordController@update')->name('order.item.edit');
+    
     ///Customers
-
     Route::get('/admin/customer','CustomerController@index')->name('customer');
     Route::post('/customer/search','SearchController@searchCustomers');
     Route::get('/customer/get-create','CustomerController@getCreate')->name('get-customer-create');
@@ -58,6 +58,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin/customer/edit/{id}', 'CustomerController@edit')->name('get.edit');
     Route::get('/admin/customer/delete/{id}','CustomerController@delete')->name('get.delete');
     Route::post('/admin/customer/update/{id}','CustomerController@update')->name('post.update');
+    Route::post('/customer/search-homed','SearchController@getHomedCustomers');
+    Route::get('/customer/homed-add/{id}','CusNameController@addHomedCustomers');
 
     ///Online- OtherOrders 
 

@@ -81,6 +81,7 @@
 	$(document).ready(function(){
 		$('#search_customer_text').keyup(function(){
 			var txt = $(this).val();
+			//alert(txt);
 			if( txt != '') {
 				$.ajaxSetup({
         		headers: {
@@ -95,6 +96,7 @@
 						},
 					dataType: "text",
 					success: function(data){
+						//console.log(data);
 						$('#result').html(data);
 					}
 				});

@@ -5,12 +5,19 @@
 @section('content')
 <div class="container">
 <div class = "page-header container col-xs-12 form-group">
-	<div class = "col-xs-10">
-		<h1 style="text-align:center; display:inline">Place Home Delivery Orders</h1>
+	
+	<div class = "col-xs-6">
+		<h2 style="text-align:center; display:inline">Place Home Delivery Orders</h2>
 	</div>
+	
+	<div class="col-xs-4">
+		@include('_customerSearching')
+	</div>
+
 	<div class = "col-xs-2"  >
 		<a href= "{{ route('homed-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
 	</div>
+	
 	</div>
 
 	<div id="result" class = "container form-group col-xs-12">
@@ -143,6 +150,101 @@
 @push('scripts')
 <script>
 	$(document).ready(function(){
+		$('#search_customer_text').keyup(function(){
+			var txt = $(this).val();
+			//alert(txt);
+			if( txt != '') {
+				$('#result').html('');
+
+				$.ajaxSetup({
+        		headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
+				$.ajax({
+					url: "/customer/search-homed",
+					method: "POST",
+					data: {
+						search:txt
+						},
+					dataType: "text",
+					success: function(data){
+						//console.log(data);
+						$('#result').html(data);
+					}
+				});
+
+			}
+			else {
+				$('#result').html('');
+
+				$.ajaxSetup({
+        		headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
+				$.ajax({
+					url: "/customer/search-homed",
+					method: "POST",
+					data: {
+						search:txt
+						},
+					dataType: "text",
+					success: function(data){
+						$('#result').html(data);
+					}
+				});
+			}
+		});
+		$('#search_customer_text').keydown(function(){
+			var txt = $(this).val();
+			if( txt != '') {
+				$('#result').html('');
+
+				$.ajaxSetup({
+        		headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
+				$.ajax({
+					url: "/customer/search-homed",
+					method: "POST",
+					data: {
+						search:txt
+						},
+					dataType: "text",
+					success: function(data){
+						$('#result').html(data);
+					}
+				});
+
+			}
+			else {
+				$('#result').html('');
+				
+				$.ajaxSetup({
+        		headers: {
+						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+					}
+				});
+				$.ajax({
+					url: "/customer/search-homed",
+					method: "POST",
+					data: {
+						search:txt
+						},
+					dataType: "text",
+					success: function(data){
+						$('#result').html(data);
+					}
+				});
+			}
+		});
+
+
+
+
+
 		$('a').click(function(){
 			var id = $(this).attr('id');
 			var val = $(this).attr('value');
