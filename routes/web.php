@@ -53,6 +53,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/admin/customer','CustomerController@index')->name('customer');
     Route::post('/customer/search','SearchController@searchCustomers');
+    Route::get('/customer/get-create','CustomerController@getCreate')->name('get-customer-create');
     Route::post('/admin/customer/create','CustomerController@postCreate')->name('customer.create');
     Route::get('/admin/customer/edit/{id}', 'CustomerController@edit')->name('get.edit');
     Route::get('/admin/customer/delete/{id}','CustomerController@delete')->name('get.delete');

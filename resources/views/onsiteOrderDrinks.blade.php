@@ -12,10 +12,6 @@
 			<a href= "{{ route('onsite-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
 		</div>
 	</div>
-
-	<div id="result" class = "container form-group col-xs-12">
-    
-    </div>
     <div class="card text-center">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" >

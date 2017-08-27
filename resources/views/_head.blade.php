@@ -14,14 +14,40 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     
     <style>
-      #item{
-          margin-top:2cm;
-      }
-      body{
-        font-family: 'Raleway', sans-serif;
-        font-size: 14px;
-      }
-      .tr:hover {background-color: #211e1d;}
+        body{
+            background-image:url('../../../../../../image/bp2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            opacity: 0.8;
+            color: #f5f5f5;
+            font-family: Raleway, sans-serif;
+            font-size: 14px;
+
+        }
+        .navbar-inverse .navbar-brand{
+            color:#eee;
+        }
+
+
+        .navbar-inverse .navbar-nav>li>a{
+            color:#eee;
+        }
+        .table-bordered>tbody>tr:hover {background-color: #211e1d;}
+        #item{
+            margin-top:2cm;
+        }
+        .a{
+            color: white;
+        }
+        #edit:hover{
+            background-color: transparent;
+        }
+        #row:hover {background-color: #211e1d;}
+        .a:hover{color: black;}
+
+        .nav-tabs>li>a:hover{background-color: #211e1d;}
+        .nav-tabs>li>a:visited{background-color: #211e1d;}
+        .nav-tabs>li>a:active{background-color: #211e1d;}
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

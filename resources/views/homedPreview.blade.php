@@ -7,37 +7,37 @@
 		<h1 style="text-align:left; display:inline">Preview</h1><hr>
 		<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-drinks') }}" style="color:white">Drinks</a>
+				<a class="TItem" href="{{ route('homed-orders-drinks') }}" style="color:white">Drinks</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
+				<a class="TItem" href="{{ route('homed-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-sides') }}" style="color:white" >Sides</a>
+				<a class="TItem" href="{{ route('homed-orders-sides') }}" style="color:white" >Sides</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-pizza') }}" style="color:white" >Pizza</a>
+				<a class="TItem" href="{{ route('homed-orders-pizza') }}" style="color:white" >Pizza</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-curry') }}" style="color:white" >Curry</a>
+				<a class="TItem" href="{{ route('homed-orders-curry') }}" style="color:white" >Curry</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-shawarma') }}" style="color:white" >Shawarma</a>
+				<a class="TItem" href="{{ route('homed-orders-shawarma') }}" style="color:white" >Shawarma</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-wrap') }}" style="color:white" >Wrap</a>
+				<a class="TItem" href="{{ route('homed-orders-wrap') }}" style="color:white" >Wrap</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-burgers') }}" style="color:white" >Burgers</a>
+				<a class="TItem" href="{{ route('homed-orders-burgers') }}" style="color:white" >Burgers</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-grilled') }}" style="color:white" >Grilled</a>
+				<a class="TItem" href="{{ route('homed-orders-grilled') }}" style="color:white" >Grilled</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-salads') }}" style="color:white" > Salads & cold Mezze</a>
+				<a class="TItem" href="{{ route('homed-orders-salads') }}" style="color:white" > Salads & cold Mezze</a>
 			</li>
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('taway-orders-spdeals') }}" style="color:white" >Special deals</a>
+				<a class="TItem" href="{{ route('homed-orders-spdeals') }}" style="color:white" >Special deals</a>
 			</li>
 			</ul>
 	</div>
@@ -85,13 +85,13 @@
 		</table>
 	</div>
 	<div class="container form-group col-xs-12 ">
-		<form method="POST" action="{{ route('confirm-order') }}">
+		<form method="POST" action="{{ route('homed-confirm-order') }}">
 			<div class = "form-group col-xs-2">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 				<input type="submit" name="submit" value="Confirm" class="btn btn-success btn-md">
 			</div>	
 			<div class = "form-group col-xs-1"> 
-				<a  href = "{{ route('order-clear') }}" class="btn btn-danger btn-md" role = "button">Cancel</a>
+				<a  href = "{{ route('homed-order-clear') }}" class="btn btn-danger btn-md" role = "button">Cancel</a>
             </div>
 
 		</form>

@@ -24,9 +24,12 @@ class CustomerRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
+            'first_name' => 'required',
+            'last_name' => 'required',
             'caller_id' => 'required',
-            'address' => 'required'
+            'address_one' => 'required',
+            'address_two' => 'required',
+            'zip' => 'required'
         ];
     }
 }

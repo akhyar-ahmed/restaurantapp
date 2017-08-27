@@ -43,9 +43,24 @@ class CustomerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function getCreate()
     {
-        //
+        if (Auth::check())
+        {
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+            $customers = Customers::all();
+            
+            if($admin->type == 1) {
+                return view('create_customer');
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        } 
     }
 
     /**
@@ -57,11 +72,19 @@ class CustomerController extends Controller
     public function postCreate(CustomerRequest $request)
     {
         //return "hello";
+        $checkCaller = Customers::where('phone','=', $request->caller_id)->get();
+        if(count($checkCaller)>0){
+            Session:: flash('danger', ' Customer are already in the list !!');
+            return redirect()->back();
+        }
         $customer = new Customers;
-        $customerName = ucfirst(strtolower($request->name)); 
-        $customer->name = $customerName;
+        $customerName = ucfirst(strtolower($request->first_name)); 
+        $customer->first_name = $customerName;
+        $customer->last_name = strtolower($request->last_name);
         $customer->phone = $request->caller_id;
-        $customer->address = $request->address;
+        $customer->address_one = $request->address_one;
+        $customer->address_two = $request->address_two;
+        $customer->zip = $request->zip;
 
         $customer->save();
 
@@ -118,10 +141,13 @@ class CustomerController extends Controller
     public function update(CustomerRequest $request, $id)
     {
         $item = Customers::find($id);
-        $itemName = ucfirst(strtolower($request->name));
-        $item->name = $itemName;
+        $itemName = ucfirst(strtolower($request->first_name));
+        $item->first_name = $itemName;
+        $item->last_name = strtolower($request->last_name);
         $item->phone = $request->caller_id;
-        $item->address = $request->address;
+        $item->address_one = $request->address_one;
+        $item->address_two = $request->address_two;
+        $item->zip = $request->zip;
 
         $item->save();
         

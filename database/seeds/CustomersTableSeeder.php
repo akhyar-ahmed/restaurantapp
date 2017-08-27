@@ -14,15 +14,21 @@ class CustomersTableSeeder extends Seeder
     {
         $data = [
             [
-                'name' => 'Sadul Hasan Tarek',
+                'first_name' => "Sadul Hasan",
+                'last_name' => "tarek",
                 'phone' => '01673956622',
-                'address' => 'Dakshin, Kajol-Shah, Medical Road, Sylhet'
+                'address_one' => 'Dakshin, Kajol-Shah, Medical Road, Sylhet',
+                'address_two' => 'Dakshin, Kajol-Shah, Medical Road, Sylhet',
+                'zip' => '3100'
             ],
 
             [
-                'name' => 'Arafat Rony',
+                'first_name' => "Arafat",
+                'last_name' => 'rony',
                 'phone' => '01686477544',
-                'address' => 'Kaji Elias, Zindabazar, Sylhet'
+                'address_one' => 'Zindabazar, Sylhet',
+                'address_two' => 'Kaji Elias, Sylhet',
+                'zip' => '3100'
             ]
         ];
 

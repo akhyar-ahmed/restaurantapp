@@ -6,15 +6,15 @@
 
     <div class = "page-header container row-xs-12 form-group">
 		<div class = "form-group col-xs-10">
-			<h1>Customers</h1>
+			<h1>Customer</h1>
 		</div>
 		<div class = "form-group col-xs-2">
 			<br>
-			<a href= "#" class = "btn btn-md btn-primary" role= "button">Create</a>
+			<a href= "{{ route('get-customer-create') }}" class = "btn btn-lg btn-primary" role= "button">Create</a>
 		</div>
 	</div>
 	<div class="container row-xs-12 form-group">
-		<div class="from-group col-xs-5"><br>@include('_customerSearching')</div>
+		<div class="from-group"><br>@include('_customerSearching')</div>
 	</div>
 	<div id="result" class = "container form-group col-xs-12"></div>
 	<br>
@@ -28,9 +28,9 @@
 				<th>SL</th>
 				<th>Full Name</th>
 				<th>Caller ID</th>
-				<th>Address</th>
+				<th>Address 1</th>
+				<th>Address 2</th>
 				<th>Created at</th>
-				<th>Updated at</th>
 				<th>Actions</th>
 			</tr>
 		</thead>
@@ -42,30 +42,29 @@
 			</td>
 
 	  		<td>
-	  			{{ $items->name }}
+	  			{{ $items->first_name." ".$items->last_name }}
 	  		</td>
 	  		<td>
 	  			{{ $items->phone }}
 	  		</td>
 	  		<td>
-	  			{{ $items->address }}
+	  			{{ $items->address_one }}
 	  		</td>
+			<td>
+				{{ $items->address_two }}
+			</td>
 	  		<td>
 	  			{{ date('M j, Y', strtotime($items->created_at)) }}
 	  		</td>
 	  		<td>
-	  			{{ date('M j, Y', strtotime($items->updated_at)) }}
-	  		</td>
-
-	  		<td>
 		  		<div>
 		              <form method="GET" action="{{ route('get.edit', $items->id ) }}" style="display: inline-block;">
-		                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+		                
 		                <input type="submit" value="Update" role="button" class="btn btn-warning btn-xs">
 		              </form>
 
 		              <form method="GET" action="{{ route('get.delete', $items->id ) }}" style="display: inline-block;">
-		                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+		               
 		                <input type="submit" value="Delete" role="button" class="btn btn-danger btn-xs">
 		              </form>
 		        </div>
