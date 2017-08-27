@@ -218,8 +218,9 @@ class SearchController extends Controller
                                 <th>SL.</th>
                                 <th>Full Name</th>
                                 <th>Caller ID</th>
-                                <th>Address</th>
-                                <th>Created at</th>
+                                <th>Addresses</th>
+                                <th>Zip</th>
+                                <th>Created</th>
                                 <th>Actions</th>
                             </tr>';
             //return $output;
@@ -232,7 +233,8 @@ class SearchController extends Controller
                                 <td>'.$sql['id'].'</td>
                                 <td>'.$sql['first_name']." ".$sql['last_name'].'</td>
                                 <td>'.$sql['phone'].'</td>
-                                <td>1. '.$sql['address_one']." 2. ".$sql['address_two'].'</td>
+                                <td>1. '.$sql['address_one'].'<br>2. '.$sql['address_two'].'</td>
+                                <td>'.$sql['zip'].'</td>
                                 <td>'.$create.'</td>
                                 <td>
                                     <div>
@@ -313,7 +315,8 @@ class SearchController extends Controller
                                 <th>SL.</th>
                                 <th>Full Name</th>
                                 <th>Caller ID</th>
-                                <th>Address</th>
+                                <th>Addresses</th>
+                                <th>Zip</th>
                                 <th>Actions</th>
                             </tr>';
             //return $output;
@@ -325,7 +328,8 @@ class SearchController extends Controller
                                 <td>'.$sql['id'].'</td>
                                 <td>'.$sql['first_name']." ".$sql['last_name'].'</td>
                                 <td>'.$sql['phone'].'</td>
-                                <td>1. '.$sql['address_one']."  2. ".$sql['address_two'].'</td>
+                                <td>1. '.$sql['address_one'].'<br>2. '.$sql['address_two'].'</td>
+                                <td>'.$sql['zip'].'</td>
                                 <td>
                                     <div>
                                         <form method="GET" action="'.$getEdit. $sql['id'].'" style="display: inline-block;">

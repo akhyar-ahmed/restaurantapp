@@ -48,7 +48,7 @@
 	  			{{ $items->phone }}
 	  		</td>
 	  		<td>
-	  			{{ "1. ". $items->address_one."    2. ". $items->address_two}}
+	  			{{ "1. ". $items->address_one }}<br>{{"2. ". $items->address_two}}
 	  		</td>
 			<td>
 				{{ $items->zip }}
