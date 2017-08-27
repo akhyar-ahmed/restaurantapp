@@ -89,7 +89,26 @@
 	<div class="container form-group col-xs-12 ">
 		<form method="POST" action="{{ route('onsite-confirm-order') }}">
 			<div class = "form-group col-xs-8">
-				<input type="text" class="form-control" name="table_name" placeholder="Please Insert Table no.">
+				<select class="form-control" name="table_name">
+					<option disabled selected value> Select a Table Number </option>
+					
+						<option name="table_name" value="Table 01">Table 01</option>
+						<option name="table_name" value="Table 02">Table 02</option>
+						<option name="table_name" value="Table 03">Table 03</option>
+						<option name="table_name" value="Table 04">Table 04</option>
+						<option name="table_name" value="Table 05">Table 05</option>
+						<option name="table_name" value="Table 06">Table 06</option>
+						<option name="table_name" value="Table 07">Table 07</option>
+						<option name="table_name" value="Table 08">Table 08</option>
+						<option name="table_name" value="Table 09">Table 09</option>
+						<option name="table_name" value="Table 10">Table 10</option>
+						<option name="table_name" value="Table 11">Table 11</option>
+						<option name="table_name" value="Table 12">Table 12</option>
+						<option name="table_name" value="Table 13">Table 13</option>
+						<option name="table_name" value="Table 14">Table 14</option>
+						<option name="table_name" value="Table 15">Table 15</option>
+					
+				</select>	
 			</div>
 			<div class = "form-group col-xs-2">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
