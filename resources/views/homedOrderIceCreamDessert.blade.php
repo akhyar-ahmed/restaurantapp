@@ -6,7 +6,7 @@
 <div class="container">
 <div class = "page-header container col-xs-12 form-group">
 	<div class = "col-xs-10">
-		<h1 style="text-align:left; display:inline">Food Ordering - </h1><h2 style="text-align:center; display:inline">(Place Home Delivery Orders)</h3>
+		<h1 style="text-align:center; display:inline">Place Home Delivery Orders</h1>
 	</div>
 	<div class = "col-xs-2"  >
 		<a href= "{{ route('homed-orders-preview') }}" class = "btn btn-md btn-default" role= "button" style="background:transparent;color:white">Preview</a>
