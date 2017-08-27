@@ -27,6 +27,35 @@ class HomedOrderController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function preview()
+    {
+        if (Auth::check()){
+
+            $user_id = Auth::user()->getId();
+            $admin = User::find($user_id);
+
+          //  $customers = Customers::all();
+            
+            if($admin->type == 1) {
+                $orderItem = Salerecords::where('user_id','=',$user_id)->get();
+                //return $orderItem;
+
+                return view('homedPreview')
+                    ->with(compact('orderItem'));
+            }
+            else if($admin->type == 0 ){
+                return redirect()->route('place.item');
+            }
+        } else {
+             return redirect()->route('logout');
+        } 
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

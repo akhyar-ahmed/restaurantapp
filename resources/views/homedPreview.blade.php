@@ -7,9 +7,6 @@
 		<h1 style="text-align:left; display:inline">Preview</h1><hr>
 		<ul class="nav nav-tabs card-header-tabs" >
 			<li class="nav-item">
-				<a class="TItem" href="{{ route('homed-orders-drinks') }}" style="color:white">Drinks</a>
-			</li>
-			<li class="nav-item">
 				<a class="TItem" href="{{ route('homed-orders-desert') }}" style="color:white" >Dessert & Ice Cream</a>
 			</li>
 			<li class="nav-item">
