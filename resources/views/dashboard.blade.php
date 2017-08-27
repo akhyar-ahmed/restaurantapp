@@ -55,8 +55,8 @@
                                     <th> SL </th>
                                     <th> User Name </th>
                                     <th> Table No </th>
-                                    <th> Total Items </th>
-                                    <th> Grand Total </th>
+                                    <th> Items </th>
+                                    <th> Total </th>
                                     <th> Time </th>
                                     <th> Action </th>
                                 </tr>
@@ -118,8 +118,8 @@
                                 <tr>
                                     <th> SL </th>
                                     <th> User Name </th>
-                                    <th> Total Items </th>
-                                    <th> Grand Total </th>
+                                    <th> Items </th>
+                                    <th> Total </th>
                                     <th> Time </th>
                                     <th> Action </th>
                                 </tr>
@@ -179,10 +179,10 @@
                                 <thead>
                                 <tr>
                                     <th> SL </th>
-                                    <th> User Name </th>
-                                    <th> Total Items </th>
-                                    <th> Cus. Name </th>
-                                    <th> Cus. Address </th>
+                                    <th> Items </th>
+                                    <th> Total </th>
+                                    <th> Name </th>
+                                    <th> Address </th>
                                     <th> Time </th>
                                     <th> Action </th>
                                 </tr>
@@ -191,11 +191,11 @@
                                 @foreach($homeDeliveryOrders as $ind => $orders)
                                     <tr id="row">
                                         <td>{{ $ind+1 }}</td>
-                                        <td> {{ $homeDeliveryName[$ind]->name }} </td>
-                                        <td> {{ $orders->total_item }} </td>
-                                        <td> {{ $homeDeliveryCusName[$ind]->name }} </td>
-                                        <td> {{ $homeDeliveryCusName[$ind]->address }} </td>
-                                        <td> {{ $orders->updated_at }} </td>
+                                        <td>{{ $orders->total_item }}</td>
+                                        <td>£{{ $orders->grand_total }}</td>
+                                        <td>{{ $homeDeliveryCusName[$ind]->first_name }}</td>
+                                        <td>{{ $homeDeliveryCusName[$ind]->address_one }}</td>
+                                        <td>{{ $orders->created_at }}</td>
                                         <td>
                                             <a href="#" class="btn btn-success btn-xs"> Approve </a>
                                             <a href="#" class="btn btn-danger btn-xs"> Delete </a>

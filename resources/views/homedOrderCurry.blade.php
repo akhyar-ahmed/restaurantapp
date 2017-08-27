@@ -59,7 +59,6 @@
 
 				<div class="col-xs-4">
 					<div class="card">
-						<img class="card-img-top" src="" alt="">
 						<div class="card-block">
 							<h4 class="card-title">Chicken</h4>
 							<a  class="btn btn-success" id="add" value="1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -70,7 +69,6 @@
 
 				<div class="col-xs-4">
 					<div class="card" >
-						<img class="card-img-top" src="..." alt="">
 						<div class="card-block">
 							<h4 class="card-title">Lamb</h4>
 							<a  class="btn btn-success" id="add" value="2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
@@ -144,7 +142,7 @@ $(document).ready(function(){
 		var id = $(this).attr('id');
 		var val = $(this).attr('value');
 		if( id == "add"){
-			alert(id+" "+val);
+			//alert(id+" "+val);
 
 			$.ajaxSetup({
 				headers: {
@@ -165,7 +163,7 @@ $(document).ready(function(){
 			
 		}
 		else if( id == "minus"){
-			alert(id+" "+val);
+			//alert(id+" "+val);
 			$.ajaxSetup({
 				headers: {
 						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

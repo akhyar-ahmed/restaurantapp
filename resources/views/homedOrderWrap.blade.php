@@ -60,7 +60,7 @@
 				<div class="col-xs-4">
 					<div class="card">
 						<div class="card-block">
-							<h4 class="card-title">Chicken Shawarma Srap</h4>
+							<h4 class="card-title">Chicken Shawarma Wrap</h4>
                                     <div class="checkbox">
 									<label><input type="checkbox" name="chips" value="1">Add Chips & Drinks</label>
                                     </div>

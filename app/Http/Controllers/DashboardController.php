@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Model\Orders;
 use App\Model\OnlineOrders;
 use App\Model\TawayOrders;
+use App\Model\HomedOrders;
 use Auth;
 use App\User;
 use App\Model\Customers;
@@ -97,10 +98,7 @@ class DashboardController extends Controller
      */
      public function getNoOfHomeDeliveryOrders()
      {
-         $orders = OnlineOrders::where([
-                ['is_paid', '=', '0'],
-                ['category_id', '=', '1']
-            ])->get();
+         $orders = HomedOrders::where('is_paid', '=', '0')->get();
          return $orders;
      }
 

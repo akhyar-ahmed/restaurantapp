@@ -83,11 +83,17 @@
 	</div>
 	<div class="container form-group col-xs-12 ">
 		<form method="POST" action="{{ route('homed-confirm-order') }}">
+			<div class = "form-group col-xs-4">
+				<input type="text" class="form-control" value ="{{ $customerFinal}}"  name="customer_name" placeholder="Please Insert Customer Name">
+			</div>
+			<div class = "form-group col-xs-4">
+				<input type="text" class="form-control" value ="{{ $customerCaller }}"  name="customer_caller_ID" placeholder="Please Insert Customer Caller ID">
+			</div>
 			<div class = "form-group col-xs-2">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 				<input type="submit" name="submit" value="Confirm" class="btn btn-success btn-md">
 			</div>	
-			<div class = "form-group col-xs-1"> 
+			<div class = "form-group col-xs-2"> 
 				<a  href = "{{ route('homed-order-clear') }}" class="btn btn-danger btn-md" role = "button">Cancel</a>
             </div>
 

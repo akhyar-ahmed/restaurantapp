@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class HomedOrderManipulations extends Model
 {
-    protected $table = homed_order_manipulations;
+    protected $table = "homed_order_manipulations";
 }
