@@ -52,18 +52,6 @@ class HomedItemsSeeder extends Seeder
             ],
 
             [
-                'name' => "Additional",
-                'category' => "Wrap",
-                'base_price' => '2.00'
-            ],
-
-            [
-                'name' => "Beef Burger Regular",
-                'category' => "Burgers",
-                'base_price' => '5.50'
-            ],
-
-            [
                 'name' => "Chicken Zinger Burger",
                 'category' => "Burgers",
                 'base_price' => '6.00'
@@ -79,6 +67,12 @@ class HomedItemsSeeder extends Seeder
                 'name' => "Veg Burger",
                 'category' => "Burgers",
                 'base_price' => '4.50'
+            ],
+            
+            [
+                'name' => "Beef Burger Regular",
+                'category' => "Burgers",
+                'base_price' => '5.50'
             ],
 
             [
@@ -97,12 +91,6 @@ class HomedItemsSeeder extends Seeder
                 'name' => "Chicken Fillet Burger Large",
                 'category' => "Burgers",
                 'base_price' => '5.99'
-            ],
-
-            [
-                'name' => "Additional",
-                'category' => "Burgers",
-                'base_price' => '2.00'
             ],
 
             [
@@ -184,7 +172,7 @@ class HomedItemsSeeder extends Seeder
             ],
 
             [
-                'name' => "Mixed Grilled",
+                'name' => "Mixed Grilled Large",
                 'category' => "Grilled",
                 'base_price' => '12.99'
             ],
@@ -213,6 +201,11 @@ class HomedItemsSeeder extends Seeder
                 'base_price' => '5.99'
             ],
 
+            [
+                'name' => "Large Mix Grill",
+                'category' => "Grilled",
+                'base_price' => '22.99'
+            ],
 
             [
                 'name' => "Chicken shawarma",
@@ -335,43 +328,7 @@ class HomedItemsSeeder extends Seeder
             ],
 
             [
-                'name' => "Garlic Sauce",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "mayonnaise",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Catchup",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Tartar",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Burger sauce",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Chilli Sauce",
-                'category' => "Sides",
-                'base_price' => '0.50'
-            ],
-
-            [
-                'name' => "Sweet Chilli Sauce",
+                'name' => "Dips",
                 'category' => "Sides",
                 'base_price' => '0.50'
             ],
