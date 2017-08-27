@@ -17,7 +17,7 @@ class CreateHomedOrdersTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('customer_id')->unsigned();
-            $table->integer('category_id');
+            $table->double('grand_total',10,3);
             $table->integer('total_item');
             $table->integer('is_paid');
             $table->timestamps();

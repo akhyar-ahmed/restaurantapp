@@ -35,7 +35,7 @@
 			<a class="TItem" href="{{ route('homed-orders-shawarma') }}" style="color:white" >Shawarma</a>
 		</li>
 		<li class="nav-item">
-			<a class="TItem" href="{{ route('homd-orders-wrap') }}" style="color:white" >Wrap</a>
+			<a class="TItem" href="{{ route('homed-orders-wrap') }}" style="color:white" >Wrap</a>
 		</li>
 		<li class="nav-item">
 			<a class="TItem" href="{{ route('homed-orders-burgers') }}" style="color:white" >Burgers</a>

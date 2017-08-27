@@ -52,21 +52,23 @@
                             <table class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th> # </th>
-                                    <th> Table No </th>
+                                    <th> SL </th>
                                     <th> User Name </th>
+                                    <th> Table No </th>
                                     <th> Total Items </th>
-                                    <th> Enrollement Time </th>
+                                    <th> Grand Total </th>
+                                    <th> Time </th>
                                     <th> Action </th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($onsiteOrders as $ind => $orders)
                                     <tr id="row">
-                                        <td> # </td>
-                                        <td> {{ $orders->table_id }} </td>
+                                        <td> {{ $ind+1 }} </td>
                                         <td> {{ $onsiteWaiterName[$ind]->name }} </td>
+                                        <td> {{ $orders->table_no }} </td>
                                         <td> {{ $orders->total_item }} </td>
+                                        <td>£ {{ $orders->grand_total }} </td>
                                         <td> {{ $orders->updated_at }} </td>
                                         <td>
                                             <a href="#" class="btn btn-success btn-xs"> Approve </a>
@@ -114,18 +116,18 @@
                             <table class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th> # </th>
+                                    <th> SL </th>
                                     <th> User Name </th>
                                     <th> Total Items </th>
                                     <th> Grand Total </th>
-                                    <th> Enrollement Time </th>
+                                    <th> Time </th>
                                     <th> Action </th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($takeAwayOrders as $ind => $orders)
                                     <tr id="row">
-                                        <td> # </td>
+                                        <td> {{ $ind+1 }} </td>
                                         <td> {{ $takeAwayName[$ind]->name }} </td>
                                         <td> {{ $orders->total_item }} </td>
                                         <td>£ {{ $orders->grand_total }} </td>
@@ -176,19 +178,19 @@
                             <table class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th> # </th>
+                                    <th> SL </th>
                                     <th> User Name </th>
                                     <th> Total Items </th>
-                                    <th> Customer Name </th>
-                                    <th> Customer Address </th>
-                                    <th> Enrollement Time </th>
+                                    <th> Cus. Name </th>
+                                    <th> Cus. Address </th>
+                                    <th> Time </th>
                                     <th> Action </th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($homeDeliveryOrders as $ind => $orders)
                                     <tr id="row">
-                                        <td> # </td>
+                                        <td>{{ $ind+1 }}</td>
                                         <td> {{ $homeDeliveryName[$ind]->name }} </td>
                                         <td> {{ $orders->total_item }} </td>
                                         <td> {{ $homeDeliveryCusName[$ind]->name }} </td>

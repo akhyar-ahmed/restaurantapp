@@ -12,6 +12,7 @@ use App\Model\OnsiteOrderManipulations;
 use Session;
 use App\Model\Customers;
 use Illuminate\Contracts\Validation\Validator;
+use App\Http\Requests\OnsiteOrderRequest;
 
 
 class OnsiteOrderController extends Controller
@@ -87,7 +88,7 @@ class OnsiteOrderController extends Controller
                     $order->delete();
                 }
 
-                Session::flash('success', ' Order Cancelled Successfully !!');
+                Session::flash('danger', ' Onsite Order Cancelled Successfully !!!');
 
                 return redirect()->route('onsite-orders');
             }
@@ -106,8 +107,8 @@ class OnsiteOrderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-     public function confirmOrder(Request $request){
-       return "hello";
+     public function confirmOrder(OnsiteOrderRequest $request){
+         //return $request->table_name; 
         if (Auth::check())
         {
             $id = Auth::user()->getId();
@@ -118,22 +119,22 @@ class OnsiteOrderController extends Controller
        
         $orderItems = Salerecords::where('user_id', '=', $id)->get();
        // return $orderItems;
-        $total_item;
+        $total_item1;
         $grand_total=0;
        
         foreach($orderItems as $indx=>$order){
-            $total_item=$indx;
+            $total_item1=$indx;
             $grand_total+=$order->total;
 
         }
        
-        $total_item++;
+        return $total_item1++;
         //return $grand_total;
        
         $onsiteOrder = new OnsiteOrders;
         $onsiteOrder->user_id = $id;
-        $onsiteOrder->total_item = $total_item;
-        $onsiteOrder->table_no = $request->table_no; 
+        $onsiteOrder->total_item = $total_item1+1;
+        $onsiteOrder->table_no = $request->table_name; 
         $onsiteOrder->grand_total = $grand_total;
         $onsiteOrder->is_paid = 0;
         
@@ -141,7 +142,7 @@ class OnsiteOrderController extends Controller
         foreach($orderItems as $indx=>$order){
             $onsiteMani = new OnsiteOrderManipulations;
 
-            $onsiteMani->order_id = $tawayOrder->id;
+            $onsiteMani->order_id = $onsiteOrder->id;
             $onsiteMani->food_name = $order->food_name;
             $onsiteMani->quantity = $order->quantity;
             $onsiteMani->base_price = $order->base_price;
@@ -150,9 +151,9 @@ class OnsiteOrderController extends Controller
             $order->delete();
         }
        
-        Session::flash('success', ' Take-Away Order Enrolled Successfully !!');
+        Session::flash('success', ' Onsite Order Enrolled Successfully !!');
        
-        return $this->index();
+        return redirect()->route('onsite-orders');
 
      }
 

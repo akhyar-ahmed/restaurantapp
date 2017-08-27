@@ -165,13 +165,60 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/onsite-orders/delete-burger','OnlineSalerecordController@deleteBurger');
     Route::post('/onsite-orders/delete-grill','OnlineSalerecordController@deleteGrill'); 
 
-    // Confirm T-away orders
+    // Confirm confirm orders
     Route::post('/onsite-orders/confirm-orders','OnsiteOrderController@confirmOrder')->name('onsite-confirm-order');
 
     //delete onsite Orders
     Route::get('/onsite-orders/allDelete-orders','OnsiteOrderController@deleteUserOrder')->name('onsite-order-clear');
 
+    
+    
+    //Homed-Orders
+    Route::get('/homed-orders', 'HomedItemController@index')->name('homed-orders');
+    Route::get('/homed-orders/desert','HomedItemController@desert')->name('homed-orders-desert'); 
+    Route::get('/homed-orders/sides','HomedItemController@sides')->name('homed-orders-sides'); 
+    Route::get('/homed-orders/pizza','HomedItemController@pizza')->name('homed-orders-pizza'); 
+    Route::get('/homed-orders/curry','HomedItemController@curry')->name('homed-orders-curry'); 
+    Route::get('/homed-orders/shawarma','HomedItemController@shawarma')->name('homed-orders-shawarma'); 
+    Route::get('/homed-orders/wrap','HomedItemController@wrap')->name('homed-orders-wrap'); 
+    Route::get('/homed-orders/burgers','HomedItemController@burgers')->name('homed-orders-burgers'); 
+    Route::get('/homed-orders/grilled','HomedItemController@grilled')->name('homed-orders-grilled'); 
+    Route::get('/homed-orders/salads','HomedItemController@salads')->name('homed-orders-salads'); 
+    Route::get('/homed-orders/spdeals','HomedItemController@spdeals')->name('homed-orders-spdeals');
+    
+    //Homed Preview
+    Route::get('/homed-orders/preview','HomedOrderController@preview')->name('homed-orders-preview');
 
+    //Homed item Add
+    Route::post('/homed-orders/add-curry','OnlineSalerecordController@addCurry');
+    Route::post('/homed-orders/add-shawarma','OnlineSalerecordController@addShawarma');
+    Route::post('/homed-orders/add-salads','OnlineSalerecordController@addSalads');
+    Route::post('/homed-orders/add-spdeals','OnlineSalerecordController@addSpdeals');
+    Route::post('/homed-orders/add-drinks','OnlineSalerecordController@addDrinks');
+    Route::post('/homed-orders/add-cake','OnlineSalerecordController@addCake');
+    Route::post('/homed-orders/add-sides','OnlineSalerecordController@addSides');
+    Route::post('/homed-orders/add-pizza','OnlineSalerecordController@addPizza');
+    Route::post('/homed-orders/add-wrap','OnlineSalerecordController@addWrap');
+    Route::post('/homed-orders/add-burger','OnlineSalerecordController@addBurger');
+    Route::post('/homed-orders/add-grill','OnlineSalerecordController@addGrill');
+
+    //Delete Homed Items
+    Route::post('/homed-orders/delete-curry','OnlineSalerecordController@deleteCurry');
+    Route::post('/homed-orders/delete-shawarma','OnlineSalerecordController@deleteShawarma');
+    Route::post('/homed-orders/delete-wrap','OnlineSalerecordController@deleteWrap');
+    Route::post('/homed-orders/delete-sides','OnlineSalerecordController@deleteSides');
+    Route::post('/homed-orders/delete-salads','OnlineSalerecordController@deleteSalads');
+    Route::post('/homed-orders/delete-spdeals','OnlineSalerecordController@deleteSpdeals');
+    Route::post('/homed-orders/delete-cake','OnlineSalerecordController@deleteCake');
+    Route::post('/homed-orders/delete-pizza','OnlineSalerecordController@deletePizza');
+    Route::post('/homed-orders/delete-burger','OnlineSalerecordController@deleteBurger');
+    Route::post('/homed-orders/delete-grill','OnlineSalerecordController@deleteGrill'); 
+
+    // Confirm  orders
+    Route::post('/homed-orders/confirm-orders','HomedOrderController@confirmOrder')->name('homed-confirm-order');
+
+    //delete onsite Orders
+    Route::get('/homed-orders/allDelete-orders','HomedOrderController@deleteUserOrder')->name('homed-order-clear');
 
 
 

@@ -9,6 +9,7 @@ use App\Model\TawayOrders;
 use Auth;
 use App\User;
 use App\Model\Customers;
+use App\Model\OnsiteOrders;
 
 class DashboardController extends Controller
 {
@@ -32,6 +33,8 @@ class DashboardController extends Controller
 
         foreach($onsiteOrders as $orders => $ind)
             $onsiteWaiterName[$orders] = User::find($ind->user_id);
+        
+        //return $onsiteOrders;
 
         foreach($takeAwayOrders as $ind => $orders)
         {
@@ -69,7 +72,7 @@ class DashboardController extends Controller
      */
      public function getNoOfOnsiteOrders()
      {
-         $orders = Orders::where('is_paid', '=', '0')->get();
+         $orders = OnsiteOrders::where('is_paid', '=', '0')->get();
          return $orders;
      }
 

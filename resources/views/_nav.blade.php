@@ -17,10 +17,10 @@
     <ul class="nav navbar-nav">
       <li class="{{ Request::is('dashboard') ? "active": "" }} "><a href="/dashboard">D-Board<span class="sr-only">(current)</span></a></li>
       <li class="{{ Request::is('admin/customer') ? "active": "" }}"><a href="/admin/customer">Customer</a></li>      
-      <li class="{{ Request::is('onsite-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/onsite-orders">Onsite</a></li>
-      <li class="{{ Request::is('taway-orders') ? "active": "" }} {{ Request::is('foodorders') ? "active": ""  }}"><a href="/taway-orders">T-Away</a></li>
-      <li class=""><a href="#">H-Delivery</a></li>
-      <li class="{{ Request::is('food-orders') ?  "active": "" }} "><a href="/food-orders">Acc.</a></li>
+      <li class="{{ Request::is('onsite-orders') ? "active": "" }} "><a href="/onsite-orders">Onsite</a></li>
+      <li class="{{ Request::is('taway-orders') ? "active": "" }}"><a href="/taway-orders">T-Away</a></li>
+      <li class="{{ Request::is('homed-orders') ? "active": "" }}"><a href="/homed-orders">H-Delivery</a></li>
+      <li class="{{ Request::is('') ?  "active": "" }} "><a href="#">Acc.</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">

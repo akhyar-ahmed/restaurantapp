@@ -3,6 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use App\User;
+use App\Model\Salerecords;
+use App\Model\TawayItems;
+use App\Model\HomedOrders;
+use App\Model\HomedOrderManipulations;
+use Session;
+use App\Model\Customers;
+use Illuminate\Contracts\Validation\Validator;
+use App\Http\Requests\HomedOrderRequest;
 
 class HomedOrderController extends Controller
 {
