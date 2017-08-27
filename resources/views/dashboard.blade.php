@@ -181,7 +181,7 @@
                                     <th> SL </th>
                                     <th> Items </th>
                                     <th> Total </th>
-                                    <th> Name </th>
+                                    <th> Caller ID </th>
                                     <th> Address </th>
                                     <th> Time </th>
                                     <th> Action </th>
@@ -193,7 +193,7 @@
                                         <td>{{ $ind+1 }}</td>
                                         <td>{{ $orders->total_item }}</td>
                                         <td>£{{ $orders->grand_total }}</td>
-                                        <td>{{ $homeDeliveryCusName[$ind]->first_name }}</td>
+                                        <td>{{ $homeDeliveryCusName[$ind]->phone }}</td>
                                         <td>{{ $homeDeliveryCusName[$ind]->address_one }}</td>
                                         <td>{{ $orders->created_at }}</td>
                                         <td>
