@@ -128,12 +128,12 @@ class OnsiteOrderController extends Controller
 
         }
        
-        return $total_item1++;
+        $total_item1++;
         //return $grand_total;
        
         $onsiteOrder = new OnsiteOrders;
         $onsiteOrder->user_id = $id;
-        $onsiteOrder->total_item = $total_item1+1;
+        $onsiteOrder->total_item = $total_item1;
         $onsiteOrder->table_no = $request->table_name; 
         $onsiteOrder->grand_total = $grand_total;
         $onsiteOrder->is_paid = 0;
