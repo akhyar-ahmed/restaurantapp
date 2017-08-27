@@ -21,16 +21,16 @@
 @if(count($customers))
 <div class = "container form-group col-xs-12">
 	<h3><u>Customers:</u></h3>
-	<table class="table table-bordered table-hover">
+	<table class="container table table-bordered table-hover">
 	
 		<thead>
 			<tr>
 				<th>SL</th>
-				<th>Full Name</th>
-				<th>Caller ID</th>
-				<th>Address 1</th>
-				<th>Address 2</th>
-				<th>Created at</th>
+				<th>Name</th>
+				<th>Celler ID</th>
+				<th>Addresses </th>
+				<th>Zip</th>
+				<th>Created</th>
 				<th>Actions</th>
 			</tr>
 		</thead>
@@ -48,10 +48,10 @@
 	  			{{ $items->phone }}
 	  		</td>
 	  		<td>
-	  			{{ $items->address_one }}
+	  			{{ "1. ". $items->address_one."    2. ". $items->address_two}}
 	  		</td>
 			<td>
-				{{ $items->address_two }}
+				{{ $items->zip }}
 			</td>
 	  		<td>
 	  			{{ date('M j, Y', strtotime($items->created_at)) }}
