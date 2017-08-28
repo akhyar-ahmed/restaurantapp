@@ -3,6 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Model\Incomes;
+use Auth;
+use Session;
+use App\Model\OnsiteOrders;
+use App\Model\TawayOrders;
+use App\Model\HomedOrders;
+use App\Model\Expenses;
 
 class IncomeController extends Controller
 {
@@ -13,7 +20,22 @@ class IncomeController extends Controller
      */
     public function index()
     {
-        //
+        if (Auth::check())
+        {
+            $id = Auth::user()->getId();
+            $admin = User::find($id);
+
+            $orderItem = Salerecords::where('user_id', '=', $id)->get();
+            
+            if($admin->type == 1) {
+                return view('order_place')
+                    ->with(compact('table', 'id', 'orderItem'));
+            }
+            else if($admin->type == 0 )
+                  return redirect()->route('onsite-orders');
+        } else {
+             return redirect()->route('logout');
+        }
     }
 
     /**
