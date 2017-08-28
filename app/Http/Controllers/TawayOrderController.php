@@ -193,6 +193,13 @@ class TawayOrderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $order = TawayOrders::find($id);
+        $order_mani = TawayOrderManipulations::where('order_id','=',$order->id)->get();
+        foreach($order_mani as $order_mani)
+            $order_mani->delete();
+        //return $order_mani;
+        $order->delete();
+        Session::flash('success', ' Take-Away Order Cancelled Successfully !!');
+        return redirect()->route('home');
     }
 }

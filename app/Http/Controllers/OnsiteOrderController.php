@@ -227,6 +227,13 @@ class OnsiteOrderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $order = OnsiteOrders::find($id);
+        $order_mani = OnsiteOrderManipulations::where('order_id','=',$order->id)->get();
+        foreach($order_mani as $order_mani)
+            $order_mani->delete();
+        //return $order_mani;
+        $order->delete();
+        Session::flash('success', ' Onsite Order Cancelled Successfully !!');
+        return redirect()->route('home');
     }
 }

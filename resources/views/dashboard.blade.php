@@ -71,8 +71,8 @@
                                         <td>£ {{ $orders->grand_total }} </td>
                                         <td> {{ $orders->updated_at }} </td>
                                         <td>
-                                            <a href="#" class="btn btn-success btn-xs"> Approve </a>
-                                            <a href="#" class="btn btn-danger btn-xs"> Delete </a>
+                                            <a href="{{ route('onsite-order-approve', $orders->id) }}" class="btn btn-success btn-xs"> Approve </a>
+                                            <a href="{{ route('onsite-destroy', $orders->id) }}" class="btn btn-danger btn-xs"> Delete </a>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -133,8 +133,8 @@
                                         <td>£ {{ $orders->grand_total }} </td>
                                         <td> {{ $orders->updated_at }} </td>
                                         <td>
-                                            <a href="#" class="btn btn-success btn-xs"> Approve </a>
-                                            <a href="#" class="btn btn-danger btn-xs"> Delete </a>
+                                            <a href="{{ route('taway-order-approve', $orders->id) }}" class="btn btn-success btn-xs"> Approve </a>
+                                            <a href="{{ route('taway-destroy', $orders->id) }}" class="btn btn-danger btn-xs"> Delete </a>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -172,7 +172,7 @@
                 <div class = "panel-heading" > {{__('Dashboard')}} </div>
                 <div class = "panel-body" >
                     <div class="row" style="margin-bottom: 30px;">
-                        <div class="col-Xs-12">
+                        <div class="col-xs-12">
                             <h2>  Recent Home Delivery Order's: </h2>
                             <hr>
                             <table class="table table-hover">
@@ -197,8 +197,8 @@
                                         <td>{{ $homeDeliveryCusName[$ind]->address_one }}</td>
                                         <td>{{ $orders->created_at }}</td>
                                         <td>
-                                            <a href="#" class="btn btn-success btn-xs"> Approve </a>
-                                            <a href="#" class="btn btn-danger btn-xs"> Delete </a>
+                                            <a href="{{ route('homed-order-approve', $orders->id) }}" class="btn btn-success btn-xs"> Approve </a>
+                                            <a href="{{ route('homed-destroy', $orders->id) }}" class="btn btn-danger btn-xs"> Delete </a>
                                         </td>
                                     </tr>
                                 @endforeach

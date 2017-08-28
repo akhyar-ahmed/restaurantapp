@@ -254,6 +254,13 @@ class HomedOrderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $order = HomedOrders::find($id);
+        $order_mani = HomedOrderManipulations::where('order_id','=',$order->id)->get();
+        foreach($order_mani as $order_mani)
+            $order_mani->delete();
+        //return $order_mani;
+        $order->delete();
+        Session::flash('success', ' Home-Delivery Order Cancelled Successfully !!');
+        return redirect()->route('home');
     }
 }

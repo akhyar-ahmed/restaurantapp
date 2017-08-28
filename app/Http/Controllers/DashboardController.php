@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 use App\Model\Orders;
 use App\Model\OnlineOrders;
 use App\Model\TawayOrders;
+use App\Model\TawayOrderManipulations;
 use App\Model\HomedOrders;
+use App\Model\HomedOrderManipulations;
+use App\Model\OnsiteOrders;
+use App\Model\OnsiteOrderManipulations;
 use Auth;
 use App\User;
 use App\Model\Customers;
-use App\Model\OnsiteOrders;
 
 class DashboardController extends Controller
 {
@@ -131,9 +134,88 @@ class DashboardController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function showOnsite($id)
     {
-        //
+        if(Auth::check())
+         {
+            $admin = User::find(Auth::user()->getId());
+            
+            if($admin->type == 1){
+                $order = OnsiteOrderManipulations::where('order_id','=',$id)->get();
+                
+                $total=0;
+                
+                foreach($order as $order1)
+                    $total+=$order1->net_total;
+                
+                return view('pre_printing')
+                    ->with(compact('order','total'));
+            }
+            else if($admin->type ==0 )
+                return redirect()->route('place.item');
+         } else {
+             return redirect()->route('logout');
+         }
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showTaway($id)
+    {
+        if(Auth::check())
+         {
+            $admin = User::find(Auth::user()->getId());
+            
+            if($admin->type == 1){
+                $order = TawayOrderManipulations::where('order_id','=',$id)->get();
+                
+                $total=0;
+
+                foreach($order as $order1)
+                    $total+=$order1->net_total;
+
+                return view('pre_printing')
+                    ->with(compact('order','total'));
+            }
+            else if($admin->type ==0 )
+                return redirect()->route('place.item');
+         } else {
+             return redirect()->route('logout');
+         }
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showHomed($id)
+    {
+        if(Auth::check())
+         {
+            $admin = User::find(Auth::user()->getId());
+            
+            if($admin->type == 1){
+                $order = HomedOrderManipulations::where('order_id','=',$id)->get();
+                
+                $total=0;
+
+                foreach($order as $order1)
+                    $total+=$order1->net_total;
+                //return $order;
+                return view('pre_printing')
+                    ->with(compact('order','total'));
+            }
+            else if($admin->type ==0 )
+                return redirect()->route('place.item');
+         } else {
+             return redirect()->route('logout');
+         }
     }
 
     /**
@@ -154,9 +236,12 @@ class DashboardController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function hello(Request $request)
     {
-        //
+        //return $request->quantity[0];
+        dd($request);
+        die();
+        return $request;
     }
 
     /**

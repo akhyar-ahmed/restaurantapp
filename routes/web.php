@@ -247,6 +247,15 @@ Route::group(['middleware' => 'auth'], function () {
 
     //Accounts
     Route::get('/accounts/statistics','IncomeController@index')->name('accounts');
+    Route::post('/accounts/add-expense','IncomeController@postExpense')->name('accounts-expense');
+
+    Route::get('/taway-orders/destroy/{id}','TawayOrderController@destroy')->name('taway-destroy');
+    Route::get('/onsite-orders/destroy/{id}','OnsiteOrderController@destroy')->name('onsite-destroy');
+    Route::get('/homed-orders/destroy/{id}','HomedOrderController@destroy')->name('homed-destroy');
+    Route::get('/onsite-orders/approve/{id}','DashboardController@showOnsite')->name('onsite-order-approve');
+    Route::get('/taway-orders/approve/{id}','DashboardController@showTaway')->name('taway-order-approve');
+    Route::get('/homed-orders/approve/{id}','DashboardController@showHomed')->name('homed-order-approve');
+    Route::post('/homed-orders/approve','DashboardController@hello')->name('print');
 
 
 
