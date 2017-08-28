@@ -25,7 +25,11 @@ Route::group(['middleware' => 'auth'], function () {
 
     //USer routes
     Route::get('/home/user','UserController@index')->name('get.user');
-    Route::get('/home/user/create','UserController@create')->name('user.create');
+    Route::get('/home/user/get-create','UserController@getCreate')->name('user.create');
+    Route::get('/home/user/get-update/{id}','UserController@getUpdate')->name('user.update');
+    Route::post('/home/user/post-create','UserController@postCreate')->name('user.create.post');
+    Route::post('/home/user/post-create/{id}','UserController@postUpdate')->name('user.update.post');
+    Route::get('/home/user/post-delete/{id}','UserController@postDelete')->name('user.delete');
 
 
 

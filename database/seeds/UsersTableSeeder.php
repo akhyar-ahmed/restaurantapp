@@ -20,15 +20,15 @@ class UsersTableSeeder extends Seeder
                 'password' => bcrypt('secret'),
                 'address' => "Shubidbazar, Sylhet-3100",
                 'Phone' => "017jhdgbhj",
-                'sup_admin' => '1',
+                'sup_admin' => '0',
                 'type' => '1'
             ],
 
             [
                 'name' => "Akhyar",
                 'email' => "akhyar@gmail.com",
-                'temp_pass' => "secret",
-                'password' =>  bcrypt('secret'),
+                'temp_pass' => "ibnatraisa",
+                'password' =>  bcrypt('ibnatraisa'),
                 'address' => "Mejortilla, Sylhet-3100",
                 'Phone' => "01686477544",
                 'sup_admin' => '1',
