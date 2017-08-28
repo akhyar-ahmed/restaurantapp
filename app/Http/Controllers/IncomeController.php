@@ -10,6 +10,7 @@ use App\Model\OnsiteOrders;
 use App\Model\TawayOrders;
 use App\Model\HomedOrders;
 use App\Model\Expenses;
+use App\User;
 
 class IncomeController extends Controller
 {
@@ -25,11 +26,10 @@ class IncomeController extends Controller
             $id = Auth::user()->getId();
             $admin = User::find($id);
 
-            $orderItem = Salerecords::where('user_id', '=', $id)->get();
+            //$orderItem = Salerecords::where('user_id', '=', $id)->get();
             
             if($admin->type == 1) {
-                return view('order_place')
-                    ->with(compact('table', 'id', 'orderItem'));
+                return view('accounts_view');
             }
             else if($admin->type == 0 )
                   return redirect()->route('onsite-orders');

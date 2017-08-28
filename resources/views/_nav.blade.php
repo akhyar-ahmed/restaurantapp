@@ -20,7 +20,7 @@
       <li class="{{ Request::is('onsite-orders') ? "active": "" }} "><a href="/onsite-orders">Onsite</a></li>
       <li class="{{ Request::is('taway-orders') ? "active": "" }}"><a href="/taway-orders">T-Away</a></li>
       <li class="{{ Request::is('homed-orders') ? "active": "" }}"><a href="/homed-orders">H-Delivery</a></li>
-      <li class="{{ Request::is('') ?  "active": "" }} "><a href="#">Acc.</a></li>
+      <li class="{{ Request::is('accounts') ?  "active": "" }}"><a href="/accounts/statistics">Acc</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
