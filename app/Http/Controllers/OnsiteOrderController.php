@@ -49,7 +49,11 @@ class OnsiteOrderController extends Controller
                     ->with(compact('orderItem'));
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                $orderItem = Salerecords::where('user_id','=',$user_id)->get();
+                //return $orderItem;
+
+                return view('onsiteUserPreview')
+                    ->with(compact('orderItem'));
             }
         } else {
              return redirect()->route('logout');
@@ -74,26 +78,29 @@ class OnsiteOrderController extends Controller
             $admin = User::find($user_id);
 
           //  $customers = Customers::all();
+            $order = Salerecords::where('user_id', '=', $user_id)->get();
+    
+            //return $order;
+
+            foreach($order as $order) {
+
+                $order->delete();
+            }
             
             if($admin->type == 1) {
                 //$orderItem = Salerecords::where('user_id','=',$user_id)->get();
                 //return $orderItem;
 
-                $order = Salerecords::where('user_id', '=', $user_id)->get();
-        
-                //return $order;
 
-                foreach($order as $order) {
-
-                    $order->delete();
-                }
 
                 Session::flash('danger', ' Onsite Order Cancelled Successfully !!!');
 
                 return redirect()->route('onsite-orders');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                Session::flash('danger', ' Onsite Order Cancelled Successfully !!!');
+
+                return redirect()->route('onsite-orders');
             }
         } else {
              return redirect()->route('logout');

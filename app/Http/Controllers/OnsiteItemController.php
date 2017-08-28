@@ -28,7 +28,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderDrinks');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                return view('onsiteUserOrderDrinks');
             }
         } else {
              return redirect()->route('logout');
@@ -63,7 +63,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderIceCreamDesserts');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                return view('onsiteUserOrderDessert');
             }
         } else {
              return redirect()->route('logout');
@@ -87,7 +87,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderSides');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                return view('onsiteUserOrderSides');
             }
         } else {
              return redirect()->route('logout');
@@ -109,7 +109,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderPizza');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                 return view('onsiteUserOrderPizza');
             }
         } else {
              return redirect()->route('logout');
@@ -134,7 +134,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderCurry');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                return view('onsiteUserOrderCurry');
             }
         } else {
              return redirect()->route('logout');
@@ -159,7 +159,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderShawarma');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                return view('onsiteUserOrderShawarma');
             }
         } else {
              return redirect()->route('logout');
@@ -184,7 +184,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderWrap');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                 return view('onsiteUserOrderWrap');
             }
         } else {
              return redirect()->route('logout');
@@ -209,7 +209,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderBurger');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                return view('onsiteUserOrderBurger');
             }
         } else {
              return redirect()->route('logout');
@@ -234,7 +234,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderGrilled');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                return view('onsiteUserOrderGrilled');
             }
         } else {
              return redirect()->route('logout');
@@ -259,7 +259,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderSaladsMezze');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                return view('onsiteUserOrderSalads');
             }
         } else {
              return redirect()->route('logout');
@@ -283,7 +283,7 @@ class OnsiteItemController extends Controller
                 return view('onsiteOrderSpecialDeals');
             }
             else if($admin->type == 0 ){
-                return redirect()->route('place.item');
+                 return view('onsiteUserOrderSpdeals');
             }
         } else {
              return redirect()->route('logout');

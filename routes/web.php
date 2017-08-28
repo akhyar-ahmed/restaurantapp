@@ -178,6 +178,24 @@ Route::group(['middleware' => 'auth'], function () {
     //delete onsite Orders
     Route::get('/onsite-orders/allDelete-orders','OnsiteOrderController@deleteUserOrder')->name('onsite-order-clear');
 
+
+/*  //Onsite-user-Orders
+    Route::get('/onsite-orders', 'OnsiteItemController@index')->name('onsite-user-orders');
+    Route::get('/onsite-orders/drinks','OnsiteItemController@drinks')->name('onsite-user-orders-drinks'); 
+    Route::get('/onsite-orders/desert','OnsiteItemController@desert')->name('onsite-user-orders-desert'); 
+    Route::get('/onsite-orders/sides','OnsiteItemController@sides')->name('onsite-user-orders-sides'); 
+    Route::get('/onsite-orders/pizza','OnsiteItemController@pizza')->name('onsite-user-orders-pizza'); 
+    Route::get('/onsite-orders/curry','OnsiteItemController@curry')->name('onsite-user-orders-curry'); 
+    Route::get('/onsite-orders/shawarma','OnsiteItemController@shawarma')->name('onsite-user-orders-shawarma'); 
+    Route::get('/onsite-orders/wrap','OnsiteItemController@wrap')->name('onsite-user-orders-wrap'); 
+    Route::get('/onsite-orders/burgers','OnsiteItemController@burgers')->name('onsite-user-orders-burgers'); 
+    Route::get('/onsite-orders/grilled','OnsiteItemController@grilled')->name('onsite-user-orders-grilled'); 
+    Route::get('/onsite-orders/salads','OnsiteItemController@salads')->name('onsite-user-orders-salads'); 
+    Route::get('/onsite-orders/spdeals','OnsiteItemController@spdeals')->name('onsite-user-orders-spdeals');
+    
+    //Onsite-user-Preview
+    Route::get('/onsite-orders/preview','OnsiteOrderController@preview')->name('onsite-user-orders-preview');
+ */
     
     
     //Homed-Orders

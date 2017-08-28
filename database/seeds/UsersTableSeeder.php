@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
                 'password' => bcrypt('secret'),
                 'address' => "Shubidbazar, Sylhet-3100",
                 'Phone' => "017jhdgbhj",
-                'sup_admin' => '0',
+                'sup_admin' => '1',
                 'type' => '1'
             ],
 

@@ -33,8 +33,7 @@ class SalerecordController extends Controller
                     ->with(compact('table', 'id', 'orderItem'));
             }
             else if($admin->type == 0 )
-                  return view('user_order_place')
-                    ->with(compact('table', 'id', 'orderItem'));
+                  return redirect()->route('onsite-orders');
         } else {
              return redirect()->route('logout');
         }
