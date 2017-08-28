@@ -52,7 +52,7 @@
                             <table class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th> SL </th>
+                                    <th> Order No </th>
                                     <th> User Name </th>
                                     <th> Table No </th>
                                     <th> Items </th>
@@ -116,7 +116,7 @@
                             <table class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th> SL </th>
+                                    <th> Order No </th>
                                     <th> User Name </th>
                                     <th> Items </th>
                                     <th> Total </th>
@@ -178,7 +178,7 @@
                             <table class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th> SL </th>
+                                    <th> Order No </th>
                                     <th> Items </th>
                                     <th> Total </th>
                                     <th> Caller ID </th>
