@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOnlineIncomesTable extends Migration
+class CreateIncomesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,16 +12,13 @@ class CreateOnlineIncomesTable extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::create('online_incomes', function (Blueprint $table) {
+    { 
+        Schema::create('incomes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('online_order_id')->unsigned();
-            $table->double('grand_total',7,3);
+            $table->integer('order_id');
+            $table->string('category');
+            $table->double('grand_total',10,3);
             $table->timestamps();
-
-            $table->foreign('online_order_id')
-                ->references('id')
-                ->on('online_orders')->onDelete('cascade');
         });
     }
 
@@ -32,6 +29,6 @@ class CreateOnlineIncomesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('online_incomes');
+        Schema::dropIfExists('incomes');
     }
 }

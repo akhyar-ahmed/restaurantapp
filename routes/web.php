@@ -245,7 +245,8 @@ Route::group(['middleware' => 'auth'], function () {
     //delete onsite Orders
     Route::get('/homed-orders/allDelete-orders','HomedOrderController@deleteUserOrder')->name('homed-order-clear');
 
-
+    //Accounts
+    Route::get('/accounts/statistics','IncomeController@index')->name('accounts');
 
 
 
