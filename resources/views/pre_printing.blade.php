@@ -70,6 +70,7 @@
     </div>
 
     <div class = "container col-xs-12" align="center">
+        <br>
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input type="submit" role="botton" value="Print" class="btn btn-success btn-lg" >
     </div>
