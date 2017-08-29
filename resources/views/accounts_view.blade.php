@@ -31,7 +31,7 @@
                                         <font size="5">Amount:</font>
                                     </label>
                                     <div class="form-group col-xs-2" align="left">
-                                        <input type="text" class="form-control" name="expense_ammount" placeholder="Expense Amount">
+                                        <input type="text" class="form-control" name="expense_amount" placeholder="Expense Amount">
                                     </div>
                                     <div class="form-group col-xs-2">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -125,7 +125,7 @@
                             <table class="container table  table-hover">
                                 <thead>
                                 <tr>
-                                    <th> Month </th>
+                                    <th> <font> Month </font></th>
                                     <th> Income </th>
                                     <th> Expense </th>
                                 </tr>

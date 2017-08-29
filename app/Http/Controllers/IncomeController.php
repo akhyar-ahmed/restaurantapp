@@ -111,7 +111,7 @@ class IncomeController extends Controller
         $expense->month = $month;
         $expense->year = $year;
         $expense->reason_expense = $request->expense_reason;
-        $expense->ex_cost = $request->expense_ammount;
+        $expense->ex_cost = $request->expense_amount;
         
         $expense->save();
 
@@ -122,7 +122,7 @@ class IncomeController extends Controller
         ])->get();
 
         foreach($daily as $daily)
-        $daily->expense += $request->aexpense_mmount;
+        $daily->expense += $request->expense_amount;
         
         $daily->save();
 

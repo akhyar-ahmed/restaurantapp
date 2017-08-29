@@ -25,7 +25,7 @@ class ExpenseRequest extends FormRequest
     {
         return [
             'expense_reason' => 'required',
-            'expense_ammount' => 'required'
+            'expense_amount' => 'required'
         ];
     }
 }
