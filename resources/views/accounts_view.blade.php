@@ -58,10 +58,10 @@
                             <table class="container table  table-hover">
                                 <thead>
                                 <tr>
-                                    <th> Date </th>
-                                    <th> Income </th>
-                                    <th> Expense </th>
-                                    <th> Expense Reason </th>
+                                    <th> <font size="4"> Date </font> </th>
+                                    <th> <font size="4"> Income </font></th>
+                                    <th> <font size="4"> Expense </font></th>
+                                    <th> <font size="4"> Expense Reason </font></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -125,9 +125,9 @@
                             <table class="container table  table-hover">
                                 <thead>
                                 <tr>
-                                    <th> <font> Month </font></th>
-                                    <th> Income </th>
-                                    <th> Expense </th>
+                                    <th> <font size = "4"> Month </font></th>
+                                    <th> <font size = "4"> Income </font> </th>
+                                    <th> <font size = "4"> Expense </font></th>
                                 </tr>
                                 </thead>
                                 <tbody>

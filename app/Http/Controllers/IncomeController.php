@@ -106,6 +106,17 @@ class IncomeController extends Controller
         
         $date = date('M/d/y');        
         list($month, $day, $year) = explode('/',$date);
+        $daily = DailyIncomes::where([
+            ['day','=',$day],
+            ['month','=',$month],
+            ['year','=',$year]
+        ])->get();
+       if(count($daily)<=0){
+
+        Session::flash('danger', "Can't add Expense before any Income Enrollement !!");
+        
+        return redirect()->route('accounts');
+       }
         $expense = new Expenses;
         $expense->day = $day;
         $expense->month = $month;
@@ -115,16 +126,23 @@ class IncomeController extends Controller
         
         $expense->save();
 
-        $daily = DailyIncomes::where([
-            ['day','=',$day],
-            ['month','=',$month],
-            ['year','=',$year]
-        ])->get();
 
         foreach($daily as $daily)
         $daily->expense += $request->expense_amount;
         
         $daily->save();
+
+        
+
+        $monthly = MonthlyIncomes::where([
+            ['month','=',$month],
+            ['year','=',$year]
+        ])->get();
+
+        foreach($monthly as $monthly)
+        $monthly->expense += $request->expense_amount;
+        
+        $monthly->save();
 
         Session::flash('success', 'Expense Added Successfully !!');
         
