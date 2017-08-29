@@ -15,16 +15,23 @@
             <div class = "panel panel-default" style = "background-color:transparent;" >
                 <div class = "panel-heading" > {{__('Add Expenses')}} </div>
                 <div class = "panel-body" >
-                    <div class="row" style="margin-bottom: 30px;">
+                    <div class="row">
                         <div class="col-xs-12">
                             <h2> Add Expenses: </h2>
                             <hr>
                             	<form method="POST" action="{{ route('accounts-expense') }}">
-                                    <div class="form-group col-xs-6">
+                                     <label class="control-label col-xs-2">
+                                        <font size = "5">Reason:</font>
+                                    </label>
+                                    
+                                    <div class="form-group col-xs-4" align="left">
                                         <input type="text-area" class="form-control" name="expense_reason" placeholder="Insert Expense Reason">
                                     </div>
-                                    <div class="form-group col-xs-4">
-                                        <input type="text" class="form-control" name="expense_ammount" placeholder="Insert Expense Ammount">
+                                     <label class="control-label col-xs-2">
+                                        <font size="5">Amount:</font>
+                                    </label>
+                                    <div class="form-group col-xs-2" align="left">
+                                        <input type="text" class="form-control" name="expense_ammount" placeholder="Expense Amount">
                                     </div>
                                     <div class="form-group col-xs-2">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -48,7 +55,37 @@
                         <div class="col-xs-12">
                             <h2> Daily Sales: </h2>
                             <hr>
-                            Mara KA !!
+                            <table class="container table  table-hover">
+                                <thead>
+                                <tr>
+                                    <th> Date </th>
+                                    <th> Income </th>
+                                    <th> Expense </th>
+                                    <th> Expense Reason </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($daily_incomes as $ind => $orders)
+                                    <tr id="row">
+                                        <td>{{ $orders->day }}/{{$orders->month}}/{{$orders->year}} </td>
+                                        <td>£ {{ $orders->income }} </td>
+                                        <td>£ {{ $orders->expense }} </td>
+                                        @if($orders->expense == 0)
+                                        <td></td>
+                                        @else
+                                         <td>
+                                         @foreach($expense as $expense)
+                                            @foreach($expense as $ind1=>$expense1)
+                                            {{$ind1+1}} {{". ".$expense1->reason_expense }}{{" - £ ". $expense1->ex_cost}}<br>
+                                            @endforeach
+                                            @break
+                                            @endforeach
+                                         </td>
+                                         @endif
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -85,7 +122,24 @@
                         <div class="col-xs-12">
                             <h2> Monthly Sales: </h2>
                             <hr>
-                            Mara KA !!
+                            <table class="container table  table-hover">
+                                <thead>
+                                <tr>
+                                    <th> Month </th>
+                                    <th> Income </th>
+                                    <th> Expense </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($monthly_incomes as $ind => $orders)
+                                    <tr id="row">
+                                        <td>{{$orders->month}}-{{$orders->year}} </td>
+                                        <td>£ {{ $orders->income }} </td>
+                                        <td>£ {{ $orders->expense }} </td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

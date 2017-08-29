@@ -255,14 +255,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/onsite-orders/approve/{id}','DashboardController@showOnsite')->name('onsite-order-approve');
     Route::get('/taway-orders/approve/{id}','DashboardController@showTaway')->name('taway-order-approve');
     Route::get('/homed-orders/approve/{id}','DashboardController@showHomed')->name('homed-order-approve');
-    Route::post('/homed-orders/approve','PrintController@index')->name('print');
-
-
-
-
-
-
-
-
+    Route::post('/orders/approve-print','PrintController@index')->name('print');
+    Route::post('/orders/approve-save','IncomeController@save');
 
 });

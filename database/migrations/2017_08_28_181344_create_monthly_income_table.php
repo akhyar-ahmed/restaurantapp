@@ -18,6 +18,7 @@ class CreateMonthlyIncomeTable extends Migration
             $table->string('month');
             $table->string('year');
             $table->double('income',10,3);
+            $table->double('expense',10,3);
             $table->timestamps();
         });
     }

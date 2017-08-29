@@ -142,14 +142,14 @@ class DashboardController extends Controller
             
             if($admin->type == 1){
                 $order = OnsiteOrderManipulations::where('order_id','=',$id)->get();
-                
+                $cat ="onsite";
                 $total=0;
                 
                 foreach($order as $order1)
                     $total+=$order1->net_total;
                 
                 return view('pre_printing')
-                    ->with(compact('order','total'));
+                    ->with(compact('order','total','cat'));
             }
             else if($admin->type ==0 )
                 return redirect()->route('place.item');
@@ -174,12 +174,13 @@ class DashboardController extends Controller
                 $order = TawayOrderManipulations::where('order_id','=',$id)->get();
                 
                 $total=0;
+                $cat ="taway";
 
                 foreach($order as $order1)
                     $total+=$order1->net_total;
 
                 return view('pre_printing')
-                    ->with(compact('order','total'));
+                    ->with(compact('order','total','cat'));
             }
             else if($admin->type ==0 )
                 return redirect()->route('place.item');
@@ -204,12 +205,13 @@ class DashboardController extends Controller
                 $order = HomedOrderManipulations::where('order_id','=',$id)->get();
                 
                 $total=0;
+                $cat ="homed";
 
                 foreach($order as $order1)
                     $total+=$order1->net_total;
                 //return $order;
                 return view('pre_printing')
-                    ->with(compact('order','total'));
+                    ->with(compact('order','total','cat'));
             }
             else if($admin->type ==0 )
                 return redirect()->route('place.item');
